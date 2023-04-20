@@ -31,7 +31,7 @@ Some of the facilities provided to programs by the Monarch Job are:
 - Program Call Stack (Invocations)
 - Program Instantiation in Activation Groups (Activations)
 - A permanent connection to the database
-- [Namespace Lists](manuals/programming/call-program.html#CALLD)
+- [Namespace Lists](/manuals/programming/programs-and-procedures/call-program.html#CALLD)
 - File Overrides
 - Local Data Area
 

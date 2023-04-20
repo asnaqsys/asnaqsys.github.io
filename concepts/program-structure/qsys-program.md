@@ -84,7 +84,7 @@ will start the *Activation* and *Invocation* process to find and execute the Sta
 
 > Note that the *Activation* rules are defined in the implementation of the **Program**, not in the **CallD**.
 
-The mechanics of **CallD**, and how the runtime locates a called program are described in [CallD](manuals/programming/call-program.html#CALLD).
+The mechanics of **CallD**, and how the runtime locates a called program are described in [CallD](/manuals/programming/programs-and-procedures/call-program.html#CALLD).
 
 For an example using `DynamicCaller_.CallD`, read [Sun Farm Guide](https://asna.github.io/SunFarm/program-bootstrap/)
 
