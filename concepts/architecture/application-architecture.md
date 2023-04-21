@@ -5,7 +5,8 @@ title: Application Architecture
 
 
 ## Jobs
-IBM i programs rely on a runtime environment provided in the form of a Job. Jobs on the IBM i represent a schedulable unit of work, they are similar to a process in Windows, Unix and other operating systems, however, Jobs are typically much 'heavier' than processes.
+IBM i programs rely on a runtime environment provided in the form of a Job. Jobs on the IBM i represent a schedulable unit of work.
+They are similar to a process in Windows, Unix and other operating systems, however, Jobs are typically much 'heavier' than processes.
 
 Some of the facilities provided to programs by the Job are:
 - Program Call Stack (Invocations)

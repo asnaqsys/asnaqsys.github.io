@@ -26,10 +26,14 @@ The following shows the typical `appsettings.json`  file produced by Monarch Coc
         "HostName": "*InProcess",
         "Port": 5555,
         "TraceOption": 1
+        "JobIdleTimeout": 20,
+        "AssemblyList": [
+            ".\\binLogic\\Acme.ERCAP.RUNCI.dll",
+            ".\\binLogic\\Acme.PMP.CUST.dll"
+        ]
     },
     "AllowedHosts": "*",
     "JobDescriptor": {
-        "AssemblyPath": ".\\binLogic\\net5.0\\Acme.ERCAP.RUNCI.dll",
         "Class": "Acme.ERCAP.RUNCI_Job.MyJob",
         "Name": "MyJobName"
     },
@@ -41,9 +45,9 @@ The following shows the typical `appsettings.json`  file produced by Monarch Coc
 }
 ```
 The following sections describe the Expo related values.
- - MonaServer
- - JobDescriptor
- - DisplayPages
+ - `MonaServer`
+ - `JobDescriptor`
+ - `DisplayPages`
 
 ### MonaServer
 The Monarch Server is responsible for loading and executing the migrated programs. The MonaServer section describes configuration options for executing
@@ -67,12 +71,15 @@ When the Monarch Server runs out of process, it becomes the responsibility of th
 
 ### JobDescriptor
 The JobDescriptor section provides the parameters to the location of the entry point into the application.  It is composed of the valuing values:
- - Class
- - Name
+ - `Class`
+ - `Name`
 
-The Class value names the interactive job class within the Assembly that represents the Job.  This class should extend the [ASNA.QSys.Runtime.JobSupport.InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html). 
+The Class value is the fully qualified name of the interactive job class within the
+application that represents the Job. This class should extend the [ASNA.QSys.Runtime.JobSupport.InteractiveJob](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html). 
 
-When a new user connect to the server, a new instance of the interactive job class will be created and the [ExecuteStartupProgram](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#executestartupprogram) will be invoked.
+When a new user connect to the server, a new instance of the interactive job class will be
+created and the [ExecuteStartupProgram](/reference/asna-qsys-runtime-job-support/classes/interactive-job.html#executestartupprogram)
+method will be invoked.
 
 Finally, the Name value provides the initial Job Name.  
 
