@@ -27,7 +27,7 @@ a particular program or file. Each user will have her own version of the library
 the same unqualifed program may end up invoking different versions of the program, residing in different libraries.
 
 In .NET, the Monarch runtime supports a similar mechanism. Calling one version or another can be controlled with the use 
-of a ***Namespace List***. The namespace list is a property of the **Job** that's controlling
+of a ***Namespace List***. The namespace list is a property of the **Job** that is controlling
 a particular execution instance of the application;
 this property is called *NamespaceList*. If an application relies on namespaces,
 this list can be set up during **Job** initialization. In the prior example, the actual `CallD` call
@@ -38,7 +38,7 @@ need; the Monarch runtime will try them sequentially to match the fully qualifie
 plus the program name*) to a class in an assembly. But which assembly and where to find it? 
 
 The answer is the ***Assembly List***. The assembly list is the list of all assemblies that compose
-the application, and it's part of the configuration settings of the *MonaServer* section of the website's
+the application, and it is part of the configuration settings of the *MonaServer* section of the website's
 *appsettings.json* file. This list can contain paths to individual assemblies, or paths with wildcard
 [patterns](https://learn.microsoft.com/en-us/dotnet/core/extensions/file-globbing#pattern-formats) that match
 mutiple assemblies. For example:
@@ -56,7 +56,7 @@ mutiple assemblies. For example:
   }
 ```
 
-Classes in assemblies can be organized in any way that's convenient as long as **each class in the application
+Classes in assemblies can be organized in any way that is convenient as long as **each class in the application
 has a unique fully qualified name**.
 
 ## RETURN

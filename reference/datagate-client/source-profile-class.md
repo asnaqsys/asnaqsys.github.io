@@ -23,7 +23,7 @@ An instance of **SourceProfile** is an in-memory representation of the informati
 
 **AdgConnection's** 
 
-[ SourceProfile](adg-connection-class-source-profile-property.html) property is set by it's constructor in one of two ways. A valid **SourceProfile** object can be passed as a reference in the **AdgConnection** [constructor](adg-connection-constructors-main.html). Alternately, **AdgConnection** can be constructed with a valid database name string, in which case a **SourceProfile** object is created to import the registered database name information. Thus, the application programmer can use **SourceProfile** to directly manipulate database connection information or to interface with registered database names.
+[ SourceProfile](adg-connection-class-source-profile-property.html) property is set by it is constructor in one of two ways. A valid **SourceProfile** object can be passed as a reference in the **AdgConnection** [constructor](adg-connection-constructors-main.html). Alternately, **AdgConnection** can be constructed with a valid database name string, in which case a **SourceProfile** object is created to import the registered database name information. Thus, the application programmer can use **SourceProfile** to directly manipulate database connection information or to interface with registered database names.
 
 
 **SourceProfile** can be constructed in one of the following three ways:

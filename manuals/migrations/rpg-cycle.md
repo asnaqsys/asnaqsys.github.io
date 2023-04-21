@@ -67,7 +67,7 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 11. The match field routine selects the next file to process. Continue at step 13.
 
-12. The next file is selected: it will be either the primary if it's not at `EOF`, or the first secondary that is not at `EOF`, selected in the order by which they are specified in the program.
+12. The next file is selected: it will be either the primary if it is not at `EOF`, or the first secondary that is not at `EOF`, selected in the order by which they are specified in the program.
 
 13. If all files are at `EOF`, then go to 14. Otherwise go to 15.
 
@@ -91,7 +91,7 @@ The following [Flow Chart](https://en.wikipedia.org/wiki/Flowchart) shows the st
 
 ## Cycle `Input` Specifications
 
-During Migration, if there are legacy RPG [Input Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-input) with *Field Description* entries corresponding to [Control Level](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-63-64-control-level#ifd6364) or [Matching Fields](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-65-66-matching-fields), then for each record where these kind of fields are defined, the migration produces an AVR declaration that indicates the Control Level number and under which condition it's set, and/or the Match Record number and under which condition it's set.
+During Migration, if there are legacy RPG [Input Specifications](https://www.ibm.com/docs/en/i/7.3?topic=specifications-input) with *Field Description* entries corresponding to [Control Level](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-63-64-control-level#ifd6364) or [Matching Fields](https://www.ibm.com/docs/en/i/7.3?topic=entries-positions-65-66-matching-fields), then for each record where these kind of fields are defined, the migration produces an AVR declaration that indicates the Control Level number and under which condition it is set, and/or the Match Record number and under which condition it is set.
 
 The syntax is as follows:
 

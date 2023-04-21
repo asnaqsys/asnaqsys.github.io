@@ -25,7 +25,7 @@ String. Specifies the path name of the database library to remove from the libra
 
 ## Remarks
 
-A library list entry can not be removed if it's on an active user's library list. 
+A library list entry can not be removed if it is on an active user's library list. 
 ## Requirements
 
 <span> **Namespace:** [ASNA.DataGate.Client](datagate-client-namespace.html) </span> 

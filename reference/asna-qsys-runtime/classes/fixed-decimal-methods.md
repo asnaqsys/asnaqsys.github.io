@@ -90,7 +90,7 @@ Contains extension methods for handling FixedDecimals according to RPG semantics
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [GetDigits\\`\\`2](#getdigits\`\`2fixeddecimal{``0-``1}-int32-int32-int32)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Extracts digits from a decimal number. | The decimal number that contains the extracted digits.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | [GetHashCode](https://docs.microsoft.com/en-us/dotnet/api/system.object.gethashcode)() | Serves as the default hash function.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A hash code for the current object.
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | [GetType](https://docs.microsoft.com/en-us/dotnet/api/system.object.gettype)() | Gets the Type of the current instance.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | The exact runtime type of the current instance.
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [IsBlanks\\`\\`1](#isblanks\`\`1fixedstring{``0})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html)) | Tests a string to see if it's all blanks (' '). | True if the string contains blanks.
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [IsBlanks\\`\\`1](#isblanks\`\`1fixedstring{``0})([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html)) | Tests a string to see if it is all blanks (' '). | True if the string contains blanks.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | [MemberwiseClone](https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone)() | Creates a shallow copy of the current Object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | A shallow copy of the current Object.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`1](#moveleft\`\`1fixedstring{``0}-string)([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left a string to string, with or without pad. | returns the value of the move.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [MoveLeft\\`\\`2](#moveleft\`\`2fixeddecimal{``0-``1}-string)([FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's MOVEL. Moves left decimal to a string. | returns a string value of the target.
@@ -1428,7 +1428,7 @@ GetDigits``2(ASNA.QSys.Runtime.FixedDecimal{``0,``1} source, Int32 start, Int32 
 
 ### IsBlanks\`\`1([FixedString{\\`\\`0}](/reference/asna-qsys-runtime/fixed-string{``0}.html))
 
-Tests a string to see if it's all blanks (' ').
+Tests a string to see if it is all blanks (' ').
 
 ```cs
 IsBlanks``1(ASNA.QSys.Runtime.FixedString{``0} arg);

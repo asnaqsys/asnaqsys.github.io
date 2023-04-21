@@ -101,7 +101,7 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] layouts );
 
 | Type | Name | Description | Return Description 
 | --- | --- | --- | --- 
-| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears the Data Structure. If the layout is defined, each field is cleared to its default value. Otherwise it's cleared to blanks. | 
+| [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Clear](#clear)() | Clears the Data Structure. If the layout is defined, each field is cleared to its default value. Otherwise it is cleared to blanks. | 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | [Dump](#dump)() | Gets the contents of the Data Structure buffer as a string value. | The contents of the Data Structure buffer as a string.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | [Equals](https://docs.microsoft.com/en-us/dotnet/api/system.object.equals)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current object.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | true if the specified object is equal to the current object; otherwise, false.
 | [Void](https://docs.microsoft.com/en-us/dotnet/api/system.void) | [Finalize](https://docs.microsoft.com/en-us/dotnet/api/system.object.finalize)() | Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br>(Inherited from [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | 
@@ -179,7 +179,7 @@ DataStructure( ASNA.QSys.Runtime.ILayout[] layouts );
 
 ### Clear()
 
-Clears the Data Structure. If the layout is defined, each field is cleared to its default value. Otherwise it's cleared to blanks.
+Clears the Data Structure. If the layout is defined, each field is cleared to its default value. Otherwise it is cleared to blanks.
 
 ```cs
 Clear();

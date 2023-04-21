@@ -17,7 +17,7 @@ title: FileAdapter.Status Property
 The value of **Status** is one of the **FileAdapter.AdapterStatus** values.
 ## Examples
 
-Here we want to use a fileAdapter object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure its opened and open it if it isn't.
+Here we want to use a fileAdapter object named "dbFile" but are unsure as to whether or not it is been initialized, so we check for null and use the Status property to make sure it is opened and open it if it isn't.
 
 ```cs 
   if (dbFile == null)

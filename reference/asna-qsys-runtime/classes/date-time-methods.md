@@ -215,10 +215,10 @@ MoveLeft(DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKind, ASN
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The date/time/timestamp value to move. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it's a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it is a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | The DateTimeFormat of the value. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | dateTimeSeparator | The DateTimeSeparator of the value. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that's the target of the MOVEL. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that is the target of the MOVEL. 
 
 #### Returns
 
@@ -379,10 +379,10 @@ MoveLeftWithPad(DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKi
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The date/time/timestamp value to move. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it's a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it is a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | The DateTimeFormat of the value. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | dateTimeSeparator | The DateTimeSeparator of the value. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that's the target of the MOVEL. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that is the target of the MOVEL. 
 
 #### Returns
 
@@ -517,10 +517,10 @@ MoveRight(DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKind, AS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The date/time/timestamp value to move. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it's a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it is a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | The DateTimeFormat of the value. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | dateTimeSeparator | The DateTimeSeparator of the value. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that's the target of the MOVE. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that is the target of the MOVE. 
 
 #### Returns
 
@@ -545,9 +545,9 @@ MoveRight(DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeKind, AS
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The date/time/timestamp value to move. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it's a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it is a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | The DateTimeFormat of the value. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | targetOperand | The decimal value that's the target of the MOVE. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | targetOperand | The decimal value that is the target of the MOVE. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The total number of digits in the decimal number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The number of decimal positions in the decimal number. 
 
@@ -681,10 +681,10 @@ MoveRightWithPad(DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeK
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The date/time/timestamp value to move. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it's a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it is a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | The DateTimeFormat of the value. 
 | [DateTimeSeparator](/reference/asna-qsys-runtime/classes/date-time-separator.html) | dateTimeSeparator | The DateTimeSeparator of the value. 
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that's the target of the MOVE. 
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | targetOperand | The string value that is the target of the MOVE. 
 
 #### Returns
 
@@ -709,9 +709,9 @@ MoveRightWithPad(DateTime dateTime, ASNA.QSys.Runtime.DateTimeDataKind dateTimeK
 | Type | Parameter name | Description
 | --- | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | The date/time/timestamp value to move. 
-| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it's a date, time, or timestamp. 
+| [DateTimeDataKind](/reference/asna-qsys-runtime/date-time-data-kind.html) | dateTimeKind | The DateTimeDataKind value that specifies whether it is a date, time, or timestamp. 
 | [DateTimeFormat]($$TODO-ASNA.DataGate.Common.DateTimeFormat.html) | dateTimeFormat | The DateTimeFormat of the value. 
-| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | targetOperand | The decimal value that's the target of the MOVE. 
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | targetOperand | The decimal value that is the target of the MOVE. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The total number of digits in the decimal number. 
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The number of decimal positions in the decimal number. 
 

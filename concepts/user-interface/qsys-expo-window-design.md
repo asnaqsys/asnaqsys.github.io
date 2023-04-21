@@ -298,7 +298,7 @@ For more advanced customization, the `CSS variables` are accessible from your us
 
 ### Popup WINDOW Drag/Drop
 
-Popup WINDOW Header is draggable, when *hovering* the mouse pointer over the Window Popup header you will notice that the mouse pointer changes to a *Drag* icon hand (checkout `dds-window-header` class above). *Dragging* the Popup Window works as expected: the Window is re-positioned on it's background Page.
+Popup WINDOW Header is draggable, when *hovering* the mouse pointer over the Window Popup header you will notice that the mouse pointer changes to a *Drag* icon hand (checkout `dds-window-header` class above). *Dragging* the Popup Window works as expected: the Window is re-positioned on its background Page.
 
 When the WINDOW is displayed again (the record is re-executed by the Application logic), the *new* Window position is lost, and the position defined by the Razor Page overrides any Window Dragging performed.
 

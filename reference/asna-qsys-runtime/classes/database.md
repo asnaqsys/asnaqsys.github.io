@@ -356,7 +356,7 @@ Dispose(Boolean disposing);
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | disposing | If True, it's safe to dispose of class members. 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | disposing | If True, it is safe to dispose of class members. 
 
 
 <br>

@@ -25,7 +25,7 @@ The **FileAdapter.AdapterStatus** enumeration is used as a parameter by the [ Fi
 
 ## Examples
 
-Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to whether or not it's been initialized, so we check for null and use the Status property to make sure it's opened and open it if it isn't.
+Here we want to use a **FileAdapter** object named "dbFile" but are unsure as to whether or not it is been initialized, so we check for null and use the Status property to make sure it is opened and open it if it isn't.
 
 ```cs 
   if (dbFile == null)

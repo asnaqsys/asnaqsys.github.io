@@ -945,7 +945,7 @@ MoveRightWithPad``2(Decimal num, ASNA.QSys.Runtime.FixedDecimal{``0,``1} targetO
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | num | Decimal value of the source number. 
-| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | Fixed decimal value that's the target of the move. 
+| [FixedDecimal{\\`\\`0,\\`\\`1}](/reference/asna-qsys-runtime/fixed-decimal{``0,``1}.html) | targetOperand | Fixed decimal value that is the target of the move. 
 
 
 <br>
