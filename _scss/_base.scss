@@ -39,9 +39,10 @@ a {
     border-color: var(--pagefind-ui-text) !important;
 }
 
-
 .pagefind-ui__drawer {
     position: fixed;
+    overflow-y: scroll !important;
+    max-height: 90vh;
 }
 
 .pagefind-ui__search-clear {
