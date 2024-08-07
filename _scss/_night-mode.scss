@@ -2,6 +2,12 @@ body.night {
     background-color: $bg-body-night;
     color:            $body-text-night;
 
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+
     &.landing {
         background-color: $bg-body-landing-night;
         .header > .container {
