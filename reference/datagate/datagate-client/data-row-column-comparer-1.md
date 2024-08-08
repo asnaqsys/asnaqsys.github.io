@@ -1,7 +1,7 @@
 ---
 title: "DataRowColumnComparer&lt;T&gt; class"
 description: "This minor variation of the System.Data.DataRowComparer&lt;T&gt; class implements IEqualityComparer&lt;T&gt; using value based semantics when comparin"
-last_modified_at: 2024-07-30T16:18:34Z
+last_modified_at: 2024-08-08T21:41:32Z
 sitemap: false
 ---
 

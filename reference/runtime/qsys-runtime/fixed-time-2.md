@@ -1,7 +1,7 @@
 ---
-title: "FixedTime&lt;T1, T2&gt; struct      | QSYS API Reference Guide"
+title: "FixedTime<T1, T2> struct      | QSYS API Reference Guide"
 description: "Holds a fixed-time value in the specified format and with the given separator. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Holds a fixed-time value in the specified format and with the given separator.
@@ -57,7 +57,7 @@ int CompareTo(object obj)
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | A value that indicates the relative order of the objects being compared.
 
-### IFixedSizeType<DateTime> Convert([DateTime value](https://docs.microsoft.com/en-us/dotnet/api/system.datetime))
+### IFixedSizeType\<DateTime\> Convert([DateTime value](https://docs.microsoft.com/en-us/dotnet/api/system.datetime))
 
 Convert a DateTime to a FixedTime of the same format and separator.
 

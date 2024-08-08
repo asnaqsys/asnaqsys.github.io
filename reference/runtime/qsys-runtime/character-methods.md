@@ -1,7 +1,7 @@
 ---
 title: "CharacterMethods class        | QSYS API Reference Guide"
 description: "Contains extension methods for Char (onechar/indicator) conversions. "
-last_modified_at: 2024-07-29T23:18:00Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains extension methods for Char (onechar/indicator) conversions.

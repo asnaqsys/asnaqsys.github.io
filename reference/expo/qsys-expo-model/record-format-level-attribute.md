@@ -1,7 +1,7 @@
 ---
 title: "RecordFormatLevelAttribute class"
 description: "Defines the Record level value for a record in the class. "
-last_modified_at: 2024-07-29T18:40:13Z
+last_modified_at: 2024-08-08T21:42:10Z
 ---
 
 Defines the Record level value for a record in the class.
@@ -47,7 +47,7 @@ RecordFormatLevelAttribute(String, String)
 | --- | --- |
 | [GetAllFrom](#ienumerable-recordformatlevelattribute-getallfromtype-type)([Type](https://docs.microsoft.com/en-us/dotnet/api/system.type)) | Extract all RecordFormatLevelAttribute definitions from the custom attributes on a type.
 
-### IEnumerable<RecordFormatLevelAttribute> GetAllFrom([Type type](https://docs.microsoft.com/en-us/dotnet/api/system.type))
+### IEnumerable\<RecordFormatLevelAttribute\> GetAllFrom([Type type](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
 Extract all RecordFormatLevelAttribute definitions from the custom attributes on a type.
 

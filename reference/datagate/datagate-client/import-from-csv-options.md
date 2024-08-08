@@ -1,7 +1,7 @@
 ---
 title: "ImportFromCsvOptions class    | QSYS API Reference Guide"
 description: "Represents options for importing data from a CSV file. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Represents options for importing data from a CSV file.

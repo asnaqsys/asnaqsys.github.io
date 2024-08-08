@@ -1,7 +1,7 @@
 ---
 title: "FileAdapter class             | QSYS API Reference Guide"
 description: "The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings.
@@ -170,6 +170,7 @@ FileAdapter(IFileObject)
 | [SeekRange](#void-seekrangerangemode-mode-adgkeytable-firstkey-rangefirst-rangefirst-adgkeytable-lastkey-rangelast-rangelast)([RangeMode](/reference/datagate/datagate-common/range-mode.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Positions the file pointer at the first record in the specified range in the file that the FileAdapter is working with.
 | [SeekRRN](#void-seekrrnseekmode-mode-long-rrn)([SeekMode](/reference/datagate/datagate-common/seek-mode.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Positions the file pointer at the record with the specified relative record number (RRN) in the file that the FileAdapter is working with.
 | [SetFormat](#void-setformatstring-format)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the format of the file that the FileAdapter is working with to the specified format.
+| [ThrowIfNotOpen\<T\>](#t-throwifnotopen-t-t-openstate)([T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | Checks if the provided state is open. If it is, the state is returned. If it is not, an exception is thrown.
 
 ### void AddRecord([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html))
 
@@ -765,6 +766,30 @@ void SetFormat(string Format)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Format | The name of the format to set.
+
+### T ThrowIfNotOpen\<T\>([T openState](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+Checks if the provided state is open. If it is, the state is returned. If it is not, an exception is thrown.
+
+
+#### Remarks
+This method is used to ensure that a certain state (like a file or a connection) is open before proceeding with operations that require it to be open.If the state is not open (i.e., it is null), it throws a dgException with a specific error number and a message indicating that the file adapter is not open.
+
+```cs
+T ThrowIfNotOpen<T>(T openState)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | openState | The state to check.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | The open state if it is not null.
 
 ## Example 1. Use of WaitForRecord Open attribute property. 
 

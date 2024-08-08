@@ -1,7 +1,7 @@
 ---
 title: "XmlElementConverter class     | QSYS API Reference Guide"
 description: "Provides methods for converting between XmlElement objects and their string, boolean, and child element representations. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Provides methods for converting between XmlElement objects and their string, boolean, and child element representations.
@@ -188,7 +188,7 @@ XmlNodeList GetChildren(string childElementName, string childElementNamespace)
 | --- | ---
 | [XmlNodeList](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnodelist?view=net-8.0) | A collection of child elements with the specified name and namespace, or null if the current element is null.
 
-### IEnumerable<XmlElement> GetChildrenOrThrow([string childName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string childNamespace](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IEnumerable\<XmlElement\> GetChildrenOrThrow([string childName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string childNamespace](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Gets all child elements of the current XmlElement with the specified name and namespace. If the current element is null, throws an InvalidOperationException.
 

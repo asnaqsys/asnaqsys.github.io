@@ -1,7 +1,7 @@
 ---
 title: "DataGateCredentialEqualityComparer class"
 description: "Provides a comparer for IDataGateCredential objects, which supports equality comparisons. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Provides a comparer for IDataGateCredential objects, which supports equality comparisons.

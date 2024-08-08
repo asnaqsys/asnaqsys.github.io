@@ -1,7 +1,7 @@
 ---
 title: "InvariantCultureTypeConverter class"
 description: "Provides a type converter to convert object types to and from string representations, using the invariant culture. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Provides a type converter to convert object types to and from string representations, using the invariant culture.

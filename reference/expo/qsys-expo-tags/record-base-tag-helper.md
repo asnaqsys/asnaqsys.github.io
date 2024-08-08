@@ -1,7 +1,7 @@
 ---
 title: "RecordBaseTagHelper class     | QSYS API Reference Guide"
 description: "Provides common properties for DdsRecords "
-last_modified_at: 2024-07-29T18:38:13Z
+last_modified_at: 2024-08-08T21:42:23Z
 ---
 
 Provides common properties for DdsRecords

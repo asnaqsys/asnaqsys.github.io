@@ -1,7 +1,7 @@
 ---
 title: "Module class                  | QSYS API Reference Guide"
 description: "Defines the core behavior of classes that were migrated from RPG or CL programs and modules. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Defines the core behavior of classes that were migrated from RPG or CL programs and modules.

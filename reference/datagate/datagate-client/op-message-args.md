@@ -1,7 +1,7 @@
 ---
 title: "OpMessageArgs class           | QSYS API Reference Guide"
 description: "Represents the arguments for an operation message event. This class is derived from EventArgs and is used to pass a message string with an event. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Represents the arguments for an operation message event.

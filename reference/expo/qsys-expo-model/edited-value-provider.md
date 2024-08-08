@@ -1,7 +1,7 @@
 ---
 title: "EditedValueProvider class     | QSYS API Reference Guide"
 description: "Provides support for Posted form validation for fields with Edit Code or Edit Word. (This value provider is registered in Startup.ConfigureServices)  "
-last_modified_at: 2024-07-29T18:40:13Z
+last_modified_at: 2024-08-08T21:42:10Z
 ---
 
 Provides support for Posted form validation for fields with Edit Code or Edit Word. (This value provider is registered in Startup.ConfigureServices) 
@@ -94,7 +94,7 @@ string GetFieldTemplateName(string originalFieldName)
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Return field's name without an actual subfile RRN.
 
-### IDictionary<string, string> GetKeysFromPrefix([string prefix](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IDictionary\<string, string\> GetKeysFromPrefix([string prefix](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Gets a Dictionary withe the keys from a given prefix
 

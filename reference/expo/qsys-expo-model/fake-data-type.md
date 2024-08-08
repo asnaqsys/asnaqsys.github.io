@@ -1,7 +1,7 @@
 ---
 title: "FakeDataType enum             | QSYS API Reference Guide"
 description: "Specifies the type of fake data to use for the display pages. "
-last_modified_at: 2024-07-29T18:40:13Z
+last_modified_at: 2024-08-08T21:42:10Z
 ---
 
 Specifies the type of fake data to use for the display pages.

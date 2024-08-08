@@ -1,7 +1,7 @@
 ---
 title: "ActivationGroupCallException class"
 description: "The exception that is thrown when an program is to be activated in the caller&#39;s activation but the caller activation group could not be found. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 The exception that is thrown when an program is to be activated in the caller's activation but the caller activation group could not be found.

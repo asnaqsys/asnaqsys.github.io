@@ -1,7 +1,7 @@
 ---
 title: "IConverter interface          | QSYS API Reference Guide"
 description: "Defines functionality to perform conversions between EBCDIC and Unicode. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Defines functionality to perform conversions between EBCDIC and Unicode.
@@ -64,7 +64,7 @@ string EbcdicToUnicode(Byte[] source, int offset, int length)
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The Unicode string.
 
-### Byte[] UnicodeToEbcdic([string source](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### Byte\[\] UnicodeToEbcdic([string source](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Converts a unicode string to the corresponding bytes of the equivalent string in EBCDIC.
 

@@ -1,7 +1,7 @@
 ---
 title: "HexMethods class              | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG conversions between character strings and their hexadecimal representation. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains extension methods for handling RPG conversions between character strings and their hexadecimal representation.
@@ -20,7 +20,7 @@ Contains extension methods for handling RPG conversions between character string
 | [ToHexFromString](#byte--tohexfromstringstring-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | ToHexFromString summary.
 | [ToStringFromHex](#string-tostringfromhexbyte--value)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | ToStringFromHex summary.
 
-### Byte[] ToHexFromString([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### Byte\[\] ToHexFromString([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 ToHexFromString summary.
 

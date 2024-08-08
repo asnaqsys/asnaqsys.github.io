@@ -1,7 +1,7 @@
 ---
 title: "AltEncoding class             | QSYS API Reference Guide"
 description: "Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data.
@@ -52,7 +52,7 @@ AltEncoding()
 | [TransformPropertiesFromStream](#itransformproperties-transformpropertiesfromstreambinaryreader-br)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | When overridden in a derived class, reads the given BinaryReader stream and converts it into an ITransformProperties object.
 | [TransformPropertiesToStream](#void-transformpropertiestostreamitransformproperties-t-binarywriter-bw)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | When overridden in a derived class, writes the given ITransformProperties object to the specified BinaryWriter stream.
 
-### Dictionary<string, object> DictionaryFromITransformProps([ITransformProperties props](/reference/datagate/datagate-providers/i-transform-properties.html))
+### Dictionary\<string, object\> DictionaryFromITransformProps([ITransformProperties props](/reference/datagate/datagate-providers/i-transform-properties.html))
 
 Converts the given ITransformProperties object into a dictionary.
 

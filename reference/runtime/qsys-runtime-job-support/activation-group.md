@@ -1,7 +1,7 @@
 ---
 title: "ActivationGroup class         | QSYS API Reference Guide"
 description: "Provides the facilities to organize the instances of programs and service programs into related groups. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Provides the facilities to organize the instances of programs and service programs into related groups.

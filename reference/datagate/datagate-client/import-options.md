@@ -1,7 +1,7 @@
 ---
 title: "ImportOptions class           | QSYS API Reference Guide"
 description: "Provides options for importing data from XML or CSV format. This class includes properties for specifying the target member where the data will be imp"
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Provides options for importing data from XML or CSV format.

@@ -1,7 +1,7 @@
 ---
 title: "ValuesAttribute class         | QSYS API Reference Guide"
 description: "Defines ValuesAttribute class "
-last_modified_at: 2024-07-29T18:40:13Z
+last_modified_at: 2024-08-08T21:42:10Z
 ---
 
 Defines ValuesAttribute class
@@ -103,7 +103,6 @@ ValuesAttribute(Type, Object[])
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Func\<Object, Object\>](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0) | Conversion | Gets ir sets the collection of functions used for the values conversion |
 | [Type](https://docs.microsoft.com/en-us/dotnet/api/system.type) | ObjectType | Gets the Object Type |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | TrimStringValue | Gets or sets a boolean value indicating if the value in the string needs te trimmed |
 | [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | ValidValues | Gets the array of valid values |

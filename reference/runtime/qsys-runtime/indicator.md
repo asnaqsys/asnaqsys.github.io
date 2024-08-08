@@ -1,7 +1,7 @@
 ---
 title: "Indicator struct              | QSYS API Reference Guide"
 description: "This class represents an IBM i RPG Indicator.  "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 This class represents an IBM i RPG Indicator. 
@@ -49,7 +49,7 @@ int CompareTo(object obj)
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
 
-### IFixedSizeType<char> Convert([char value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
+### IFixedSizeType\<char\> Convert([char value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char))
 
 Convert char to Indicator.
 

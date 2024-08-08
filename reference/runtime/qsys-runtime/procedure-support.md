@@ -1,7 +1,7 @@
 ---
 title: "ProcedureSupport class        | QSYS API Reference Guide"
 description: "Provides static methods to support finding a class used in dynamic calls (RPG&#39;s CallD). "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Provides static methods to support finding a class used in dynamic calls (RPG's CallD).
@@ -17,7 +17,6 @@ Provides static methods to support finding a class used in dynamic calls (RPG's 
 
 | Type | Name | Description
 | --- | --- | --- 
-| [Func\<String, Assembly\>](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0) | AssemblyLoader | Delegate to set a custom assembly loader. By default, assembly loading uses the DefaultLoader method in this class. |
 
 ## Methods
 

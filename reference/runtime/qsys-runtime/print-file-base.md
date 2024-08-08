@@ -1,7 +1,7 @@
 ---
 title: "PrintFileBase class           | QSYS API Reference Guide"
 description: "Base class for Database print files. Contains the print file setup information and some output operations. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Base class for Database print files. Contains the print file setup information and some output operations.
@@ -108,7 +108,6 @@ PrintFileBase(String, String, ShareTypes, Boolean)
 | [Dictionary\<String, String\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0) | formatIDs | When overriden in a derived class, gets the mapping from record format names to formatIDs. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormName | Gets or sets the customized page size to use.  |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormType | Gets or sets the type of forms used in the printer for printed output. |
-| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | InfSR | Gets the delegate that is invoked when there is an error in a file operation. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InOverflow | Return whether the printer has entered the overflow area of the page. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFormatID | A boolean value that specifies if the Format IDs of the file should be checked when the file is opened. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the file is open. |
@@ -120,7 +119,6 @@ PrintFileBase(String, String, ShareTypes, Boolean)
 | [PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-8.0) | PaperSize | Gets or sets the paper size.  This property is of type ASNA.DataGate.Common.PaperSize.    |
 | [PaperSourceKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.papersourcekind?view=dotnet-plat-ext-8.0) | PaperSource | Gets or sets the paper source.  This property is of type ASNA.DataGate.Common.PaperSource. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PaperWidth | Gets or sets the paper width.  This property is of type *Integer4. |
-| [Action\<String, AdgDataSet\>](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. |
 | [AccessMode](/reference/datagate/datagate-common/access-mode.html) | Preview | Gets or sets whether the print preview dialog is to be displayed before printing.  This property is of type ASNA.DataGate.Common.AccessMode.  |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PrintableLength | Gets the printer's printable Length.  This property is of type *Integer4. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | PrintableWidth | Gets the printer’s printable width.  This property is of type *Integer4. |

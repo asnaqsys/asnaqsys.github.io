@@ -1,7 +1,7 @@
 ---
 title: "DataGateException class       | QSYS API Reference Guide"
 description: "DataGate operation on file -filename- caused -datagate exception- exception. "
-last_modified_at: 2024-07-29T23:19:39Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 DataGate operation on file -filename- caused -datagate exception- exception.

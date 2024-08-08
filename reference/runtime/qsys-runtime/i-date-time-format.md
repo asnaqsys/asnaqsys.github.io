@@ -1,7 +1,7 @@
 ---
 title: "IDateTimeFormat interface     | QSYS API Reference Guide"
 description: "Base interface for interfaces used as date/time formats in the declaration of date/time types. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 sitemap: false
 ---
 

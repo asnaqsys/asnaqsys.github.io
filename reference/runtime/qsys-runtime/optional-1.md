@@ -1,7 +1,7 @@
 ---
 title: "Optional&lt;T&gt; class       | QSYS API Reference Guide"
 description: "Encapsulates a *NOPASS parameter. "
-last_modified_at: 2024-07-30T16:27:02Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Encapsulates a *NOPASS parameter.

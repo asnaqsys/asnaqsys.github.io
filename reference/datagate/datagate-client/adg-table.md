@@ -1,7 +1,7 @@
 ---
 title: "AdgTable class                | QSYS API Reference Guide"
 description: "The AdgTable class supports DG infrastructure and is not intended to be used directly from your code. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 The AdgTable class supports DG infrastructure and is not intended to be used directly from your code.

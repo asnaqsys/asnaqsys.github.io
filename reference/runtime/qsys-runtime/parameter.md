@@ -1,7 +1,7 @@
 ---
 title: "Parameter class               | QSYS API Reference Guide"
 description: "Describes a parameter sent into an IBMi program call. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Describes a parameter sent into an IBMi program call.

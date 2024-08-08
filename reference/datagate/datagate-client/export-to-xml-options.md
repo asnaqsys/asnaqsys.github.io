@@ -1,7 +1,7 @@
 ---
 title: "ExportToXmlOptions class      | QSYS API Reference Guide"
 description: "Provides options for exporting data to XML format. This class includes properties for specifying whether fields should be exported as elements and whe"
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Provides options for exporting data to XML format.

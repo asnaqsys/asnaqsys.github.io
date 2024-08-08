@@ -1,7 +1,7 @@
 ---
 title: "BuiltInMethods class          | QSYS API Reference Guide"
 description: "Contains extension methods for handling Built-in functions according to RPG semantics. "
-last_modified_at: 2024-07-29T23:17:51Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains extension methods for handling Built-in functions according to RPG semantics.
@@ -21,11 +21,13 @@ Contains extension methods for handling Built-in functions according to RPG sema
 | [BIInt](#int-biintfloat-num-bool-halfadjust)([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust.
 | [BIInt](#int-biintdouble-num-bool-halfadjust)([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust.
 | [BIInt](#int-biintstring-num-bool-halfadjust)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust.
+| [BIInt\<TLen\>](#int-biint-tlen-fixedstring-tlen-num-bool-halfadjust)([FixedString\<TLen\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Integer with half adjust.
 | [BIUns](#int-biunsdecimal-num-bool-halfadjust)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust.
 | [BIUns](#int-biunsint-num-bool-halfadjust)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust.
 | [BIUns](#int-biunsfloat-num-bool-halfadjust)([Single](https://learn.microsoft.com/en-us/dotnet/api/system.single?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust.
 | [BIUns](#int-biunsdouble-num-bool-halfadjust)([Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust.
 | [BIUns](#int-biunsstring-num-bool-halfadjust)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust.
+| [BIUns\<TLen\>](#int-biuns-tlen-fixedstring-tlen-num-bool-halfadjust)([FixedString\<TLen\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Convert to Unsigned Integer with half adjust.
 
 ### int BIInt([decimal num](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [bool halfAdjust](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -103,6 +105,27 @@ int BIInt(string num, bool halfAdjust)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | num | Input number as string.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The number converted.
+
+### int BIInt\<TLen\>([FixedString\<TLen\> num](/reference/runtime/qsys-runtime/fixed-string-1.html), [bool halfAdjust](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Convert to Integer with half adjust.
+
+```cs
+int BIInt<TLen>(FixedString<TLen> num, bool halfAdjust)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedString\<TLen\>](/reference/runtime/qsys-runtime/fixed-string-1.html) | num | Input fixed-string number.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise.
 
 #### Returns
@@ -208,6 +231,27 @@ int BIUns(string num, bool halfAdjust)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | num | Input number as string.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The number converted.
+
+### int BIUns\<TLen\>([FixedString\<TLen\> num](/reference/runtime/qsys-runtime/fixed-string-1.html), [bool halfAdjust](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Convert to Unsigned Integer with half adjust.
+
+```cs
+int BIUns<TLen>(FixedString<TLen> num, bool halfAdjust)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedString\<TLen\>](/reference/runtime/qsys-runtime/fixed-string-1.html) | num | Input number as fixed-string.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | halfAdjust | True if half-adjust is requested; False otherwise.
 
 #### Returns

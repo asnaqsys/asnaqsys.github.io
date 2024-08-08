@@ -1,7 +1,7 @@
 ---
 title: "Database class                | QSYS API Reference Guide"
 description: "Handles connections to a Database. "
-last_modified_at: 2024-07-30T15:24:16Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Handles connections to a Database.

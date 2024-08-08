@@ -1,7 +1,7 @@
 ---
 title: "ServiceProgram class          | QSYS API Reference Guide"
 description: "Defines the core behavior of a service program and provides a base for migrated derived classes. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Defines the core behavior of a service program and provides a base for migrated derived classes.
@@ -39,7 +39,7 @@ ServiceProgram(CommonProgram)
 | --- | --- |
 | [GetInstance\<T\>](#t-getinstance-t-icaller-caller)([ICaller](/reference/runtime/qsys-runtime/i-caller.html)) | Gets an instance of a service program. The instance can be an existing one if it is found in the Job otherwise a new one is created. 
 
-### T GetInstance<T>([ICaller caller](/reference/runtime/qsys-runtime/i-caller.html))
+### T GetInstance\<T\>([ICaller caller](/reference/runtime/qsys-runtime/i-caller.html))
 
 Gets an instance of a service program. The instance can be an existing one if it is found in the Job otherwise a new one is created. 
 

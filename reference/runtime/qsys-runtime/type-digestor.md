@@ -1,7 +1,7 @@
 ---
 title: "TypeDigestor class            | QSYS API Reference Guide"
 description: "Contains methods that aid in the parsing of the generic type arguments of fixed-sized types. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains methods that aid in the parsing of the generic type arguments of fixed-sized types.

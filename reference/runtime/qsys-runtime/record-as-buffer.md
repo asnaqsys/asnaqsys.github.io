@@ -1,7 +1,7 @@
 ---
 title: "RecordAsBuffer class          | QSYS API Reference Guide"
 description: "Defines operations to move data between a file record, a row in a dataset, and a string buffer. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Defines operations to move data between a file record, a row in a dataset, and a string buffer.

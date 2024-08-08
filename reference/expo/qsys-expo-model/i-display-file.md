@@ -1,7 +1,7 @@
 ---
 title: "IDisplayFile interface        | QSYS API Reference Guide"
 description: "Exposes DisplayFile properties and methods "
-last_modified_at: 2024-07-29T18:40:13Z
+last_modified_at: 2024-08-08T21:42:10Z
 ---
 
 Exposes DisplayFile properties and methods

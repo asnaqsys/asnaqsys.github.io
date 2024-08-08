@@ -1,7 +1,7 @@
 ---
 title: "DataStructure class           | QSYS API Reference Guide"
 description: "Contains the functionality to support the semantics of a RPG Data Structure with a memory layout. "
-last_modified_at: 2024-07-29T23:19:39Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains the functionality to support the semantics of a RPG Data Structure with a memory layout.
@@ -214,7 +214,7 @@ DateTime GetDate(int start, DateTimeFormat format, DateTimeSeparator separator)
 | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
 
-### Byte[] GetHex([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Byte\[\] GetHex([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a byte array from the Data Structure buffer, at the given start position for the given length.
 
@@ -295,7 +295,7 @@ long GetLong(int start)
 | --- | ---
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | The long number starting at the given position in the buffer.
 
-### Nullable<decimal> GetNullableBinary([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<decimal\> GetNullableBinary([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a decimal number stored as a Binary decimal number starting at the specified position in the Data Structure buffer.
 
@@ -317,7 +317,7 @@ Nullable<decimal> GetNullableBinary(int start, int digits, int decimals)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | The decimal number value of the Binary decimal number.
 
-### Nullable<byte> GetNullableByte([int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<byte\> GetNullableByte([int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a byte value from the specified position in the Data Structure buffer.
 
@@ -337,7 +337,7 @@ Nullable<byte> GetNullableByte(int position)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | The character at the given position in the buffer.
 
-### Nullable<char> GetNullableChar([int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<char\> GetNullableChar([int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a character from the specified position in the Data Structure buffer.
 
@@ -357,7 +357,7 @@ Nullable<char> GetNullableChar(int position)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | The character at the given position in the buffer.
 
-### Nullable<DateTime> GetNullableDate([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeFormat format](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
+### Nullable\<DateTime\> GetNullableDate([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeFormat format](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
 
 Gets a Date value stored with the specified format and date separator at the specified starting position in the Data Structure buffer.
 
@@ -379,7 +379,7 @@ Nullable<DateTime> GetNullableDate(int start, DateTimeFormat format, DateTimeSep
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | A DateTime value where the Date part is the value retrieved from the Data Structure Buffer.
 
-### Nullable<char> GetNullableIndicator([int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<char\> GetNullableIndicator([int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a character from the specified position in the Data Structure buffer and returns either '0', if the character is '0', or '1'if the character is anything else.
 
@@ -399,7 +399,7 @@ Nullable<char> GetNullableIndicator(int position)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | '0' if the character at the given position in the buffer is '0', or '1' otherwise.
 
-### Nullable<int> GetNullableInteger([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<int\> GetNullableInteger([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets an integer (Int32) value starting at the specified position in the Data Structure buffer.
 
@@ -419,7 +419,7 @@ Nullable<int> GetNullableInteger(int start)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | The integer number starting at the given position in the buffer.
 
-### Nullable<long> GetNullableLong([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<long\> GetNullableLong([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets an long (Int64) value starting at the specified position in the Data Structure buffer.
 
@@ -439,7 +439,7 @@ Nullable<long> GetNullableLong(int start)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | The long number starting at the given position in the buffer.
 
-### Nullable<decimal> GetNullablePacked([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<decimal\> GetNullablePacked([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a decimal number stored as a Packed decimal number starting at the specified position in the Data Structure buffer.
 
@@ -461,7 +461,7 @@ Nullable<decimal> GetNullablePacked(int start, int digits, int decimals)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | The decimal number value of the Packed decimal number.
 
-### Nullable<short> GetNullableShort([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<short\> GetNullableShort([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a short (Int16) value starting at the specified position in the Data Structure buffer.
 
@@ -502,7 +502,7 @@ string GetNullableString(int start, int len)
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The string of the given length that starts at the given position.
 
-### Nullable<DateTime> GetNullableTime([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeFormat format](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
+### Nullable\<DateTime\> GetNullableTime([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeFormat format](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
 
 Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer.
 
@@ -524,7 +524,7 @@ Nullable<DateTime> GetNullableTime(int start, DateTimeFormat format, DateTimeSep
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | A DateTime value where the Time part is the value retrieved from the Data Structure Buffer.
 
-### Nullable<DateTime> GetNullableTimestamp([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
+### Nullable\<DateTime\> GetNullableTimestamp([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
 
 Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer.
 
@@ -545,7 +545,7 @@ Nullable<DateTime> GetNullableTimestamp(int start, DateTimeSeparator separator)
 | --- | ---
 | [Nullable`1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
 
-### Nullable<decimal> GetNullableZoned([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Nullable\<decimal\> GetNullableZoned([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer.
 
@@ -673,7 +673,7 @@ DateTime GetTimestamp(int start, DateTimeSeparator separator)
 | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
 
-### U GetValue<U>([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### U GetValue\<U\>([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets the value of the field at the requested starting position in the buffer.
 
@@ -691,7 +691,7 @@ U GetValue<U>(int start)
 
 | Type | Description
 | --- | ---
-| [U](https://learn.microsoft.com/en-us/dotnet/api/) | The value of the field that starts at the requested buffer position.
+| [U](https://learn.microsoft.com/en-us/dotnet/standard/generics) | The value of the field that starts at the requested buffer position.
 
 ### decimal GetZoned([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

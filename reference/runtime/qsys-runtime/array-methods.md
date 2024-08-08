@@ -1,7 +1,7 @@
 ---
 title: "ArrayMethods class            | QSYS API Reference Guide"
 description: "Contains extension methods for handling Arrays according to RPG semantics. "
-last_modified_at: 2024-07-29T23:16:57Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains extension methods for handling Arrays according to RPG semantics.
@@ -20,6 +20,26 @@ Contains extension methods for handling Arrays according to RPG semantics.
 | [FillArrayWith](#void-fillarraywitharray-target-int-startposition-object-obj)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Fills a given array with the specified object.
 | [GetIndices](#int32--getindicesarray-myarr-int-i)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Obtains the indices of an array based on the linear index.
 | [Initialize](#void-initializearray-myarr-object-val)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes the elements of an arbitrary array to the same value.
+| [Lookup\<T\>](#bool-lookup-t-t--array-t-searchargument-searchtype-searchtype-indicator-ind)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType](/reference/runtime/qsys-runtime/search-type.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | Searches an array for the specified element value.
+| [Lookup\<T\>](#bool-lookup-t-t--array-t-searchargument-searchtype-searchtype-indicator-hiloind-indicator-eqind)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType](/reference/runtime/qsys-runtime/search-type.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | Searches an array for the specified element value.
+| [Lookup\<T\>](#bool-lookup-t-t--array-t-searchargument-searchtype-searchtype-int-startposition-indicator-ind)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType](/reference/runtime/qsys-runtime/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | Searches an array for the specified element value.
+| [Lookup\<T\>](#bool-lookup-t-t--array-t-searchargument-searchtype-searchtype-int-startposition-int32-foundindex-indicator-ind)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType](/reference/runtime/qsys-runtime/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | Searches an array for the specified element value.
+| [Lookup\<T\>](#bool-lookup-t-t--array-t-searchargument-searchtype-searchtype-int-startposition-int32-foundindex-indicator-hiloind-indicator-eqind)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType](/reference/runtime/qsys-runtime/search-type.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator&](/reference/runtime/qsys-runtime/indicator.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | Searches an array for the specified element value.
+| [Lookup\<T\>](#int-lookup-t-t--argarray-t-searchargument-int-startpos-int-searchlength)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
+| [Lookup\<T\>](#int-lookup-t-t--argarray-t-searchargument-int-startpos)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
+| [Lookup\<T\>](#int-lookup-t-t--argarray-t-searchargument)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
+| [LookupGE\<T\>](#int-lookupge-t-t--argarray-t-searchargument-int-startpos-int-searchlength)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
+| [LookupGE\<T\>](#int-lookupge-t-t--argarray-t-searchargument-int-startpos)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
+| [LookupGE\<T\>](#int-lookupge-t-t--argarray-t-searchargument)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
+| [LookupGT\<T\>](#int-lookupgt-t-t--argarray-t-searchargument-int-startpos-int-searchlength)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
+| [LookupGT\<T\>](#int-lookupgt-t-t--argarray-t-searchargument-int-startpos)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
+| [LookupGT\<T\>](#int-lookupgt-t-t--argarray-t-searchargument)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
+| [LookupLE\<T\>](#int-lookuple-t-t--argarray-t-searchargument-int-startpos-int-searchlength)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
+| [LookupLE\<T\>](#int-lookuple-t-t--argarray-t-searchargument-int-startpos)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
+| [LookupLE\<T\>](#int-lookuple-t-t--argarray-t-searchargument)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
+| [LookupLT\<T\>](#int-lookuplt-t-t--argarray-t-searchargument-int-startpos-int-searchlength)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
+| [LookupLT\<T\>](#int-lookuplt-t-t--argarray-t-searchargument-int-startpos)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
+| [LookupLT\<T\>](#int-lookuplt-t-t--argarray-t-searchargument)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
 | [MoveToArray](#void-movetoarrayarray-source-int-srcstartpos-array-destination-int-dststartpos)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array, no padding.
 | [MoveToArrayDiffFieldLength](#void-movetoarraydifffieldlengtharray-source-int-srcstartpos-array-destination-int-dststartpos)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array of different field lengths, no padding.
 | [MoveToArrayDiffFieldLengthWithPad](#void-movetoarraydifffieldlengthwithpadarray-source-int-srcstartpos-array-destination-int-dststartpos)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVEA. Moves source array to destination array of different field lengths, with padding.
@@ -65,7 +85,7 @@ void FillArrayWith(Array target, int startPosition, object obj)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array element where the copy starts.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | Object to fill array with, must be a compatible type.
 
-### Int32[] GetIndices([Array myArr](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [int i](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Int32\[\] GetIndices([Array myArr](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [int i](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Obtains the indices of an array based on the linear index.
 
@@ -100,6 +120,458 @@ void Initialize(Array myArr, object val)
 | --- | --- | ---
 | [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | myArr | The array to initialize.
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | val | The value to place in the array elements.
+
+### bool Lookup\<T\>([T\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType searchType](/reference/runtime/qsys-runtime/search-type.html), [Indicator& ind](/reference/runtime/qsys-runtime/indicator.html))
+
+Searches an array for the specified element value.
+
+```cs
+bool Lookup<T>(T[] array, T searchArgument, SearchType searchType, Indicator& ind)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | array | The array to search.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The element value being searched for in the array.
+| [SearchType](/reference/runtime/qsys-runtime/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Returns true if lookup is successful, false otherwise.
+
+### bool Lookup\<T\>([T\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType searchType](/reference/runtime/qsys-runtime/search-type.html), [Indicator& hiLoInd](/reference/runtime/qsys-runtime/indicator.html), [Indicator& eqInd](/reference/runtime/qsys-runtime/indicator.html))
+
+Searches an array for the specified element value.
+
+```cs
+bool Lookup<T>(T[] array, T searchArgument, SearchType searchType, Indicator& hiLoInd, Indicator& eqInd)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | array | The array to search.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The element value being searched for in the array.
+| [SearchType](/reference/runtime/qsys-runtime/search-type.html) | searchType | The type of search being performed.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | hiLoInd | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | eqInd | Indicator which will be set *ON ('1') if Lookup finds an exact match within the array.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Returns true if lookup is successful, false otherwise.
+
+### bool Lookup\<T\>([T\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType searchType](/reference/runtime/qsys-runtime/search-type.html), [int startPosition](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Indicator& ind](/reference/runtime/qsys-runtime/indicator.html))
+
+Searches an array for the specified element value.
+
+```cs
+bool Lookup<T>(T[] array, T searchArgument, SearchType searchType, int startPosition, Indicator& ind)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | array | The array to search.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The element value being searched for in the array.
+| [SearchType](/reference/runtime/qsys-runtime/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Returns true if lookup is successful, false otherwise.
+
+### bool Lookup\<T\>([T\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType searchType](/reference/runtime/qsys-runtime/search-type.html), [int startPosition](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Int32& foundIndex](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator& ind](/reference/runtime/qsys-runtime/indicator.html))
+
+Searches an array for the specified element value.
+
+```cs
+bool Lookup<T>(T[] array, T searchArgument, SearchType searchType, int startPosition, Int32& foundIndex, Indicator& ind)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | array | The array to search.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The element value being searched for in the array.
+| [SearchType](/reference/runtime/qsys-runtime/search-type.html) | searchType | The type of search being performed. Only Hi, Lo, or Eq are valid.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the array element that matches the search, or 0 if not found.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | ind | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Returns true if lookup is successful, false otherwise.
+
+### bool Lookup\<T\>([T\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [SearchType searchType](/reference/runtime/qsys-runtime/search-type.html), [int startPosition](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Int32& foundIndex](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator& hiLoInd](/reference/runtime/qsys-runtime/indicator.html), [Indicator& eqInd](/reference/runtime/qsys-runtime/indicator.html))
+
+Searches an array for the specified element value.
+
+```cs
+bool Lookup<T>(T[] array, T searchArgument, SearchType searchType, int startPosition, Int32& foundIndex, Indicator& hiLoInd, Indicator& eqInd)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | array | The array to search.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The element value being searched for in the array.
+| [SearchType](/reference/runtime/qsys-runtime/search-type.html) | searchType | The type of search being performed.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPosition | The array index where the search will begin.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | foundIndex | The index of the array element that matches the search, or 0 if not found.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | hiLoInd | Indicator which will be set *ON ('1') if the specified SearchType type is satisfied by the search.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | eqInd | Indicator which will be set *ON ('1') if Lookup finds an exact match within the array.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if lookup is successful, false otherwise.
+
+### int Lookup\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int searchLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
+
+```cs
+int Lookup<T>(T[] argArray, T searchArgument, int startPos, int searchLength)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | searchLength | The number of elements to search after the startPos.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int Lookup\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
+
+```cs
+int Lookup<T>(T[] argArray, T searchArgument, int startPos)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int Lookup\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+RPG's %LOOKUP. Returns the index of the item in argArray that matches the search argument.
+
+```cs
+int Lookup<T>(T[] argArray, T searchArgument)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupGE\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int searchLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
+
+```cs
+int LookupGE<T>(T[] argArray, T searchArgument, int startPos, int searchLength)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | searchLength | The number of elements to search after the startPos.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupGE\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
+
+```cs
+int LookupGE<T>(T[] argArray, T searchArgument, int startPos)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupGE\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+RPG's %LOOKUPGE. Returns the index of the item in argArray that is greater than or equal to the search argument.
+
+```cs
+int LookupGE<T>(T[] argArray, T searchArgument)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupGT\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int searchLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
+
+```cs
+int LookupGT<T>(T[] argArray, T searchArgument, int startPos, int searchLength)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | searchLength | The number of elements to search after the startPos.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupGT\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
+
+```cs
+int LookupGT<T>(T[] argArray, T searchArgument, int startPos)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupGT\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+RPG's %LOOKUPGT. Returns the index of the item in argArray that is greater than the search argument.
+
+```cs
+int LookupGT<T>(T[] argArray, T searchArgument)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupLE\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int searchLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
+
+```cs
+int LookupLE<T>(T[] argArray, T searchArgument, int startPos, int searchLength)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | searchLength | The number of elements to search after the startPos.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupLE\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
+
+```cs
+int LookupLE<T>(T[] argArray, T searchArgument, int startPos)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupLE\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+RPG's %LOOKUPLE. Returns the index of the item in argArray that is less than or equal to the search argument.
+
+```cs
+int LookupLE<T>(T[] argArray, T searchArgument)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupLT\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int searchLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
+
+```cs
+int LookupLT<T>(T[] argArray, T searchArgument, int startPos, int searchLength)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | searchLength | The number of elements to search after the startPos.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupLT\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
+
+```cs
+int LookupLT<T>(T[] argArray, T searchArgument, int startPos)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The starting index in argArray.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
+
+### int LookupLT\<T\>([T\[\] argArray](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [T searchArgument](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+RPG's %LOOKUPLT. Returns the index of the item in argArray that is less than the search argument.
+
+```cs
+int LookupLT<T>(T[] argArray, T searchArgument)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | argArray | The array to be searched.
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | searchArgument | The search argument used to search the array.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | Returns the zero based starting index of a found value, otherwise a -1.
 
 ### void MoveToArray([Array source](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [int srcStartPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Array destination](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [int dstStartPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

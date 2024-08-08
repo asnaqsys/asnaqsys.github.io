@@ -1,7 +1,7 @@
 ---
 title: "ShareTypes enum               | QSYS API Reference Guide"
 description: "Specifies the type of sharing for a file or resource. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Specifies the type of sharing for a file or resource.

@@ -1,7 +1,7 @@
 ---
 title: "StringOps class               | QSYS API Reference Guide"
 description: "Provide fixed length character string storage and operations. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Provide fixed length character string storage and operations.
@@ -145,7 +145,7 @@ void GetChars(string source, Char[] destination, int destinationIndex, int desti
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | destinationIndex | The starting position on the destination array.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | destinationLength | How many characters to copy.
 
-### Int32[] GetIndices([Array myArr](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [int i](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+### Int32\[\] GetIndices([Array myArr](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [int i](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Get the indices of a multidimensional array for the given position.
 

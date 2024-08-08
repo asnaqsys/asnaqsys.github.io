@@ -1,7 +1,7 @@
 ---
-title: "FixedStringArrayInDS&lt;T1, T2&gt; struct"
+title: "FixedStringArrayInDS<T1, T2> struct"
 description: "Describes a fixed size array of FixedString contained in a DataStructure. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Describes a fixed size array of FixedString contained in a DataStructure.

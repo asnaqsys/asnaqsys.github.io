@@ -1,7 +1,7 @@
 ---
 title: "FixedDecimalTypeAttribute class"
 description: "A non-RPG class may stamp a decimal member with this attribute to be considered as a fixed-sized decimal field by a consumer RPG program. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 A non-RPG class may stamp a decimal member with this attribute to be considered as a fixed-sized decimal field by a consumer RPG program.

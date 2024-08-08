@@ -1,7 +1,7 @@
 ---
 title: "IDSCallParm interface         | QSYS API Reference Guide"
 description: "This interface should be implemented by any DataStructure class if an object of its type will be passed as a parameter to a program in the IBMi. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 This interface should be implemented by any DataStructure class if an object of its type will be passed as a parameter to a program in the IBMi.

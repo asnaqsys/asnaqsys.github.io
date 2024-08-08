@@ -1,7 +1,7 @@
 ---
 title: "_EUR interface                | QSYS API Reference Guide"
 description: "Describes the EUR date/time format in the declaration of date/time types. "
-last_modified_at: 2024-07-29T23:16:57Z
+last_modified_at: 2024-08-08T21:41:46Z
 sitemap: false
 ---
 

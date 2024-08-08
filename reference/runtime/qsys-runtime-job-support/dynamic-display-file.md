@@ -1,7 +1,7 @@
 ---
 title: "DynamicDisplayFile class      | QSYS API Reference Guide"
 description: "Provides the facilities to use a display file without prior infrastructure. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Provides the facilities to use a display file without prior infrastructure.

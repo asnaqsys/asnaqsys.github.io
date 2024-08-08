@@ -1,7 +1,7 @@
 ---
 title: "QueryFileNotOpenException class"
 description: "Query File -filename- is not open exception. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Query File -filename- is not open exception.

@@ -1,7 +1,7 @@
 ---
-title: "IFixedArrayBase&lt;T1, T2&gt; interface"
+title: "IFixedArrayBase<T1, T2> interface"
 description: "Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Base interface for all fixed sized arrays in the fixed-sized type framework. These arrays are unidimensional.

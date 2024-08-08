@@ -1,7 +1,7 @@
 ---
 title: "ActiveKeyBarLocation enum     | QSYS API Reference Guide"
 description: "Specifies the Active Function Key Bar location and direction. "
-last_modified_at: 2024-07-29T18:38:13Z
+last_modified_at: 2024-08-08T21:42:22Z
 ---
 
 Specifies the Active Function Key Bar location and direction.

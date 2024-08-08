@@ -1,7 +1,7 @@
 ---
 title: "DdsCharFieldTagHelper class   | QSYS API Reference Guide"
 description: "Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value entered into a field.  "
-last_modified_at: 2024-07-29T18:38:13Z
+last_modified_at: 2024-08-08T21:42:22Z
 ---
 
 Defines an input element where characters can be typed using a keyboard. The captured value will be posted as the value entered into a field. 

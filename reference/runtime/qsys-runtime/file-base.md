@@ -1,7 +1,7 @@
 ---
 title: "FileBase class                | QSYS API Reference Guide"
 description: "Defines common functionality for files (Database, Printfile, Workstation) "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Defines common functionality for files (Database, Printfile, Workstation)
@@ -55,15 +55,11 @@ FileBase(String, Action)
 | --- | --- | --- 
 | [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | DataSet | Gets the AdgDataSet that moves data between the program and the database. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | DclFileName | Gets the name of this file field in the program. |
-| [Action](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | InfSR | Gets the delegate that is invoked when there is an error in a file operation. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsEof | Gets or sets the IsEof flag of the file, true when the file is at End of File. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsEqual | Gets or sets the IsEqual flag of the file, true when a record with the same key was found in a file operation. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFound | Gets or sets the IsFound flag of the file, true when a record is found. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the file is open. |
 | [RuntimeException](/reference/runtime/qsys-runtime/runtime-exception.html) | LastException | Gets the RuntimeException that resulted from a file operation. |
-| [Action\<String, AdgDataSet\>](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateBufferDelegate | Gets or set the delegate to copy from the program fields to the dataset record. It receives the record format name and the dataset as arguments. |
-| [Action\<String, AdgDataSet, String\[\]\>](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateBufferWithFieldsDelegate | Gets or set the delegate to copy from the dataset record to the selected program fields. It receives the record format name, the dataset,and the array of field names as arguments. |
-| [Action\<String, AdgDataSet\>](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0) | populateFieldsDelegate | Gets or set the delegate to copy from the dataset record to the program fields. It receives the record format name and the dataset as arguments. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | StatusCode | Gets the status code resulting from a file operation. |
 
 ## Methods

@@ -1,7 +1,7 @@
 ---
 title: "AdgTrace class                | QSYS API Reference Guide"
 description: "Provides methods and properties for tracing and logging in the application. This class cannot be inherited. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Provides methods and properties for tracing and logging in the application.

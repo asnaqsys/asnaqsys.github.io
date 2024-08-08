@@ -1,7 +1,7 @@
 ---
 title: "ReadEqualMode enum            | QSYS API Reference Guide"
 description: "Specifies the mode for reading equal data. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Specifies the mode for reading equal data.

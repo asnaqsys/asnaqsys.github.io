@@ -1,7 +1,7 @@
 ---
 title: "InteractiveJob class          | QSYS API Reference Guide"
 description: "Defines the core behavior of an interactive job. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Defines the core behavior of an interactive job.
@@ -156,7 +156,7 @@ Requests an orderly shutdown of the job but it forcibly shuts it down if not com
 void RequestShutdown()
 ```
 
-### String[] RequestYellowService([string command](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string parm1](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string parm2](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string parm3](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] otherParms](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+### String\[\] RequestYellowService([string command](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string parm1](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string parm2](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string parm3](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] otherParms](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 Request a service to be performed by the UI website.
 

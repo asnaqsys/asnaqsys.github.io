@@ -1,7 +1,7 @@
 ---
 title: "QueryKeyFieldsUsageException class"
 description: "Expecting: &#39;*ASCEND&#39;, &#39;*DESCEND&#39; or &#39;*ABSVAL&#39; but found -usage- exception. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Expecting: '*ASCEND', '*DESCEND' or '*ABSVAL' but found -usage- exception.

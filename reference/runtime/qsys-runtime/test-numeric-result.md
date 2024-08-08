@@ -1,7 +1,7 @@
 ---
 title: "TestNumericResult enum        | QSYS API Reference Guide"
 description: "The possible results of a TestNumeric operation. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 sitemap: false
 ---
 

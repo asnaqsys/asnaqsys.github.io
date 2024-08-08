@@ -1,7 +1,7 @@
 ---
-title: "FixedString&lt;T&gt; struct         | QSYS API Reference Guide"
+title: "FixedString<T> struct         | QSYS API Reference Guide"
 description: "Holds a fixed-string value with the specified length. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Holds a fixed-string value with the specified length.
@@ -57,7 +57,7 @@ int CompareTo(object obj)
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | A 32-bit signed integer that indicates whether this instance precedes, follows, or appears in the same position in the sort order as the obj parameter.
 
-### IFixedSizeType<string> Convert([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+### IFixedSizeType\<string\> Convert([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Convert string to FixedSize string.
 

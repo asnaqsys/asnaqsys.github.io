@@ -1,7 +1,7 @@
 ---
 title: "DecimalMethods class          | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations for decimal numbers. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains extension methods for handling RPG operations for decimal numbers.
@@ -56,6 +56,7 @@ Contains extension methods for handling RPG operations for decimal numbers.
 | [Sum](#double-sumdouble--array)([Double\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0)) | Returns the added values of each element in the array.
 | [TestTime](#bool-testtimedecimal-num-int-digits-int-decimals-datetimedatakind-kind-datetimeformat-format)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeDataKind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | Tests whether a decimal number contains a valid date/time/timestamp value. 
 | [ToDate](#datetime-todatedecimal-source-datetimeformat-format)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html)) | ToDate summary.
+| [ToDecimal\<T\>](#decimal-todecimal-t-t-val)([T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | Converts a value of type T to decimal.
 | [ToFixedDecimal](#decimal-tofixeddecimaldecimal-num-int-digits-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a fixed decimal number.
 | [ToFixedDecimal](#decimal-tofixeddecimaldecimal-num-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Truncates a decimal to the specified number of decimal positions.
 | [ToFixedDecimalRounded](#decimal-tofixeddecimalroundeddecimal-num-int-digits-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adjusts the digits and decimal positions of a fixed decimal number using Away From Zero rounding.
@@ -965,6 +966,26 @@ DateTime ToDate(decimal source, DateTimeFormat format)
 | Type | Description
 | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | ToDate returns.
+
+### decimal ToDecimal\<T\>([T val](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+Converts a value of type T to decimal.
+
+```cs
+decimal ToDecimal<T>(T val)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | val |  The value to convert.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | The decimal result of the conversion.
 
 ### decimal ToFixedDecimal([decimal num](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

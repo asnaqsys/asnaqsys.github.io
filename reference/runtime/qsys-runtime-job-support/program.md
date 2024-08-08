@@ -1,7 +1,7 @@
 ---
 title: "Program class                 | QSYS API Reference Guide"
 description: "Defines the core behavior of a program and provides a base for migrated derived classes. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Defines the core behavior of a program and provides a base for migrated derived classes.
@@ -20,7 +20,7 @@ Defines the core behavior of a program and provides a base for migrated derived 
 | [BeginCall\<T\>](#t-begincall-t-icaller-caller)([ICaller](/reference/runtime/qsys-runtime/i-caller.html)) | Prepares a program for execution by getting an instance of the program and pushing it in the invocation stack.
 | [EndCall()](#indicator-endcall) | Marks the end of a program execution by popping it from the invocation stack and potentially deactivating it when the program's LR indicator is on.
 
-### T BeginCall<T>([ICaller caller](/reference/runtime/qsys-runtime/i-caller.html))
+### T BeginCall\<T\>([ICaller caller](/reference/runtime/qsys-runtime/i-caller.html))
 
 Prepares a program for execution by getting an instance of the program and pushing it in the invocation stack.
 

@@ -1,7 +1,7 @@
 ---
 title: "ConnectionNotOpenException class"
 description: "File -filename- cannot be opened because a connection to database -database- has not been established exception. "
-last_modified_at: 2024-07-29T23:18:00Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 File -filename- cannot be opened because a connection to database -database- has not been established exception.

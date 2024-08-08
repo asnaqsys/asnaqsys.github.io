@@ -1,7 +1,7 @@
 ---
 title: "EndStreamModeException class  | QSYS API Reference Guide"
 description: "Represents errors that occur when the end of a stream mode is reached unexpectedly. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Represents errors that occur when the end of a stream mode is reached unexpectedly.

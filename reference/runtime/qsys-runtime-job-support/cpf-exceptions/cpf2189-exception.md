@@ -1,7 +1,7 @@
 ---
 title: "CPF2189Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when Not authorized to object {0} in {1} type {2} "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 The exception that is thrown when Not authorized to object {0} in {1} type {2}

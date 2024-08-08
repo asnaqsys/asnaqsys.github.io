@@ -1,7 +1,7 @@
 ---
 title: "WingsRecordFormat class       | QSYS API Reference Guide"
 description: "Contains functionality to construct the WRF, an XML representation of a file. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Contains functionality to construct the WRF, an XML representation of a file.

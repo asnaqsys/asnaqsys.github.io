@@ -1,7 +1,7 @@
 ---
 title: "OpenSimpleQueryFileException class"
 description: "An invalid QryKeyFlds string format has been entered. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 An invalid QryKeyFlds string format has been entered.

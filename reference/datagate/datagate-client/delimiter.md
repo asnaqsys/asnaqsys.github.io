@@ -1,7 +1,7 @@
 ---
 title: "Delimiter class               | QSYS API Reference Guide"
 description: "Represents a delimiter in a data stream. "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Represents a delimiter in a data stream.

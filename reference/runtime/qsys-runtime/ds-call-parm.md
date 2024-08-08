@@ -1,7 +1,7 @@
 ---
 title: "DSCallParm class              | QSYS API Reference Guide"
 description: "Describes a Data Structure (either single or Multi) as a parameter for a CALL to an IBMi program. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Describes a Data Structure (either single or Multi) as a parameter for a CALL to an IBMi program.

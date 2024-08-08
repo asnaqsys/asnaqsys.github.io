@@ -1,7 +1,7 @@
 ---
 title: "DbXmlNameConverter class      | QSYS API Reference Guide"
 description: "This class is a filter used in the XML transforms ExportToXml.xslt and ImportToXml.xslt.  Encode() takes an arbitrary string and returns an XML-compli"
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 This class is a filter used in the XML transforms ExportToXml.xslt and

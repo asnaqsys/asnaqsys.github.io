@@ -1,7 +1,7 @@
 ---
 title: "InfSrException class          | QSYS API Reference Guide"
 description: "Exception that can be thrown from InfSr to return or report an error condition. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 Exception that can be thrown from InfSr to return or report an error condition.

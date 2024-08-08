@@ -1,7 +1,7 @@
 ---
 title: "DSLengthAttribute class       | QSYS API Reference Guide"
 description: "A non-RPG class may be stamped with this attribute to indicate a consumer RPG program to consider it as a Data Structure with the specified length. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-08-08T21:41:46Z
 ---
 
 A non-RPG class may be stamped with this attribute to indicate a consumer RPG program to consider it as a Data Structure with the specified length.

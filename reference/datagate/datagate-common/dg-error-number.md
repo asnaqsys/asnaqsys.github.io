@@ -1,7 +1,7 @@
 ---
 title: "dgErrorNumber enum            | QSYS API Reference Guide"
 description: "Represents the different error numbers generated as a result of Acceler8DB or Datagate/400 server errors. These errors occur programmatically on the s"
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-08-08T21:41:32Z
 ---
 
 Represents the different error numbers generated as a result of Acceler8DB or Datagate/400 server errors. These errors occur programmatically on the server computer to indicate a condition.  In general, these are "true errors", and only in a few cases do they signify a normal condition.
