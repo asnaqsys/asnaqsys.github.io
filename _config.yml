@@ -9,7 +9,8 @@ exclude:
   - README.md
   - .vscode
   - .ruby-version
-
+  - /fonts/geomanist/demo.html
+  
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
