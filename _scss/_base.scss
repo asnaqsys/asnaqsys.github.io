@@ -20,6 +20,10 @@ body {
     overflow-x: hidden;
 }
 
+body:has(div.pagefind-ui__drawer:not(.pagefind-ui__hidden)) {
+    overflow-y: hidden !important;
+}
+
 a {
     color: $primary-links;
     text-decoration: none;

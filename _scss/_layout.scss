@@ -123,6 +123,10 @@ section.section {
     padding-bottom: 20px;
 }
 
+.sidebar:has(div.pagefind-ui__drawer:not(.pagefind-ui__hidden)) {
+    overflow-y: hidden !important;
+}
+
 /*
  * global footer  **************************************************************
  */
