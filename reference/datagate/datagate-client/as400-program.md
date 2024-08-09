@@ -1,7 +1,7 @@
 ---
 title: "As400Program class            | QSYS API Reference Guide"
 description: "Represents a program in the ASNA DataGate client. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Represents a program in the ASNA DataGate client.
@@ -76,6 +76,7 @@ As400Program(AdgConnection, String)
 | Signature | Description |
 | --- | --- |
 | [AppendParm](#void-appendparmprogparm-parameter)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a parameter to the program.
+| [AppendParm](#void-appendparmprogparm-parameter)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends a parameter to the specified list of parameters.
 | [AppendParms](#void-appendparmsprogparm--parameters)([ProgParm\[\]](/reference/datagate/datagate-data-link/prog-parm.html)) | Appends an array of parameters to the program.
 | [Dispose()](#void-dispose) | Releases all resources used by the current instance of the  class.
 | [Dispose](#void-disposebool-isdisposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the unmanaged resources used by the  and optionally releases the managed resources.
@@ -83,6 +84,7 @@ As400Program(AdgConnection, String)
 | [Finalize()](#void-finalize) | Finalizes an instance of the  class.
 | [GetParameters()](#ienumerable-progparm-getparameters) | Gets the parameters of the program.
 | [GetParmByName](#progparm-getparmbynamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter with the specified name.
+| [GetParmByName](#progparm-getparmbynamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the parameter with the specified name from the specified list of parameters.
 | [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value-int-element)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified object to a parameter of the specified type.
 | [ObjectToParm](#void-objecttoparmprogparm-parameter-object-value)([ProgParm](/reference/datagate/datagate-data-link/prog-parm.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Converts the specified object to a parameter.
 | [ObjectToParm](#void-objecttoparmobject-value-string-parametername-int32--elementindices)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts the specified object to a parameter of the specified name and element indices.
@@ -114,6 +116,18 @@ void AppendParm(ProgParm parameter)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | parameter | The parameter to append.
+
+### void AppendParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html))
+
+Appends a parameter to the specified list of parameters.
+
+
+#### Remarks
+This method appends a parameter to the specified list of parameters in the ASNA DataGate client. It checks if the provided parameter is named, and if not, throws an ArgumentException. It also checks if a parameter with the same name already exists in the list, and if so, throws an ArgumentException. It then adds the parameter to the list.
+
+```cs
+void AppendParm(ProgParm parameter)
+```
 
 ### void AppendParms([ProgParm\[\] parameters](/reference/datagate/datagate-data-link/prog-parm.html))
 
@@ -222,6 +236,18 @@ ProgParm GetParmByName(string name)
 | Type | Description
 | --- | ---
 | [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | The parameter with the specified name, or null if no such parameter exists.
+
+### ProgParm GetParmByName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Gets the parameter with the specified name from the specified list of parameters.
+
+
+#### Remarks
+This method returns the parameter with the specified name from the specified list of parameters in the ASNA DataGate client. The name comparison is case-insensitive. If no such parameter exists, it returns null.
+
+```cs
+ProgParm GetParmByName(string name)
+```
 
 ### void ObjectToParm([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

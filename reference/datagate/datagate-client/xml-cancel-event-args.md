@@ -1,7 +1,7 @@
 ---
 title: "XmlCancelEventArgs class      | QSYS API Reference Guide"
 description: "Provides data for the XmlCancelEvent event. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Provides data for the XmlCancelEvent event.

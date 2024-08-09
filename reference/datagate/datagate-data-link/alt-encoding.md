@@ -1,7 +1,7 @@
 ---
 title: "AltEncoding class             | QSYS API Reference Guide"
 description: "Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data.
@@ -49,6 +49,7 @@ AltEncoding()
 | [GetDecoderImpl()](#altdecoder-getdecoderimpl) | When overridden in a derived class, returns an AltDecoder object for this AltEncoding.
 | [GetEncoder()](#encoder-getencoder) | Returns an AltEncoder object for this AltEncoding, using the default properties.
 | [GetEncoderImpl()](#altencoder-getencoderimpl) | When overridden in a derived class, returns an AltEncoder object for this AltEncoding.
+| [TransformPropertiesFromDictionary](#itransformproperties-transformpropertiesfromdictionarydictionary-string-object-dict)([Dictionary\<String, Object\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0)) | Converts the given dictionary into an ITransformProperties object.
 | [TransformPropertiesFromStream](#itransformproperties-transformpropertiesfromstreambinaryreader-br)([BinaryReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0)) | When overridden in a derived class, reads the given BinaryReader stream and converts it into an ITransformProperties object.
 | [TransformPropertiesToStream](#void-transformpropertiestostreamitransformproperties-t-binarywriter-bw)([ITransformProperties](/reference/datagate/datagate-providers/i-transform-properties.html), [BinaryWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.binarywriter?view=net-8.0)) | When overridden in a derived class, writes the given ITransformProperties object to the specified BinaryWriter stream.
 
@@ -191,6 +192,14 @@ When overridden in a derived class, returns an AltEncoder object for this AltEnc
 
 ```cs
 AltEncoder GetEncoderImpl()
+```
+
+### ITransformProperties TransformPropertiesFromDictionary([Dictionary\<string, object\> dict](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-8.0))
+
+Converts the given dictionary into an ITransformProperties object.
+
+```cs
+ITransformProperties TransformPropertiesFromDictionary(Dictionary<string, object> dict)
 ```
 
 ### ITransformProperties TransformPropertiesFromStream([BinaryReader br](https://learn.microsoft.com/en-us/dotnet/api/system.io.binaryreader?view=net-8.0))

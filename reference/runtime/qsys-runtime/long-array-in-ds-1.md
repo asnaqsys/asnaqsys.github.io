@@ -1,7 +1,7 @@
 ---
 title: "LongArrayInDS<T> struct       | QSYS API Reference Guide"
 description: "Describes a fixed size array of long numbers contained in a DataStructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a fixed size array of long numbers contained in a DataStructure.
@@ -69,6 +69,7 @@ LongArrayInDS(MultiDataStructure, Int32, Int32)
 | [CopyFrom](#void-copyfromint64--sourcearray-int-targetstartat)([Int64\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a long[] into this array.
 | [GetEnumerator()](#ienumerator-long-getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
+| [op_Explicit](#int64--op-explicitlongarrayinds-tdim-array)([LongArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/long-array-in-ds-1.html)) | Casting operator to long[]. Returns a copy of the array as an long[].
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
@@ -121,6 +122,26 @@ int GetStartingPosition(int index)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The position in the buffer of the element at the given index.
+
+### Int64\[\] op_Explicit([LongArrayInDS\<TDim\> array](/reference/runtime/qsys-runtime/long-array-in-ds-1.html))
+
+Casting operator to long[]. Returns a copy of the array as an long[].
+
+```cs
+Int64[] op_Explicit(LongArrayInDS<TDim> array)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [LongArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/long-array-in-ds-1.html) | array | The array to copy.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int64\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | 
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

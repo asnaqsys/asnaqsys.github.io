@@ -1,7 +1,7 @@
 ---
 title: "ProcedureSupport class        | QSYS API Reference Guide"
 description: "Provides static methods to support finding a class used in dynamic calls (RPG&#39;s CallD). "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Provides static methods to support finding a class used in dynamic calls (RPG's CallD).

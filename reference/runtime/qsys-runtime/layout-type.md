@@ -1,7 +1,7 @@
 ---
 title: "LayoutType enum               | QSYS API Reference Guide"
 description: "Contains enumeration values to identify the type of data in a layout. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains enumeration values to identify the type of data in a layout.

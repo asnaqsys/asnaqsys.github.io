@@ -1,7 +1,7 @@
 ---
 title: "CPF0000Exception class        | QSYS API Reference Guide"
 description: "Defines the core behavior of all the CPFxxxx exceptions. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the core behavior of all the CPFxxxx exceptions.

@@ -1,7 +1,7 @@
 ---
 title: "CharArrayInDS<T> struct       | QSYS API Reference Guide"
 description: "Describes a fixed size array of characters contained in a DataStructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a fixed size array of characters contained in a DataStructure.
@@ -71,6 +71,9 @@ CharArrayInDS(MultiDataStructure, Int32, Int32)
 | [GetEnumerator()](#ienumerator-char-getenumerator) | Returns an enumerator that iterates through the array.
 | [GetHashCode()](#int-gethashcode) | Computes the hashcode.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
+| [op_Equality](#bool-op-equalitychararrayinds-tdim-left-chararrayinds-tdim-right)([CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html), [CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html)) | Operator ==, returns true if the operands are equal.
+| [op_Explicit](#char--op-explicitchararrayinds-tdim-array)([CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html)) | Casting operator to char[]. Returns a copy of the array as a char[].
+| [op_Inequality](#bool-op-inequalitychararrayinds-tdim-left-chararrayinds-tdim-right)([CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html), [CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html)) | Operator !=, returns true if the operands are not equal.
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 | [To()](#char--to) | Copies the array to a char[]. 
 
@@ -152,6 +155,68 @@ int GetStartingPosition(int index)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The position in the buffer of the element at the given index.
+
+### bool op_Equality([CharArrayInDS\<TDim\> left](/reference/runtime/qsys-runtime/char-array-in-ds-1.html), [CharArrayInDS\<TDim\> right](/reference/runtime/qsys-runtime/char-array-in-ds-1.html))
+
+Operator ==, returns true if the operands are equal.
+
+```cs
+bool op_Equality(CharArrayInDS<TDim> left, CharArrayInDS<TDim> right)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html) | left | Left operand.
+| [CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html) | right | Right operand.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the operands are equal, false otherwise.
+
+### Char\[\] op_Explicit([CharArrayInDS\<TDim\> array](/reference/runtime/qsys-runtime/char-array-in-ds-1.html))
+
+Casting operator to char[]. Returns a copy of the array as a char[].
+
+```cs
+Char[] op_Explicit(CharArrayInDS<TDim> array)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html) | array | The array to copy.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | 
+
+### bool op_Inequality([CharArrayInDS\<TDim\> left](/reference/runtime/qsys-runtime/char-array-in-ds-1.html), [CharArrayInDS\<TDim\> right](/reference/runtime/qsys-runtime/char-array-in-ds-1.html))
+
+Operator !=, returns true if the operands are not equal.
+
+```cs
+bool op_Inequality(CharArrayInDS<TDim> left, CharArrayInDS<TDim> right)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html) | left | Left operand.
+| [CharArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/char-array-in-ds-1.html) | right | Right operand.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the operands are NOT equal, false otherwise.
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

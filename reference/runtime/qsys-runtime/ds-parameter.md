@@ -1,7 +1,7 @@
 ---
 title: "DSParameter class             | QSYS API Reference Guide"
 description: "Describes the datastructure parameters sent into an IBMi program call. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes the datastructure parameters sent into an IBMi program call.

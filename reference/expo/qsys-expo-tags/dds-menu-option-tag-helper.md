@@ -1,7 +1,7 @@
 ---
 title: "DdsMenuOptionTagHelper class  | QSYS API Reference Guide"
 description: "Defines a Context Menu Option. DdsMenuOptions on a DdsContextMenu container define actions identified by AidKeys. "
-last_modified_at: 2024-08-08T21:42:22Z
+last_modified_at: 2024-08-09T16:19:09Z
 ---
 
 Defines a Context Menu Option. DdsMenuOptions on a DdsContextMenu container define actions identified by AidKeys.

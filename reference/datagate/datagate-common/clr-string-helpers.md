@@ -1,7 +1,7 @@
 ---
 title: "ClrStringHelpers class        | QSYS API Reference Guide"
 description: "This class offers some abstractions for .NET string functions peculiar to the net core platform (and suggested by CA). "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 This class offers some abstractions for .NET string functions peculiar

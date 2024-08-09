@@ -1,7 +1,7 @@
 ---
 title: "MessageBase class             | QSYS API Reference Guide"
 description: "Represents a base class for messages, providing properties and methods for message text, cause, recovery suggestions, and logging functionality. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Represents a base class for messages, providing properties and methods for message text, cause, recovery suggestions, and logging functionality.

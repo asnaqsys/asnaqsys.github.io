@@ -1,7 +1,7 @@
 ---
 title: "ColTagHelper class            | QSYS API Reference Guide"
 description: "Provides a Col tag helper to Razor elements.  "
-last_modified_at: 2024-08-08T21:42:22Z
+last_modified_at: 2024-08-09T16:19:09Z
 ---
 
 Provides a Col tag helper to Razor elements. 

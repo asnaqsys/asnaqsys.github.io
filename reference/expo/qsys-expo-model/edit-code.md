@@ -1,7 +1,7 @@
 ---
 title: "EditCode class                | QSYS API Reference Guide"
 description: "Provides methods to format numeric values according to Edit Code "
-last_modified_at: 2024-08-08T21:42:10Z
+last_modified_at: 2024-08-09T16:18:58Z
 ---
 
 Provides methods to format numeric values according to Edit Code

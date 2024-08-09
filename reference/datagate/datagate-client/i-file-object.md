@@ -1,7 +1,7 @@
 ---
 title: "IFileObject interface         | QSYS API Reference Guide"
 description: "Defines the contract for managing a file in the ASNA DataGate client. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Defines the contract for managing a file in the ASNA DataGate client.
@@ -55,6 +55,7 @@ get the AdgDataSet of the file, inspect the file, and repair the file.
 | [CopyData](#ifileobject-copydatastring-targetdir-string-newname-string-srcmember-string-newmember-copydataoptions-options-int-fromrrn-int-torrn-int-crecords)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CopyDataOptions](/reference/datagate/datagate-common/copy-data-options.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies data from the file to a new file. If this object does not represent a physical file, returns null.
 | [CopyFromImportFile](#ifileobject-copyfromimportfilestring-filepath-copyfromimportfileoptions-options)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [CopyFromImportFileOptions](/reference/datagate/datagate-client/copy-from-import-file-options.html)) | Copies data from an import file to the file.
 | [GetAdgDataSet](#adgdataset-getadgdatasetdatasetoptions-opts)([DataSetOptions](/reference/datagate/datagate-common/data-set-options.html)) | Gets the AdgDataSet of the file.
+| [InspectFile](#void-inspectfileinspectfileparts-parts-inspectfileoutput-output-int32-errorcount-adgobserver-observer)([InspectFileParts](/reference/datagate/datagate-common/inspect-file-parts.html), [InspectFileOutput](/reference/datagate/datagate-common/inspect-file-output.html), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Inspects the file.
 | [ReadCreationAttributes](#void-readcreationattributesxmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the creation attributes of the file from an XML reader.
 | [ReadDefinition](#void-readdefinitionxmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Reads the definition of the file from an XML reader.
 | [RepairFile](#void-repairfilerepairoptions-repairoptions-adgobserver-observer)([RepairOptions](/reference/datagate/datagate-common/repair-options.html), [AdgObserver](/reference/datagate/datagate-client/adg-observer.html)) | Repairs the file.
@@ -170,6 +171,23 @@ AdgDataSet GetAdgDataSet(DataSetOptions opts)
 | Type | Description
 | --- | ---
 | [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | The AdgDataSet of the file.
+
+### void InspectFile([InspectFileParts parts](/reference/datagate/datagate-common/inspect-file-parts.html), [InspectFileOutput output](/reference/datagate/datagate-common/inspect-file-output.html), [Int32& ErrorCount](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [AdgObserver observer](/reference/datagate/datagate-client/adg-observer.html))
+
+Inspects the file.
+
+```cs
+void InspectFile(InspectFileParts parts, InspectFileOutput output, Int32& ErrorCount, AdgObserver observer)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [InspectFileParts](/reference/datagate/datagate-common/inspect-file-parts.html) | parts | The parts of the file to inspect.
+| [InspectFileOutput](/reference/datagate/datagate-common/inspect-file-output.html) | output | The output of the inspection.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | ErrorCount | The number of errors found during the inspection.
+| [AdgObserver](/reference/datagate/datagate-client/adg-observer.html) | observer | The observer to use during the inspection.
 
 ### void ReadCreationAttributes([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 

@@ -1,7 +1,7 @@
 ---
 title: "AidProperty class             | QSYS API Reference Guide"
 description: "Specifies which resulting indicator to turn on for each possible AID key. Each Key might specify multiple indicators, each one conditioned via an bool"
-last_modified_at: 2024-08-08T21:42:10Z
+last_modified_at: 2024-08-09T16:18:58Z
 ---
 
 Specifies which resulting indicator to turn on for each possible AID key. Each Key might specify multiple indicators, each one conditioned via an boolean expression.

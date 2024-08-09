@@ -1,7 +1,7 @@
 ---
 title: "ExpoAjaxRequest class         | QSYS API Reference Guide"
 description: "Defines the ExpoAjaxRequest class (used for JSON serialization) "
-last_modified_at: 2024-08-08T21:42:10Z
+last_modified_at: 2024-08-09T16:18:58Z
 ---
 
 Defines the ExpoAjaxRequest class (used for JSON serialization)

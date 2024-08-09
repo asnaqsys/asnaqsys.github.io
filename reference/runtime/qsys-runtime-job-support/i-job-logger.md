@@ -1,7 +1,7 @@
 ---
 title: "IJobLogger interface          | QSYS API Reference Guide"
 description: "Defines a generalized way to to add messages to a log. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines a generalized way to to add messages to a log.

@@ -1,7 +1,7 @@
 ---
 title: "OpenAccessFile class          | QSYS API Reference Guide"
 description: "Provides the facilities to use a display file without prior infrastructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Provides the facilities to use a display file without prior infrastructure.
@@ -54,8 +54,10 @@ OpenAccessFile(String)
 | [Close()](#void-close) | Closes the display file disposing of its resources.
 | [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Closes the file and releases the resources used by the current instance of the OpenAccessFile class.
 | [Dispose()](#void-dispose) | Closes the file and releases the resources used by the current instance of the OpenAccessFile class.
+| [Extend](#void-extendstring-formatname-char--optionindicators-action-string-datarow-object-populatebuffer-object-popcookie)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action\<String, DataRow, Object\>](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer.
 | [Open()](#int-open) | Opens the display file for IO operations, allocating the dataset buffer for the file's records.
 | [Read()](#void-read) | Presents the current data on the device and waits for the user to enter new data. 
+| [Write](#void-writestring-formatname-char--optionindicators-action-string-datarow-object-populatebuffer-object-popcookie)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action\<String, DataRow, Object\>](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds a record to the record format's buffer.
 
 ### void ClearRecords([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -101,6 +103,14 @@ Closes the file and releases the resources used by the current instance of the O
 void Dispose()
 ```
 
+### void Extend([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action\<string, DataRow, object\> populateBuffer](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0), [object popCookie](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Adds a record to the record format's buffer.
+
+```cs
+void Extend(string formatName, Char[] optionIndicators, Action<string, DataRow, object> populateBuffer, object popCookie)
+```
+
 ### int Open()
 
 Opens the display file for IO operations, allocating the dataset buffer for the file's records.
@@ -115,4 +125,12 @@ Presents the current data on the device and waits for the user to enter new data
 
 ```cs
 void Read()
+```
+
+### void Write([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Char\[\] optionIndicators](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Action\<string, DataRow, object\> populateBuffer](https://learn.microsoft.com/en-us/dotnet/api/system.action?view=net-8.0), [object popCookie](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Adds a record to the record format's buffer.
+
+```cs
+void Write(string formatName, Char[] optionIndicators, Action<string, DataRow, object> populateBuffer, object popCookie)
 ```

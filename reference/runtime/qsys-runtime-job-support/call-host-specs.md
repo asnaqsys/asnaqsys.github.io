@@ -1,7 +1,7 @@
 ---
 title: "CallHostSpecs class           | QSYS API Reference Guide"
 description: "Packages the specification of a remote program call command and its parameters. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Packages the specification of a remote program call command and its parameters.

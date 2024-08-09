@@ -1,7 +1,7 @@
 ---
 title: "CannotCallException class     | QSYS API Reference Guide"
 description: "Exception thrown when trying to use a multidimensional multi data structure in a CALL. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Exception thrown when trying to use a multidimensional multi data structure in a CALL.

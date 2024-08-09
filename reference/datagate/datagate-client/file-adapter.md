@@ -1,7 +1,7 @@
 ---
 title: "FileAdapter class             | QSYS API Reference Guide"
 description: "The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings.
@@ -156,6 +156,8 @@ FileAdapter(IFileObject)
 | [GetFormatName](#string-getformatnameint-i)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the name of the format at the specified index in the file that the FileAdapter is working with.
 | [GetPrintProperties](#iprintproperties-getprintpropertiesstring-format)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the print properties for the specified format in the file that the FileAdapter is working with.
 | [Open](#void-openadgdataset-ds)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Opens the FileAdapter with the specified AdgDataSet.
+| [OpenNewAdgDataSet](#void-opennewadgdatasetadgdataset-ds)([AdgDataSet&](/reference/datagate/datagate-client/adg-data-set.html)) | Opens a new AdgDataSet for the FileAdapter.
+| [OpenSimpleQuery](#void-opensimplequeryadgdataset-ds-string-queryfile-string-query-string--keynames-keyusages--keyflags)([AdgDataSet&](/reference/datagate/datagate-client/adg-data-set.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [KeyUsages\[\]](/reference/datagate/datagate-common/key-usages.html)) | Opens the FileAdapter with a simple query.
 | [ReadRandomKey](#void-readrandomkeyadgdataset-ds-readrandommode-mode-lockrequest-lr-adgkeytable-keytable)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html)) | Reads a record from the file that the FileAdapter is working with using the specified key.
 | [ReadRandomRRN](#void-readrandomrrnadgdataset-ds-readrandommode-mode-lockrequest-lr-long-rrn)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Reads a record from the file that the FileAdapter is working with using the specified relative record number (RRN).
 | [ReadRange](#void-readrangeadgdataset-ds-rangemode-mode-lockrequest-lr-adgkeytable-firstkey-rangefirst-rangefirst-adgkeytable-lastkey-rangelast-rangelast)([AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html), [RangeMode](/reference/datagate/datagate-common/range-mode.html), [LockRequest](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast](/reference/datagate/datagate-common/range-last.html)) | Reads a range of records from the file that the FileAdapter is working with using the specified keys.
@@ -507,6 +509,46 @@ void Open(AdgDataSet ds)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to use for the FileAdapter.
+
+### void OpenNewAdgDataSet([AdgDataSet& ds](/reference/datagate/datagate-client/adg-data-set.html))
+
+Opens a new AdgDataSet for the FileAdapter.
+
+
+#### Remarks
+The OpenNewAdgDataSet method is used to open a new AdgDataSet for the FileAdapter. It first checks if the FileAdapter is already open. If it is, it throws an exception. Then it calls the PrepareParms method to prepare the parameters for the FileAdapter. It then calls the NewFileData method of the FileFactory class, passing the FileObject and member name of the FileAdapter, the access mode, the open attributes, and a reference to the new AdgDataSet. The NewFileData method creates a new FileData object for the FileObject and member name, with the specified access mode and open attributes, and assigns it to the new AdgDataSet. The new AdgDataSet can be used to interact with the data in the file that the FileAdapter is working with.
+
+```cs
+void OpenNewAdgDataSet(AdgDataSet& ds)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgDataSet&](/reference/datagate/datagate-client/adg-data-set.html) | ds | The new AdgDataSet that is opened.
+
+### void OpenSimpleQuery([AdgDataSet& ds](/reference/datagate/datagate-client/adg-data-set.html), [string queryFile](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string query](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] keyNames](https://docs.microsoft.com/en-us/dotnet/api/system.string), [KeyUsages\[\] keyFlags](/reference/datagate/datagate-common/key-usages.html))
+
+Opens the FileAdapter with a simple query.
+
+
+#### Remarks
+The OpenSimpleQuery method is used to open the FileAdapter with a simple query. It first checks if the FileAdapter is already open. If it is, it throws an exception. It then checks if the keyNames and keyFlags parameters are valid. If they are not, it throws an exception. It also checks if the query and queryFile parameters are not null. If they are, it throws an exception. It then sets the query, queryFile, queryKeyNames, and queryKeyUsage properties of the FileAdapter to the provided values. It then calls the PrepareParms method to prepare the parameters for the FileAdapter. It then calls the NewFileData method of the FileFactory class, passing the FileObject and member name of the FileAdapter, the access mode, the open attributes, a reference to the AdgDataSet, and the query parameters. The NewFileData method creates a new FileData object for the FileObject and member name, with the specified access mode and open attributes, and assigns it to the AdgDataSet. The AdgDataSet can be used to interact with the data in the file that the FileAdapter is working with.
+
+```cs
+void OpenSimpleQuery(AdgDataSet& ds, string queryFile, string query, String[] keyNames, KeyUsages[] keyFlags)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [AdgDataSet&](/reference/datagate/datagate-client/adg-data-set.html) | ds | The AdgDataSet to use for the FileAdapter.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | queryFile | The file to query.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | query | The query to execute.
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | keyNames | The names of the keys to use in the query.
+| [KeyUsages\[\]](/reference/datagate/datagate-common/key-usages.html) | keyFlags | The flags to use for the keys in the query.
 
 ### void ReadRandomKey([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode mode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 

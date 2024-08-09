@@ -1,7 +1,7 @@
 ---
 title: "FixedTimeArrayInDS<T1, T2, T3> struct"
 description: "Describes a fixed size array of FixedTime contained in a DataStructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a fixed size array of FixedTime contained in a DataStructure.
@@ -69,6 +69,8 @@ FixedTimeArrayInDS(MultiDataStructure, Int32, Int32)
 | [CopyFrom](#void-copyfromdatetime--sourcearray-int-targetstartat)([DateTime\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a DateTime[] into this array.
 | [GetEnumerator()](#ienumerator-fixedtime-tformat-tseparator--getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
+| [op_Explicit](#datetime--op-explicitfixedtimearrayinds-tdim-tformat-tseparator-array)([FixedTimeArrayInDS\<TDim, TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-time-array-in-ds-3.html)) | Casting operator to DateTime[]. Returns a copy of the array as a DateTime[].
+| [op_Implicit](#fixedtimearray-tdim-tformat-tseparator-op-implicitfixedtimearrayinds-tdim-tformat-tseparator-array)([FixedTimeArrayInDS\<TDim, TFormat, TSeparator\>](/reference/runtime/qsys-runtime/fixed-time-array-in-ds-3.html)) | Casting operator to FixedTimeArray. Returns a copy of the array as a FixedTimeArray.
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
@@ -121,6 +123,22 @@ int GetStartingPosition(int index)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The position in the buffer of the element at the given index.
+
+### DateTime\[\] op_Explicit([FixedTimeArrayInDS\<TDim, TFormat, TSeparator\> array](/reference/runtime/qsys-runtime/fixed-time-array-in-ds-3.html))
+
+Casting operator to DateTime[]. Returns a copy of the array as a DateTime[].
+
+```cs
+DateTime[] op_Explicit(FixedTimeArrayInDS<TDim, TFormat, TSeparator> array)
+```
+
+### FixedTimeArray\<TDim, TFormat, TSeparator\> op_Implicit([FixedTimeArrayInDS\<TDim, TFormat, TSeparator\> array](/reference/runtime/qsys-runtime/fixed-time-array-in-ds-3.html))
+
+Casting operator to FixedTimeArray. Returns a copy of the array as a FixedTimeArray.
+
+```cs
+FixedTimeArray<TDim, TFormat, TSeparator> op_Implicit(FixedTimeArrayInDS<TDim, TFormat, TSeparator> array)
+```
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

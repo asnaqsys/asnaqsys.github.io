@@ -1,7 +1,7 @@
 ---
 title: "CPF3011Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when TYPE not found for file {0} in library {1} "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 The exception that is thrown when TYPE not found for file {0} in library {1}

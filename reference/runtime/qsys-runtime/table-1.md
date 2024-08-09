@@ -1,7 +1,7 @@
 ---
 title: "Table&lt;T&gt; class          | QSYS API Reference Guide"
 description: "Supports RPG&#39;s table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property.
@@ -45,6 +45,7 @@ Table(Int32)
 | Signature | Description |
 | --- | --- |
 | [GetEnumerator()](#ienumerator-t-getenumerator) | Returns an enumerator to iterate over the table elements.
+| [Initialize](#void-initializet-val)([T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | Initializes the elements of an arbitrary array to the same value.
 
 ### IEnumerator<T> GetEnumerator()
 
@@ -53,3 +54,17 @@ Returns an enumerator to iterate over the table elements.
 ```cs
 IEnumerator<T> GetEnumerator()
 ```
+
+### void Initialize([T val](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+Initializes the elements of an arbitrary array to the same value.
+
+```cs
+void Initialize(T val)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | val | The value to place in the table elements.

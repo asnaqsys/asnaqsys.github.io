@@ -1,7 +1,7 @@
 ---
 title: "QueryCursor class             | QSYS API Reference Guide"
 description: "Represents the SQL Query Cursor. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Represents the SQL Query Cursor.
@@ -81,6 +81,7 @@ QueryCursor(DbConnection, String, DBParm[])
 | Signature | Description |
 | --- | --- |
 | [Close()](#void-close) | Closes the Cursor. Does not throw error if the cursor had not been opened.
+| [Fetch](#bool-fetchint-expectedresults-fetchorientation-orientation)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FetchOrientation](/reference/runtime/qsys-runtime-job-support/fetch-orientation.html)) | Fetches a row according to the orientation requested.
 | [FetchAbsolute](#bool-fetchabsoluteint-expectedresults-int-absoluterow)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows until it gets to the indicated absolute row.
 | [FetchRelative](#bool-fetchrelativeint-expectedresults-int-relativerowcount)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Fetches rows in a relative way.
 | [Open()](#void-open) | Opens the Cursor. Throws exception if cursor already opened.
@@ -94,6 +95,27 @@ Closes the Cursor. Does not throw error if the cursor had not been opened.
 ```cs
 void Close()
 ```
+
+### bool Fetch([int expectedResults](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [FetchOrientation orientation](/reference/runtime/qsys-runtime-job-support/fetch-orientation.html))
+
+Fetches a row according to the orientation requested.
+
+```cs
+bool Fetch(int expectedResults, FetchOrientation orientation)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | expectedResults | Expected field count available after operation.
+| [FetchOrientation](/reference/runtime/qsys-runtime-job-support/fetch-orientation.html) | orientation | Orientation specification.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the fetch was successful.
 
 ### bool FetchAbsolute([int expectedResults](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int absoluteRow](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

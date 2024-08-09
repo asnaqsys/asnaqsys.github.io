@@ -1,7 +1,7 @@
 ---
 title: "XmlElementConverter class     | QSYS API Reference Guide"
 description: "Provides methods for converting between XmlElement objects and their string, boolean, and child element representations. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Provides methods for converting between XmlElement objects and their string, boolean, and child element representations.

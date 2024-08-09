@@ -1,7 +1,7 @@
 ---
 title: "ILen interface                | QSYS API Reference Guide"
 description: "Interface that identifies types to be used as length type arguments in fixed type declarations. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 sitemap: false
 ---
 

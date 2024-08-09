@@ -1,7 +1,7 @@
 ---
 title: "SqlObjectName class           | QSYS API Reference Guide"
 description: "Represents a SQL object name. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Represents a SQL object name.
@@ -104,6 +104,7 @@ SqlObjectName(String, String, String, String)
 | Signature | Description |
 | --- | --- |
 | [Parse](#sqlobjectname-parsestring-input)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Parses a string into a SqlObjectName.
+| [TryParse](#bool-tryparsestring-input-sqlobjectname-output)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SqlObjectName&](/reference/datagate/datagate-sql-server/sql-object-name.html)) | Tries to parse a string into a SqlObjectName.
 
 ### SqlObjectName Parse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
@@ -128,3 +129,28 @@ SqlObjectName Parse(string input)
 | Type | Description
 | --- | ---
 | [SqlObjectName](/reference/datagate/datagate-sql-server/sql-object-name.html) | A SqlObjectName that represents the parsed string.
+
+### bool TryParse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [SqlObjectName& output](/reference/datagate/datagate-sql-server/sql-object-name.html))
+
+Tries to parse a string into a SqlObjectName.
+
+
+#### Remarks
+This method is used to convert a string into a SqlObjectName. The string should be in the format of a SQL object name, such as "server.database.schema.object". If the string cannot be parsed, the method returns false and assigns null to the result parameter.
+
+```cs
+bool TryParse(string input, SqlObjectName& output)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | input | The string to parse.
+| [SqlObjectName&](/reference/datagate/datagate-sql-server/sql-object-name.html) | output | When this method returns, contains the SqlObjectName equivalent to the string contained in input, if the conversion succeeded, or null if the conversion failed.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the input was converted successfully; otherwise, false.

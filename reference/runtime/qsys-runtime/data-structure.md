@@ -1,7 +1,7 @@
 ---
 title: "DataStructure class           | QSYS API Reference Guide"
 description: "Contains the functionality to support the semantics of a RPG Data Structure with a memory layout. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains the functionality to support the semantics of a RPG Data Structure with a memory layout.
@@ -94,6 +94,8 @@ DataStructure(ILayout[])
 | [GetZoned](#decimal-getzonedint-start-int-digits-int-decimals)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer.
 | [Load](#void-loadstring-source)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the Data Structure buffer to the given string value, padding with blanks if necessary.
 | [ObjectToParm](#void-objecttoparmas400program-program-int32--indices-int-dim)([As400Program](/reference/datagate/datagate-client/as400-program.html), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ObjectToParm implementation. Converts the Data Structure field values into parameters for calling the given IBMi program.
+| [op_Explicit](#string-op-explicitdatastructure-datastructure)([DataStructure](/reference/runtime/qsys-runtime/data-structure.html)) | Casting operator to string. Returns the data structure as a string.
+| [op_Implicit](#dsdataarea-op-implicitdatastructure-ds)([DataStructure](/reference/runtime/qsys-runtime/data-structure.html)) | Casting operator to DSDataArea.
 | [ParmToObject](#void-parmtoobjectas400program-program-int32--indices-int-dim)([As400Program](/reference/datagate/datagate-client/as400-program.html), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ParmToObject implementation. Gets the Data Structure field values returned from a call to an IBMi program.
 | [SetBinary](#void-setbinarydecimal-value-int-start-int-digits-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Binary decimal number starting at the specified position in the Data Structure buffer.
 | [SetByte](#void-setbytebyte-value-int-position)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a byte value in the specified position in the Data Structure buffer.
@@ -103,14 +105,27 @@ DataStructure(ILayout[])
 | [SetIndicator](#void-setindicatorchar-val-int-position)([Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an indicator value specified as a character in the specified position in the Data Structure buffer.
 | [SetInteger](#void-setintegerint-value-int-start)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an integer (Int32) value starting at the specified position in the Data Structure buffer.
 | [SetLong](#void-setlonglong-value-int-start)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an long (Int64) value starting at the specified position in the Data Structure buffer.
+| [SetNullableBinary](#void-setnullablebinarynullable-decimal-value-int-start-int-digits-int-decimals)([Nullable\<Decimal\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Binary decimal number starting at the specified position in the Data Structure buffer.
+| [SetNullableByte](#void-setnullablebytenullable-byte-value-int-position)([Nullable\<Byte\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a byte value in the specified position in the Data Structure buffer.
+| [SetNullableChar](#void-setnullablecharnullable-char-val-int-position)([Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a character value in the specified position in the Data Structure buffer.
+| [SetNullableDate](#void-setnullabledatenullable-datetime-value-int-start-datetimeformat-format-datetimeseparator-separator)([Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Stores the Date part of a DateTime value with the specified format and date separator in the Data Structure buffer.
+| [SetNullableIndicator](#void-setnullableindicatornullable-char-val-int-position)([Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an indicator value specified as a character in the specified position in the Data Structure buffer.
+| [SetNullableInteger](#void-setnullableintegernullable-int-value-int-start)([Nullable\<Int32\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an integer (Int32) value starting at the specified position in the Data Structure buffer.
+| [SetNullableLong](#void-setnullablelongnullable-long-value-int-start)([Nullable\<Int64\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores an long (Int64) value starting at the specified position in the Data Structure buffer.
+| [SetNullablePacked](#void-setnullablepackednullable-decimal-value-int-start-int-digits-int-decimals)([Nullable\<Decimal\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Packed decimal number starting at the specified position in the Data Structure buffer.
+| [SetNullableShort](#void-setnullableshortnullable-short-value-int-start)([Nullable\<Int16\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a short (Int16) value starting at the specified position in the Data Structure buffer.
 | [SetNullableString](#void-setnullablestringstring-val-int-start-int-len-char-padchar-bool-pad)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a string into a segment the Data Structure buffer, left adjusted. Pads on the right if necessary.
 | [SetNullableStringR](#void-setnullablestringrstring-val-int-start-int-len-char-padchar-bool-pad)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a string into a segment the Data Structure buffer, right adjusted. Pads on the left if necessary.
+| [SetNullableTime](#void-setnullabletimenullable-datetime-value-int-start-datetimeformat-format-datetimeseparator-separator)([Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer.
+| [SetNullableTimestamp](#void-setnullabletimestampnullable-datetime-value-int-start-datetimeseparator-separator)([Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer.
+| [SetNullableZoned](#void-setnullablezonednullable-decimal-value-int-start-int-digits-int-decimals)([Nullable\<Decimal\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Zoned decimal number starting at the specified position in the Data Structure buffer.
 | [SetPacked](#void-setpackeddecimal-value-int-start-int-digits-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Packed decimal number starting at the specified position in the Data Structure buffer.
 | [SetShort](#void-setshortshort-value-int-start)([Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a short (Int16) value starting at the specified position in the Data Structure buffer.
 | [SetString](#void-setstringstring-val-int-start-int-len-char-padchar-bool-pad)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a string into a segment the Data Structure buffer, left adjusted. Pads on the right if necessary.
 | [SetStringR](#void-setstringrstring-val-int-start-int-len-char-padchar-bool-pad)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Copies a string into a segment the Data Structure buffer, right adjusted. Pads on the left if necessary.
 | [SetTime](#void-settimedatetime-value-int-start-datetimeformat-format-datetimeseparator-separator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer.
 | [SetTimestamp](#void-settimestampdatetime-value-int-start-datetimeseparator-separator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer.
+| [SetValue\<U\>](#void-setvalue-u-u-value-int-start)([U](https://learn.microsoft.com/en-us/dotnet/standard/generics), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the value of the field at the requested starting position in the buffer.
 | [SetZoned](#void-setzoneddecimal-value-int-start-int-digits-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Stores a decimal number as a Zoned decimal number starting at the specified position in the Data Structure buffer.
 | [ToString()](#string-tostring) | Gets the contents of the data structure as a string.
 
@@ -745,6 +760,46 @@ void ObjectToParm(As400Program program, Int32[] indices, int dim)
 | [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dim | The dimension nesting of the parameter.
 
+### string op_Explicit([DataStructure dataStructure](/reference/runtime/qsys-runtime/data-structure.html))
+
+Casting operator to string. Returns the data structure as a string.
+
+```cs
+string op_Explicit(DataStructure dataStructure)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | dataStructure | Data structure to cast to string.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | 
+
+### DSDataArea op_Implicit([DataStructure ds](/reference/runtime/qsys-runtime/data-structure.html))
+
+Casting operator to DSDataArea.
+
+```cs
+DSDataArea op_Implicit(DataStructure ds)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | ds | The DataStructure object to cast.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DSDataArea](/reference/runtime/qsys-runtime/ds-data-area.html) | 
+
 ### void ParmToObject([As400Program program](/reference/datagate/datagate-client/as400-program.html), [Int32\[\] indices](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [int dim](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 IDS.ParmToObject implementation. Gets the Data Structure field values returned from a call to an IBMi program.
@@ -886,6 +941,147 @@ void SetLong(long value, int start)
 | [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | value | The long number to store.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
 
+### void SetNullableBinary([Nullable\<decimal\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores a decimal number as a Binary decimal number starting at the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableBinary(Nullable<decimal> value, int start, int digits, int decimals)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Decimal\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The decimal value to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The total number of digits in the Binary decimal number.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The number of decimal positions in the Binary decimal number.
+
+### void SetNullableByte([Nullable\<byte\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores a byte value in the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableByte(Nullable<byte> value, int position)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Byte\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The byte to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | position | Position in the Data Structure buffer.
+
+### void SetNullableChar([Nullable\<char\> val](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores a character value in the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableChar(Nullable<char> val, int position)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | val | The character to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | position | Position in the Data Structure buffer.
+
+### void SetNullableDate([Nullable\<DateTime\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeFormat format](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
+
+Stores the Date part of a DateTime value with the specified format and date separator in the Data Structure buffer.
+
+```cs
+void SetNullableDate(Nullable<DateTime> value, int start, DateTimeFormat format, DateTimeSeparator separator)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The DateTime value to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | format | The DateTimeFormat value that represents the date format to use.
+| [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html) | separator | The DateTimeSeparator value that represents the date separator used.
+
+### void SetNullableIndicator([Nullable\<char\> val](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int position](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores an indicator value specified as a character in the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableIndicator(Nullable<char> val, int position)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | val | The indicator value as a character.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | position | Position in the Data Structure buffer.
+
+### void SetNullableInteger([Nullable\<int\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores an integer (Int32) value starting at the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableInteger(Nullable<int> value, int start)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Int32\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The integer number to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+
+### void SetNullableLong([Nullable\<long\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores an long (Int64) value starting at the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableLong(Nullable<long> value, int start)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Int64\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The long number to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+
+### void SetNullablePacked([Nullable\<decimal\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores a decimal number as a Packed decimal number starting at the specified position in the Data Structure buffer.
+
+```cs
+void SetNullablePacked(Nullable<decimal> value, int start, int digits, int decimals)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Decimal\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The decimal value to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The total number of digits in the Packed decimal number.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The number of decimal positions in the Packed decimal number.
+
+### void SetNullableShort([Nullable\<short\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores a short (Int16) value starting at the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableShort(Nullable<short> value, int start)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Int16\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The short number to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+
 ### void SetNullableString([string val](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [char padChar](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char), [bool pad](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Copies a string into a segment the Data Structure buffer, left adjusted. Pads on the right if necessary.
@@ -921,6 +1117,56 @@ void SetNullableStringR(string val, int start, int len, char padChar, bool pad)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | len | Length of the string.
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | padChar | Character to pad the string if necessary. Default is blanks.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | Indicates whether to pad or not. Default is true.
+
+### void SetNullableTime([Nullable\<DateTime\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeFormat format](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
+
+Stores the Time part of a DateTime value with the specified format and time separator in the Data Structure buffer.
+
+```cs
+void SetNullableTime(Nullable<DateTime> value, int start, DateTimeFormat format, DateTimeSeparator separator)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The DateTime value to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+| [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html) | format | The DateTimeFormat value that represents the time format to use.
+| [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html) | separator | The DateTimeSeparator value that represents the time separator used.
+
+### void SetNullableTimestamp([Nullable\<DateTime\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
+
+Stores the DateTime value as a Timestamp with the specified timestamp separator in the Data Structure buffer.
+
+```cs
+void SetNullableTimestamp(Nullable<DateTime> value, int start, DateTimeSeparator separator)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<DateTime\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The DateTime value to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+| [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html) | separator | The DateTimeSeparator value that represents the timestamp separator used. Only None or Default are allowed.
+
+### void SetNullableZoned([Nullable\<decimal\> value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Stores a decimal number as a Zoned decimal number starting at the specified position in the Data Structure buffer.
+
+```cs
+void SetNullableZoned(Nullable<decimal> value, int start, int digits, int decimals)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Nullable\<Decimal\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | value | The decimal value to store.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | digits | The total number of digits in the Zoned decimal number.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimals | The number of decimal positions in the Zoned decimal number.
 
 ### void SetPacked([decimal value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -1022,6 +1268,21 @@ void SetTimestamp(DateTime value, int start, DateTimeSeparator separator)
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | value | The DateTime value to store.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Starting position in the Data Structure buffer.
 | [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html) | separator | The DateTimeSeparator value that represents the timestamp separator used. Only None or Default are allowed.
+
+### void SetValue\<U\>([U value](https://learn.microsoft.com/en-us/dotnet/standard/generics), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Sets the value of the field at the requested starting position in the buffer.
+
+```cs
+void SetValue<U>(U value, int start)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [U](https://learn.microsoft.com/en-us/dotnet/standard/generics) | value | The value to set.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Position in the buffer where the field starts.
 
 ### void SetZoned([decimal value](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

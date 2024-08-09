@@ -1,7 +1,7 @@
 ---
 title: "ColorProperty class           | QSYS API Reference Guide"
 description: "Defines ColorProperty. Encapsulates the name of a color to be use when rendering fields and constants. "
-last_modified_at: 2024-08-08T21:42:10Z
+last_modified_at: 2024-08-09T16:18:58Z
 ---
 
 Defines ColorProperty. Encapsulates the name of a color to be use when rendering fields and constants.

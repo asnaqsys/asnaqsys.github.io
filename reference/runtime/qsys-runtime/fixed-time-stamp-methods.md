@@ -1,7 +1,7 @@
 ---
 title: "FixedTimeStampMethods class   | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations for FixedTimestamp values. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains extension methods for handling RPG operations for FixedTimestamp values.
@@ -17,6 +17,9 @@ Contains extension methods for handling RPG operations for FixedTimestamp values
 
 | Signature | Description |
 | --- | --- |
+| [AddDuration\<TSeparator\>](#datetime-addduration-tseparator-fixedtimestamp-tseparator-timestamp-double-duration-durationcode-durationcode)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/runtime/qsys-runtime/duration-code.html)) | Adds a duration span to a FixedTime value.
+| [MergeDate\<TSeparator\>](#datetime-mergedate-tseparator-fixedtimestamp-tseparator-timestamp-datetime-date)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Merges a date into the date part of a timestamp.
+| [MergeTime\<TSeparator\>](#datetime-mergetime-tseparator-fixedtimestamp-tseparator-timestamp-datetime-time)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Merges a time into the time part of a timestamp.
 | [MoveLeft\<TSeparator\>](#short-moveleft-tseparator-fixedtimestamp-tseparator-timestamp-short-targetoperand)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a datetime into a int2 (short).
 | [MoveLeft\<TSeparator\>](#short-moveleft-tseparator-fixedtimestamp-tseparator-timestamp-short-targetoperand)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a datetime into a int4 (int).
 | [MoveLeft\<TSeparator\>](#short-moveleft-tseparator-fixedtimestamp-tseparator-timestamp-short-targetoperand)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVEL. Moves left a datetime into a int8 (long).
@@ -31,6 +34,7 @@ Contains extension methods for handling RPG operations for FixedTimestamp values
 | [MoveRightWithPad\<TSeparator\>](#short-moverightwithpad-tseparator-fixedtimestamp-tseparator-timestamp-short-targetoperand)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a datetime into a int2 (short) with pad.
 | [MoveRightWithPad\<TSeparator\>](#short-moverightwithpad-tseparator-fixedtimestamp-tseparator-timestamp-short-targetoperand)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a datetime into a int4 (int) with pad.
 | [MoveRightWithPad\<TSeparator\>](#short-moverightwithpad-tseparator-fixedtimestamp-tseparator-timestamp-short-targetoperand)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a datetime into a int8 (long) with pad.
+| [SubtractDuration\<TSeparator\>](#datetime-subtractduration-tseparator-fixedtimestamp-tseparator-timestamp-double-duration-durationcode-durationcode)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/runtime/qsys-runtime/duration-code.html)) | Subtracts a duration span from a date or a timestamp value.
 | [TimestampToDate\<TSeparator\>](#datetime-timestamptodate-tseparator-fixedtimestamp-tseparator-timestamp)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html)) | Returns the Date portion of a timestamp.
 | [TimestampToTime\<TSeparator\>](#datetime-timestamptotime-tseparator-fixedtimestamp-tseparator-timestamp)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html)) | Returns the hours, minutes, and seconds of a timestamp.
 | [TimestampToUSATime\<TSeparator\>](#datetime-timestamptousatime-tseparator-fixedtimestamp-tseparator-timestamp)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html)) | Returns the hours and minutes of a timestamp.
@@ -40,6 +44,70 @@ Contains extension methods for handling RPG operations for FixedTimestamp values
 | [ToInt16\<TSeparator\>](#short-toint16-tseparator-fixedtimestamp-tseparator-timestamp-bool-throwonoverflow)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a timestamp type to int 16.
 | [ToInt32\<TSeparator\>](#int-toint32-tseparator-fixedtimestamp-tseparator-timestamp-bool-throwonoverflow)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a timestamp type to int 32.
 | [ToInt64\<TSeparator\>](#long-toint64-tseparator-fixedtimestamp-tseparator-timestamp-bool-throwonoverflow)([FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a timestamp type to int 64.
+
+### DateTime AddDuration\<TSeparator\>([FixedTimestamp\<TSeparator\> timestamp](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [double duration](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [DurationCode durationCode](/reference/runtime/qsys-runtime/duration-code.html))
+
+Adds a duration span to a FixedTime value.
+
+```cs
+DateTime AddDuration<TSeparator>(FixedTimestamp<TSeparator> timestamp, double duration, DurationCode durationCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html) | timestamp | .NET FixedTime value specifying a FixedTime value.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration.
+| [DurationCode](/reference/runtime/qsys-runtime/duration-code.html) | durationCode | Code determining what duration represents.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | The resulting DateTime value after adding to it the given duration.
+
+### DateTime MergeDate\<TSeparator\>([FixedTimestamp\<TSeparator\> timestamp](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [DateTime date](https://docs.microsoft.com/en-us/dotnet/api/system.datetime))
+
+Merges a date into the date part of a timestamp.
+
+```cs
+DateTime MergeDate<TSeparator>(FixedTimestamp<TSeparator> timestamp, DateTime date)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html) | timestamp | timestamp to be merged.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | date | date to merge.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | .NET DateTime value.
+
+### DateTime MergeTime\<TSeparator\>([FixedTimestamp\<TSeparator\> timestamp](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [DateTime time](https://docs.microsoft.com/en-us/dotnet/api/system.datetime))
+
+Merges a time into the time part of a timestamp.
+
+```cs
+DateTime MergeTime<TSeparator>(FixedTimestamp<TSeparator> timestamp, DateTime time)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html) | timestamp | timestamp to be merged.
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | time | time to merge.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | .NET DateTime value.
 
 ### short MoveLeft\<TSeparator\>([FixedTimestamp\<TSeparator\> timestamp](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [short targetOperand](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -332,6 +400,28 @@ short MoveRightWithPad<TSeparator>(FixedTimestamp<TSeparator> timestamp, short t
 | Type | Description
 | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | The resulting long value of the operation.
+
+### DateTime SubtractDuration\<TSeparator\>([FixedTimestamp\<TSeparator\> timestamp](/reference/runtime/qsys-runtime/fixed-timestamp-1.html), [double duration](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [DurationCode durationCode](/reference/runtime/qsys-runtime/duration-code.html))
+
+Subtracts a duration span from a date or a timestamp value.
+
+```cs
+DateTime SubtractDuration<TSeparator>(FixedTimestamp<TSeparator> timestamp, double duration, DurationCode durationCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedTimestamp\<TSeparator\>](/reference/runtime/qsys-runtime/fixed-timestamp-1.html) | timestamp | The timestamp value.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration.
+| [DurationCode](/reference/runtime/qsys-runtime/duration-code.html) | durationCode | Code determining what duration represents.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | The resulting DateTime value after subracting from it the given duration.
 
 ### DateTime TimestampToDate\<TSeparator\>([FixedTimestamp\<TSeparator\> timestamp](/reference/runtime/qsys-runtime/fixed-timestamp-1.html))
 

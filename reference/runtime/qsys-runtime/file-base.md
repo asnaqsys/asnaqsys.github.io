@@ -1,7 +1,7 @@
 ---
 title: "FileBase class                | QSYS API Reference Guide"
 description: "Defines common functionality for files (Database, Printfile, Workstation) "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines common functionality for files (Database, Printfile, Workstation)

@@ -1,7 +1,7 @@
 ---
 title: "YellowPageModel class         | QSYS API Reference Guide"
 description: "Defines YellowPageModel class and provides a base for the &#39;Yellow&#39; Page Model "
-last_modified_at: 2024-08-08T21:42:10Z
+last_modified_at: 2024-08-09T16:18:58Z
 ---
 
 Defines YellowPageModel class and provides a base for the 'Yellow' Page Model

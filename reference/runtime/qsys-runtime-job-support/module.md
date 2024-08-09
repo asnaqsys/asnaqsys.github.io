@@ -1,7 +1,7 @@
 ---
 title: "Module class                  | QSYS API Reference Guide"
 description: "Defines the core behavior of classes that were migrated from RPG or CL programs and modules. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the core behavior of classes that were migrated from RPG or CL programs and modules.
@@ -63,6 +63,7 @@ Module(CommonProgram)
 | [ExecSQL_Statement](#void-execsql-statementdbconnection-sqlconnection-string-sqltext-dbparm--parameters)([DbConnection](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbconnection?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm\[\]](/reference/runtime/qsys-runtime-job-support/db-parm.html)) | Execute an non-query SQL Command.
 | [ExecSQL_Statement](#void-execsql-statementstring-sqltext-dbparm--parameters)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm\[\]](/reference/runtime/qsys-runtime-job-support/db-parm.html)) | Execute an non-query SQL Command on the default Job's ado connection.
 | [ExecSQL_Statement](#void-execsql-statementsqlpreparedstatement-preparedstatement-dbparm--parameters)([SqlPreparedStatement](/reference/runtime/qsys-runtime-job-support/sql-prepared-statement.html), [DBParm\[\]](/reference/runtime/qsys-runtime-job-support/db-parm.html)) | Execute an non-query prepared SQL Command.
+| [FormatMessage](#string-formatmessagestring-msgfile-string-msgid-string-msgdata-string-secondleveltext)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Produces the strings with the formatted first and second level text for a message. Any placeholders are replaced with values from the message data. 
 | [GetLdaField](#string-getldafieldint-start-int-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA.
 | [GetModule<T>()](#t-getmodule-t) | Gets a module contained in the same program or in one of the service programs.
 | [PopInvocation()](#void-popinvocation) | Pops one invocation from the invocation stack.
@@ -230,6 +231,29 @@ void ExecSQL_Statement(SqlPreparedStatement preparedStatement, DBParm[] paramete
 | --- | --- | ---
 | [SqlPreparedStatement](/reference/runtime/qsys-runtime-job-support/sql-prepared-statement.html) | preparedStatement | The prepared SQL command to execute.
 | [DBParm\[\]](/reference/runtime/qsys-runtime-job-support/db-parm.html) | parameters | An array of parameters to be used with the command.
+
+### string FormatMessage([string MsgFile](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string MsgId](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string MsgData](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String& secondLevelText](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Produces the strings with the formatted first and second level text for a message. Any placeholders are replaced with values from the message data. 
+
+```cs
+string FormatMessage(string MsgFile, string MsgId, string MsgData, String& secondLevelText)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgFile | The message file name where the message description is to be found.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgId | The message identification.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | MsgData | The replacement text, if any, for the message placeholders.
+| [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string) | secondLevelText | The formatted second level text of the message.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The formatted first level text of the message.
 
 ### string GetLdaField([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

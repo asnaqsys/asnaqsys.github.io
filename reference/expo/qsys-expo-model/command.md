@@ -1,7 +1,7 @@
 ---
 title: "Command class                 | QSYS API Reference Guide"
 description: "Provides functionality to interact directly with a Job. "
-last_modified_at: 2024-08-08T21:42:10Z
+last_modified_at: 2024-08-09T16:18:58Z
 ---
 
 Provides functionality to interact directly with a Job.
@@ -51,6 +51,7 @@ Command(HttpContext, Int32)
 | [CommitJobSession()](#void-commitjobsession) | Store the job session in the data store. 
 | [GetActiveDisplayFile()](#webdisplayfileproxy-getactivedisplayfile) | Get the active display file.
 | [GetCommandFromRequest](#command-getcommandfromrequesthttpcontext-httpcontext)([HttpContext](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext?view=aspnetcore-8.0)) | Initializes a new instance of the Command class for the provided HTTP context which should contain a JobHandle.
+| [GetHostFile](#int-gethostfilestring-hostfilepath-byte--filebytes)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Byte\[\]&](https://docs.microsoft.com/en-us/dotnet/api/system.byte)) | Get a file stored at the host.
 | [GetLdaField](#string-getldafieldint-start-int-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value stored in the Job's Local Data Area.
 | [GetLdcObject](#string-getldcobjectstring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets the value from the Job's Local Data Collection associated with the specified name.
 | [GetRequestJobHandle](#int-getrequestjobhandlehttpcontext-httpcontext-displaypagesoptions-dpoptions)([HttpContext](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.httpcontext?view=aspnetcore-8.0), [DisplayPagesOptions](/reference/expo/qsys-expo-model/display-pages-options.html)) | Get the JobHandle for the Request in the HttpContext.
@@ -153,6 +154,27 @@ Command GetCommandFromRequest(HttpContext HttpContext)
 | Type | Description
 | --- | ---
 | [Command](/reference/expo/qsys-expo-model/command.html) | A Command instance associated with the JobHandle.
+
+### int GetHostFile([string hostFilePath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Byte\[\]& fileBytes](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
+
+Get a file stored at the host.
+
+```cs
+int GetHostFile(string hostFilePath, Byte[]& fileBytes)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | hostFilePath | The host file full path.
+| [Byte\[\]&](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | fileBytes | Stream size in bytes
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | 
 
 ### string GetLdaField([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

@@ -1,7 +1,7 @@
 ---
 title: "DSCallParm class              | QSYS API Reference Guide"
 description: "Describes a Data Structure (either single or Multi) as a parameter for a CALL to an IBMi program. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a Data Structure (either single or Multi) as a parameter for a CALL to an IBMi program.
@@ -47,6 +47,7 @@ DSCallParm(IDS)
 | --- | --- |
 | [GetProgParm](#progparm-getprogparmdatadirection-direction)([DataDirection](/reference/datagate/datagate-common/data-direction.html)) | IDSCallParm.GetProgParm implementation.
 | [GetProgParm](#progparm-getprogparmdatadirection-direction-int-modsdimensions)([DataDirection](/reference/datagate/datagate-common/data-direction.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDSCallParm.GetProgParm implementation.
+| [op_Explicit](#datastructure-op-explicitdscallparm-dscallparm)([DSCallParm](/reference/runtime/qsys-runtime/ds-call-parm.html)) | Explicit cast to DataStructure.
 | [ToDataStructure()](#datastructure-todatastructure) | Convert to a DataStructure type.
 
 ### ProgParm GetProgParm([DataDirection direction](/reference/datagate/datagate-common/data-direction.html))
@@ -89,6 +90,30 @@ ProgParm GetProgParm(DataDirection direction, int modsDimensions)
 | Type | Description
 | --- | ---
 | [ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) | A ProgParm describing the Data Structure for use in a CALL.
+
+### DataStructure op_Explicit([DSCallParm dsCallParm](/reference/runtime/qsys-runtime/ds-call-parm.html))
+
+Explicit cast to DataStructure.
+
+
+#### Remarks
+If the IDS member of the dsCallParm parameter is a DataStructure, the result is the IDS member cast to DataStructure. If the IDS member is a MultiDataStructure,the result is the Current member of IDS.
+
+```cs
+DataStructure op_Explicit(DSCallParm dsCallParm)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DSCallParm](/reference/runtime/qsys-runtime/ds-call-parm.html) | dsCallParm | A DSCallParm object.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DataStructure](/reference/runtime/qsys-runtime/data-structure.html) | 
 
 ### DataStructure ToDataStructure()
 

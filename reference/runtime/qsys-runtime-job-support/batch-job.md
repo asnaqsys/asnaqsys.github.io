@@ -1,7 +1,7 @@
 ---
 title: "BatchJob class                | QSYS API Reference Guide"
 description: "Defines the core behavior of a batch job. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the core behavior of a batch job.
@@ -19,6 +19,7 @@ Defines the core behavior of a batch job.
 | --- | --- |
 | [CreateJobConfig](#jobconfig-createjobconfigbatchentry-batchentry)([BatchEntry](/reference/runtime/qsys-runtime-job-support/batch-entry.html)) | Creates a JobConfig from a BatchEntry.
 | [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the current instance of the Job class.
+| [Execute](#void-executemethodinfo-entrymethod-list-string-parmameterlist)([MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0), [List\<String\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)) | Execute a program with a parameter list.
 | [getADO_Connection()](#dbconnection-getado-connection) | Gets the ADO connection used for 'embedded SQL'
 | [getDatabase()](#database-getdatabase) | Gets the main DataGate Database associated with the Job.
 | [getPrinterDB()](#database-getprinterdb) | Gets the DataGate Database for Printer Files associated with the Job.
@@ -59,6 +60,21 @@ void Dispose(bool disposing)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | disposing | true to release managed and unmanaged resources; false to release only unmanaged resources.
+
+### void Execute([MethodInfo entryMethod](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0), [List\<string\> parmameterList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1))
+
+Execute a program with a parameter list.
+
+```cs
+void Execute(MethodInfo entryMethod, List<string> parmameterList)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [MethodInfo](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo?view=net-8.0) | entryMethod | The *ENTRY method info for the program to be executed.
+| [List\<String\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) | parmameterList | The parameter list to be passed to the program.
 
 ### DbConnection getADO_Connection()
 

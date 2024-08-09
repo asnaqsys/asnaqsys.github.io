@@ -1,7 +1,7 @@
 ---
 title: "PrintFileBase class           | QSYS API Reference Guide"
 description: "Base class for Database print files. Contains the print file setup information and some output operations. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Base class for Database print files. Contains the print file setup information and some output operations.
@@ -96,6 +96,7 @@ PrintFileBase(String, String, ShareTypes, Boolean)
 
 | Type | Name | Description
 | --- | --- | --- 
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CheckFormatID | Gets or sets the value that specifies if the Format IDs of the file should be checked when the file is opened. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Collate | Gets or sets whether collation will be used when printing multiple copies.  This property is of type *Boolean. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Copies | Gets or sets the number of copies to print.  This property is of type *Integer4.    |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CursorY | Gets the position, in Print Units, that the printer is from the top of the page.  This property is of type *Integer4. |
@@ -109,7 +110,7 @@ PrintFileBase(String, String, ShareTypes, Boolean)
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormName | Gets or sets the customized page size to use.  |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormType | Gets or sets the type of forms used in the printer for printed output. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InOverflow | Return whether the printer has entered the overflow area of the page. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFormatID | A boolean value that specifies if the Format IDs of the file should be checked when the file is opened. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFormatID | Obsolete. Use CheckFormatID. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsOpen | Gets a value indicating whether the file is open. |
 | [RuntimeException](/reference/runtime/qsys-runtime/runtime-exception.html) | LastException | Gets the last exception thrown for this file.  This is a protected public field of type ASNA.QSys.RuntimeException. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | ManuscriptPath | Gets or sets the path and file name for the manuscript. |

@@ -1,7 +1,7 @@
 ---
 title: "TooManySubfileRecordsException class"
 description: "Record -rrn- does not fit in subfile -subfile name- on file -filename- exception. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Record -rrn- does not fit in subfile -subfile name- on file -filename- exception.

@@ -1,7 +1,7 @@
 ---
 title: "StringOps class               | QSYS API Reference Guide"
 description: "Provide fixed length character string storage and operations. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Provide fixed length character string storage and operations.
@@ -29,7 +29,10 @@ Provide fixed length character string storage and operations.
 | [SetArrayChars](#void-setarraycharsarray-array-char--source-int-sourceindex-int-charlength)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Load an array of strings with the strings constructed out of a char[].
 | [SetArrayOneChars](#void-setarrayonecharsarray-array-char--source-int-sourceindex)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy characters from a one-dimensional array to an array.
 | [SetChars](#string-setcharsstring-destination-char--source-int-sourceindex-int-sourcelength)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Create a string out of character in a char[].
+| [SetLengthOfField](#void-setlengthoffieldstring-source-int32-length)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the length parameter to the length of the string. Throws an exception if the string is null.
+| [SetVaryingLengthChar](#string-setvaryinglengthcharstring-source-int-maxlength-int32-length)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Keep a string with at most maxLength characters, and compute its current length.
 | [TestNumeric](#testnumericresult-testnumericstring-candidate)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test a string for any of the conditions specified in the TestNumericResult enumeration.
+| [VaryLength](#string-varylengthint-length-string-source-int-maxlength-int32-newlength)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Set the length of source to the given length subject to maxLength, and return the newLength.
 
 ### string Adjust([string source](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int targetLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool padLeft](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -264,6 +267,43 @@ string SetChars(string destination, Char[] source, int sourceIndex, int sourceLe
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The string created with characters from the array.
 
+### void SetLengthOfField([string source](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Int32& length](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Sets the length parameter to the length of the string. Throws an exception if the string is null.
+
+```cs
+void SetLengthOfField(string source, Int32& length)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The string.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The resulting value of the length of the string.
+
+### string SetVaryingLengthChar([string source](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int maxLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Int32& length](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Keep a string with at most maxLength characters, and compute its current length.
+
+```cs
+string SetVaryingLengthChar(string source, int maxLength, Int32& length)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The string to analyze.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | maxLength | The maximum allowed length for source.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The resulting length of source.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The value of source adjusted to maxLength if needed.
+
 ### TestNumericResult TestNumeric([string candidate](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Test a string for any of the conditions specified in the TestNumericResult enumeration.
@@ -283,3 +323,26 @@ TestNumericResult TestNumeric(string candidate)
 | Type | Description
 | --- | ---
 | [TestNumericResult](/reference/runtime/qsys-runtime/test-numeric-result.html) | A TestNumericResult value specifying the status of the string.
+
+### string VaryLength([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string source](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int maxLength](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Int32& newLength](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+Set the length of source to the given length subject to maxLength, and return the newLength.
+
+```cs
+string VaryLength(int length, string source, int maxLength, Int32& newLength)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | Desired length of source.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | source | The string to adjust in length.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | maxLength | The maximum allowed length.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | newLength | The resulting length.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The value of source adjusted to the given length.

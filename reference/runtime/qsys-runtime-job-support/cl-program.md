@@ -1,7 +1,7 @@
 ---
 title: "CLProgram class               | QSYS API Reference Guide"
 description: "Defines the core behavior of programs migrated from CL program . "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the core behavior of programs migrated from CL program .
@@ -69,6 +69,7 @@ CLProgram()
 | [LibraryExists](#bool-libraryexistsstring-libraryname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test for the existence of a database library.
 | [MemberExists](#bool-memberexistsstring-filepath-string-membername)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test for the existence of a database file's member.
 | [OverrideFile](#void-overridefilestring-filename-overrideoption-option-object-newvalue-overridescope-scope)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [OverrideOption](/reference/runtime/qsys-runtime-job-support/override-option.html), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [OverrideScope](/reference/runtime/qsys-runtime-job-support/override-scope.html)) | Temporary overrides (replaces) a file name, its location or some other parameter used when a program opens the file.
+| [Percent_SST](#void-percent-sststring-receiver-int-start-int-length-string-value)([String&](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves a substring. The substring starts at a specified position and has a specified length.
 | [Percent_Switch](#string-percent-switchstring-mask)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Tests the current state of the job's switches.
 | [RemoveMember](#void-removememberstring-file-string-mbr)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a member from a database file.
 | [RenameDataArea](#void-renamedataareastring-dataareaname-string-newname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Rename a data area.
@@ -84,6 +85,8 @@ CLProgram()
 | [RmvLibLEntry](#void-rmvliblentrystring-libraryname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a library name from the user portion of the library list.
 | [SetAttentionProgram](#void-setattentionprogrambool-invokeprogram)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Enables or disables the current Attention Program.
 | [SetAttentionProgram](#void-setattentionprogramstring-assemblyname-string-programname-bool-invokeprogram)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Sets the attention program to be be called when the Attention Key is 'pressed'
+| [splitQualifiedNameForInput](#string-splitqualifiednameforinputstring-qualifiedname-string-library-string-objectname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Separate the name components of a qualified name.
+| [splitQualifiedNameForOutput](#string-splitqualifiednameforoutputstring-qualifiedname-string-library-string-objectname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Separate the name components of a qualified name.
 | [TryAddLibLEntry](#bool-tryaddliblentrystring-libraryname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attempts to add a library name to the start of the user portion of library list.
 | [TryAddLibLEntry](#bool-tryaddliblentrystring-libraryname-liblposition-position-string-referencelibraryname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/datagate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Attempts to add a library name at a particular position in the user portion of the library list.
 
@@ -626,6 +629,23 @@ void OverrideFile(string fileName, OverrideOption option, object newValue, Overr
 | [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | newValue | The value to use when the file is used.
 | [OverrideScope](/reference/runtime/qsys-runtime-job-support/override-scope.html) | scope | One of the enumeration values that specifies the scope of the override. If not given CallLvl is used.
 
+### void Percent_SST([String& receiver](https://docs.microsoft.com/en-us/dotnet/api/system.string), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Retrieves a substring. The substring starts at a specified position and has a specified length.
+
+```cs
+void Percent_SST(String& receiver, int start, int length, string value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string) | receiver | The receiver of the substring.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | The one-based position of the substring start.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | length | The length of the substring.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | value | The string containing the substring.
+
 ### string Percent_Switch([string mask](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Tests the current state of the job's switches.
@@ -886,6 +906,50 @@ void SetAttentionProgram(string assemblyName, string programName, bool invokePro
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | assemblyName | Name of assembly that contains the program.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | programName | Qualified name of the class implementing the program logic.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | invokeProgram | true to enable.
+
+### string splitQualifiedNameForInput([string qualifiedName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String& library](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String& objectName](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Separate the name components of a qualified name.
+
+```cs
+string splitQualifiedNameForInput(string qualifiedName, String& library, String& objectName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qualifiedName | Qualified name to dissect.
+| [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string) | library | The library name. If there is no library component, "*LIBL" is returned.
+| [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string) | objectName | The object name.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The fully qualified name.
+
+### string splitQualifiedNameForOutput([string qualifiedName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String& library](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String& objectName](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Separate the name components of a qualified name.
+
+```cs
+string splitQualifiedNameForOutput(string qualifiedName, String& library, String& objectName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | qualifiedName | Qualified name to dissect.
+| [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string) | library | The library name. If there is no library component, "*CURLIB" is returned.
+| [String&](https://docs.microsoft.com/en-us/dotnet/api/system.string) | objectName | The object name.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The fully qualified name.
 
 ### bool TryAddLibLEntry([string libraryName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

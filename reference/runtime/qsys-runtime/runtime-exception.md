@@ -1,7 +1,7 @@
 ---
 title: "RuntimeException class        | QSYS API Reference Guide"
 description: "Base class for all ASNA QSys Runtime generated exceptions. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Base class for all ASNA QSys Runtime generated exceptions.

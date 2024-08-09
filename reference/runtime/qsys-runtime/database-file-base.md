@@ -1,7 +1,7 @@
 ---
 title: "DatabaseFileBase class        | QSYS API Reference Guide"
 description: "Common base class for Database data files, single format and multiformat. It contains methods common to both kinds. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Common base class for Database data files, single format and multiformat. It contains methods common to both kinds.
@@ -129,13 +129,13 @@ DatabaseFileBase(String, String, String, Int32, ShareTypes, Boolean, Int32, Stri
 | Type | Name | Description
 | --- | --- | --- 
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | BlockingFactor | Gets or sets the integer that determines if and optionally how many database records will be blocked across the Network for better performance when reading or writing groups of records. Network blocking significantly reduces the network burden of transferring records between server and client machines, and this is demonstrated by the substantial increase of data throughput. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CheckFormatID | AGets or sets the value that specifies if the Format IDs of the file should be checked when the file is opened. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | CheckFormatID | Gets or sets the value that specifies if the Format IDs of the file should be checked when the file is opened. |
 | [FileAdapter](/reference/datagate/datagate-client/file-adapter.html) | fileAdapter | fileAdapter summary. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FilePath | Gets or sets the path to the file in the Database, given as "library/filename". |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FormatName | Gets the name of the record format. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | InhibitWrites | Prevents operations to the file from actually updating it, effectively treating the operation as a no-op. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsDefaultRFN | Gets or sets the value that specifies if the "default" renamed format is going to be used. |
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFormatID | Gets the value that specifies if the Format IDs of the file should be checked when the file is opened. |
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsFormatID | Obsolete. Use CheckFormatID. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IsKeyed | Gets the value that specifies if the file has been opened for "keyed" access. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | LibraryName | Gets the library name for an open fileAdapter. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | MemberName | Gets or sets the name of the file member. |

@@ -1,7 +1,7 @@
 ---
 title: "InputStreamAggregator class   | QSYS API Reference Guide"
 description: "Queue multiple, fixed-length, read-only streams into one stream. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Queue multiple, fixed-length, read-only streams into one stream.
@@ -41,6 +41,7 @@ InputStreamAggregator()
 
 | Signature | Description |
 | --- | --- |
+| [Append](#void-appendint-len-func-stream-cons)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Func\<Stream\>](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0)) | Appends a new stream to the list of streams to be aggregated.
 | [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases all resources used by the current instance of the  class.
 | [Finalize()](#void-finalize) | Finalizes an instance of the  class.
 | [Flush()](#void-flush) | Overrides the Stream.Flush method so that no action is performed.
@@ -49,6 +50,21 @@ InputStreamAggregator()
 | [Seek](#long-seeklong-offset-seekorigin-origin)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64), [SeekOrigin](https://learn.microsoft.com/en-us/dotnet/api/system.io.seekorigin?view=net-8.0)) | Sets the position within the current stream. Always throws a NotSupportedException.
 | [SetLength](#void-setlengthlong-value)([Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Sets the length of the current stream. This method always throws a NotSupportedException.
 | [Write](#void-writebyte--buffer-int-offset-int-count)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written. This method always throws a NotSupportedException.
+
+### void Append([int len](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Func\<Stream\> cons](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0))
+
+Appends a new stream to the list of streams to be aggregated.
+
+```cs
+void Append(int len, Func<Stream> cons)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | len | The length of the stream to be appended.
+| [Func\<Stream\>](https://learn.microsoft.com/en-us/dotnet/api/system.func-2?view=net-8.0) | cons | A function that constructs the stream to be appended.
 
 ### void Dispose([bool disposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

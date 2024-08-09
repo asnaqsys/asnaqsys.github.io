@@ -1,7 +1,7 @@
 ---
 title: "IndicatorArray<T> struct      | QSYS API Reference Guide"
 description: "Defines the functionality of a fixed-sized unidimensional array of Indicator elements. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of Indicator elements.

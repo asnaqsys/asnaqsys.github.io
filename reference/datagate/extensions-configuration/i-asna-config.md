@@ -1,7 +1,7 @@
 ---
 title: "IAsnaConfig interface         | QSYS API Reference Guide"
 description: "Provides an interface for accessing ASNA configuration. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 sitemap: false
 ---
 

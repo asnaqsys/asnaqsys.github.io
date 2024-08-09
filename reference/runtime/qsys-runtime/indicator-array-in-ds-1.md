@@ -1,7 +1,7 @@
 ---
 title: "IndicatorArrayInDS<T> struct  | QSYS API Reference Guide"
 description: "Describes a fixed size array of Indicators contained in a DataStructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a fixed size array of Indicators contained in a DataStructure.
@@ -70,6 +70,8 @@ IndicatorArrayInDS(MultiDataStructure, Int32, Int32)
 | [CopyFrom](#void-copyfromchar--sourcearray-int-targetstartat)([Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a char[] into this array.
 | [GetEnumerator()](#ienumerator-indicator-getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
+| [op_Explicit](#char--op-explicitindicatorarrayinds-tdim-array)([IndicatorArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/indicator-array-in-ds-1.html)) | Casting operator to char[]. Returns a copy of the array as a char[].
+| [op_Implicit](#indicatorarray-tdim-op-implicitindicatorarrayinds-tdim-array)([IndicatorArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/indicator-array-in-ds-1.html)) | Casting operator to IndicatorArray. Returns a copy of the array as an IndicatorArray.
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
@@ -137,6 +139,46 @@ int GetStartingPosition(int index)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The position in the buffer of the element at the given index.
+
+### Char\[\] op_Explicit([IndicatorArrayInDS\<TDim\> array](/reference/runtime/qsys-runtime/indicator-array-in-ds-1.html))
+
+Casting operator to char[]. Returns a copy of the array as a char[].
+
+```cs
+Char[] op_Explicit(IndicatorArrayInDS<TDim> array)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IndicatorArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/indicator-array-in-ds-1.html) | array | The array to copy.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char) | 
+
+### IndicatorArray\<TDim\> op_Implicit([IndicatorArrayInDS\<TDim\> array](/reference/runtime/qsys-runtime/indicator-array-in-ds-1.html))
+
+Casting operator to IndicatorArray. Returns a copy of the array as an IndicatorArray.
+
+```cs
+IndicatorArray<TDim> op_Implicit(IndicatorArrayInDS<TDim> array)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [IndicatorArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/indicator-array-in-ds-1.html) | array | The array to copy.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [IndicatorArray`1](/reference/runtime/qsys-runtime/indicator-array-1.html) | 
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

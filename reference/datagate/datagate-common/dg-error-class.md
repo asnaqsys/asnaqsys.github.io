@@ -1,7 +1,7 @@
 ---
 title: "dgErrorClass enum             | QSYS API Reference Guide"
 description: "Represents the different error classes generated as a result of Acceler8DB or Datagate/400 server errors. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Represents the different error classes generated as a result of Acceler8DB or Datagate/400 server errors.

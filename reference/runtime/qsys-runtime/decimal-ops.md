@@ -1,7 +1,7 @@
 ---
 title: "DecimalOps class              | QSYS API Reference Guide"
 description: "Provide fixed length decimal storage and operations. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Provide fixed length decimal storage and operations.
@@ -20,15 +20,18 @@ Provide fixed length decimal storage and operations.
 | [ConvertToString](#string-converttostringdecimal-number-int-integrals-int-decimals-bool-zeropad)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals and converts to string.
 | [DecimalToMemUnits](#string-decimaltomemunitsdecimal-number-int-integrals-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert a decimal of the given size to its memory layout representation.
 | [DecimalToMemUnitsSigned](#string-decimaltomemunitssigneddecimal-number-int-integrals-int-decimals)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert a decimal of the given size to its memory layout representation, encoding the sign in each of the digits.
+| [Divide](#decimal-dividedecimal-f1-decimal-f2-decimal-globalremainder-int-resultdecimals-bool-isroundup-bool-checkoverflow)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Decimal&](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Executes a DIVIDE operation.
 | [FixDecimal](#decimal-fixdecimaldecimal-number-int-digits-int-decimals-bool-checkoverflow)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals.
 | [FixDecimalH](#decimal-fixdecimalhdecimal-number-int-digits-int-decimals-bool-checkoverflow)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals using half adjust.
 | [FixI4](#decimal-fixi4int-digits-int-decimals-int-number-bool-checkoverflow)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Formats a numeric value by fixing the number of digits and decimals.
+| [GetIndicators](#void-getindicatorsdecimal-number-boolean-hiindicator-boolean-loindicator-boolean-eqindicator)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Gets the HI-LO-EQ indicator conditions.
 | [MakeHiVal](#decimal-makehivalint-length-int-decimals)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Makes a decimal HI-VALUE.
 | [MapFromPacked](#string-mapfrompackeddecimal-number-int-digits)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts Packed format number to a string.
 | [MapToPacked](#decimal-maptopackedstring-basestring-int-decimalcount)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts number in a string to a Packed format numeric value.
 | [MemUnitsToDecimal](#decimal-memunitstodecimalstring-digits-int-integrals-int-decimals)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Converts a string representing a the number as a memory digits to the numeric value.
 | [RoundUp](#decimal-roundupdecimal-newvalue-int-integralcount-int-decimalcount-bool-checkoverflow)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Rounds-up a decimal value.
 | [RoundUpDecimals](#decimal-roundupdecimalsdecimal-newvalue-int-decimalcount)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Round-up a decimal value.
+| [Trim](#decimal-trimdecimal-newvalue-int-integralcount-int-decimalcount-vxadjust-adjustparm-bool-checkoverflow)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [vxAdjust](/reference/runtime/qsys-runtime/vx-adjust.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Trims a decimal value.
 | [Truncate](#decimal-truncatedecimal-newvalue-int-integralcount-int-decimalcount-bool-checkoverflow)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Truncates a decimal value.
 | [TruncateDecimals](#decimal-truncatedecimalsdecimal-newvalue-int-decimalcount)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Truncates a decimal value.
 
@@ -99,6 +102,31 @@ string DecimalToMemUnitsSigned(decimal number, int integrals, int decimals)
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The string memory representation.
 
+### decimal Divide([decimal f1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [decimal f2](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [Decimal& globalRemainder](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [int resultDecimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool isRoundUp](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [bool checkOverflow](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Executes a DIVIDE operation.
+
+```cs
+decimal Divide(decimal f1, decimal f2, Decimal& globalRemainder, int resultDecimals, bool isRoundUp, bool checkOverflow)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | f1 | Input factor one.
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | f2 | Input factor two.
+| [Decimal&](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | globalRemainder | Output reminder.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | resultDecimals | Input result decimals.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isRoundUp | True if rounding is to be performed in the result; False otherwise.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | checkOverflow | True if overflow condition is to be checked; False otherwise.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | The result of the decimal division with the requested resulting decimal positions, truncated or rounded.
+
 ### decimal FixDecimal([decimal number](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool checkOverflow](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Formats a numeric value by fixing the number of digits and decimals.
@@ -167,6 +195,23 @@ decimal FixI4(int digits, int decimals, int number, bool checkOverflow)
 | Type | Description
 | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | Fixed-length numeric result.
+
+### void GetIndicators([decimal number](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [Boolean& HiIndicator](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& LoIndicator](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& EqIndicator](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Gets the HI-LO-EQ indicator conditions.
+
+```cs
+void GetIndicators(decimal number, Boolean& HiIndicator, Boolean& LoIndicator, Boolean& EqIndicator)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | number | Input number.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | HiIndicator | Output HI indicator.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | LoIndicator | Output LO indicator.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | EqIndicator | Output EQ indicator.
 
 ### decimal MakeHiVal([int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
@@ -296,6 +341,30 @@ decimal RoundUpDecimals(decimal newValue, int decimalCount)
 | Type | Description
 | --- | ---
 | [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | The rounded-up result.
+
+### decimal Trim([decimal newValue](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int integralCount](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimalCount](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [vxAdjust AdjustParm](/reference/runtime/qsys-runtime/vx-adjust.html), [bool checkOverflow](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Trims a decimal value.
+
+```cs
+decimal Trim(decimal newValue, int integralCount, int decimalCount, vxAdjust AdjustParm, bool checkOverflow)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | newValue | Input value.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | integralCount | Integral count.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | decimalCount | Decimal count.
+| [vxAdjust](/reference/runtime/qsys-runtime/vx-adjust.html) | AdjustParm | How to half-adjust.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | checkOverflow | True if overflow condition is to be checked; False otherwise.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal) | The trimmed result.
 
 ### decimal Truncate([decimal newValue](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [int integralCount](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimalCount](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool checkOverflow](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 

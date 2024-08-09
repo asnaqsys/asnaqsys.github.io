@@ -1,7 +1,7 @@
 ---
 title: "SslOptions enum               | QSYS API Reference Guide"
 description: "Specifies the SSL options for a connection. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Specifies the SSL options for a connection.

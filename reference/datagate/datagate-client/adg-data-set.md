@@ -1,7 +1,7 @@
 ---
 title: "AdgDataSet class              | QSYS API Reference Guide"
 description: "A DataGate-compatible DataSet class for record-oriented database access. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 A DataGate-compatible DataSet class for record-oriented database access.
@@ -69,7 +69,9 @@ AdgDataSet(String)
 | [AddPreparedRowAndSetActive](#bool-addpreparedrowandsetactiveint-iformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a prepared row to the DataTable associated with the specified format index and sets it as the active row.
 | [AddRow](#void-addrowstring-strformat)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a new row to the DataTable associated with the specified format name.
 | [AddRow](#void-addrowint-iformat)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a new row to the DataTable associated with the specified format index.
+| [Contains](#bool-containskeyvaluepair-int-adgtable-item)([KeyValuePair\<Int32, AdgTable\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0)) | Determines whether the AdgDataSet contains a specific key-value pair.
 | [ContainsKey](#bool-containskeyint-key)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Determines whether the AdgDataSet contains an AdgTable with the specified format index.
+| [CopyTo](#void-copytokeyvaluepair-2--array-int-arrayindex)([KeyValuePair`2\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies the elements of the AdgDataSet to an array, starting at a particular array index.
 | [DeleteRow](#void-deleterowstring-strformat-int-rrn)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Deletes the row at the specified relative record number (rrn) in the DataTable associated with the specified format name.
 | [GetEnumerator()](#ienumerator-keyvaluepair-int-adgtable--getenumerator) | Returns an enumerator that iterates through the AdgDataSet.
 | [GetFormatIndex](#int-getformatindexstring-strformat)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves the format index associated with the specified format name.
@@ -149,6 +151,18 @@ void AddRow(int iFormat)
 | --- | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable.
 
+### bool Contains([KeyValuePair\<int, AdgTable\> item](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0))
+
+Determines whether the AdgDataSet contains a specific key-value pair.
+
+
+#### Remarks
+This method is used to determine whether the AdgDataSet contains a specific key-value pair.The method calls the Contains method of the AdgTable dictionary with the provided key-value pair and returns the result.This method is used in scenarios where it needs to be checked whether a specific key-value pair exists in the AdgDataSet.
+
+```cs
+bool Contains(KeyValuePair<int, AdgTable> item)
+```
+
 ### bool ContainsKey([int key](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Determines whether the AdgDataSet contains an AdgTable with the specified format index.
@@ -172,6 +186,18 @@ bool ContainsKey(int key)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the AdgDataSet contains an AdgTable with the specified format index; otherwise, false.
+
+### void CopyTo([KeyValuePair`2\[\] array](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keyvaluepair-2?view=net-8.0), [int arrayIndex](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Copies the elements of the AdgDataSet to an array, starting at a particular array index.
+
+
+#### Remarks
+This method is used to copy the elements of the AdgDataSet to an array, starting at a particular array index.The method calls the CopyTo method of the AdgTable dictionary with the provided array and array index.This method is used in scenarios where the elements of the AdgDataSet need to be copied to an array for further processing or storage.
+
+```cs
+void CopyTo(KeyValuePair`2[] array, int arrayIndex)
+```
 
 ### void DeleteRow([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

@@ -1,7 +1,7 @@
 ---
 title: "Spooler class                 | QSYS API Reference Guide"
 description: "Provides the infrastructure to manage spooled output from print files.  "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Provides the infrastructure to manage spooled output from print files. 
@@ -18,7 +18,8 @@ Provides the infrastructure to manage spooled output from print files.
 | Signature | Description |
 | --- | --- |
 | [ClearQueue](#void-clearqueuestring-queuename)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Remove all the spool files from an output queue.
-| [CopyFileToDatabaseFile](#void-copyfiletodatabasefilestring-spoolfilename-string-todatabasefile-string-job-string-spoolnumber-string-createddate-string-tomember-bool-replacerecords-spoolercontrolcharacter-controlcharacter)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html)) | When overridden in a derived class, copies a Spooled File to a Database File.
+| [CopyFileToDatabaseFile](#void-copyfiletodatabasefilestring-spoolfilename-string-todatabasefile-string-job-string-spoolnumber-string-createddate-string-tomember-bool-replacerecords-spoolercontrolcharacter-controlcharacter)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html)) | Copies a Spooled File to a Database File.
+| [CopyFileToTextWriter](#void-copyfiletotextwriterstring-spoolfilename-textwriter-totextwriter-string-job-string-spoolnumber-string-createddate-spoolercontrolcharacter-controlcharacter)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [TextWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.textwriter?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [SpoolerControlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html)) | Copies a Spooled File to a TextWriter.
 | [CreateQueue](#void-createqueuestring-queuename)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a new output queue.
 | [DeleteFile](#void-deletefilestring-spoolfilename-string-jobid-string-spoolnumber)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a spool file.
 | [DeleteQueue](#void-deletequeuestring-queuename)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete an output queue.
@@ -52,11 +53,7 @@ void ClearQueue(string queueName)
 
 ### void CopyFileToDatabaseFile([string spoolFileName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string toDatabaseFile](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string job](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string spoolNumber](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string createdDate](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string toMember](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool replaceRecords](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter controlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html))
 
-When overridden in a derived class, copies a Spooled File to a Database File.
-
-
-#### Remarks
-This base implentation throws a NotImplementedException exception.
+Copies a Spooled File to a Database File.
 
 ```cs
 void CopyFileToDatabaseFile(string spoolFileName, string toDatabaseFile, string job, string spoolNumber, string createdDate, string toMember, bool replaceRecords, SpoolerControlCharacter controlCharacter)
@@ -74,6 +71,29 @@ void CopyFileToDatabaseFile(string spoolFileName, string toDatabaseFile, string 
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | toMember | Name of database file Member, you can also use "*FIRST".
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | replaceRecords | Delete any records in the database file member prior to copying.
 | [SpoolerControlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html) | controlCharacter | Manner in which control characters will be represented in the database.
+
+### void CopyFileToTextWriter([string spoolFileName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [TextWriter toTextWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.textwriter?view=net-8.0), [string job](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string spoolNumber](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string createdDate](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [SpoolerControlCharacter controlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html))
+
+Copies a Spooled File to a TextWriter.
+
+
+#### Remarks
+This base implentation throws a NotImplementedException exception.
+
+```cs
+void CopyFileToTextWriter(string spoolFileName, TextWriter toTextWriter, string job, string spoolNumber, string createdDate, SpoolerControlCharacter controlCharacter)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolFileName | Name of the Spooled File.
+| [TextWriter](https://learn.microsoft.com/en-us/dotnet/api/system.io.textwriter?view=net-8.0) | toTextWriter | TextWriter to 'receive' the spoolfile text.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | job | Job ID. Use "*" for current Job otherwise "JobNumber/JobUser/JobName".
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | spoolNumber | Use "*LAST" otherwise an integer number.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | createdDate | Only valid value is "*ONLY".
+| [SpoolerControlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html) | controlCharacter | Manner in which control characters will be represented in the database. Defaults to None.
 
 ### void CreateQueue([string queueName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

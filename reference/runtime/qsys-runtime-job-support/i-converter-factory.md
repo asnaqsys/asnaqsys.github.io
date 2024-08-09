@@ -1,7 +1,7 @@
 ---
 title: "IConverterFactory interface   | QSYS API Reference Guide"
 description: "Defines the functionality to create an object that implements the IConverter interface. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the functionality to create an object that implements the IConverter interface.

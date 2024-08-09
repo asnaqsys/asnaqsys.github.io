@@ -1,7 +1,7 @@
 ---
 title: "StringMethods class           | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations and conversions for string values. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains extension methods for handling RPG operations and conversions for string values.
@@ -72,6 +72,7 @@ Contains extension methods for handling RPG operations and conversions for strin
 | [ScanString](#int-scanstringstring-basestring-string-cmpstr)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's %SCAN. Returns the first position of the search argument in the source string, or 0 if it was not found.
 | [ScanString](#bool-scanstringstring-basestring-string-cmpstr-int-cmplen-int-startpos)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SCAN. Attempts to find cmpStr in the baseString.
 | [ScanString](#bool-scanstringstring-basestring-string-cmpstr-int-cmplen-int-startpos-array-fndposarray)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | RPG's SCAN. Attempts to find cmpStr in the baseString.
+| [SetHiLoEq](#string-sethiloeqstring-teststring-indicator-hi-indicator-lo-indicator-eq)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Indicator&](/reference/runtime/qsys-runtime/indicator.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | Sets the flags according to the value of testString.
 | [SetVaryingLength](#string-setvaryinglengthstring-charstr-int-length-int-limit)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sets the variable length string to the indicated length, ensuring that it is no longer than limit.
 | [SubStr](#string-substrstring-basestring-int-startpos-int-sublen)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length.
 | [SubStrFixed](#string-substrfixedstring-basestring-int-startpos-int-sublen-string-target)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target. This function preserves the length of the target, no padding.
@@ -1269,6 +1270,29 @@ bool ScanString(string baseString, string cmpStr, int cmpLen, int startPos, Arra
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Returns true if cmpStr is found in baseString.
+
+### string SetHiLoEq([string testString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Indicator& hi](/reference/runtime/qsys-runtime/indicator.html), [Indicator& lo](/reference/runtime/qsys-runtime/indicator.html), [Indicator& eq](/reference/runtime/qsys-runtime/indicator.html))
+
+Sets the flags according to the value of testString.
+
+```cs
+string SetHiLoEq(string testString, Indicator& hi, Indicator& lo, Indicator& eq)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | testString | The string to test.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | hi | Will be set to '0'.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | lo | Will be set to '0'.
+| [Indicator&](/reference/runtime/qsys-runtime/indicator.html) | eq | Will be '1' if testString is all blanks, otherwise '0'.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The test value.
 
 ### string SetVaryingLength([string charStr](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int limit](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

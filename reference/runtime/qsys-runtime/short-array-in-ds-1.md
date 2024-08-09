@@ -1,7 +1,7 @@
 ---
 title: "ShortArrayInDS<T> struct      | QSYS API Reference Guide"
 description: "Describes a fixed size array of short numbers contained in a DataStructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a fixed size array of short numbers contained in a DataStructure.
@@ -69,6 +69,7 @@ ShortArrayInDS(MultiDataStructure, Int32, Int32)
 | [CopyFrom](#void-copyfromint16--sourcearray-int-targetstartat)([Int16\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int16), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a short[] into this array.
 | [GetEnumerator()](#ienumerator-short-getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
+| [op_Explicit](#int16--op-explicitshortarrayinds-tdim-array)([ShortArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/short-array-in-ds-1.html)) | Casting operator to short[]. Returns a copy of the array as an short[].
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
@@ -121,6 +122,26 @@ int GetStartingPosition(int index)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The position in the buffer of the element at the given index.
+
+### Int16\[\] op_Explicit([ShortArrayInDS\<TDim\> array](/reference/runtime/qsys-runtime/short-array-in-ds-1.html))
+
+Casting operator to short[]. Returns a copy of the array as an short[].
+
+```cs
+Int16[] op_Explicit(ShortArrayInDS<TDim> array)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [ShortArrayInDS\<TDim\>](/reference/runtime/qsys-runtime/short-array-in-ds-1.html) | array | The array to copy.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Int16\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | 
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

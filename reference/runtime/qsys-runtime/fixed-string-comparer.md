@@ -1,7 +1,7 @@
 ---
 title: "FixedStringComparer class     | QSYS API Reference Guide"
 description: "Provides a comparer for fixed-length strings, allowing for consistent comparison of strings with fixed lengths. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Provides a comparer for fixed-length strings, allowing for consistent comparison of strings with fixed lengths.

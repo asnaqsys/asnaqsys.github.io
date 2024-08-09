@@ -1,7 +1,7 @@
 ---
 title: "ActivationGroupDisposeException class"
 description: "The exception that is thrown when an program has a null activation group at dispose time. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 The exception that is thrown when an program has a null activation group at dispose time.

@@ -1,7 +1,7 @@
 ---
 title: "IntegerMethods class          | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations and conversions for Integer (2, 4, and 8-byte long) values. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains extension methods for handling RPG operations and conversions for Integer (2, 4, and 8-byte long) values.

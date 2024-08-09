@@ -1,7 +1,7 @@
 ---
 title: "CPF8A16Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when Document library objects not deleted. {0} objects deleted. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 The exception that is thrown when Document library objects not deleted. {0} objects deleted.

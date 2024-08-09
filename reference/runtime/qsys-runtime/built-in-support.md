@@ -1,7 +1,7 @@
 ---
 title: "BuiltInSupport class          | QSYS API Reference Guide"
 description: "Contains static methods to perform certain RPG Built In functions. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains static methods to perform certain RPG Built In functions.
@@ -39,7 +39,11 @@ Contains static methods to perform certain RPG Built In functions.
 | [DoBuiltInScan](#int-dobuiltinscanstring-cmpstr-string-basestring-int-startpos)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %SCAN: Find a string within another and return the 1-based starting position where the match starts.
 | [DoBuiltInSubSt](#string-dobuiltinsubststring-basestring-int-startpos-int-sublen)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %SUBST: Get a substring.
 | [DoBuiltInSubStAssign](#string-dobuiltinsubstassignstring-basestring-int-startpos-int-sublen-string-replacestr-bool-isrightadjust)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %SUBST: Set a substring.
+| [DoBuiltInTLookup](#bool-dobuiltintlookupobject-source-array-array-int32-tableindex-int32-alttableindex)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %TLOOKUP: Searches an array representing a RPG table for the specified element value.
+| [DoBuiltInTLookupXX](#bool-dobuiltintlookupxxobject-source-array-array-int32-tableindex-int32-alttableindex-bool-searchhi-bool-searchlo-bool-searcheq)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %TLOOKUPXX: Searches an array representing a RPG table for the specified element value.
+| [DoCheck](#void-docheckstring-cmpstr-string-basestring-bool-isdefaultstartpos-int-startpos-int32-result)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECK. Finds in baseString the first occurrence that is different from any of the characters in cmpStr and returns its 1-based position.
 | [DoCheckArrayResult](#void-docheckarrayresultstring-cmpstr-string-basestring-bool-isdefaultstartpos-int-startpos-array-nomatcharray)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | RPG's %CHECK. Finds in baseString all the occurrences that are different from any of the characters in cmpStr and returns their 1-based position in an array.
+| [DoCheckR](#void-docheckrstring-cmpstr-string-basestring-bool-isdefaultstartpos-int-startpos-int32-result)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %CHECKR. Finds in baseStr the first occurrence that is different from any of the characters in cmpStr and returns its 1-based position, starting at the end of baseStr.
 | [DoCheckRArrayResult](#void-docheckrarrayresultstring-cmpstr-string-basestring-bool-isdefaultstartpos-int-startpos-array-nomatcharray)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | RPG's %CHECKR. Finds in baseString all the occurrences that are different from any of the characters in cmpStr and returns their 1-based position in an array, starting at the end of baseStr..
 | [DoConcat](#string-doconcatstring-prefix-string-suffix-int-blanks)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Concatenate two strings, adjusting the number of blanks at the end of prefix to the given number.
 | [DoIntDecimal](#int-dointdecimaldecimal-thedecimal-bool-ishalfadjust)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | RPG's %INT/%INTH for a decimal argument. Convert a decimal number to an integer.
@@ -67,13 +71,19 @@ Contains static methods to perform certain RPG Built In functions.
 | [MapToBinary](#decimal-maptobinarystring-basestring-int-digits-int-decimals)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Convert a string representing a Binary decimal number to decimal.
 | [MoveArrayElemToElem](#void-movearrayelemtoelemarray-source-array-target-int-isourcestart-int-itargetstart-bool-pad-bool-targetisfixeddecimal-int-targetintegrals-int-targetdecimals-bool-sourceisfixeddecimal-int-sourcedecimals-bool-targetisdatetime-string-targetdateformat-bool-sourceisdatetime-string-sourcedateformat)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Move data between arrays of arbitrary RPG types represented with system types.
 | [MoveArrayFromArray](#void-movearrayfromarrayarray-source-array-target-int-sourcestartat-int-targetstartat-bool-pad)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Moves data from one array to another, where the array elements are of the same size.
+| [MoveArrayToString](#string-movearraytostringboolean-boz-array-source-string-target-int-sourcestartat-bool-pad)([Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Serialize an array onto a target string.
 | [MoveComplexArray](#void-movecomplexarrayarray-source-array-target-int-sourcestartat-int-targetstartat-bool-pad)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Moves data from one array to another, where the array elements are of different size.
 | [MoveFigurativeToElem](#void-movefigurativetoelemarray-target-int-itargetstart-object-obj)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Fill a given array with the specified object.
 | [MoveStringToArray](#void-movestringtoarraystring-source-array-target-int-targetstartat-bool-pad)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Deserialize a string onto a character-typed array.
+| [OsExec](#void-osexecstring-commandline-int-windowstyle-string-operationstring-string-directory-bool-wait-int32-returncode)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | The OSEXEC command opens or prints a specified file.  The file can be an executable file or a file that is associated with a program.
+| [OsExecWithExitCode](#void-osexecwithexitcodestring-commandline-int-windowstyle-string-operationstring-string-directory-bool-wait-int32-returncode-int32-exitcode)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | The OSEXEC command opens or prints a specified file.  The file can be an executable file or a file that is associated with a program.
 | [SetArrayDates](#void-setarraydatesarray-array-char--source-int-sourceindex-string-formatstring)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Deserialize an array of fixed date/time values stored in a character array onto a DateTime array.
 | [SetArrayDecimals](#void-setarraydecimalsarray-array-char--source-int-sourceindex-int-cintegrals-int-cdecimals)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.char), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Deserialize an array of zoned decimals stored in a character array onto a decimal array.
+| [SetPosNegBoz](#void-setposnegbozstring-test-boolean-pos-boolean-neg-boolean-boz-bool-testisnumeric)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Sets flags depending on the value of the test argument. The flags indicate a positive, negative, or blank-or-zero test value.
 | [SortArr](#void-sortarrarray-arraytosort)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | Sort an array using RPG sorting rules.
 | [SortNonContiguosArr](#void-sortnoncontiguosarrarray-basearray-array-arraytosort)([Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0)) | Sort a base array using a second array as a key array, using RPG sorting rules. This method only sorts arrays of strings or arrays of decimal numbers.
+| [TestBits](#void-testbitsbyte-b-string-mask-boolean-off-boolean-on-boolean-eq)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Compares the bits in mask with the corresponding bits in b.
+| [TestBitsWithByte](#void-testbitswithbytebyte-b-byte-maskbyte-boolean-off-boolean-on-boolean-eq)([Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Compares the bits in maskByte with the corresponding bits in b.
 | [ToChar](#char-tocharstring-sa)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Converts the first character of a specified string to a Unicode character.
 
 ### byte BitOff([string mask](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte))
@@ -413,6 +423,73 @@ string DoBuiltInSubStAssign(string baseString, int startPos, int subLen, string 
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The value of baseString with the replacement.
 
+### bool DoBuiltInTLookup([object source](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Array array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32& tableIndex](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32& altTableIndex](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's %TLOOKUP: Searches an array representing a RPG table for the specified element value.
+
+```cs
+bool DoBuiltInTLookup(object source, Array array, Int32& tableIndex, Int32& altTableIndex)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | source | The element value being searched for in the table.
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | array | The table to search.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | tableIndex | Out value that contains the 1-based index where the element was found, or 0 if not found.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | altTableIndex | Out value that contains the 1-based index where the element was found, or 0 if not found.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the element was found. False otherwise.
+
+### bool DoBuiltInTLookupXX([object source](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Array array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Int32& tableIndex](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32& altTableIndex](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [bool searchHi](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [bool searchLo](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [bool searchEq](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+RPG's %TLOOKUPXX: Searches an array representing a RPG table for the specified element value.
+
+```cs
+bool DoBuiltInTLookupXX(object source, Array array, Int32& tableIndex, Int32& altTableIndex, bool searchHi, bool searchLo, bool searchEq)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | source | The element value being searched for in the table.
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | array | The table to search.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | tableIndex | Out value that contains the 1-based index where the element was found, or 0 if not found.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | altTableIndex | Out value that contains the 1-based index where the element was found, or 0 if not found.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | searchHi | True to search for greater than.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | searchLo | True to search for less than.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | searchEq | True to search for equal.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the element was found. False otherwise.
+
+### void DoCheck([string cmpStr](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string baseString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool isDefaultStartPos](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Int32& result](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's %CHECK. Finds in baseString the first occurrence that is different from any of the characters in cmpStr and returns its 1-based position.
+
+```cs
+void DoCheck(string cmpStr, string baseString, bool isDefaultStartPos, int startPos, Int32& result)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | The characters to search for.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | The string to test.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDefaultStartPos | True to start at the beginning of baseString.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based position where the search should start.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | result | The 1-based position of the found character, or 0 if it was not found.
+
 ### void DoCheckArrayResult([string cmpStr](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string baseString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool isDefaultStartPos](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Array noMatchArray](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0))
 
 RPG's %CHECK. Finds in baseString all the occurrences that are different from any of the characters in cmpStr and returns their 1-based position in an array.
@@ -430,6 +507,24 @@ void DoCheckArrayResult(string cmpStr, string baseString, bool isDefaultStartPos
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDefaultStartPos | True to start at the beginning of baseString.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based position where the search should start.
 | [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | noMatchArray | The 1-based position of the found characters, in order. Any additional positions in the array will be filled with 0.
+
+### void DoCheckR([string cmpStr](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string baseString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool isDefaultStartPos](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Int32& result](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+RPG's %CHECKR. Finds in baseStr the first occurrence that is different from any of the characters in cmpStr and returns its 1-based position, starting at the end of baseStr.
+
+```cs
+void DoCheckR(string cmpStr, string baseString, bool isDefaultStartPos, int startPos, Int32& result)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | cmpStr | The characters to search for.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | baseString | The string to test.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | isDefaultStartPos | True to start at the end of baseString.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | The 1-based position where the search should start.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | result | The 1-based position of the found character, or 0 if it was not found.
 
 ### void DoCheckRArrayResult([string cmpStr](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string baseString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool isDefaultStartPos](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [Array noMatchArray](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0))
 
@@ -988,6 +1083,30 @@ void MoveArrayFromArray(Array source, Array target, int sourceStartAt, int targe
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | Initial position in target.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | True if padding with blanks is to be performed when the target array is longer than the data copied from the source.
 
+### string MoveArrayToString([Boolean& boz](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Array source](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [string target](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int sourceStartAt](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool pad](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Serialize an array onto a target string.
+
+```cs
+string MoveArrayToString(Boolean& boz, Array source, string target, int sourceStartAt, bool pad)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | boz | Boolean flag that return true if the resulting string is blanks.
+| [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | source | The array to serialize.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | The target string.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | sourceStartAt | Index of the array element on where to start serialization.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | True to pad the target string with blanks.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The result of serializing the array onto the target string.
+
 ### void MoveComplexArray([Array source](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Array target](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [int sourceStartAt](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int targetStartAt](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [bool pad](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Moves data from one array to another, where the array elements are of different size.
@@ -1039,6 +1158,45 @@ void MoveStringToArray(string source, Array target, int targetStartAt, bool pad)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | targetStartAt | Index of the array element on where to start deserialization.
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pad | True to pad the array with blanks.
 
+### void OsExec([string commandLine](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int windowStyle](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string operationString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string directory](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool wait](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32& returnCode](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+The OSEXEC command opens or prints a specified file.  The file can be an executable file or a file that is associated with a program.
+
+```cs
+void OsExec(string commandLine, int windowStyle, string operationString, string directory, bool wait, Int32& returnCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | Specifies the file to open or print, or the folder to open or explore.  The function can be either an executable file or a document file.  It can also print a document file.  commandLine must contain the complete path of the application to execute.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | windowStyle | The style of the window to open..
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | Specifies what type of operation is to be performed on the file. The action to take with the file the action processes.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | Contains the string that specifies the default directory.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Determines whether the program will wait for the launched application to end before continuing execution.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | returnCode | Reference to the code that indicates success of failure to launch. 0 is sucess, otherwise the error numeric value.
+
+### void OsExecWithExitCode([string commandLine](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int windowStyle](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string operationString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string directory](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool wait](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32& returnCode](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32& exitCode](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
+
+The OSEXEC command opens or prints a specified file.  The file can be an executable file or a file that is associated with a program.
+
+```cs
+void OsExecWithExitCode(string commandLine, int windowStyle, string operationString, string directory, bool wait, Int32& returnCode, Int32& exitCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | commandLine | Specifies the file to open or print, or the folder to open or explore.  The function can be either an executable file or a document file.  It can also print a document file.  commandLine must contain the complete path of the application to execute.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | windowStyle | The style of the window to open..
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | operationString | Specifies what type of operation is to be performed on the file. The action to take with the file the action processes.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | directory | Contains the string that specifies the default directory.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | wait | Determines whether the program will wait for the launched application to end before continuing execution.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | returnCode | Reference to the code that indicates success of failure to launch. 0 is sucess, otherwise the error numeric value.
+| [Int32&](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | exitCode | Reference to the exit code of the launched application after waiting for it to finish.
+
 ### void SetArrayDates([Array array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0), [Char\[\] source](https://docs.microsoft.com/en-us/dotnet/api/system.char), [int sourceIndex](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string formatString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Deserialize an array of fixed date/time values stored in a character array onto a DateTime array.
@@ -1074,6 +1232,24 @@ void SetArrayDecimals(Array array, Char[] source, int sourceIndex, int cIntegral
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cIntegrals | The number of integral digits in the zoned numbers.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cDecimals | The number of decimal positions in the zoned numbers.
 
+### void SetPosNegBoz([string test](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Boolean& pos](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& neg](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& boz](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [bool testIsNumeric](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Sets flags depending on the value of the test argument. The flags indicate a positive, negative, or blank-or-zero test value.
+
+```cs
+void SetPosNegBoz(string test, Boolean& pos, Boolean& neg, Boolean& boz, bool testIsNumeric)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | test | The value to test, as a string.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | pos | Positive flag. It will be true if the test parameter represents a positive numeric value.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | neg | Negative flag. It will be true if the test parameter represents a negative numeric value.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | boz | Blank-or-zero flag. It will be true if the test parameter is blanks or represents a numeric value of zero.
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | testIsNumeric | Indicates whether the string to test represents a numeric value.
+
 ### void SortArr([Array arrayToSort](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0))
 
 Sort an array using RPG sorting rules.
@@ -1102,6 +1278,42 @@ void SortNonContiguosArr(Array baseArray, Array arrayToSort)
 | --- | --- | ---
 | [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | baseArray | The array to sort.
 | [Array](https://learn.microsoft.com/en-us/dotnet/api/system.array?view=net-8.0) | arrayToSort | The array of keys.
+
+### void TestBits([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [string mask](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Boolean& off](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& on](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& eq](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Compares the bits in mask with the corresponding bits in b.
+
+```cs
+void TestBits(byte b, string mask, Boolean& off, Boolean& on, Boolean& eq)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | Input byte value.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | mask | Can contain: Bit numbers 0-7. Enclose the bit numbers in apostrophes. For example, to set bits 0, 3, 6 on, enter '036'. A Character Expression. Hexadecimal literal (H'01') for example. Named constant up to 8 positions long containing the bit numbers to be set on.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | off | Reflects the status of the result field bits.  Assuming a Mask of H'E4' (1100 0100), Off is true if all of the masked bits are Off in the field.  In this case, for Off to be true, the field would contain H'3B' (0011 1011).
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | on | Reflects the status of the result field bits.  Assuming a Mask of H'E4' (1100 0100), On is true if some of the masked bits are On and some the masked bits are Off in the field.  In this case, the field would contain anything but H'3B' or H'E4'.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | eq | Reflects the status of the result field bits.  Assuming a Mask of H'E4' (1100 0100), Eq is true if all of the masked bits are On in the field.  In this case, the field would contain H'E4' (1100 0100)..
+
+### void TestBitsWithByte([byte b](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [byte maskByte](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Boolean& off](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& on](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Boolean& eq](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Compares the bits in maskByte with the corresponding bits in b.
+
+```cs
+void TestBitsWithByte(byte b, byte maskByte, Boolean& off, Boolean& on, Boolean& eq)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | b | Input byte value.
+| [Byte](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | maskByte | Can contain: Bit numbers 0-7. Enclose the bit numbers in apostrophes. For example, to set bits 0, 3, 6 on, enter '036'. A Character Expression. Hexadecimal literal (H'01') for example. Named constant up to 8 positions long containing the bit numbers to be set on.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | off | Reflects the status of the result field bits.  Assuming a Mask of H'E4' (1100 0100), Off is true if all of the masked bits are Off in the field.  In this case, for Off to be true, the field would contain H'3B' (0011 1011).
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | on | Reflects the status of the result field bits.  Assuming a Mask of H'E4' (1100 0100), On is true if some of the masked bits are On and some the masked bits are Off in the field.  In this case, the field would contain anything but H'3B' or H'E4'.
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | eq | Reflects the status of the result field bits.  Assuming a Mask of H'E4' (1100 0100), Eq is true if all of the masked bits are On in the field.  In this case, the field would contain H'E4' (1100 0100).
 
 ### char ToChar([string sA](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

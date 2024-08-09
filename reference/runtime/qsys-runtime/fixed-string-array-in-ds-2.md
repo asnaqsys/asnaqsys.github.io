@@ -1,7 +1,7 @@
 ---
 title: "FixedStringArrayInDS<T1, T2> struct"
 description: "Describes a fixed size array of FixedString contained in a DataStructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a fixed size array of FixedString contained in a DataStructure.
@@ -69,6 +69,8 @@ FixedStringArrayInDS(MultiDataStructure, Int32, Int32)
 | [CopyFrom](#void-copyfromstring--sourcearray-int-targetstartat)([String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a string[] into this array.
 | [GetEnumerator()](#ienumerator-fixedstring-tlen--getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
+| [op_Explicit](#string--op-explicitfixedstringarrayinds-tdim-tlen-array)([FixedStringArrayInDS\<TDim, TLen\>](/reference/runtime/qsys-runtime/fixed-string-array-in-ds-2.html)) | Casting operator to string[]. Returns a copy of the array as a string[].
+| [op_Implicit](#fixedstringarray-tdim-tlen-op-implicitfixedstringarrayinds-tdim-tlen-array)([FixedStringArrayInDS\<TDim, TLen\>](/reference/runtime/qsys-runtime/fixed-string-array-in-ds-2.html)) | Casting operator to FixedStringArray. Returns a copy of the array as a FixedStringArray.
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
@@ -121,6 +123,22 @@ int GetStartingPosition(int index)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The position in the buffer of the element at the given index.
+
+### String\[\] op_Explicit([FixedStringArrayInDS\<TDim, TLen\> array](/reference/runtime/qsys-runtime/fixed-string-array-in-ds-2.html))
+
+Casting operator to string[]. Returns a copy of the array as a string[].
+
+```cs
+String[] op_Explicit(FixedStringArrayInDS<TDim, TLen> array)
+```
+
+### FixedStringArray\<TDim, TLen\> op_Implicit([FixedStringArrayInDS\<TDim, TLen\> array](/reference/runtime/qsys-runtime/fixed-string-array-in-ds-2.html))
+
+Casting operator to FixedStringArray. Returns a copy of the array as a FixedStringArray.
+
+```cs
+FixedStringArray<TDim, TLen> op_Implicit(FixedStringArrayInDS<TDim, TLen> array)
+```
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

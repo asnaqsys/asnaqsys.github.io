@@ -1,7 +1,7 @@
 ---
 title: "AssemblyListProfilesSetting class"
 description: "Gets or sets a dictionary of named assembly lists.  "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 sitemap: false
 ---
 

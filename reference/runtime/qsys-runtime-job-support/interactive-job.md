@@ -1,7 +1,7 @@
 ---
 title: "InteractiveJob class          | QSYS API Reference Guide"
 description: "Defines the core behavior of an interactive job. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the core behavior of an interactive job.
@@ -62,6 +62,7 @@ InteractiveJob(JobConfig)
 | [GetSessionValue](#string-getsessionvaluestring-sessionkey)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Get a the value of a string in the website's session.
 | [InitJobSessionStore](#void-initjobsessionstorestring-sessionid)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Associate the JobSessionStore as belonging to the provided sessionId.
 | [RequestShutdown()](#void-requestshutdown) | Requests an orderly shutdown of the job but it forcibly shuts it down if not completed after a time period.
+| [RequestShutdown()](#void-requestshutdown) | Requests an orderly shutdown of the job but it forcibly shuts it down if not completed after a time period.
 | [RequestYellowService](#string--requestyellowservicestring-command-string-parm1-string-parm2-string-parm3-string--otherparms)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Request a service to be performed by the UI website.
 | [SetJobSessionString](#bool-setjobsessionstringstring-sessionid-string-jobsessionstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the job session from a serialized string.
 | [SetProgram](#void-setprogramstring-programname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Records the name of the program that is currently running in the job.
@@ -69,6 +70,7 @@ InteractiveJob(JobConfig)
 | [SetUserDeviceID](#bool-setuserdeviceidstring-initialdeviceid)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the UserDeviceID for the first time.
 | [ShowPage](#string-showpagestring-outsidepage-string-parameter)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Display an arbitrary page to the user.
 | [ShutDown()](#void-shutdown) | Forcibly shuts down the job.
+| [Start](#webdevice-startstring-jobname-socket-socket-semaphoreslim-jobendedsemaphore-concurrentqueue-int-endedjobsqueue)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Socket](https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.socket?view=net-8.0), [SemaphoreSlim](https://learn.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim?view=net-8.0), [ConcurrentQueue\<Int32\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-8.0)) | Starts the execution of the InteractiveJob on a newly created thread.
 
 ### string AcceptCommands()
 
@@ -147,6 +149,14 @@ void InitJobSessionStore(string sessionID)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | sessionID | The ID of the session serving this job.
+
+### void RequestShutdown()
+
+Requests an orderly shutdown of the job but it forcibly shuts it down if not completed after a time period.
+
+```cs
+void RequestShutdown()
+```
 
 ### void RequestShutdown()
 
@@ -278,3 +288,26 @@ Forcibly shuts down the job.
 ```cs
 void ShutDown()
 ```
+
+### WebDevice Start([string jobName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Socket socket](https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.socket?view=net-8.0), [SemaphoreSlim jobEndedSemaphore](https://learn.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim?view=net-8.0), [ConcurrentQueue\<int\> endedJobsQueue](https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-8.0))
+
+Starts the execution of the InteractiveJob on a newly created thread.
+
+```cs
+WebDevice Start(string jobName, Socket socket, SemaphoreSlim jobEndedSemaphore, ConcurrentQueue<int> endedJobsQueue)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | jobName | The job name to be associated with this running job.
+| [Socket](https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.socket?view=net-8.0) | socket | The socket used to communicate with the website providing the user interface display pages.
+| [SemaphoreSlim](https://learn.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim?view=net-8.0) | jobEndedSemaphore | The semaphore to signal that the job has ended.
+| [ConcurrentQueue\<Int32\>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1?view=net-8.0) | endedJobsQueue | The queue to register the ended job.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [WebDevice](/reference/runtime/qsys-runtime-job-support/web-device.html) | The device assigned to the job.

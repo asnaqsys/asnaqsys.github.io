@@ -1,7 +1,7 @@
 ---
 title: "LocalScopeMultiDS&lt;T&gt; class"
 description: "Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS obj"
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains functionality to support locally scoped multiple occurrence data structures. A LocalScopeMultiDS object contains an array of LocalScopeDS objects.
@@ -64,6 +64,8 @@ LocalScopeMultiDS(Int32)
 | [Load](#void-loadstring-source)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Loads the current occurrence from a string.
 | [LoadAll](#void-loadallstring-source)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Copies the given string into the multi-occurrence data structure. 
 | [ObjectToParm](#void-objecttoparmas400program-program-int32--indices-int-dim)([As400Program](/reference/datagate/datagate-client/as400-program.html), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ObjectToParm implementation. Converts the current occurrence field values into parameters for calling the given IBMi program.
+| [op_Explicit](#string-op-explicitlocalscopemultids-t-multidatastructure)([LocalScopeMultiDS\<T\>](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html)) | Casting operator to string. Returns the multi-occurrence data structure as a string.
+| [op_Implicit](#t-op-implicitlocalscopemultids-t-multids)([LocalScopeMultiDS\<T\>](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html)) | Cast operator to type T. Returns the current occurrence.
 | [ParmToObject](#void-parmtoobjectas400program-program-int32--indices-int-dim)([As400Program](/reference/datagate/datagate-client/as400-program.html), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ParmToObject implementation. Gets the current occurrence field values returned from a call to an IBMi program.
 | [ToString()](#string-tostring) | Gets the contents of all occurrences of the multi data structure as a string.
 | [ToT()](#t-tot) | Get the current occurrence.
@@ -143,6 +145,46 @@ void ObjectToParm(As400Program program, Int32[] indices, int dim)
 | [As400Program](/reference/datagate/datagate-client/as400-program.html) | program | As400Program object describing the program call.
 | [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | indices | Array that hold the indices for the current parameter.
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | dim | The dimension nesting of the parameter.
+
+### string op_Explicit([LocalScopeMultiDS\<T\> multiDataStructure](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html))
+
+Casting operator to string. Returns the multi-occurrence data structure as a string.
+
+```cs
+string op_Explicit(LocalScopeMultiDS<T> multiDataStructure)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [LocalScopeMultiDS\<T\>](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html) | multiDataStructure | Multi-occurrence data structure to cast to string.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | 
+
+### T op_Implicit([LocalScopeMultiDS\<T\> multiDS](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html))
+
+Cast operator to type T. Returns the current occurrence.
+
+```cs
+T op_Implicit(LocalScopeMultiDS<T> multiDS)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [LocalScopeMultiDS\<T\>](/reference/runtime/qsys-runtime/local-scope-multi-ds-1.html) | multiDS | The local multi data structure.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | 
 
 ### void ParmToObject([As400Program program](/reference/datagate/datagate-client/as400-program.html), [Int32\[\] indices](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [int dim](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

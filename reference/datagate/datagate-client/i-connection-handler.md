@@ -1,7 +1,7 @@
 ---
 title: "IConnectionHandler interface  | QSYS API Reference Guide"
 description: "Defines the methods for handling connections. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Defines the methods for handling connections.

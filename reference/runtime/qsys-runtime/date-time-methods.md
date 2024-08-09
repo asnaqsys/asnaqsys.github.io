@@ -1,7 +1,7 @@
 ---
 title: "DateTimeMethods class         | QSYS API Reference Guide"
 description: "Contains extension methods for handling Date/Time/Timestamp conversions. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains extension methods for handling Date/Time/Timestamp conversions.
@@ -17,6 +17,8 @@ Contains extension methods for handling Date/Time/Timestamp conversions.
 
 | Signature | Description |
 | --- | --- |
+| [AddDuration](#datetime-adddurationdatetime-datetime-double-duration-durationcode-durationcode)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/runtime/qsys-runtime/duration-code.html)) | Adds a duration span to a date or a timestamp value.
+| [AddDurationToTime](#datetime-adddurationtotimedatetime-datetime-double-duration-durationcode-durationcode)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/runtime/qsys-runtime/duration-code.html)) | Adds a duration span to a time value.
 | [GetFormatLength](#int-getformatlengthdatetimedatakind-kind-datetimeformat-format-datetimeseparator-separator)([DateTimeDataKind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Returns the length of the string representation of a date/time/timestamp type.
 | [MergeDate](#datetime-mergedatedatetime-timestamp-datetime-date)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Merges a date into the date part of a timestamp.
 | [MergeTime](#datetime-mergetimedatetime-timestamp-datetime-time)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Merges a time into the time part of a timestamp.
@@ -43,6 +45,8 @@ Contains extension methods for handling Date/Time/Timestamp conversions.
 | [MoveRightWithPad](#int-moverightwithpaddatetime-datetime-datetimedatakind-datetimekind-datetimeformat-datetimeformat-int-targetoperand)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's MOVE. Moves right a datetime into a int4 (int) with pad.
 | [MoveRightWithPad](#long-moverightwithpaddatetime-datetime-datetimedatakind-datetimekind-datetimeformat-datetimeformat-long-targetoperand)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | RPG's MOVE. Moves right a datetime into a int8 (long) with pad.
 | [NormalizeYear](#datetime-normalizeyeardatetime-datetime)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Turns a 4 digit year into a 2 digit year between 1940 and 2039
+| [SubtractDuration](#datetime-subtractdurationdatetime-datetime-double-duration-durationcode-durationcode)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/runtime/qsys-runtime/duration-code.html)) | Subtracts a duration span from a date or a timestamp value.
+| [SubtractDurationFromTime](#datetime-subtractdurationfromtimedatetime-datetime-double-duration-durationcode-durationcode)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0), [DurationCode](/reference/runtime/qsys-runtime/duration-code.html)) | Subtracts a duration span from a time value.
 | [TimestampToDate](#datetime-timestamptodatedatetime-timestamp)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Returns the Date portion of a timestamp.
 | [TimestampToTime](#datetime-timestamptotimedatetime-timestamp)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Returns the hours, minutes, and seconds of a timestamp.
 | [TimestampToUSATime](#datetime-timestamptousatimedatetime-timestamp)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime)) | Returns the hours and minutes of a timestamp.
@@ -52,6 +56,50 @@ Contains extension methods for handling Date/Time/Timestamp conversions.
 | [ToInt32](#int-toint32datetime-datetime-datetimedatakind-datetimekind-datetimeformat-datetimeformat-bool-throwonoverflow)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a dateTime type to int 32.
 | [ToInt64](#long-toint64datetime-datetime-datetimedatakind-datetimekind-datetimeformat-datetimeformat-bool-throwonoverflow)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Converts a dateTime type to int 64.
 | [ToString](#string-tostringdatetime-datetime-datetimedatakind-datetimekind-datetimeformat-datetimeformat-datetimeseparator-datetimeseparator)([DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [DateTimeDataKind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Converts a DateTime with the specified Kind and Format to a string using the specified separator.
+
+### DateTime AddDuration([DateTime dateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [double duration](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [DurationCode durationCode](/reference/runtime/qsys-runtime/duration-code.html))
+
+Adds a duration span to a date or a timestamp value.
+
+```cs
+DateTime AddDuration(DateTime dateTime, double duration, DurationCode durationCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | .NET DateTime value.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration.
+| [DurationCode](/reference/runtime/qsys-runtime/duration-code.html) | durationCode | Code determining what duration represents.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | The resulting Date or Timestamp value after adding to it the given duration.
+
+### DateTime AddDurationToTime([DateTime dateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [double duration](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [DurationCode durationCode](/reference/runtime/qsys-runtime/duration-code.html))
+
+Adds a duration span to a time value.
+
+```cs
+DateTime AddDurationToTime(DateTime dateTime, double duration, DurationCode durationCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | .NET DateTime value specifying a time value.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration.
+| [DurationCode](/reference/runtime/qsys-runtime/duration-code.html) | durationCode | Code determining what duration represents.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | The resulting Time value after adding to it the given duration.
 
 ### int GetFormatLength([DateTimeDataKind kind](/reference/runtime/qsys-runtime/date-time-data-kind.html), [DateTimeFormat format](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator separator](/reference/runtime/qsys-runtime/date-time-separator.html))
 
@@ -652,6 +700,50 @@ DateTime NormalizeYear(DateTime dateTime)
 | Type | Description
 | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | .NET DateTime value.
+
+### DateTime SubtractDuration([DateTime dateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [double duration](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [DurationCode durationCode](/reference/runtime/qsys-runtime/duration-code.html))
+
+Subtracts a duration span from a date or a timestamp value.
+
+```cs
+DateTime SubtractDuration(DateTime dateTime, double duration, DurationCode durationCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | .NET DateTime value.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration.
+| [DurationCode](/reference/runtime/qsys-runtime/duration-code.html) | durationCode | Code determining what duration represents.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | The resulting Date or Timestamp value after subracting from it the given duration.
+
+### DateTime SubtractDurationFromTime([DateTime dateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime), [double duration](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types), [DurationCode durationCode](/reference/runtime/qsys-runtime/duration-code.html))
+
+Subtracts a duration span from a time value.
+
+```cs
+DateTime SubtractDurationFromTime(DateTime dateTime, double duration, DurationCode durationCode)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | dateTime | .NET DateTime value specifying a time value.
+| [Double](https://learn.microsoft.com/en-us/dotnet/api/system.double?view=net-8.0) | duration | A double value representing duration.
+| [DurationCode](/reference/runtime/qsys-runtime/duration-code.html) | durationCode | Code determining what duration represents.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | The resulting Time value after subtracting from it the given duration.
 
 ### DateTime TimestampToDate([DateTime timestamp](https://docs.microsoft.com/en-us/dotnet/api/system.datetime))
 

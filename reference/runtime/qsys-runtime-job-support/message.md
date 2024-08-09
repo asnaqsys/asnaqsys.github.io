@@ -1,7 +1,7 @@
 ---
 title: "Message class                 | QSYS API Reference Guide"
 description: "Represent a message sent by a program. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Represent a message sent by a program.

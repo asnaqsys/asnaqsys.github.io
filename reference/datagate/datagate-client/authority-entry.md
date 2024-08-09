@@ -1,7 +1,7 @@
 ---
 title: "AuthorityEntry class          | QSYS API Reference Guide"
 description: "The AuthorityEntry class describes a user or group authorization to a database object. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 The AuthorityEntry class describes a user or group authorization to a database object.

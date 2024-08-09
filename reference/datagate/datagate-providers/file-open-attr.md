@@ -1,7 +1,7 @@
 ---
 title: "FileOpenAttr class            | QSYS API Reference Guide"
 description: "Represents the attributes for opening a file. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 Represents the attributes for opening a file.
@@ -56,6 +56,7 @@ FileOpenAttr()
 | [Add](#void-addstring-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds an element with the provided key and value to the FileOpenAttr.
 | [ContainsKey](#bool-containskeystring-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the FileOpenAttr contains an element with the specified key.
 | [Remove](#bool-removestring-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the element with the specified key from the FileOpenAttr.
+| [TryGetValue](#bool-trygetvaluestring-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object&](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Gets the value associated with the specified key.
 
 ### void Add([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
@@ -111,3 +112,24 @@ bool Remove(string key)
 | Type | Description
 | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the element is successfully found and removed; otherwise, false.
+
+### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Object& value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
+
+Gets the value associated with the specified key.
+
+```cs
+bool TryGetValue(string key, Object& value)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The key of the value to get.
+| [Object&](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the FileOpenAttr contains an element with the specified key; otherwise, false.

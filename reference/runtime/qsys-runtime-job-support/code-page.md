@@ -1,7 +1,7 @@
 ---
 title: "CodePage class                | QSYS API Reference Guide"
 description: "Provides facilities to probe an IBM i file&#39;s code page. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Provides facilities to probe an IBM i file's code page.

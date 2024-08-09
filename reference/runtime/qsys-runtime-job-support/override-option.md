@@ -1,7 +1,7 @@
 ---
 title: "OverrideOption enum           | QSYS API Reference Guide"
 description: "Specifies the option to be overridden on a file. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Specifies the option to be overridden on a file.
@@ -15,6 +15,7 @@ Specifies the option to be overridden on a file.
 
 | Name | Description | Value
 | --- | --- | --- 
+| CheckFormatIDs | Specifies whether the level identifiers of the file's record formats should be compared at open time with those provided by the program. Only value allowed is false. | 24 |
 | Collate | The collate option. | 3 |
 | Copies | The number of printed copies. | 4 |
 | Duplex | The duplex option. | 5 |
@@ -22,7 +23,7 @@ Specifies the option to be overridden on a file.
 | FormType | The type of form. | 17 |
 | Hold | The value indicating if the printout should be held. | 18 |
 | InhibitWrite | Prevents operations to the file from actually updating it, effectively treating the operation as a no-op. | 23 |
-| MaxOption | The number of options in this enumeration. | 24 |
+| MaxOption | The number of options in this enumeration. | 25 |
 | Mbr | The member name. | 1 |
 | Orientation | The print paper orientation. | 7 |
 | OutputQueue | The name of the output queue. | 19 |

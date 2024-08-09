@@ -1,7 +1,7 @@
 ---
 title: "EndOperationException class   | QSYS API Reference Guide"
 description: "Defines the core behavior of the the base class that is thrown to unwind the program call stack. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 sitemap: false
 ---
 

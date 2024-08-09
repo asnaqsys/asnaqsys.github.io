@@ -1,7 +1,7 @@
 ---
 title: "DBIntegerParm class           | QSYS API Reference Guide"
 description: "Represents a parameter for an integer type. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Represents a parameter for an integer type.

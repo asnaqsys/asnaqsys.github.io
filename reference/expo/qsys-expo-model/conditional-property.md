@@ -1,7 +1,7 @@
 ---
 title: "ConditionalProperty class     | QSYS API Reference Guide"
 description: "Defines a ConditionalProperty "
-last_modified_at: 2024-08-08T21:42:10Z
+last_modified_at: 2024-08-09T16:18:58Z
 ---
 
 Defines a ConditionalProperty

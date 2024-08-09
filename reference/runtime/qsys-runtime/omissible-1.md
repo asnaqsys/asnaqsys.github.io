@@ -1,7 +1,7 @@
 ---
 title: "Omissible&lt;T&gt; class      | QSYS API Reference Guide"
 description: "Encapsulates a *OMIT parameter. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Encapsulates a *OMIT parameter.

@@ -1,7 +1,7 @@
 ---
 title: "NameStoreOptions enum         | QSYS API Reference Guide"
 description: "Defines flags that tell the name store which name sources to use. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:54:11Z
 ---
 
 Defines flags that tell the name store which name sources to use.
@@ -15,10 +15,10 @@ Defines flags that tell the name store which name sources to use.
 
 | Name | Description | Value
 | --- | --- | --- 
-| none | none summary. | 0 |
-| UseCommandLineArgs | UseCommandLineArgs summary. | 8 |
-| UseEnvironmentalVars | UseEnvironmentalVars summary. | 4 |
-| UseJsonDefaultPath | UseJsonDefaultPath summary. | 1 |
-| UseSecrets | UseSecrets summary. | 2 |
-| WithCommonDefaults | WithCommonDefaults summary. | 15 |
-| WithSecretsJsonDefault | WithSecretsJsonDefault summary. | 3 |
+| none | No Name Store. | 0 |
+| UseCommandLineArgs | Use command-line arguments as to pass the Name Store. | 8 |
+| UseEnvironmentalVars | Use OS Environmental variables to resolve the Name Store. | 4 |
+| UseJsonDefaultPath | Use JSON default path as the Name Store. | 1 |
+| UseSecrets | Use secrets as the Name Store. | 2 |
+| WithCommonDefaults | With Common defaults as the Name Store. | 15 |
+| WithSecretsJsonDefault | With Secrets JSON default as the Name Store. | 3 |

@@ -1,7 +1,7 @@
 ---
 title: "FixedDecimalArray<T1, T2, T3> struct"
 description: "Defines the functionality of a fixed-sized unidimensional array of FixedDecimal elements. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Defines the functionality of a fixed-sized unidimensional array of FixedDecimal elements.
@@ -47,6 +47,7 @@ FixedDecimalArray(Decimal[])
 | [Clear()](#void-clear) | Clears all elements of the array to their default value.
 | [CopyFrom](#void-copyfromdecimal--sourcearray-int-targetstartat)([Decimal\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a decimal[] into this array, starting at the given position.
 | [GetEnumerator()](#ienumerator-fixeddecimal-tdigits-tdecimals--getenumerator) | Get an IEnumerator to iterate over the elements of the array.
+| [op_Explicit](#decimal--op-explicitfixeddecimalarray-tdim-tdigits-tdecimals-fixedarray)([FixedDecimalArray\<TDim, TDigits, TDecimals\>](/reference/runtime/qsys-runtime/fixed-decimal-array-3.html)) | Explicit cast from FixedDecimalArray to decimal[]
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Order elements of the array according to their value.
 
 ### void Clear()
@@ -78,6 +79,14 @@ Get an IEnumerator to iterate over the elements of the array.
 
 ```cs
 IEnumerator<FixedDecimal<TDigits, TDecimals>> GetEnumerator()
+```
+
+### Decimal\[\] op_Explicit([FixedDecimalArray\<TDim, TDigits, TDecimals\> fixedArray](/reference/runtime/qsys-runtime/fixed-decimal-array-3.html))
+
+Explicit cast from FixedDecimalArray to decimal[]
+
+```cs
+Decimal[] op_Explicit(FixedDecimalArray<TDim, TDigits, TDecimals> fixedArray)
 ```
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))

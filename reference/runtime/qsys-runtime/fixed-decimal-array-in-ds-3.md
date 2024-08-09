@@ -1,7 +1,7 @@
 ---
 title: "FixedDecimalArrayInDS<T1, T2, T3> struct"
 description: "Describes a fixed size array of FixedDecimal contained in a DataStructure. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Describes a fixed size array of FixedDecimal contained in a DataStructure.
@@ -71,6 +71,7 @@ FixedDecimalArrayInDS(DataStructure, LayoutType, Int32, Int32)
 | [CopyFrom](#void-copyfromdecimal--sourcearray-int-targetstartat)([Decimal\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copies elements from a decimal[] into this array.
 | [GetEnumerator()](#ienumerator-fixeddecimal-tdigits-tdecimals--getenumerator) | Returns an enumerator that iterates through the array.
 | [GetStartingPosition](#int-getstartingpositionint-index)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the starting position in the DataStructure buffer of the element indicated by the index parameter.
+| [op_Explicit](#decimal--op-explicitfixeddecimalarrayinds-tdim-tdigits-tdecimals-array)([FixedDecimalArrayInDS\<TDim, TDigits, TDecimals\>](/reference/runtime/qsys-runtime/fixed-decimal-array-in-ds-3.html)) | Casting operator to decimal[]. Returns a copy of the array as a decimal[].
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Sorts a range of elements in the array in ascending or descending order.
 
 ### void Clear()
@@ -123,6 +124,14 @@ int GetStartingPosition(int index)
 | Type | Description
 | --- | ---
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The position in the buffer of the element at the given index.
+
+### Decimal\[\] op_Explicit([FixedDecimalArrayInDS\<TDim, TDigits, TDecimals\> array](/reference/runtime/qsys-runtime/fixed-decimal-array-in-ds-3.html))
+
+Casting operator to decimal[]. Returns a copy of the array as a decimal[].
+
+```cs
+Decimal[] op_Explicit(FixedDecimalArrayInDS<TDim, TDigits, TDecimals> array)
+```
 
 ### void Sort([bool ascending](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int length](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

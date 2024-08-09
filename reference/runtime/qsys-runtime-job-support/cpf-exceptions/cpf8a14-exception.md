@@ -1,7 +1,7 @@
 ---
 title: "CPF8A14Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when {0} of type {1} not renamed to {2} in folder {3}. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 The exception that is thrown when {0} of type {1} not renamed to {2} in folder {3}.

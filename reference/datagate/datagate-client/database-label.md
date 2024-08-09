@@ -1,7 +1,7 @@
 ---
 title: "DatabaseLabel class           | QSYS API Reference Guide"
 description: "The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment. "
-last_modified_at: 2024-08-08T21:41:32Z
+last_modified_at: 2024-08-09T16:18:40Z
 ---
 
 The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment.
@@ -31,6 +31,7 @@ The class also provides methods for labeling and unlabeling databases, and for c
 | [CreateLabelObject()](#ilabel-createlabelobject) | Creates an ILabel object with default values
 | [GetLabel](#ilabel-getlabelsourceprofile-sp-string-lblname)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Retrieves a specific label from a given server.
 | [GetLabels](#ilabel--getlabelssourceprofile-sp)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Creates a list of all labels in a given server
+| [LabelDatabase](#void-labeldatabasesourceprofile-serverandcredentials-ilabel-label-boolean-bexists)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html), [ILabel](/reference/datagate/datagate-client/i-label.html), [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Create a label for an existing database
 | [RemoveDatabase](#void-removedatabasesourceprofile-sourceprofile)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Completely erases a database and its label.
 | [UnlabelDatabase](#void-unlabeldatabasesourceprofile-source)([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)) | Remove a label on a database
 
@@ -134,6 +135,22 @@ ILabel[] GetLabels(SourceProfile sp)
 | Type | Description
 | --- | ---
 | [ILabel\[\]](/reference/datagate/datagate-client/i-label.html) | Array of labels
+
+### void LabelDatabase([SourceProfile serverAndCredentials](/reference/datagate/datagate-providers/source-profile.html), [ILabel label](/reference/datagate/datagate-client/i-label.html), [Boolean& bExists](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+
+Create a label for an existing database
+
+```cs
+void LabelDatabase(SourceProfile serverAndCredentials, ILabel label, Boolean& bExists)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | serverAndCredentials | Server name and credentials for            DG access.
+| [ILabel](/reference/datagate/datagate-client/i-label.html) | label | Label details
+| [Boolean&](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | bExists | Modified to reflect whether the database            exists
 
 ### void RemoveDatabase([SourceProfile sourceProfile](/reference/datagate/datagate-providers/source-profile.html))
 

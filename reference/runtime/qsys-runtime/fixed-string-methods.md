@@ -1,7 +1,7 @@
 ---
 title: "FixedStringMethods class      | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations for FixedString values. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 ---
 
 Contains extension methods for handling RPG operations for FixedString values.
@@ -39,6 +39,7 @@ Contains extension methods for handling RPG operations for FixedString values.
 | [MoveRightWithPad\<T\>](#short-moverightwithpad-t-fixedstring-t-charstr-short-target)([FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int2 (short) with pad.
 | [MoveRightWithPad\<T\>](#short-moverightwithpad-t-fixedstring-t-charstr-short-target)([FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int4 (int) with pad.
 | [MoveRightWithPad\<T\>](#short-moverightwithpad-t-fixedstring-t-charstr-short-target)([FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16)) | RPG's MOVE. Moves right a numeric string into an int8 (long) with pad.
+| [ReplaceFixed\<T\>](#string-replacefixed-t-fixedstring-t-basestring-int-baselenconst-string-repstring-int-startpos-int-lengthtoreplace)([FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's %REPLACE. Replaces a length of characters in a FixedString value with a replacement string.
 | [SetHiLoEq\<T\>](#string-sethiloeq-t-fixedstring-t-teststring-indicator-hi-indicator-lo-indicator-eq)([FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | Sets the flags according to the value of testString.
 | [SubStr\<T\>](#string-substr-t-fixedstring-t-basestring-int-startpos-int-sublen)([FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length.
 | [SubStr\<T\>](#string-substr-t-fixedstring-t-basestring-int-startpos-int-sublen-indicator-errind)([FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Indicator&](/reference/runtime/qsys-runtime/indicator.html)) | RPG's SUBST. Returns a substring from baseString, starting at startPos ending at subLen, puts it into target, no padding, no preservation of length.
@@ -511,6 +512,30 @@ short MoveRightWithPad<T>(FixedString<T> charStr, short target)
 | Type | Description
 | --- | ---
 | [Int16](https://docs.microsoft.com/en-us/dotnet/api/system.int16) | returns the value of the move.
+
+### string ReplaceFixed\<T\>([FixedString\<T\> baseString](/reference/runtime/qsys-runtime/fixed-string-1.html), [int baseLenConst](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [string repString](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int startPos](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int lengthToReplace](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+RPG's %REPLACE. Replaces a length of characters in a FixedString value with a replacement string.
+
+```cs
+string ReplaceFixed<T>(FixedString<T> baseString, int baseLenConst, string repString, int startPos, int lengthToReplace)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [FixedString\<T\>](/reference/runtime/qsys-runtime/fixed-string-1.html) | baseString | Original FixedString value where replacement will occur.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | baseLenConst | Length to adjust the resulting string to.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | repString | Replacement string.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | startPos | Position in the original string where replacement will start.
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | lengthToReplace | Number of character in the original string to replace.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The string after the replacement and length adjustment.
 
 ### string SetHiLoEq\<T\>([FixedString\<T\> testString](/reference/runtime/qsys-runtime/fixed-string-1.html), [Indicator& hi](/reference/runtime/qsys-runtime/indicator.html), [Indicator& lo](/reference/runtime/qsys-runtime/indicator.html), [Indicator& eq](/reference/runtime/qsys-runtime/indicator.html))
 

@@ -1,7 +1,7 @@
 ---
 title: "_Slash interface              | QSYS API Reference Guide"
 description: "Describes the Slash (/) as date/time separator in the declaration of date/time types. "
-last_modified_at: 2024-08-08T21:41:46Z
+last_modified_at: 2024-08-09T16:18:25Z
 sitemap: false
 ---
 
