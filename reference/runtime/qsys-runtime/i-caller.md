@@ -1,7 +1,7 @@
 ---
 title: "ICaller interface             | QSYS API Reference Guide"
 description: "Identifies a class that participates in the ActivationGroup logic. A class that uses CALLD must implement this interface. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Identifies a class that participates in the ActivationGroup logic. A class that uses CALLD must implement this interface.

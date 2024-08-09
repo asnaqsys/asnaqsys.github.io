@@ -1,7 +1,7 @@
 ---
 title: "RecordFormatLevelAttribute class"
 description: "Defines the Record level value for a record in the class. "
-last_modified_at: 2024-08-09T16:18:58Z
+last_modified_at: 2024-08-09T17:26:04Z
 ---
 
 Defines the Record level value for a record in the class.

@@ -1,7 +1,7 @@
 ---
 title: "FixedStringMethods class      | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations for FixedString values. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Contains extension methods for handling RPG operations for FixedString values.

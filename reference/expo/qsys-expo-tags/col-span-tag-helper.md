@@ -1,7 +1,7 @@
 ---
 title: "ColSpanTagHelper class        | QSYS API Reference Guide"
 description: "Provides a ColSpan tag helper to Razor elements.  "
-last_modified_at: 2024-08-09T16:19:09Z
+last_modified_at: 2024-08-09T17:26:17Z
 ---
 
 Provides a ColSpan tag helper to Razor elements. 

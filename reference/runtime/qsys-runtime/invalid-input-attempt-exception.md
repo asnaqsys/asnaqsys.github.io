@@ -1,7 +1,7 @@
 ---
 title: "InvalidInputAttemptException class"
 description: "Invalid input attempt on format : -record format name- on file: -filename- exception. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Invalid input attempt on format : -record format name- on file: -filename- exception.

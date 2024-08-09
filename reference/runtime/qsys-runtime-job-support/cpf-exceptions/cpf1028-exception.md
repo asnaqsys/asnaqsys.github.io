@@ -1,7 +1,7 @@
 ---
 title: "CPF1028Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when {0} not valid for parameter SYSVAL. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 The exception that is thrown when {0} not valid for parameter SYSVAL.

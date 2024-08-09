@@ -1,7 +1,7 @@
 ---
 title: "ActivationGroupAttribute class"
 description: "Defines the Activation Group Attribute used to mark a program or service program class. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Defines the Activation Group Attribute used to mark a program or service program class.

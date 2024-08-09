@@ -1,7 +1,7 @@
 ---
 title: "FixedArray<T1, T2> struct     | QSYS API Reference Guide"
 description: "Defines the functionality of a fixed-sized unidimensional array. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Defines the functionality of a fixed-sized unidimensional array.
@@ -29,6 +29,7 @@ Defines the functionality of a fixed-sized unidimensional array.
 | [CompareTo](#int-comparetoobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Compare To object. 
 | [CopyFrom](#void-copyfromt--sourcearray-int-targetstartat)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Copy elements of a T[] into this array, starting at the given position.
 | [GetEnumerator()](#ienumerator-t-getenumerator) | Get an IEnumerator to iterate over the elements of the array.
+| [Initialize](#void-initializet-val)([T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | Initializes all elements of the array to the given value.
 | [op_Explicit](#t--op-explicitfixedarray-tdim-t-fixedarray)([FixedArray\<TDim, T\>](/reference/runtime/qsys-runtime/fixed-array-2.html)) | Explicit cast from FixedArray to T[]
 | [op_Implicit](#fixedarray-tdim-t-op-implicitt--array)([T\[\]](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0)) | Implicit cast from T[] to FixedArray.
 | [Sort](#void-sortbool-ascending-int-start-int-length)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Order elements of the array according to their value, using the default comparison for type T.
@@ -83,6 +84,20 @@ Get an IEnumerator to iterate over the elements of the array.
 ```cs
 IEnumerator<T> GetEnumerator()
 ```
+
+### void Initialize([T val](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0))
+
+Initializes all elements of the array to the given value.
+
+```cs
+void Initialize(T val)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | val | The value to copy into all array elements.
 
 ### T\[\] op_Explicit([FixedArray\<TDim, T\> fixedArray](/reference/runtime/qsys-runtime/fixed-array-2.html))
 

@@ -1,7 +1,7 @@
 ---
 title: "BuiltInSupport class          | QSYS API Reference Guide"
 description: "Contains static methods to perform certain RPG Built In functions. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Contains static methods to perform certain RPG Built In functions.

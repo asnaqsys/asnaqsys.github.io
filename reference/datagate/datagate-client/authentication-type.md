@@ -1,7 +1,7 @@
 ---
 title: "AuthenticationType enum       | QSYS API Reference Guide"
 description: "Specifies the type of authentication used in the ASNA DataGate client. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Specifies the type of authentication used in the ASNA DataGate client.

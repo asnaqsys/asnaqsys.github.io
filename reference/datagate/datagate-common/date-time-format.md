@@ -1,7 +1,7 @@
 ---
 title: "DateTimeFormat enum           | QSYS API Reference Guide"
 description: "Specifies the format for a date/time field. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Specifies the format for a date/time field.

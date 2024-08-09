@@ -1,7 +1,7 @@
 ---
 title: "ISchemaElementName interface  | QSYS API Reference Guide"
 description: "Represents a schema element name with its local name, namespace URI, and name. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Represents a schema element name with its local name, namespace URI, and name.

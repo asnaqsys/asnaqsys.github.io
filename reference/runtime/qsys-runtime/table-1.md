@@ -1,7 +1,7 @@
 ---
 title: "Table&lt;T&gt; class          | QSYS API Reference Guide"
 description: "Supports RPG&#39;s table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Supports RPG's table type by encapsulating an array and providing it with an implied index through the use of the CurrentElement property.

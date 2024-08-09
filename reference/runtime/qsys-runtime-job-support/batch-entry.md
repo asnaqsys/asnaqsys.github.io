@@ -1,7 +1,7 @@
 ---
 title: "BatchEntry class              | QSYS API Reference Guide"
 description: "Represents a single entry in a batch processing system. This class provides the necessary properties and methods to manage the entry&#39;s data and st"
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Represents a single entry in a batch processing system. This class provides

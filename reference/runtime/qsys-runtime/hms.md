@@ -1,7 +1,7 @@
 ---
 title: "_HMS interface                | QSYS API Reference Guide"
 description: "Describes the HMS date/time format in the declaration of date/time types. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false
 ---
 

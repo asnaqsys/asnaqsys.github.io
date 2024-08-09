@@ -1,7 +1,7 @@
 ---
 title: "IFixedArrayInDS<T1, T2> interface"
 description: "Describes minimum operations for a fixed size array contained in a DataStructure. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Describes minimum operations for a fixed size array contained in a DataStructure.

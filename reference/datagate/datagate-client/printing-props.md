@@ -1,7 +1,7 @@
 ---
 title: "PrintingProps class           | QSYS API Reference Guide"
 description: "Represents the application settings for printing properties. This class is auto-generated and changes may be overwritten. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Represents the application settings for printing properties.

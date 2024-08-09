@@ -1,7 +1,7 @@
 ---
 title: "CPF2123Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when Description for object {0} not changed. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 The exception that is thrown when Description for object {0} not changed.

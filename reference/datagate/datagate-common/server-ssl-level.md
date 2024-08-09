@@ -1,7 +1,7 @@
 ---
 title: "ServerSslLevel enum           | QSYS API Reference Guide"
 description: "Specifies the SSL level for a server connection. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Specifies the SSL level for a server connection.

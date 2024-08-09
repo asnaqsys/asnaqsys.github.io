@@ -1,7 +1,7 @@
 ---
 title: "FixedDateArrayInDS<T1, T2, T3> struct"
 description: "Describes a fixed size array of FixedDate contained in a DataStructure. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Describes a fixed size array of FixedDate contained in a DataStructure.

@@ -1,7 +1,7 @@
 ---
 title: "FieldAttribute class          | QSYS API Reference Guide"
 description: "Provides Displayfile field attributes "
-last_modified_at: 2024-08-09T16:18:58Z
+last_modified_at: 2024-08-09T17:26:04Z
 ---
 
 Provides Displayfile field attributes

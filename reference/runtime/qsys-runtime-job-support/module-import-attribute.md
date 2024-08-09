@@ -1,7 +1,7 @@
 ---
 title: "ModuleImportAttribute class   | QSYS API Reference Guide"
 description: "Attribute to indicate the list of (external) modules this program will contain. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Attribute to indicate the list of (external) modules this program will contain.

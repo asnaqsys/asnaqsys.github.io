@@ -1,7 +1,7 @@
 ---
 title: "IDS interface                 | QSYS API Reference Guide"
 description: "Defines the basic set of operations for a data structure. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Defines the basic set of operations for a data structure.

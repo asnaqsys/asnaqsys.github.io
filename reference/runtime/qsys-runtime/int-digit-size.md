@@ -1,7 +1,7 @@
 ---
 title: "IntDigitSize class            | QSYS API Reference Guide"
 description: "Constants for the size of integers, in digits. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Constants for the size of integers, in digits.

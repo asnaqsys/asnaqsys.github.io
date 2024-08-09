@@ -1,7 +1,7 @@
 ---
 title: "CPF3357Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when Output queue {0} does not exist. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 The exception that is thrown when Output queue {0} does not exist.

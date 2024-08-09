@@ -1,7 +1,7 @@
 ---
 title: "IMonaServerConfig interface   | QSYS API Reference Guide"
 description: "Exposes MonaServerConfig properties. "
-last_modified_at: 2024-08-09T16:18:58Z
+last_modified_at: 2024-08-09T17:26:04Z
 ---
 
 Exposes MonaServerConfig properties.

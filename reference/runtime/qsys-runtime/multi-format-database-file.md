@@ -1,7 +1,7 @@
 ---
 title: "MultiFormatDatabaseFile class | QSYS API Reference Guide"
 description: "Represents a multiformat Database data file. It contains methods to handle all Input and Output operations on the file.  "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Represents a multiformat Database data file. It contains methods to handle all Input and Output operations on the file. 

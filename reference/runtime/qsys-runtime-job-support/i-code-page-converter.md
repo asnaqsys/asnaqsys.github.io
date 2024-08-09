@@ -1,7 +1,7 @@
 ---
 title: "ICodePageConverter interface  | QSYS API Reference Guide"
 description: "Implement this interface to add your own CodePage conversion if Wings or the 5250 emulator don&#39;t already know it. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Implement this interface to add your own CodePage conversion if Wings or the 5250 emulator don't already know it.

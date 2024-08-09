@@ -1,7 +1,7 @@
 ---
 title: "SqlObjectName class           | QSYS API Reference Guide"
 description: "Represents a SQL object name. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Represents a SQL object name.

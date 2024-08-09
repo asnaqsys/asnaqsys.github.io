@@ -1,7 +1,7 @@
 ---
 title: "DdsSignatureTagHelper class   | QSYS API Reference Guide"
 description: "Defines an element where a signature can be captured "
-last_modified_at: 2024-08-09T16:19:09Z
+last_modified_at: 2024-08-09T17:26:17Z
 ---
 
 Defines an element where a signature can be captured

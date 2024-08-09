@@ -1,7 +1,7 @@
 ---
 title: "HostResourceHandler class     | QSYS API Reference Guide"
 description: "Facilities to deal with resources available in the Host server. "
-last_modified_at: 2024-08-09T16:18:58Z
+last_modified_at: 2024-08-09T17:26:04Z
 ---
 
 Facilities to deal with resources available in the Host server.

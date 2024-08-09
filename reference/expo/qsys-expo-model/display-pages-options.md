@@ -1,7 +1,7 @@
 ---
 title: "DisplayPagesOptions class     | QSYS API Reference Guide"
 description: "Provides configuration for Display Pages. "
-last_modified_at: 2024-08-09T16:18:58Z
+last_modified_at: 2024-08-09T17:26:04Z
 ---
 
 Provides configuration for Display Pages.

@@ -1,7 +1,7 @@
 ---
 title: "DdsFieldBase class            | QSYS API Reference Guide"
 description: "Provides common methods for DdsFields. "
-last_modified_at: 2024-08-09T16:19:09Z
+last_modified_at: 2024-08-09T17:26:17Z
 ---
 
 Provides common methods for DdsFields.

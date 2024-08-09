@@ -1,7 +1,7 @@
 ---
 title: "DdsConstantTagHelper class    | QSYS API Reference Guide"
 description: "Defines an constant label. "
-last_modified_at: 2024-08-09T16:19:09Z
+last_modified_at: 2024-08-09T17:26:17Z
 ---
 
 Defines an constant label.

@@ -1,7 +1,7 @@
 ---
 title: "DdsDecDateFieldTagHelper class"
 description: "Defines an input element to capture Dates for fields defined as decimal values. "
-last_modified_at: 2024-08-09T16:19:09Z
+last_modified_at: 2024-08-09T17:26:17Z
 ---
 
 Defines an input element to capture Dates for fields defined as decimal values.

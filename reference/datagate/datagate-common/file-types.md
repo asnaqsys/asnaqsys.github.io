@@ -1,7 +1,7 @@
 ---
 title: "FileTypes enum                | QSYS API Reference Guide"
 description: "Used for filtering results when enumerating a directory. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Used for filtering results when enumerating a directory.

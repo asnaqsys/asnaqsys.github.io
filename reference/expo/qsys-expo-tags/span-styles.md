@@ -1,7 +1,7 @@
 ---
 title: "SpanStyles enum               | QSYS API Reference Guide"
 description: "Defines the styles for the span of the grid row. "
-last_modified_at: 2024-08-09T16:19:09Z
+last_modified_at: 2024-08-09T17:26:17Z
 ---
 
 Defines the styles for the span of the grid row.

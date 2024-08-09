@@ -1,7 +1,7 @@
 ---
 title: "FieldType class               | QSYS API Reference Guide"
 description: "Represents the type of a field in a data structure. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Represents the type of a field in a data structure.

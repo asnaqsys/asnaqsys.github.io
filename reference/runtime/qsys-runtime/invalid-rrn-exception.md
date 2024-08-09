@@ -1,7 +1,7 @@
 ---
 title: "InvalidRRNException class     | QSYS API Reference Guide"
 description: "Invalid RRN Value: -rrn- on file: -filename- exception. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Invalid RRN Value: -rrn- on file: -filename- exception.

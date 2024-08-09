@@ -1,7 +1,7 @@
 ---
 title: "DdsTableTagHelper class       | QSYS API Reference Guide"
 description: "Defines a Subfile Table to be rendered as a standard Table. "
-last_modified_at: 2024-08-09T16:19:09Z
+last_modified_at: 2024-08-09T17:26:17Z
 ---
 
 Defines a Subfile Table to be rendered as a standard Table.

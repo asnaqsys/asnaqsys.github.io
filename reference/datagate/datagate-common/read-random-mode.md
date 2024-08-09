@@ -1,7 +1,7 @@
 ---
 title: "ReadRandomMode enum           | QSYS API Reference Guide"
 description: "Specifies the mode for reading data randomly. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Specifies the mode for reading data randomly.

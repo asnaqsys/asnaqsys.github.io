@@ -1,7 +1,7 @@
 ---
 title: "AdgSubTypes enum              | QSYS API Reference Guide"
 description: "Specifies the subtype of an ADG object. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Specifies the subtype of an ADG object.

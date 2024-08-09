@@ -1,7 +1,7 @@
 ---
 title: "MultiDataStructure class      | QSYS API Reference Guide"
 description: "Contains functionality to support multiple occurrence data structures. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Contains functionality to support multiple occurrence data structures.

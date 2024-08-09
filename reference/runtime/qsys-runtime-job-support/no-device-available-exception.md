@@ -1,7 +1,7 @@
 ---
 title: "NoDeviceAvailableException class"
 description: "The exception that is thrown when an operation is attempted when the job is not attached to a device. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 The exception that is thrown when an operation is attempted when the job is not attached to a device.

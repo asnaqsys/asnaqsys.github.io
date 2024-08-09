@@ -1,7 +1,7 @@
 ---
 title: "FixedTimestamp<T> struct      | QSYS API Reference Guide"
 description: "Holds a fixed-timestamp value with the given separator. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Holds a fixed-timestamp value with the given separator.

@@ -1,7 +1,7 @@
 ---
 title: "RowInsertedEventArgs class    | QSYS API Reference Guide"
 description: "Holds information that the RowInsertedEvent requires. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Holds information that the RowInsertedEvent requires.

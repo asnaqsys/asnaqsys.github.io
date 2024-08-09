@@ -1,7 +1,7 @@
 ---
 title: "GetObject class               | QSYS API Reference Guide"
 description: "Class that contains methods to construct certain RPG objects. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Class that contains methods to construct certain RPG objects.

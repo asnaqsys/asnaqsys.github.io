@@ -1,7 +1,7 @@
 ---
 title: "LockRequest enum              | QSYS API Reference Guide"
 description: "Specifies the type of lock to request on a resource. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Specifies the type of lock to request on a resource.

@@ -1,7 +1,7 @@
 ---
 title: "TraceSinkSectionHandler class | QSYS API Reference Guide"
 description: "Handles the configuration section for trace sinks in the application. Implements the  interface. "
-last_modified_at: 2024-08-09T16:18:40Z
+last_modified_at: 2024-08-09T17:25:07Z
 ---
 
 Handles the configuration section for trace sinks in the application.

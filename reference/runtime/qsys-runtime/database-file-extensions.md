@@ -1,7 +1,7 @@
 ---
 title: "DatabaseFileExtensions class  | QSYS API Reference Guide"
 description: "Defines a collection of extension methods to aid in operating with the file&#39;s dataset. "
-last_modified_at: 2024-08-09T16:18:25Z
+last_modified_at: 2024-08-09T17:25:29Z
 ---
 
 Defines a collection of extension methods to aid in operating with the file's dataset.
