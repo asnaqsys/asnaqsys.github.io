@@ -16,7 +16,6 @@ The following are the classes, enumerations and interfaces provided by **ASNA Da
 | [DataGateCredentialConverter](/reference/datagate/datagate-providers/datagate-credential-converter.html) | Provides a converter for DataGate credentials. |
 | [DataGateCredentialEqualityComparer](/reference/datagate/datagate-providers/datagate-credential-equality-comparer.html) | Provides a comparer for IDataGateCredential objects, which supports equality comparisons. |
 | [DataGateCredentialExtensions](/reference/datagate/datagate-providers/datagate-credential-extensions.html) | Provides extension methods for the IDataGateCredential interface. |
-| [Exchange5250DS](/reference/datagate/datagate-providers/exchange5250ds.html) | Represents a method that exchanges 5250 data stream. |
 | [FileOpenAttr](/reference/datagate/datagate-providers/file-open-attr.html) | Represents the attributes for opening a file. |
 | [PrintCreateAttr](/reference/datagate/datagate-providers/print-create-attr.html) | Represents the attributes for creating a print file. |
 | [PrintDevAttr](/reference/datagate/datagate-providers/print-dev-attr.html) | Compatibility class for dgPrintDeviceAttr structure. |
