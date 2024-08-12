@@ -1,6 +1,6 @@
 ---
 title: "QSYS Database File Essentials"
-description: "Explore the core aspects of QSYS database files. This guide covers creation, management, and best practices for efficient database handling."
+description: "Explore the core aspects of QSYS database files in IBM i systems. This guide covers creation, management, and best practices for efficient database handling and optimization."
 ---
 
 IBM i RPG [File Description Specifications](https://www.ibm.com/docs/en/i/7.2?topic=specifications-file-description) are implemented in `ASNA.QSys` by the class `DatabaseFile`.
