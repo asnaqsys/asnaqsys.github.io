@@ -50,7 +50,7 @@ The following sample JSON file defines two Database Names profiles, the first on
 }
 ```
 
-DataGate defines a [DataGate Schema](asna-qsys-schema.json) for JSON files defining named Source Profiles. Adding a reference to the schema file can assist on editors that provide intelisense like VS Code and Visual Studio.
+DataGate defines a [DataGate Schema](asna-qsys-schema.json) for JSON files defining named Source Profiles. Adding a reference to the schema file can assist on editors that provide intellisense like VS Code and Visual Studio.
 
 ```json
 {

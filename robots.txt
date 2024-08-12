@@ -4,4 +4,5 @@ Disallow: /googlec9891433cb8bee49.html
 Disallow: /fonts/geomanist/demo.html
 Disallow: /build_and_serve.sh
 Disallow: /pagefind/
+Disallow: /manuals/configuration/asna-qsys-schema.json
 Sitemap: https://asnaqsys.github.io/sitemap.xml
