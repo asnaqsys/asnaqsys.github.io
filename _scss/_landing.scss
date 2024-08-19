@@ -105,7 +105,8 @@ body.landing {
   .pagefind-ui__drawer {
     position: fixed;
     overflow-y: scroll !important;
-    max-height: 90vh;
+    /* max-height: 90vh; */
+    height: 68%;
     z-index: 1000;
   }
 
