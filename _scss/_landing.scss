@@ -95,7 +95,7 @@ body.landing {
 
   .pagefind-ui__results-area {
     background-color: var(--pagefind-ui-background);
-    margin-left: 10rem;
+    margin-left: 0;
   }
 
   .pagefind-ui__button { 
@@ -116,7 +116,7 @@ body.landing {
   }
 
   .pagefind-ui__results {
-    padding-left: 2% !important;
+    padding-left: 0 !important;
   }
 
   .card-holder {
