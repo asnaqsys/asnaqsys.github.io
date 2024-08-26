@@ -87,6 +87,10 @@ img.inline {
   width: 20rem;
 } 
 
+.asna-search form:not(:has(input[type=text]:focus))::before {
+  background-color: white !important;
+}
+
 .asna-search input[type=text] {
   background-color: rgba(0, 0, 0, 0.17);
   color: #0C5176;
