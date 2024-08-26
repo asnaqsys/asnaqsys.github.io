@@ -72,7 +72,7 @@ skip_read_time: true
     </div>
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
-            new PagefindUI({ element: "#search-div-hero", translations: { placeholder: ""},
+            new PagefindUI({ element: "#search-div-hero", translations: { placeholder: "Search for concepts, topics, examples, and more in this documentation site."},
             showSubResults: false, showImages: false, resetStyles: false });
         });
         document.documentElement.style.setProperty('--pagefind-ui-scale','1');
