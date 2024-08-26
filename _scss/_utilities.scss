@@ -102,6 +102,12 @@ img.inline {
   box-shadow: none;
 }
 
+.asna-search input[type=text]::placeholder {
+  color: white;
+  opacity: 0.6 !important;
+  font-style: italic;
+}
+
 .asna-search-hero {
   font-size: 18px;
   height: 50px;
