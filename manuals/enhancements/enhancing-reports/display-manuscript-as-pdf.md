@@ -1,6 +1,6 @@
 ---
-title: "Convert Reports to PDF: A Guide"
-description: "Transform your report manuscripts into professional and easily shareable PDF documents with our comprehensive guide on Displaying Report Manuscript as a PDF." 
+title: "Display Reports as PDF: A Guide"
+description: "Transform your report manuscripts into shareable PDF documents and present them to users on their Browsers." 
 ---
 
 The report written by a program is typically used in only one of these ways:

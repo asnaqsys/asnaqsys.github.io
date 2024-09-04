@@ -55,7 +55,7 @@ Concepts:
       section:
       - title: Database Files
         path: /concepts/program-structure/qsys-databasefile.html
-      - title: Print Files
+      - title: Printer Files
         path: /concepts/program-structure/qsys-printfile.html
       - title: Workstation Files
         path: /concepts/program-structure/qsys-workstationfile.html
@@ -68,15 +68,8 @@ Concepts:
     section:
     - title: Razor Pages
       path: /concepts/user-interface/razor-pages.html
-    - sectiontitle: Expo Display Pages
-      sectionpath: /concepts/user-interface/qsys-expo-display-pages.html
-      section:
-      - title: Subfile "More" or "Bottom"
-        path: /concepts/user-interface/qsys-expo-sfl-end.html
-    - title: Expo Web Content
-      path: /concepts/user-interface/qsys-expo-web-content.html
-    - title: Expo Client Library
-      path: /concepts/user-interface/qsys-expo-client-library.html
+    - title: Expo Display Pages
+      path: /concepts/user-interface/qsys-expo-display-pages.html
     - title: Expo DDS-like TagHelpers
       path: /concepts/user-interface/qsys-expo-dds-elements.html
     - sectiontitle: Expo Display Page Model
@@ -84,20 +77,26 @@ Concepts:
       section:
       - title: Intercept Model <=> Program Data Flow
         path: /concepts/user-interface/intercept-model-program-dataflow.html
-    - title: Messagefile
-      path: /concepts/user-interface/qsys-expo-messagefile.html
-    - title: Expo Client Library Advanced CSS
-      path: /concepts/user-interface/qsys-expo-client-advanced-css.html
-    - title: Expo Client Subfile
-      path: /concepts/user-interface/qsys-expo-client-subfile.html
+    - sectiontitle: Expo Client Subfile
+      sectionpath: /concepts/user-interface/qsys-expo-client-subfile.html
+      section:
+      - title: Subfile "More" or "Bottom"
+        path: /concepts/user-interface/qsys-expo-sfl-end.html
     - title: Expo Window Design
       path: /concepts/user-interface/qsys-expo-window-design.html
-
+    - title: Expo Web Content
+      path: /concepts/user-interface/qsys-expo-web-content.html
+    - title: Expo Client Library
+      path: /concepts/user-interface/qsys-expo-client-library.html
+    - title: Expo Client Library Advanced CSS
+      path: /concepts/user-interface/qsys-expo-client-advanced-css.html
+    - title: Messagefile
+      path: /concepts/user-interface/qsys-expo-messagefile.html
   - sectiontitle: Reports
     sectionpath: /concepts/printing/printing-introduction.html
     section:
-    - title: Facilites Based on CL Print Commands
-      path: /concepts/printing/equivalent-cl-print-commands.html
+    - title: Printer Files
+      path: /concepts/printing/printer-files.html
   - title: Database
     path: /concepts/database/database-overview.html
   - sectiontitle: Enhancing Migrated Applications
@@ -306,6 +305,8 @@ Manuals:
       section: 
       - title: Support for IFS and DLO
         path: /manuals/migrations/ifs-and-dlo.html
+      - title: Support for Print Commands
+        path: /manuals/migrations/equivalent-cl-print-commands.html
     - sectiontitle: Migrating Display Files
       sectionpath: /manuals/migrations/dspf-migration.html
       section: 
@@ -396,10 +397,17 @@ Manuals:
     - sectiontitle: Monarch Operations Management
       sectionpath: /manuals/hosting/mom/mom-overview.html
       section:
-      - title: Printer Writer
-        path: /manuals/hosting/mom/printer-writer.html
       - title: Batch Processor
         path: /manuals/hosting/mom/batch-dispatch.html
+      - sectiontitle: Manuscript Renderer
+        sectionpath: /manuals/hosting/mom/manuscript-renderer.html
+        section:
+        - title: Rendering in Windows
+          path: /manuals/hosting/mom/rendering-in-windows.html
+        - title: Rendering Elsewhere
+          path: /manuals/hosting/mom/rendering-in-linux.html
+      - title: Printer Writer
+        path: /manuals/hosting/mom/printer-writer.html
   - sectiontitle: Monarch Cocoon
     section:
     - title: Displayfile Function Key Text
