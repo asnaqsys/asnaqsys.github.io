@@ -1,5 +1,5 @@
 ---
-title: "Expo for Monarch Apps: Client-Side Barcode Scanning Config."
+title: "Expo Client-Side Barcode Scanning Support Configuration"
 description: "Master Expo for Monarch app development. Learn to manage client-side content with additional support for Barcode Scanning."
 ---
 
