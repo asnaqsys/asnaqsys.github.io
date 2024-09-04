@@ -348,6 +348,8 @@ Manuals:
         path: /manuals/configuration/multiple-jobs-one-browser.html
       - title: Expo Client-Side Content
         path: /manuals/configuration/expo-client-side-library.html
+      - title: Expo Client-Side Barcode Scanning Support
+        path: /manuals/configuration/expo-client-side-barcode-scan-config.html
       - title: Using Fake Data
         path: /manuals/configuration/using-fake-data.html        
       - sectiontitle: BTerm Customization
