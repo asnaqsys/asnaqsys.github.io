@@ -45,7 +45,7 @@ jobs:
 
     - name: Run Pagefind
       run: |
-        pagefind --source ./_site --output-path ./_site/search
+        pagefind --source ./_site --output-path ./_site/pagefind
         
     - name: Upload artifact
       # Automatically uploads an artifact from the './_site' directory by default
