@@ -1,7 +1,7 @@
 ---
 title: "DdsBarcodeFieldTagHelper class"
 description: "Defines a character input element (code) that may be read from a video source, by scanning images on each frame, identifying patterns according to Bar"
-last_modified_at: 2024-08-09T17:26:17Z
+last_modified_at: 2024-09-04T21:02:18Z
 ---
 
 Defines a character input element (code) that may be read from a video source, by scanning images on each frame, identifying patterns according to Barcode or QR Code pictorial representation.
@@ -34,6 +34,8 @@ As soon as the code in the Barcode is identified:
 Normally the Application will expect only one or two Barcode formats to be used. The barcode detection performance can be improved if the Barcode format(s) is enabled by setting the appropriate `Hint` value to `true` (for any of the listed properties below).
 
 >Note: [Some browsers restrict the use of the camera for secure connections](https://www.digicert.com/blog/https-only-features-in-browsers). Beware that `http` protocol may **NOT** work for Barcode scanning. The development use of *Self-signed* certificate may require additional user consent to display pages on your site.
+
+>Important: `DdsBarcodeFieldTag` requires additional site configuration to work properly. Please read [Expo Client-Side Barcode Scanning Support](/manuals/configuration/expo-client-side-barcode-scan-config.html) on the Manuals / Configuration section.
 
 ## Properties
 

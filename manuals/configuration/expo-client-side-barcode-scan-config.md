@@ -1,5 +1,5 @@
 ---
-title: "Expo for Monarch Apps: Client-Side Barcode Scanning Config."
+title: "Expo Client-Side Barcode Scanning Support Configuration"
 description: "Master Expo for Monarch app development. Learn to manage client-side content with additional support for Barcode Scanning."
 ---
 
@@ -132,6 +132,8 @@ Notice the new library added to the `"libraries"` array, that will download the 
 
 The following is a Basic Page, with one record format `HOMEMENU` including an input field `PRCODE` that is intended to receive the value of a code scanned from a Barcode.
 
+**Areas/Views/Pages/HelloDspf.cshtml** file:
+
 ```html
 @page
 @model HELLODSPF
@@ -166,4 +168,39 @@ The following is a Basic Page, with one record format `HOMEMENU` including an in
         </main>
     </DdsFile>
 </form>
+```
+
+**Areas/Views/Pages/HelloDspf.cshtml.cs** file:
+
+```cs
+using System;
+using Microsoft.AspNetCore.Mvc;
+using ASNA.QSys.Expo.Model;
+
+namespace YourCompany.YourApplication.BARCODEViews
+{
+    [
+        BindProperties,
+        DisplayPage(FunctionKeys = "F3 03"),
+        ExportSource(CCSID = 37)
+    ]
+    public class HELLODSPF : DisplayPageModel
+    {
+        public HOMEMENU_Model HOMEMENU { get; set; }
+
+        public HELLODSPF()
+        {
+            HOMEMENU = new HOMEMENU_Model();
+        }
+
+        [
+            Record(EraseFormats = "*ALL")
+        ]
+        public class HOMEMENU_Model : RecordModel
+        {
+            [Char(25, Upper = false)]
+            public string PRCODE { get; set; }
+        }
+    }
+}
 ```
