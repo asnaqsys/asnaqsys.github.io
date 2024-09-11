@@ -401,7 +401,7 @@ Manuals:
       section:
       - title: Batch Processor
         path: /manuals/hosting/mom/batch-dispatch.html
-      - sectiontitle: Manuscript Renderer
+      - sectiontitle: Manuscript Renderers
         sectionpath: /manuals/hosting/mom/manuscript-renderer.html
         section:
         - title: Rendering in Windows
