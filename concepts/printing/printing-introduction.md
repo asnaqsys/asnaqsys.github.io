@@ -115,25 +115,21 @@ Once an application has created a report (printer output) in the form of a manus
 3. The 'report' will be sent to some other subsystem like a document management facility or fax system.
 4. The report will be processed by a Printer Writer on a printer (potentially a PDF printer).
 
-### Rendering a Manuscript
-There are three mechanisms for users to typically consume a report.  
+## Consuming a Manuscript
+Rendering is the process of producing a paper of PDF version of report describied in a manuscript. 
+
+There are four mechanisms for users to typically consume a report.  
 1.	The application can direct the runtime to directly render the APM to a physical printer and produce an actual paper report.
-2.	The application can render the manuscript to a PDF file and present it immediatly to the application user via the user’s browser.
-3.	An user or operator can request at a later time to render the manuscript directing it to a printer or as PDF.
+2.	The application can render the manuscript to a PDF file and present it immediatly via the user’s web browser.
+3.	A user or operator can request at a later time to render the manuscript directing it to a printer or as PDF.
+4. It is also possible to have an application consume the Manuscript's XML directly possibly, 'scraping' only a few values.
 
-If the generated report is not for immediate user consumption but is more of a batch processing, then the [Printer Writer](#the-printer-writer) can be set as a Windows Service to ‘watch’ the output queue directories and render the manuscript out out of the queue.
+There are several [Renderers](/manuals/hosting/mom/manuscript-renderer.html) that can be used with the application depending on the execution environment.
 
-Whatever system is executing the ‘renderer’ program (to produce a PDF or real paper) must have access to:
- *	The renderer.exe program (typically located in some local drive)
- *	The manuscript APM file (either locally or thru a shared drive)
- *	The Windows Printer Driver for the printer where output will be directed (in the case of PDF, it must have the Microsoft Print to PDF printer driver).
-Notice that in the case noted above (2) where the user will consume the report as a PDF via the browser, there is no need to install anything on the user’s PC.
-
-### Rendering a Manuscript without Windows dependencies
+If the generated report is not for immediate user consumption but is more of a batch processing, then the [Printer Writer](#the-printer-writer) can be set as a Windows Service to ‘watch’ the output queue directories and render the manuscript out of the queue.
 
 
 ## The Printer Writer
-
 Monarch provides an [implementation of the Printer Writer](/manuals/hosting/mom/printer-writer.html) in the form of the executable program: ASNA.QSys.PrinterWriter.exe.
 
 The program can be configured via the ```appsettings.json``` file, and by command line arguments that override those in the json file.

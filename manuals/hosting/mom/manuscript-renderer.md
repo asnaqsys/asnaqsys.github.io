@@ -8,14 +8,19 @@ The final phase in the process of creating a report is the rendering of the manu
 You can read the [Concepts behind printing here](/concepts/printing/printing-introduction.html) and the [Printer Files concepts here](/concepts/printing/printer-files.html).
 
 ## Three Renderers
-In addition to the DataGate Renderer, there are two open source renderers that can be used without having to install DataGate on the rendering machine. ASNA provides these three renderers:
+In addition to the DataGate Renderer, there are Renderers with source in a [GitHub repository](//github.com/asnaqsys/ASNA.QSys.Renderer) that can be used without having to install DataGate on the rendering machine. 
+
+ASNA provides these three renderers:
  1. DataGate Renderer
- 2. Open.Renderer
- 3. PDF.PrintRenderer
+ 2. ASNA.QSys.Renderer.WindowsOnly
+ 3. ASNA.QSys.Renderer.PDFOnly
 
 The [first two renderers](/manuals/hosting/mom/rendering-in-windows.html) depend on the Windows operating system as they direct their output to an Windows printer device, the printer can be a 'physical' printer or the _Microsoft Print to PDF_ &nbsp;'printer'. Both of them are also dependent on the .NET Framework.
  
-The [third renderer](/manuals/hosting/mom/rendering-in-linux.html), `PDF.PrintRenderer`, creates a PDF document and is independent of the Windows OS. `PDF.PrintRenderer` is a .NET (Core) executable.
+The [third renderer](/manuals/hosting/mom/rendering-in-linux.html), `ASNA.QSys.Renderer.PDFOnly`, creates a PDF document and is independent of the Windows OS. `ASNA.QSys.Renderer.PDFOnly` is a .NET (Core) executable.
+
+As a convinience for deployment, ASNA provides the front-end program [ASNA.QSys.Renderer] which will invoke either one of the two ASNA.QSys.Renderers (`.WindowsOnly` or `.PDFOnly`) depending on the operating system where it is being executed. The source for these program can be found in the [ASNA.QSys.Renderer GitHub Repository](//github.com/asnaqsys/ASNA.QSys.Renderer).
+
 
 ## Renderer Command Line Options
 
@@ -58,7 +63,7 @@ A combinations of single page and a range of pages can be specified. **`/r:"1-3,
 
 ## Examples
 
-These example are using the Windows renderer `Renderer.exe` but the same options can be used with the other renderers.
+These example are using the DataGate renderer `Renderer.exe` but the same options can be used with the other renderers.
 
 **Print preview the entire report and do not delete Manuscript file when finished (all defaults used).**
 

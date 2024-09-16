@@ -61,17 +61,18 @@ When the Printer File is open, it is possible to provide an actual location to s
 ## Rendering
 The final phase in the process of creating a report is the rendering of the manuscript.  A renderer sends the formated contents of a manuscript to a printer or a PDF file.  DataGate provides a default renderer program (Renderer.exe) which yields a printout produced to a Windows installed printer.  The Renderer can be executed automatically when a Printer File is closed or be invoked by an operator or application. There are command options that can be set to control certain aspects of the rendering operation when Renderer.exe is executed from the Command Line.
 
-ASNA provides three renderers:
+ASNA provides [three Renderers](/manuals/hosting/mom/manuscript-renderer.html):
  1. DataGate Renderer
- 2. Open.Renderer
- 3. PDF.PrintRenderer
+ 2. ASNA.QSys.Renderer.WindowsOnly
+ 3. ASNA.QSys.Renderer.PDFOnly
 
-The [first two renderers](/manuals/hosting/mom/rendering-in-windows.html) depend on the Windows operating system as they direct their output to an Windows printer device, the printer can be a 'physical' printer or the _Microsoft Print to PDF_ &nbsp;'printer'. Both of them are also dependent on the .NET Framework.
+The [first two renderers](/manuals/hosting/mom/rendering-in-windows.html) depend on the Windows operating system as they direct their output to an Windows printer device, the printer can be a 'physical' printer or the _Microsoft Print to PDF_ &nbsp;'printer'. Both of them are **.NET Framework** executables.
  
-The [third renderer](/manuals/hosting/mom/rendering-in-linux.html), `PDF.PrintRenderer`, creates a PDF document and is independent of the Windows OS. `PDF.PrintRenderer` is a .NET (Core) executable.
+The [third renderer](/manuals/hosting/mom/rendering-in-linux.html), `ASNA.QSys.Renderer.PDFOnly`, creates a PDF document and is independent of the Windows OS. `ASNA.QSys.Renderer.PDFOnly` is a .NET (Core) executable.
+
+As a convinience for deployment, ASNA provides a front-end program called `ASNA.QSys.Renderer` which will invoke one of the two ASNA.QSys.Renderers depending on the operating system where it is being executed.
 
 ## Alternate Manuscript Uses
-
 Having the manuscript formatted as an XML document makes it easy to create custom 'renderers' which can process the manuscript in arbitrary ways.  For instance a custom program can use the manuscript as input to a process that 'grabs' the data from the report much like a traditional report 'scraper' would.
 
 ---------- 

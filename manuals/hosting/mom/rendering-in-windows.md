@@ -5,7 +5,7 @@ description: "Describes how to render a Manuscript in a environment hosted by a 
 
 This document discusses how to render a Manuscript with the support of Windows. ASNA provides two different implementations of a Report Renderer:
  + [DataGate Renderer](#datagate-renderer)
- + [Open.Renderer](#openrenderer)
+ + [ASNA.QSys.Renderer.WindowsOnly](#openrenderer)
 
 ## Common Features of the Two Implementations
 
@@ -13,7 +13,7 @@ A [Printer File](/concepts/printing/printer-files.html) is a collection of [Wind
 
 The Rendering process reads the Manuscript and instantiates the controls according to their design time properties and then iterates over the pages of the report setting the recorded runtime property values and rising the controls [OnPaint](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.onpaint)'s event. The Paint event receives the [System.Drawing.Graphics](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.graphics) instance that encapsulates the GDI+ drawings surface of the printer where the report is being renderer.
 
-> The DataGate Renderer and the Open.Renderer programs are .NET Framework executables that depend on the Windows operating system.
+> The DataGate Renderer and the ASNA.QSys.Renderer.WindowsOnly programs are .NET Framework executables that depend on the Windows operating system.
 
 The Printer where the report is created must be [installed](//support.microsoft.com/en-us/windows/install-a-printer-in-windows-cc0724cf-793e-3542-d1ff-727e4978638b) on the computer where the rendering is being executed and it can be a physical printer or the "Microsoft Print to PDF" printer.
 
@@ -30,12 +30,12 @@ In addition to the Renderer program, the installation places the assembly `ASNA.
 (where xx.x is the version number of the product being installed) and registers the assembly in the [GAC](//learn.microsoft.com/en-us/dotnet/framework/app-domains/gac).
 
 
-## Open.Renderer
-The combination of the Open.Renderer and Open.PrintControls can be used to print a Manuscript file to any printer installed on a **Windows computer**, including the 'Microsoft Print To PDF' printer.
+## ASNA.QSys.Renderer.WindowsOnly
+The ASNA.QSys.Renderer.WindowsOnly can be used to print a Manuscript file to any printer installed on a **Windows computer**, including the 'Microsoft Print To PDF' printer.
 
-`Open.Render` and `Open.PrintControls` are the Open Source releases of the DataGate components. To distiguish these components from those ship with the standard DataGate ones the names have been prefixed with `Open.`.
+`ASNA.QSys.Renderer.WindowsOnly` is the Open Source releas of the DataGate components. To distiguish this components from those ship with the standard DataGate ones the names have been modified.
 
-It is your responsibilty to build and install these components on your system. You can find the projects' sources in the GitHub [asnaqsys/PrintRendering](https://github.com/asnaqsys/PrintRendering) repositiory.
+It is your responsibilty to build and install these components on your system. You can find the project sources in the [GitHub Repository](//github.com/asnaqsys/ASNA.QSys.Renderer).
 
 
 
