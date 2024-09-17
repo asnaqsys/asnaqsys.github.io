@@ -5,7 +5,7 @@ description: "Describes how to render a Manuscript in a environment hosted by a 
 
 This document discusses how to render a Manuscript with the support of Windows. ASNA provides two different implementations of a Report Renderer:
  + [DataGate Renderer](#datagate-renderer)
- + [ASNA.QSys.Renderer.WindowsOnly](#openrenderer)
+ + [ASNA.QSys.Renderer.WindowsOnly](#asnaqsysrendererwindowsonly)
 
 ## Common Features of the Two Implementations
 
