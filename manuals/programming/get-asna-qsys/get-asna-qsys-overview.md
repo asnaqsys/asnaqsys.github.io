@@ -121,9 +121,38 @@ e.	You should be prompted to enter credentials (if not, hit the refresh button)
 
 Now you should be able to see the packages in the AsnaQSys organization.
 
-## ASNA.QSys.BatchDispatch.exe Sources
-ASNA.QSys.BatchDispatch.exe (BatchDispatch) is a program that can be used to run programs submitted to a job queue as part of a solution for [Batch Processing](/manuals/programming/jobs/batch-jobs.html). 
+## Configuring GA and Beta NuGet Package Sources
+The easiest way to configure two package sources, one for the General Available packages and one for the Beta packages is by editing your NuGet.Config file as shown here:
 
-The source code for BatchDispatch is in GitHub where customers can fork the repository and customize it to their particular needs.
+```xml
+  <packageSources>
+    . . . 
+    <add key="GitHub-AsnaQSys" value="https://nuget.pkg.github.com/asnaqsys/index.json" />
+    <add key="GitHub-QSysBeta"  value="https://nuget.pkg.github.com/asnaqsys-beta/index.json" />
+  </packageSources>
+  <packageSourceCredentials>
+    <GitHub-AsnaQSys>
+      <add key="username" value="MyGitHubName" />
+      <add key="cleartextpassword" value="MyGitHubToken" />
+    </GitHub-AsnaQSys>
+    <GitHub-QSysBeta>
+      <add key="username" value="MyGitHubName" />
+      <add key="cleartextpassword" value="MyGitHubToken" />
+    </GitHub-QSysBeta>
+  </packageSourceCredentials>
+```
+After you add the **GitHub-QSysBeta** entry to NuGet.Config, restart Visual Studio and make your selection in the package source dropdown box:
 
- > BatchDispatch Repository: [https://github.com/asnaqsys/ASNA.QSys.BatchDispatch](https://github.com/asnaqsys/ASNA.QSys.BatchDispatch)
+![VS Package Selection](images/vs-package-select.jpg)
+Notice the selection of the checkbox **Include prerelease**
+
+## Getting Sources for Monarch Operations Support Programs
+There are several programs that assist in the operations of a Monarch application.  Some of these programs assist with Batch Job dispatching, Printing Manuscripts and processing the manuscripts out of output queues.
+
+The source code for these programs is in GitHub where customers can fork the repository and customize and build them to their particular needs.
+
+Monarch Operations programs:
+ - [Batch Processing](/manuals/hosting/mom/batch-dispatch.html) source repository [ASNA.QSys.BatchDispatch](//github.com/asnaqsys/ASNA.QSys.BatchDispatch)
+ - [Manuscript Renderers](/manuals/hosting/mom/manuscript-renderer.html) source repository [ASNA.QSys.Renderer](http://github.com/asnaqsys/ASNA.QSys.Renderer)
+ - [Printer Writer](/manuals/hosting/mom/printer-writer.html) source repository [ASNA.QSys.PrinterWriter](//github.com/asnaqsys/ASNA.QSys.PrinterWriter)
+
