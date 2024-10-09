@@ -6,14 +6,14 @@ description: "Learn how to download the components required to execute applicati
 ## NuGet Packages
 To facilitate the building of migrated applications, Monarch Base is made available via the following NuGet packages:
 
-- ASNA.DataGate.Client
+- ASNA.QSys.DataGate.Client
 - ASNA.QSys.Runtime
 - ASNA.QSys.MonaServer
 - ASNA.QSys.Expo
 
 There are two main ways to get ahold of the NuGet packages:
- - Have ASNA ship you a zip file with the packages
- - Download them from GitHub
+ - Download the packages by configuring a Source to GitHub. This is the recomended way
+ - Clone the sources and build the packages yourself
 
 ## Accessing ASNA QSys NuGet Packages on GitHub
 The NuGet packages are available at [GitHub](https://github.com/orgs/asnaqsys/packages). In order to download them from this location you will need to have access to the AsnaQSys repository. Contact ASNA to be added to the ASNA QSys organization on the customer team.

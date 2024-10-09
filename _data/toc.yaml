@@ -262,8 +262,11 @@ Manuals:
       path: /manuals/programming/what-s-new/new-in-4.0.html
     - title: What's new in 5.0
       path: /manuals/programming/what-s-new/new-in-5.0.html
-    - title: Getting Asna.QSys Packages
-      path: /manuals/programming/get-asna-qsys/get-asna-qsys-overview.html
+    - sectiontitle: Getting Asna.QSys Packages
+      sectionpath: /manuals/programming/get-asna-qsys/get-asna-qsys-overview.html
+      section:
+      - title: Clone Repositories and Packages
+        path: /manuals/programming/get-asna-qsys/clone-repositories-and-nuget-packages.html
     - sectiontitle: Programs
       sectionpath: /manuals/programming/programs-and-procedures/pp-overview.html
       section:
