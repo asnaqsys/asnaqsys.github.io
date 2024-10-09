@@ -9,8 +9,9 @@ The easiest way of utilizing ASNA Monarch® Base is to [configure](get-asna-qsys
 As an alternate of using the released NuGet packages, you can build your own by cloning the Monarch Base sources and creating them yourself. You should only consider building your own packages if you need to customize them or if you will lose access to GitHub.
 
 ## ASNA Monarch® Base is NOT Open Source
-> [!CAUTION]
-> ASNA grants its ASNA Monarch® Base customers a license to the sources for their own use within the Migrated Application. <br/> Customers are not to allowed to make the sources available to the public or anybody outside their organization withour prior written agreement from ASNA.
+
+> ASNA grants its ASNA Monarch® Base customers a license to the sources for their own use within the Migrated Application. <br/>
+ Customers are not to allowed to make the sources available to the public or anybody outside their organization withour prior written agreement from ASNA.
 
 ## Clone Monarch Base Source Repositories
 There are multiple ways of cloning a GitHub repositiory. An easy way to make a clone is via Visual Studio.
