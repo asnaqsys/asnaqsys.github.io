@@ -38,7 +38,7 @@ Setting file: *CustomerApp*`Site\libman.json`:
 
 > "jsdelivr" is the service ASNA migrated applications use during Development, to [restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore) files from the public [ASNA github public location](https://github.com/asnaqsys/asna-qsys-expo-web-content) to the local Application's `wwwroot` folder.
 
-Executing Visual Studio 2022[^1]'s "Restore Client-Side Libraries" command, will refresh the QSys Expo Web Content to the released version-level as indicated (in this case to Version 2.0.0 according to the configuration in the [JSON](https://en.wikipedia.org/wiki/JSON) file).
+Executing Visual Studio's [^1] "Restore Client-Side Libraries" command, will refresh the QSys Expo Web Content to the released version-level as indicated (in this case to Version 2.0.0 according to the configuration in the [JSON](https://en.wikipedia.org/wiki/JSON) file).
 
 > Note: The Visual Studio feature is available by calling the *context* menu option when the `libman.json` file is selected in the Visual Studio Explorer window.
 
