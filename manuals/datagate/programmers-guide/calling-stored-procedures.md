@@ -4,13 +4,13 @@ description: "Master the process of calling stored procedures in DataGate. This 
 ---
 
 #### Program Call Example Tutorial
-DG for Visual Studio 2019 offers an interface for calling traditional RPG programs. These called programs typically are designed to be passed parameter variable values by reference. Thus the caller can pass a variable of a certain type to the program and the program, which defines the type of the parameter variable, can read and change the value of the variable before control is returned to the caller.
+DG for Visual Studio offers an interface for calling traditional RPG programs. These called programs typically are designed to be passed parameter variable values by reference. Thus the caller can pass a variable of a certain type to the program and the program, which defines the type of the parameter variable, can read and change the value of the variable before control is returned to the caller.
 
 Unlike IBM i file access where files are "externally described" and programs are compiled against those descriptions, the descriptions of IBM i program parameters are not readily available from the database, and thus cannot be directly compiled against. The description of called program parameters must be known and described by the DG programmer in order for a program call to be successful. DG allows parameters of called programs to be described procedurally. The following sections describe the objects and methods for calling programs.
 
 IBM i called programs may define parameters as complex data structures and arrays of simple or complex types. DG supports these parameters. Following the sections outlining parameter list construction is a section detailing the use of arrays and data structures.
 
-Note: There are some VB examples located in the C:\Program Files\ASNA\Examples\DG for VS 2017\VB folder. Each example is contained within a separate folder and there is a file called z_Readme.mht file in each folder containing information about the example and how to access it. Double-clicking on the solution file (.sln) will automatically open the example in Visual Studio 2019.
+Note: There are some VB examples located in the C:\Program Files\ASNA\Examples\DG for VS 2017\VB folder. Each example is contained within a separate folder and there is a file called z_Readme.mht file in each folder containing information about the example and how to access it. Double-clicking on the solution file (.sln) will automatically open the example in Visual Studio.
 ## Contents
 
 - Database Connections and Program Paths

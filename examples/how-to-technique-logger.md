@@ -3,7 +3,7 @@ title: "Effective Logging Techniques Guide"
 description: "Master the art of logging with our guide. Learn best practices, tools, and techniques to enhance your application's logging strategy."
 ---
 
-Visual Studio has a sophisticated [Output Window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/output-window?view=vs-2019) where lots of messages are displayed as the Application executes.
+Visual Studio has a sophisticated [Output Window](https://docs.microsoft.com/en-us/visualstudio/ide/reference/output-window) where lots of messages are displayed as the Application executes.
 
 During ASNA.QSys Application Debugging, it is desirable to display field values or complete dumps of records in a place where this information can be isolated from the rest of ASP.NET Core.
 

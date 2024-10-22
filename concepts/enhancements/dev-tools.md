@@ -28,9 +28,9 @@ program.cs
 
 > The Monarch Base Dev Tool also produces a **cache** folder that contains *External File Definitions* for all the database, printer and display page files used by all the programs in a particular Project. This folder has *hidden* attributes to keep the folder structure simple for the Application developer.
 
-## Integration with Visual Studio&reg; 2019
+## Integration with Visual Studio&reg;
 
-Visual Studio&reg; 2019 Projects have a collection of files, where each file can have associated properties.
+Visual Studio&reg; Projects have a collection of files, where each file can have associated properties.
 
 Typically, `.cs` C# source files will have:
 
@@ -85,7 +85,7 @@ The purpose of `.io.xfu` is to:
 1. List all references to all externally described files use by the program (workstation, database and printfiles).
 2. Provide a means to the Developer to specify *Directives* on all records for all the files, to drive the generation of QSys Program partial class.
 
-This XML file is also the selection node for Visual Studio 2019 to show the *context menu*, that will give the Developer access to the two Tools.
+This XML file is also the selection node for Visual Studio to show the *context menu*, that will give the Developer access to the two Tools.
 
 > ASNA.QSys runtime support will throw an exception when attempting to open files that had their schema out-of-sync with respect to the current partial class I/O implementation.
 
