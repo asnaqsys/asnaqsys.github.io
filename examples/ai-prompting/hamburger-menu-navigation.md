@@ -22,7 +22,7 @@ Inside the generated HTML element a collection of anchor elements (role=button) 
 The 'title' property has the label of the key name. 
 Each button will get at runtime a 'Click' event handler with the appropriate function handler code to execute a runtime passing pre-determined parameters. 
 
-Please write JavasScript code to run after the Page completed rendering, that will locate the Banner, identify the inner buttons, and create a Hamburger menu - with a nicer Font family and smaller font height - that will present menu options for the original buttons preserving labels and Click event handling code. The Hamburger should be added as the first child of the element 'main[role=main]'. The new JavaScript should be added to 'wwwroot\js' and the related CSS to 'wwwroot\css\site.css'
+Please write JavasScript code to run after the Page completed rendering, that will locate the Banner, identify the inner buttons, and create a Hamburger menu - with a nicer Font family and smaller font height - that will present menu options for the original buttons preserving labels and Click event handling code. The Hamburger should be added as the first child of the element 'main[role=main]', while the original Banner should hide (not removed). The new JavaScript should be added to 'wwwroot\js' and the related CSS to 'wwwroot\css\site.css'
 </pre>
 
 <style>
@@ -37,7 +37,7 @@ pre {
 *Sure, let's start by creating the JavaScript code to handle the Hamburger menu functionality. We'll place this code in a new file called wwwroot/js/hamburgerMenu.js.*
 
 ```js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Locate the Banner
     const banner = document.querySelector("nav[class^='dds-activekey-']");
     if (!banner) return;
@@ -60,7 +60,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const menuItem = document.createElement("a");
         menuItem.href = "#";
         menuItem.textContent = button.title;
-        menuItem.onclick = button.onclick;
+
+        // Preserve click handlers
+        menuItem.addEventListener('click', function (event) {
+            event.preventDefault();
+            button.click();
+        });
+
         menuContent.appendChild(menuItem);
     });
 
@@ -74,9 +80,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Toggle menu visibility on button click
-    menuButton.addEventListener("click", function() {
+    menuButton.addEventListener("click", function (event) {
+        event.preventDefault();
         menuContent.classList.toggle("show");
     });
+
+    banner.style.display = "none";
 });
 ```
 
@@ -148,3 +157,9 @@ Even small changes assume you remember many details about JavaScript and CSS (or
 The prompt contains details requiring knowledge of how the [Monarch Expo](/manuals/enhancements/enhancing-ui/user-client-scripting.html) works. If the provided code doesn't work on the first try, you can always ask for more details and provide more references to your code. AI is ready to work in your context. If the new code produces build errors, you can copy from the log output and ask AI for assistance.
 
 If there's a particular detail you don't like, such as font style, sizes, or the location of the Hamburger button, you can modify the provided prompt and ask AI to try again.
+
+## Results
+
+| Before | After |
+| :-: | :-: |
+| ![Before](../images/original-banner.png) | ![After](../images/banner-replaced-hamburger-menu.png) |
