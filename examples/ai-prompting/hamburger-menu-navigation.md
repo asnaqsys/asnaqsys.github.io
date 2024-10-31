@@ -139,18 +139,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <br>
 
+### How Copilot Helps with Writing Code
 
+Even small changes assume you remember many details about JavaScript and CSS (or perhaps it generated code you thought was beyond your reach). Using the prompt definitely saves time.
 
-### How Copilot specifically helps when writing the code for you.
+### Reflections and Next Steps
 
-Even this small change assumes that you can remember lots of details of how JavaScript and CSS work (or maybe it produced code you thought was beyond your reach). 
-Using the prompt was definitely a time saver.
+The prompt contains details requiring knowledge of how the [Monarch Expo](/manuals/enhancements/enhancing-ui/user-client-scripting.html) works. If the provided code doesn't work on the first try, you can always ask for more details and provide more references to your code. AI is ready to work in your context. If the new code produces build errors, you can copy from the log output and ask AI for assistance.
 
-
-### What you learn, reflections on your experience, or what you can try next
-
-The prompt contains details that required knowledge of how the [Monarch Expo](/manuals/enhancements/enhancing-ui/user-client-scripting.html) work.
-If the provided code does not work on the first try, you can always ask more details and provide more references to you code. AI is ready to work in your context.
-If the new code produces build errors, you can copy from the log output and ask AI for assistance.
-
-If there is a particular detail that you don't like, for example, font style, sizes or Hamburger button location, you can modify the provided Prompt and ask AI to try again.
+If there's a particular detail you don't like, such as font style, sizes, or the location of the Hamburger button, you can modify the provided prompt and ask AI to try again.
