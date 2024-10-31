@@ -2113,6 +2113,10 @@ Examples:
       path: /examples/sunfarm/grouping-existing-record-fields.html
     - title: Preserving Tab user preferences 
       path: /examples/sunfarm/preserve-user-preferences.html
-
+  - sectiontitle: AI Assisted Modernization
+    sectionpath: /examples/ai-prompting/ai-assisted-modernization-overview.html
+    section:
+    - title: Hamburger Menu Navigation
+      path: /examples/ai-prompting/hamburger-menu-navigation.html
 
                                                                                           
