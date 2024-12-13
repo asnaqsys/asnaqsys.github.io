@@ -48,15 +48,15 @@ The sources to build these subsystems can be obtained from ASNA repositories in 
  - [BatchDispatch Repository](https://github.com/asnaqsys/ASNA.QSys.BatchDispatch).
  - [BatchHost source](https://github.com/asnaqsys/ASNA.QSys.MonaServer/tree/main/src/ASNA.QSys.BatchHost) is in the MonaServer Repository.
  - [PrinterWriter Repository](https://github.com/asnaqsys/ASNA.QSys.PrinterWriter)
- - [Renderer Repository](https://github.com/asnaqsys/PrintRendering) which includes the Open.Renderer executable and the Open.PrintControls.
+ - [Renderer Repository](https://github.com/asnaqsys/ASNA.QSys.Renderer) which includes the Open.Renderer executable and the Open.PrintControls.
 
-There are two versions of the Renderer and the Print Controls. Both of them are **.NET Framework**.  The first version does not have to get built as it is installed with many ASNA products as part of the ‘DataGate’ infrastructure; The other version is ‘open sourced’ for customers that do not install DataGate products and can be found in the [Renderer Repository](https://github.com/asnaqsys/PrintRendering).
+There are two options to use the Renderer and the Print Controls: Install the ones distrubuted by ASNA or build them from rhe [Renderer Repository](https://github.com/asnaqsys/ASNA.QSys.Renderer). The first option  does not have to get built as it is installed with many ASNA products as part of the ‘DataGate’ infrastructure; this version is  **.NET Framework** only; The [other option](/manuals/hosting/mom/manuscript-renderer.html) is ‘open sourced’ for customers that do not **install** DataGate products and can be found in the [Renderer Repository](https://github.com/asnaqsys/ASNA.QSys.Renderer); this option includes projects for Windows **.NET Framework** only and projects for the creation of PDF files on any .NET platform like Windows and Linux.
 
-The DataGate version of the Print Controls is installed in the GAC, however the open-source version (Open.PrintControls) can be located anywhere in the file system and its location set on the Open.Renderer's App.config file.
+The DataGate version of the Print Controls is installed in the GAC, however the open-source versions can be located anywhere in the file system.
 
 ### Components
  - ASNA.QSys.BatchDispatch
  - ASNA.QSys.BatchHost
  - ASNA.QSys.PrinterWriter
- - Renderer (DataGate version or Open.Renderer and Open.PrintControls)
+ - One of the Renderers (DataGate version or one of the other [ASNA.QSys.Renderer options](/manuals/hosting/mom/manuscript-renderer.html))
 

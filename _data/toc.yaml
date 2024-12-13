@@ -325,6 +325,8 @@ Manuals:
     section:
     - title: Hosting an Interactive Application
       path: /manuals/hosting/host-interactive-application.html
+    - title: Hosting on Linux
+      path: /manuals/hosting/host-on-linux.html
     - sectiontitle: Monarch Operations Management
       sectionpath: /manuals/hosting/mom/mom-overview.html
       section:
