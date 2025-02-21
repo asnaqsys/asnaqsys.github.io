@@ -45,13 +45,14 @@ The most demanding change is the one requiring segments of code involving `CHAIN
 
 ## Access(*NoLock) Option on Reads
 
-DGL uses _SQL Server_ Cursors to implement file access.  When a file is opened for update, it is not possible to tell _SQL Server_ to not lock the record on a read, so this option is not valid for files opened for Update.  If a read operation uses the `Access(*NoLock)`[^1] option a runtime error will be rised.
+> DataGate can communicate **directly** with SQL Server using ADO.NET; this method of communication is known as _DataGate Linear_. To use _DataGate Linear_ set the ([SourceProfile](/reference/datagate/datagate-providers/source-profile.html)`.PlatformAttribute = "*SQLCLIENT"`.
 
-You have two options to solve this problem: 
- 1. A first alternative is to remove the `Access(*NoLock)` and follow the `READ' or 'CHAIN` with an `UNLOCK` operation. The challenge with this approach is the side efect that `Unlock` has of loosing the file's current position.
- 
- 2. Another approach is is to declare and open the file twice, once for input only and the other for update. Where the read appears with the `Access(*NoLock)` option, the file should be substituted with the one open for input only. By doing this, the application can take advantage of network blocking - yielding better performance. The challenge here is that it may be necessary to keep both files synchronized, particularly whenever a `SETLL` or `SETGT` (generically a seek) opeartion is done.
- 
+Starting with version 5.0, _DataGate Linear_ supports reading records without locking them on files that were open for `update`. To request a read with no lock, add the keyword `Access(*NoLock)`[^1] to the read/chain operation.
+
+While this feature is supported on DataGate for IBM i, it  was not available on SQL Server when it was accesed via DataGate. On those older versions, whenever a file was accessed for `update`, any read would always apply a lock to the record read. Now with _DataGate Linear_ it is possible to pass the parameter requesting the record not be locked. Notice that  _DataGate for SQL Server_ (DSS) does not have this enhancement.
+
+The _DataGate Linear_ feature comes with a restriction however.  It is not possible to switch between **sequential** reads with-lock and without-lock. In order to switch modes, a random-access operation is needed between the reads, this operation could be a seek (SETLL) or random-read (CHAIN).
+
 
 ----
 
