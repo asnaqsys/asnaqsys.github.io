@@ -296,6 +296,9 @@ Manuals:
           path: /manuals/configuration/bterm/bterm-sizing.html
     - title: Batch Processor Configuration
       path: /manuals/configuration/configure-batch-processor.html
+    - title: Edit Code Configuration
+      path: /manuals/configuration/edit-codes.html
+  
   - sectiontitle: Enhancing your Migrated Application
     section:
     - sectiontitle: Enhancing the User Interface

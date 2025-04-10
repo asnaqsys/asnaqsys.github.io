@@ -19,7 +19,7 @@ The [first two renderers](/manuals/hosting/mom/rendering-in-windows.html) depend
  
 The [third renderer](/manuals/hosting/mom/rendering-in-linux.html), `ASNA.QSys.Renderer.PDFOnly`, creates a PDF document and is independent of the Windows OS. `ASNA.QSys.Renderer.PDFOnly` is a .NET (Core) executable.
 
-As a convinience for deployment, ASNA provides the front-end program [ASNA.QSys.Renderer] which will invoke either one of the two ASNA.QSys.Renderers (`.WindowsOnly` or `.PDFOnly`) depending on the operating system where it is being executed. The source for these program can be found in the [ASNA.QSys.Renderer GitHub Repository](//github.com/asnaqsys/ASNA.QSys.Renderer).
+As a convinience for deployment, ASNA provides the front-end program [ASNA.QSys.Renderer] which will invoke either one of the two ASNA.QSys.Renderers (`.WindowsOnly` or `.PDFOnly`) depending on the operating system where it is being executed. The sources for these programs can be found in the [ASNA.QSys.Renderer GitHub Repository](//github.com/asnaqsys/ASNA.QSys.Renderer).
 
 
 ## Renderer Command Line Options
