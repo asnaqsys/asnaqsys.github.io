@@ -45,7 +45,7 @@ Executing Visual Studio's [^1] "Restore Client-Side Libraries" command, will ref
 ## Application dependent Web Content
 The following image shows a typical `wwwroot` web content file structure:
 
-![Typical Application Root folder](images/typical-application-wwwroot-folder.png/)
+![Typical Application Root folder](images/typical-application-wwwroot-folder.png)
 
 > Note: The ASNA QSys Expo folder is highlighted. Also note that Visual Studio Explorer shows the nodes with a *red* circle. This means that the branch is *excluded* from source control, since the sources are shared and likely "restored" from a common place (the cloud).
 
