@@ -11,6 +11,12 @@ Specifies the access mode for a data operation.
 <br>
 <br>
 
+## Remarks
+
+**AccessMode** defines flag values which can be used alone or combined to create a custom value to suit an application’s requirements for accessing a particular file. Many common combinations, such as `ReadWrite` and `RWCD`, are predefined by the enumeration.
+
+The `AccessMode` property of **FileAdapter** contains a value of AccessMode, which should be set prior to calling **FileAdapter’s** `Open`, `OpenNewAdgDataSet`, or `OpenSimpleQuery` to provide the requested access restrictions on the opened file.
+
 ## Enum Values
 
 | Name | Description | Value

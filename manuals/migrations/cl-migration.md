@@ -49,11 +49,10 @@ The following list of commands is supported by Monarch, please note that not all
 
 ```
 ADDLFM
-ADDLIBL
+ADDLIBLE
 ADDPFM
 ALCOBJ
 CALL
-CALLB
 CALLPRC
 CALLSUBR
 CHGACGCDE
@@ -170,7 +169,6 @@ The following lists group related commands.
 ### Calls
 ```
 CALL
-CALLB
 CALLPRC
 CALLSUBR
 RETURN
@@ -276,7 +274,7 @@ SBMJOB
 
 ### Library List
 ```
-ADDLIBL
+ADDLIBLE
 CHGLIBL
 RMVLIBLE
 ```

@@ -371,8 +371,47 @@ Reference:
     - sectiontitle: Classes
       sectionpath: /reference/datagate/datagate-client/landing-page-classes.html
       section:
-      - title: AdgConnection
-        path: /reference/datagate/datagate-client/adg-connection.html
+      - sectiontitle: AdgConnection
+        sectionpath: /reference/datagate/datagate-client/adg-connection.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/adg-connection-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: BeginAutoTransaction
+            path: /reference/datagate/datagate-client/adg-connection-begin-auto-transaction.html
+          - title: BeginTransaction
+            path: /reference/datagate/datagate-client/adg-connection-begin-transaction.html
+          - title: Clone
+            path: /reference/datagate/datagate-client/adg-connection-clone.html
+          - title: Close
+            path: /reference/datagate/datagate-client/adg-connection-close.html
+          - title: Dispose
+            path: /reference/datagate/datagate-client/adg-connection-dispose.html
+          - title: Equals
+            path: /reference/datagate/datagate-client/adg-connection-equals.html
+          - title: GetDatabaseAttributes
+            path: /reference/datagate/datagate-client/adg-connection-get-database-attributes.html
+          - title: GetDeviceCodePageID
+            path: /reference/datagate/datagate-client/adg-connection-get-device-code-page-id.html
+          - title: GetPeerAltCodePageID
+            path: /reference/datagate/datagate-client/adg-connection-get-peer-alt-code-page-id.html
+          - title: GetPeerVersion
+            path: /reference/datagate/datagate-client/adg-connection-get-peer-version.html
+          - title: GetSourceProfileCopy
+            path: /reference/datagate/datagate-client/adg-connection-get-source-profile-copy.html
+          - title: GetSupportsMultiMember
+            path: /reference/datagate/datagate-client/adg-connection-get-supports-multi-member.html
+          - title: IsCanceledException
+            path: /reference/datagate/datagate-client/adg-connection-is-canceled-exception.html
+          - title: Open
+            path: /reference/datagate/datagate-client/adg-connection-open.html
+          - title: operator ==
+            path: /reference/datagate/datagate-client/adg-connection-operator-equals.html
+          - title: operator !=
+            path: /reference/datagate/datagate-client/adg-connection-operator-not-equal.html
+          - title: Synchronized
+            path: /reference/datagate/datagate-client/adg-connection-synchronized.html
       - title: AdgDataSet
         path: /reference/datagate/datagate-client/adg-data-set.html
       - title: AdgFactory
