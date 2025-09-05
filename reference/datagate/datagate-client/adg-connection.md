@@ -74,14 +74,14 @@ An Open **AdgConnection** object may enter the Closed state via the `Close` meth
 | [Dispose()](adg-connection-dispose.html#void-dispose) | Releases all resources used by the AdgConnection.
 | [Dispose](adg-connection-dispose.html#void-disposebool-isdisposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Releases the resources used by the AdgConnection.
 | [Equals](adg-connection-equals.html)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the current AdgConnection instance is equal to the specified object.
-| [GetDatabaseAttributes()](adg-connection-get-database-attribute.html) | Gets the attributes of the database.
+| [GetDatabaseAttributes()](adg-connection-get-database-attributes.html) | Gets the attributes of the database.
 | [GetDeviceCodePageID()](adg-connection-get-device-code-page-id.html) | Gets the device code page ID.
 | GetHashCode() | Serves as the default hash function.
-| [GetPeerAltCodePageID()](adg-connection-int-get-peer-alt-code-page-id.html) | Gets the peer alternative code page ID.
+| [GetPeerAltCodePageID()](adg-connection-get-peer-alt-code-page-id.html) | Gets the peer alternative code page ID.
 | [GetPeerVersion()](adg-connection-get-peer-version.html) | Gets the protocol level of the peer.
 | [GetSourceProfileCopy()](adg-connection-get-source-profile-copy.html) | Return a deep-copy of the current value of the connection's source profile.
 | [GetSupportsMultiMember()](#bool-getsupportsmultimember.html) | Gets a value indicating whether the connection supports multi-member files.
-| [IsCanceledException](adg-connection-is-canceled-exceptionexception.html)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Determines whether the specified exception is due to a cancellation request.
+| [IsCanceledException](adg-connection-is-canceled-exception.html)([Exception](https://docs.microsoft.com/en-us/dotnet/api/system.exception)) | Determines whether the specified exception is due to a cancellation request.
 | [op_Equality](adg-connection-operator-equals.html)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Determines whether two AdgConnection instances are equal.
 | [op_Inequality](adg-connection-operator-not-equal.html)([AdgConnection](/reference/datagate/datagate-client/adg-connection.html), [AdgConnection](/reference/datagate/datagate-client/adg-connection.html)) | Determines whether two AdgConnection instances are not equal.
 | [Open](adg-connection-open.html#void-opencancellationtoken-ct)([CancellationToken](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-8.0)) | Opens a connection to the database with default options.
