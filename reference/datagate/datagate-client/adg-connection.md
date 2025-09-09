@@ -90,7 +90,11 @@ An Open **AdgConnection** object may enter the Closed state via the `Close` meth
 
 
 
-## Example
+## Examples
+
+### Create an AdgConnection
+
+Shows how to `new` an `AdgConnection` using a Database Source Profile Name.
 
 ```cs 
 
@@ -106,14 +110,33 @@ An Open **AdgConnection** object may enter the Closed state via the `Close` meth
         dgConfig = config.DataGate;
     }
 
-    private AdgConnection connect(string dbName)
+    private AdgConnection createAdgConnection(string dbName)
     {
-        AdgConnection dbConnection;
         SourceProfile sourceProfile = dgConfig.ResolveSourceName(dbName);
-        dbConnection = new AdgConnection(sourceProfile);
-        dbConnection.Open();
+        AdgConnection dbConnection = new AdgConnection(sourceProfile);
         return dbConnection;
     }
+
+
+    public void start()
+    {
+        PrepareStore(AsnaConfigHelper.DefaultConfigFilePath, "./appsetting.json");
+        . . . 
+        AdgConnection dbConnection = createAdgConnection("MyDatabaseName");
+        dbConnection.Open();
+        . . .
+        . . .
+        //Disconnects from the dataBase by closing the connection.
+        dbConnection.Close();
+    }
+
+```
+
+### Open a Database File
+
+See [Create an AdgConnection](#create-an-adgconnection)
+
+```cs 
 
     private FileAdapter openCustomerFile(AdgConnection dbConnection, out AdgDataSet dataSet)
     {
@@ -142,7 +165,8 @@ An Open **AdgConnection** object may enter the Closed state via the `Close` meth
     {
         PrepareStore(AsnaConfigHelper.DefaultConfigFilePath, "./appsetting.json");
         . . . 
-        AdgConnection dbConnection = connect("MyDatabaseName");
+        AdgConnection dbConnection = createAdgConnection("MyDatabaseName");
+        dbConnection.Open();
 
         AdgDataSet dataSet;       
         FileAdapter dbFile = openCustomerFile(dbConnection, out dataSet);

@@ -46,7 +46,7 @@ The `ASNA.QSys.Runtime.dll` assembly provides convinience classes to facilitate 
 2) **Gives you two target states with one codebase.** The same Monarch‑generated code can point to DB2 for i or SQL Server by **changing the DataGate database/profile**, not application logic—useful for phased cutovers and hybrid states. Any code not using DataGate (like embedded SQL) will require adjustments to the code.
 
 ## See Also
-[ASNA.QSys.Runtime](/reference/runtime/qsys-runtime/landing-page-namespace.html) Namespace
-[ASNA.QSys.Runtime.JobSupport.CLProgram](/reference/runtime/qsys-runtime-job-support/cl-program.html) Class
+[ASNA.QSys.Runtime Namespace](/reference/runtime/qsys-runtime/landing-page-namespace.html) <br/>
+[ASNA.QSys.Runtime.JobSupport.CLProgram Class](/reference/runtime/qsys-runtime-job-support/cl-program.html) <br/>
 [DataGate Overview](/manuals/datagate/datagate-overview.html)
 

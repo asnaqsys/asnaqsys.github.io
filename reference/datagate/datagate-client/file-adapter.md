@@ -833,13 +833,17 @@ T ThrowIfNotOpen<T>(T openState)
 | --- | ---
 | [T](https://learn.microsoft.com/en-us/dotnet/api/system.type?view=net-8.0) | The open state if it is not null.
 
-## Example 1. Use of WaitForRecord Open attribute property. 
+## Examples
+Most of the following examples create an AdgConnection by calling the `createAdgConnection()` method which is part of the [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) showing how to `new` an `AdgConnection` using a Database Source Profile Name.
+
+
+### Example 1. Use of WaitForRecord Open attribute property. 
 
 
 ```cs 
   /* Opens a record which will spend no time waiting for a record
    * if that record is locked. */
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEW", "CMMASTER");
   dbFile.AccessMode = AccessMode.Delete;
   dbFile.OpenAttributes.WaitForRecord = 0;
@@ -849,11 +853,11 @@ T ThrowIfNotOpen<T>(T openState)
 ```
 
 
-## Example 2. Use of ShareTypes Open attribute property.
+### Example 2. Use of ShareTypes Open attribute property.
 
 ```cs 
   /* We open the file in order to delete all of its records. */
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEW", "CMMASTER");
   dbFile.AccessMode = AccessMode.Delete;
   /* Its generally good practice to make sure you have an exclusive lock
@@ -884,10 +888,10 @@ T ThrowIfNotOpen<T>(T openState)
   db.Close();
 ```
 
-## Example 3. Use of BlockingFactor Open attribute property.
+### Example 3. Use of BlockingFactor Open attribute property.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
 
@@ -897,18 +901,18 @@ T ThrowIfNotOpen<T>(T openState)
   dbFile.OpenNewAdgDataSet(out ds);
 ```
 
-## Example 4. Use of OmitBlocking BlockingFactor Open attribute property.
+### Example 4. Use of OmitBlocking BlockingFactor Open attribute property.
 
-```cs  AdgConnection db = new AdgConnection("*Public/DG
-  NET Local"); FileAdapter dbFile = new FileAdapter(db,
-  "*Libl/CMASTNEWL1", "CMMASTERL1"); dbFile.AccessMode
-  = AccessMode.Read; /* Omits record blocking feature. */
+```cs
+  AdgConnection db = createAdgConnection("MyDatabaseName"); 
+  FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1"); 
+  dbFile.AccessMode = AccessMode.Read; /* Omits record blocking feature. */
   dbFile.OpenAttributes.BlockingFactor = FileOpenAttr.OmitBlocking;
   AdgDataSet ds = null;
   dbFile.OpenNewAdgDataSet(out ds);
 ```
 
-## Example 5. Using the FileLocks property of a FileAdapter's OpenAttributes
+### Example 5. Using the FileLocks property of a FileAdapter's OpenAttributes
 
 ```cs 
   /* Using the FileLocks property of a FileAdapter's OpenAttributes,
@@ -916,7 +920,7 @@ T ThrowIfNotOpen<T>(T openState)
    * than one record at a time. Note that manual file locking
    * is database dependent- for instance, it will work with a Acceler8
    * database but not with an IBM i. */
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.OpenAttributes.FileLocks = FileLocks.Manual;
   dbFile.AccessMode = AccessMode.RWCD;
@@ -963,10 +967,10 @@ T ThrowIfNotOpen<T>(T openState)
   db.Close();
 ```
 
-## Example 6. Using an specific BlockingFactor value to periodically update a progress bar.
+### Example 6. Using an specific BlockingFactor value to periodically update a progress bar.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -1024,7 +1028,7 @@ T ThrowIfNotOpen<T>(T openState)
 ```
 
 
-## Example 7. Use of FileLocks enumeration to allow locking more than one record at a time.
+### Example 7. Use of FileLocks enumeration to allow locking more than one record at a time.
 
 ```cs 
   /* Using the FileLocks property of a FileAdapter's OpenAttributes,
@@ -1032,7 +1036,7 @@ T ThrowIfNotOpen<T>(T openState)
    * than one record at a time. Note that manual file locking
    * is database dependent- for instance, it will work with a Acceler8
    * database but not with an IBM i. */
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.OpenAttributes.FileLocks = FileLocks.Manual;
   dbFile.AccessMode = AccessMode.RWCD;
@@ -1080,7 +1084,7 @@ T ThrowIfNotOpen<T>(T openState)
 ```
 
 
-## Example 8. Checking the status of a FileAdapter object before using it.
+### Example 8. Checking the status of a FileAdapter object before using it.
 
 Using a fileAdapter object named "dbFile" but are unsure as to whether or not it is been initialized, so we check for null and use the Status property to make sure it is opened and open it if it isn't.
 
@@ -1097,11 +1101,11 @@ Using a fileAdapter object named "dbFile" but are unsure as to whether or not it
   
 ```
 
-## Example 9. Use of FileAdapter.SetFormat Method.
+### Example 9. Use of FileAdapter.SetFormat Method.
 
 ```cs 
   /* Read only records from format one. */
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/SalesMem", "SalesMem");
   dbFile.AccessMode = AccessMode.Read | AccessMode.Write;
   AdgDataSet myDS = null;
@@ -1185,10 +1189,10 @@ Using a fileAdapter object named "dbFile" but are unsure as to whether or not it
 ```
 
 
-## Example 10. SeekRange method example.
+### Example 10. SeekRange method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -1239,10 +1243,10 @@ Using a fileAdapter object named "dbFile" but are unsure as to whether or not it
 ```
 
 
-## Example 11. SeekKey method example.
+### Example 11. SeekKey method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -1284,11 +1288,11 @@ Using a fileAdapter object named "dbFile" but are unsure as to whether or not it
 ```
 
 
-## Example 12. FileAdaptor ResetFormat method example.
+### Example 12. FileAdaptor ResetFormat method example.
 
 
 ```cs 
-AdgConnection db = new AdgConnection("*Public/DG NET Local");
+AdgConnection db = createAdgConnection("MyDatabaseName");
 FileAdapter dbFile = new FileAdapter(db, "Examples/SalesMem", "SalesMem");
 dbFile.AccessMode = AccessMode.Read;
 AdgDataSet myDS = null;
@@ -1351,7 +1355,7 @@ db.Close();
 ```
 
 
-## Example 13. FileAdaptor ReleaseCurrent method example.
+### Example 13. FileAdaptor ReleaseCurrent method example.
 
 ```cs 
  /* Here, we are using a pre-initialized FileAdapter (named "dbFile")
@@ -1376,10 +1380,10 @@ db.Close();
 
 ```
 
-## Example 14. FileAdaptor RecordCount property usage example.
+### Example 14. FileAdaptor RecordCount property usage example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -1437,10 +1441,10 @@ db.Close();
 ```
 
 
-## Example 15. ReadSequential FileAdaptor method example.
+### Example 15. ReadSequential FileAdaptor method example.
 
 ```cs 
-   AdgConnection db = new AdgConnection("*Public/DG NET Local");
+   AdgConnection db = createAdgConnection("MyDatabaseName");
    FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1",
            "CMMASTERL1");
    dbFile.AccessMode = AccessMode.Read;
@@ -1463,10 +1467,10 @@ db.Close();
 ```
 
 
-## Example 16. ReadSequentialEqual FileAdaptor method example.
+### Example 16. ReadSequentialEqual FileAdaptor method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -1553,10 +1557,10 @@ db.Close();
 
 ```
 
-## Example 17. ReadRange FileAdaptor method example.
+### Example 17. ReadRange FileAdaptor method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", 
             "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
@@ -1634,10 +1638,10 @@ db.Close();
 ```
 
 
-## Example 18. ReadRandomKey FileAdaptor method example.
+### Example 18. ReadRandomKey FileAdaptor method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -1660,10 +1664,10 @@ db.Close();
 ```
 
 
-## Example 19. OpenSimpleQuery FileAdaptor method example.
+### Example 19. OpenSimpleQuery FileAdaptor method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read; 
   AdgDataSet myDS = null;
@@ -1687,10 +1691,10 @@ db.Close();
 
 ```
 
-## Example 20. OpenNewAdgDataSet FileAdaptor method example.
+### Example 20. OpenNewAdgDataSet FileAdaptor method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
 
@@ -1731,7 +1735,7 @@ db.Close();
   db.Close();
 ```
 
-## Example 20. Open FileAdaptor method example.
+### Example 20. Open FileAdaptor method example.
 
 ```cs 
   /* Unlike OpenNewAdgDataSet, the Open method does not create
@@ -1743,7 +1747,7 @@ db.Close();
    * operation and the need to reopen a file rarely occurs. */
 
   FileAdapter dbFile = new FileAdapter();
-  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
+  dbFile.SetConnection( createAdgConnection("MyDatabaseName") );
   dbFile.FileName = "*Libl/CMASTNEW";
   dbFile.MemberName = "CMMASTER";
   AdgDataSet myDS = null;
@@ -1760,10 +1764,10 @@ db.Close();
 
 ```
 
-## Example 21. OpenAttributes property example.
+### Example 21. OpenAttributes property example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -1820,7 +1824,7 @@ db.Close();
   db.Close();
 ```
 
-## Example 21. MemberName property example.
+### Example 21. MemberName property example.
 
 ```cs 
   /* We attempt to open the class variable FileAdapter "dbFile" 
@@ -1857,13 +1861,13 @@ db.Close();
 ```
 
 
-## Example 23. GetPrintProperties method example.
+### Example 23. GetPrintProperties method example.
 
 
 ```cs 
   /* Will open up "CustReport" and will write a single detail, and
    * change its background color. */
-  AdgConnection dataBase = new AdgConnection("DG NET Local");
+  AdgConnection dataBase = createAdgConnection("MyDatabaseName");
   FileAdapter printFile = new FileAdapter(dataBase, "*Libl/CustReport", "*First");
   printFile.AccessMode = AccessMode.PrintPreview;
   AdgDataSet dataSet;
@@ -1885,7 +1889,7 @@ db.Close();
   dataBase.Close();
 ```
 
-## Example 24. FileAdapter FileName property example.
+### Example 24. FileAdapter FileName property example.
 
 ```cs 
   /* In this simple routine we wish to write the format names 
@@ -1917,11 +1921,11 @@ db.Close();
 ```
 
 
-## Example 24. FileAdapter FileLength property example.
+### Example 24. FileAdapter FileLength property example.
 
 ```cs 
   FileAdapter dbFile = new FileAdapter();
-  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
+  dbFile.SetConnection( createAdgConnection("MyDatabaseName") );
   dbFile.FileName = "*Libl/CMASTNEW";
   dbFile.MemberName = "CMMASTER";
   AdgDataSet myDS = null;
@@ -1939,29 +1943,29 @@ db.Close();
   dbFile.Connection.Close();
 ```
 
-## Example 25. Specifying FileName and MemberName properties after FileAdapter gets instanced.
+### Example 25. Specifying FileName and MemberName properties after FileAdapter gets instanced.
 
 ```cs 
-  AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
+  AdgConnection dataBase = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(dataBase);
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";
 ```
 
-## Example 25. Specifying Connection property after FileAdapter gets instanced.
+### Example 25. Specifying Connection property after FileAdapter gets instanced.
 
 ```cs 
-  AdgConnection dataBase = new AdgConnection("*Public/DG NET IBM i");
+  AdgConnection dataBase = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter();
   dbFile.SetConnection( dataBase;
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";
 ```
 
-## Example 26. FileAdapter.ExactSeek Property usage example.
+### Example 26. FileAdapter.ExactSeek Property usage example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   using (FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1"))
   {
       dbFile.AccessMode = AccessMode.Read;
@@ -1988,10 +1992,10 @@ db.Close();
   db.Close();
 ```
 
-## Example 26. DeleteRange method example.
+### Example 26. DeleteRange method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Delete | AccessMode.Read;
 
@@ -2027,10 +2031,10 @@ db.Close();
   db.Close();
 ```
 
-## Example 27. DeleteKey method example.
+### Example 27. DeleteKey method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   /* Open a file for reading and deleting- this allows us to delete a record by its key value. */
   dbFile.AccessMode = AccessMode.Delete | AccessMode.Read;
@@ -2055,10 +2059,10 @@ db.Close();
   db.Close();
 ```
 
-## Example 28. DeleteCurrent method example.
+### Example 28. DeleteCurrent method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read | AccessMode.Delete;
 
@@ -2094,11 +2098,11 @@ db.Close();
   db.Close();
 ```
 
-## Example 29. DeleteAllRecords method example.
+### Example 29. DeleteAllRecords method example.
 
 ```cs 
   /* We open the file in order to delete all of its records. */
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEW", "CMMASTER");
   dbFile.AccessMode = AccessMode.Delete;
   /* Its generally good practice to make sure you have an exclusive lock
@@ -2128,14 +2132,14 @@ db.Close();
   db.Close();
 ```
 
-## Example 30. Connection property example.
+### Example 30. Connection property example.
 
 ```cs 
   /* Initialize a new fileadapter. Since the AdgConnection is needed
    * only for this file adapter, it is created and destroyed using the
    * FileAdapter's Connection property. */
   FileAdapter dbFile = new FileAdapter();
-  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
+  dbFile.SetConnection( createAdgConnection("MyDatabaseName") );
   dbFile.FileName = "*Libl/CMASTNEWL2";
   dbFile.MemberName = "CMMASTERL2";
   dbFile.AccessMode = AccessMode.Read;
@@ -2155,10 +2159,10 @@ db.Close();
   dbFile.Connection.Close(); /* Close database. */
 ```
 
-## Example 31. Close method example.
+### Example 31. Close method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;
@@ -2188,10 +2192,10 @@ db.Close();
   db.Close();
 ```
 
-## Example 32. ChangeCurrent method example.
+### Example 32. ChangeCurrent method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read | AccessMode.Change;
 
@@ -2228,10 +2232,10 @@ db.Close();
   db.Close();
 ```
 
-## Example 33. AddRecord method example.
+### Example 33. AddRecord method example.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyDatabaseName");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", 
             "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
@@ -2273,11 +2277,11 @@ db.Close();
   }
 ```
 
-## Example 34. FileAdapter AccessMode property example.
+### Example 34. FileAdapter AccessMode property example.
 
 ```cs 
   FileAdapter dbFile = new FileAdapter();
-  dbFile.SetConnection( new AdgConnection("*Public/DG NET Local") );
+  dbFile.SetConnection( createAdgConnection("MyDatabaseName") );
   dbFile.FileName = "*Libl/CMASTNEWL1";
   dbFile.MemberName = "CMMASTERL1";
 
