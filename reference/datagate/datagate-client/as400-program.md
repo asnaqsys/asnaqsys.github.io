@@ -587,7 +587,7 @@ void WriteParmXml(XmlWriter writer)
 
 ```cs 
   As400Program prog = new As400Program();
-  prog.SetConnection( new AdgConnection("*Public/DG NET IBM i") );
+  prog.SetConnection( createAdgConnection("*Public/DG NET IBM i") );
   prog.SetProgramPath( "*Libl/Call400" );
 ```
 
@@ -647,6 +647,8 @@ void WriteParmXml(XmlWriter writer)
 
 ```cs 
   As400Program prog = new As400Program();
-  prog.SetConnection( new AdgConnection("*Public/DG NET IBM i") );
+  prog.SetConnection( createAdgConnection("*Public/DG NET IBM i") );
   prog.SetProgramPath = "*Libl/Call400";
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`

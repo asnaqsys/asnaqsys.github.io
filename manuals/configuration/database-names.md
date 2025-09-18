@@ -19,7 +19,7 @@ The `QSys.Runtime.Database` constructor accepts a Database Name string and it al
 Before the constructor or the SetDBName are executed, one or more Configuration Sources should be established via the static method `PrepareNameStore()`.
 
 ## Configuration Sources
-The `PrepareNameStore()` method supports the following sources:
+The [PrepareNameStore](/reference/runtime/qsys-runtime/database.html#void-preparenamestoretnamestoreoptions-options-string-configfiles) method supports the following sources:
 1. JSON Files
 2. User Secrets
 3. Environmental Variables

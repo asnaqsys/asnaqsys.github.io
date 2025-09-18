@@ -42,7 +42,7 @@ The `AccessMode` property of **FileAdapter** contains a value of AccessMode, whi
 ## Examples 
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   /* We need to open this file for Read as well as as Delete
    * in order search for the key value. */
@@ -76,3 +76,5 @@ The `AccessMode` property of **FileAdapter** contains a value of AccessMode, whi
   dbFile.Close();
   db.Close();
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`

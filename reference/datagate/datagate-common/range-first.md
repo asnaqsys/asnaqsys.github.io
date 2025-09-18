@@ -22,7 +22,7 @@ Specifies the first range of a sequence.
 ## Examples
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
 
@@ -57,3 +57,5 @@ Specifies the first range of a sequence.
   dbFile.Close();
   db.Close();
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`

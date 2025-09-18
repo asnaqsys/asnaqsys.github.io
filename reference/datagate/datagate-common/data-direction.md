@@ -23,7 +23,7 @@ Specifies the direction of data flow for a data operation.
 ## Examples
 
 ```cs
-   AdgConnection ProdDB = new AdgConnection("*Public/DG NET IBM i");
+   AdgConnection ProdDB = createAdgConnection("*Public/DG NET IBM i");
    char Quit400App = '1';
    string CustName;
    decimal TimeOfDay;
@@ -55,3 +55,5 @@ Specifies the direction of data flow for a data operation.
   TimeOfDay = Convert.ToDecimal(prog.ParmToObject(System.Type.GetType("System.Decimal"), 
       "TimeOfDay", new int[]{}));
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`

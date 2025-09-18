@@ -81,7 +81,7 @@ bool Equals(DataRow other)
      the customer "Thilmany of Bread Co Resources".
      It omits error trapping for clarity's sake. */
 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   db.Open();
   FileAdapter file = new FileAdapter(db);
   file.FileName = "Examples//CMastNewL2";
@@ -102,4 +102,6 @@ bool Equals(DataRow other)
   //in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key);
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`
 

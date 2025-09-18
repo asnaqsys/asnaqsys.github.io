@@ -16,30 +16,25 @@ The following AVR code opens a database connection and then creates a **FileAdap
   AdgConnection Cx;
   FileAdapter DbFile;
   AdgDataSet Ds;
-  Cx = new AdgConnection("ASNA Local DB");
+  Cx = createAdgConnection(" ASNA Local DB");
   Cx.Open();
   DbFile = new FileAdapter(Cx,"/cmmaster","*first");
   DbFile.AccessMode = AccessMode.Read;
   DbFile.OpenNewAdgDataSet(ref Ds);
 ```
 
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`
+
 **FileAdapter** models an open database file’s "pointer", or the current position of the virtual record cursor on the database server. For example, **FileAdapter’s** [ OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method sets the record cursor to just prior to the first record in the file. **FileAdapter** also includes "<span>seek</span>" methods, used to place the record cursor to positions of particular interest. The [CurrentFormatIndex](file-adapter-class-current-format-index-property.html), [FormatRequested](file-adapter-class-format-requested-property.html), [ RRN](file-adapter-class-rrn-property.html), and [ExactSeek](file-adapter-class-exact-seek-property.html) properties of **FileAdapter** provide indicators of the current position of the record cursor.
 ## See Also
 
 
-[AdgConnection Class](adg-connection-class.html)
-      <br />
-[AdgDataSet Class](adg-dataset-class.html)
-      <br />
-[FileAdapter Class](file-adapter-class.html)
-      <br />
-[FileAdapter Class Members](file-adapter-members.html)
-      <br />
-[Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)
-      <br />
-[Efficient File Access](efficient-file-access.html)
-      <br />
-[Reading and Writing to Database Files](readingand-writingto-database-files.html)
-      <br />
+[AdgConnection Class](adg-connection-class.html) <br />
+[AdgDataSet Class](adg-dataset-class.html) <br />
+[FileAdapter Class](file-adapter-class.html) <br />
+[FileAdapter Class Members](file-adapter-members.html) <br />
+[Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html) <br />
+[Efficient File Access](efficient-file-access.html) <br />
+[Reading and Writing to Database Files](readingand-writingto-database-files.html) <br />
 [Verifying Results with Exception Handling](verifying-resultswith-exception-handling.html)
 

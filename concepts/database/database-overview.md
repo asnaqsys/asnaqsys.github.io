@@ -5,14 +5,15 @@ description: "Gain insights into Monarch Application's database management. Lear
 
 Database support for Monarch Applications is provided by ASNA DataGate. DataGate is a client/server facility capable of providing .NET programs access to data in either Microsoft SQL Server or IBM's DB2 on IBM i.
 
-> DataGate is the bridge that lets Monarch‑converted .NET code keep doing RPG‑style record‑level I/O and job semantics, either against IBM i (via DataGate for IBM i) or against SQL Server (via DataGate for SQL Server), without rewriting the application’s core data logic.
+> **DataGate (DG)** is the record‑level data‑access layer used by Monarch‑converted applications. It exposes RPG‑style I/O (READ, CHAIN, WRITE, UPDATE, DELETE) and IBM i idioms (library list, members, data areas, QTEMP) to .NET applications targeting either **IBM i (DB2 for i)** or **Microsoft SQL Server**.
 
-
-In an ASNA Monarch migration, **DataGate** is the data‑access runtime and tooling layer that lets the converted .NET application keep behaving like RPG ---  preserving record‑level I/O, keyed access, library‑list semantics and other IBM i idioms — while running on Microsoft .NET and pointing either to **DB2 for i**  or to **Microsoft SQL Server**. Monarch generates .NET code that uses the `ASNA.QSys.Runtime` library which in turn depends on the `ASNA.DataGate`  classes to perform file I/O and related operations. 
+In an ASNA Monarch migration, **DataGate** is the data‑access runtime and tooling layer that lets the converted .NET application keep behaving like RPG ---  preserving record‑level I/O, keyed access, library‑list semantics and other IBM i idioms — while running on Microsoft .NET and pointing either to **DB2 for i**  or to **Microsoft SQL Server**. Monarch generates .NET code that uses the `ASNA.QSys.Runtime` library which in turn depends on the `ASNA.DataGate`  classes to perform file I/O and related operations. The use of DataGate preserves business logic without the need to rewrite the application’s core data logic.
 
 
 ## Where DataGate Sits in a Migrated Program
 In general, programmers working on migrated programs interact with the Runtime Library instead of dealing directly with the DataGate Library.
+
+> DG is consumed through the **ASNA.QSys.DataGate.Client** assembly and higher‑level convenience classes in **ASNA.QSys.Runtime** used by migrated code. NuGet packages are available to licensed developers.
 
 ![](images/datagate-vis-a-vis-runtime.jpg)
 

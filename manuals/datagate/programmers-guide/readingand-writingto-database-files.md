@@ -6,21 +6,21 @@ description: "Master the techniques for reading and writing to database files wi
 The following example <span>opens a database file</span> for "read" access and then reads the first record in the file.
 
 ```cs
- 
-  using ASNA.DataGate.Client;
+   using ASNA.DataGate.Client;
   using ASNA.DataGate.Common;
   ...
   AdgConnection Cx;
   FileAdapter DBFile;
   AdgDataSet Ds;
-  Cx = new AdgConnection("ASNA Local DB");
+  Cx = createAdgConnection("ASNA Local DB");
   Cx.Open();
   DbFile = new FileAdapter(Cx,"/cmmaster","*first");
   DbFile.OpenNewAdgDataSet( ref Ds );
   DbFile.ReadSequential (Ds, ReadSequentialMode.Next, LockRequest.Default);
   Console.WriteLine("CMCustNo = " + Ds.ActiveRow["CMCustNo"]);
-
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`
 
 Upon the successful completion of the `DbFile.ReadSequential` method in this example, the database file cursor represented by DbFile will rest on the first record of the file. Also, the data contained in the first record is available via the **AdgDataSet** object referred to by the Ds variable. The most recent record read into **AdgDataSet** is accessible via its `ActiveRow` property. In the last line of the example, the value of a field in the record (CMCustNo) is referenced from the ActiveRow property and displayed in a message box.
 
@@ -35,7 +35,7 @@ The following example illustrates one procedure for **updating a file**.
   AdgConnection cx; 
   FileAdapter dbFile;
   AdgDataSet ds;
-  cx = new AdgConnection("ASNA Local DB");
+  cx = createAdgConnection("ASNA Local DB");
   cx.Open();
   dbFile = new FileAdapter(cx, "/cmmaster", "*first");
   dbFile.AccessMode = AccessMode.Change + AccessMode.Read;
@@ -46,6 +46,8 @@ The following example illustrates one procedure for **updating a file**.
   dbFile.Close();
   cx.Close();
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`
 
 This example simply opens and reads the first record as in the previous example, then sets the value of the CMCustNo field before calling the [ ChangeCurrent](file-adapter-class-change-current-method.html) method to send the change to the server. Note that we have set the [AccessMode](file-adapter-class-access-mode-property.html) property of the **FileAdapter** object prior to calling the [ OpenNewAdgDataSet](file-adapter-class-open-new-adg-dataset-method.html) method. This informs the server that records in the opened file are to be read and updated. If not set explicitly, the <span> **AccessMode** </span> property value is Read, for read-only access.
 
@@ -83,11 +85,8 @@ The following example illustrates an appropriate sequence for **adding a databas
 
 ## See Also
 
-[AdgDataSet Class](/reference/datagate/datagate-client/adg-data-set.html)
-<br />
-[FileAdapter Enumeration](/reference/datagate/datagate-providers/i-file-adapter.html)
-<br />
-[Verifying Results with Exception Handling](/manuals/datagate/programmers-guide/verifying-resultswith-exception-handling.html)
-<br />
+[AdgDataSet Class](/reference/datagate/datagate-client/adg-data-set.html) <br />
+[FileAdapter Enumeration](/reference/datagate/datagate-providers/i-file-adapter.html) <br />
+[Verifying Results with Exception Handling](/manuals/datagate/programmers-guide/verifying-resultswith-exception-handling.html) <br />
 [Using the FileAdapter Class](/manuals/datagate/programmers-guide/usingthe-file-adapter-class.html)
 

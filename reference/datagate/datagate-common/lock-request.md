@@ -22,10 +22,11 @@ Specifies the type of lock to request on a resource.
 | ReadWrite | Requests both a read and write lock on the resource. | 6 |
 | Write | Requests a write lock on the resource. | 4 |
 
+
 ## Example 1. Requesting to avoid locking records in a file, while we read sequentially through it.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
 
@@ -85,9 +86,8 @@ Specifies the type of lock to request on a resource.
 
 ## Example 2. First read with NoLock request, immediately read backwards without locking.
 
-
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
 
@@ -144,3 +144,5 @@ Specifies the type of lock to request on a resource.
   }
 
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`

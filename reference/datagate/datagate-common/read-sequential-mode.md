@@ -26,7 +26,7 @@ Specifies the mode for reading data sequentially.
 The follwing code examples demonstrate how to use the `ReadSequentialMode` enumeration.
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET iSeries");
+  AdgConnection db = createAdgConnection("*Public/DG NET iSeries");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.ReadWrite; 
   AdgDataSet myDS = null;
@@ -75,3 +75,5 @@ The follwing code examples demonstrate how to use the `ReadSequentialMode` enume
   dbFile.ReadSequential(myDS, ReadSequentialMode.Previous, LockRequest.Read);
   
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`

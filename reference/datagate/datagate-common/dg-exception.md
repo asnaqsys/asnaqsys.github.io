@@ -201,6 +201,10 @@ Return a string containing a verbose description of thedgException. This string 
 string GetVerboseText()
 ```
 
+
+## Examples
+Several  of the following examples create an AdgConnection by calling the `createAdgConnection()` method which is part of the [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) showing how to `new` an `AdgConnection` using a Database Source Profile Name.
+
 ### Example 1. dgException ErrorClass and SystemError properties example.
 
 ```cs 
@@ -236,9 +240,8 @@ string GetVerboseText()
 
 ### Example 2. dgException Message property example.
 
-
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
 
@@ -256,14 +259,14 @@ string GetVerboseText()
   }
 ```
 
-## Example 3. GetVerboseText method example.
+### Example 3. GetVerboseText method example.
 
 ```cs 
   /* Verbose text generates a large string which is a concatanation 
    * of several of dgException's properties and also shows the
    * stack trace. While not very user friendly, it can come in handy
    * developing a program. */
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read ;
 
@@ -289,11 +292,11 @@ string GetVerboseText()
   db.Close();
 ```
 
-## Example 4. dgErrorNumber property example.
+### Example 4. dgErrorNumber property example.
 
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMMASTERL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
 

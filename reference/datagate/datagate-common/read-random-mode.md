@@ -23,7 +23,7 @@ Specifies the mode for reading data randomly.
 
 
 ```cs 
-  AdgConnection db = new AdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("*Public/DG NET Local");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL2", "CMMASTERL2");
   dbFile.AccessMode = AccessMode.RWCD;
 
@@ -53,3 +53,5 @@ Specifies the mode for reading data randomly.
       dgEx.Error.ToString());
   }
 ```
+
+> See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`
