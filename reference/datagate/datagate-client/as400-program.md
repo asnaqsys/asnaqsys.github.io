@@ -587,7 +587,7 @@ void WriteParmXml(XmlWriter writer)
 
 ```cs 
   As400Program prog = new As400Program();
-  prog.SetConnection( createAdgConnection("*Public/DG NET IBM i") );
+  prog.SetConnection( createAdgConnection("YourIBMi") );
   prog.SetProgramPath( "*Libl/Call400" );
 ```
 
@@ -647,7 +647,7 @@ void WriteParmXml(XmlWriter writer)
 
 ```cs 
   As400Program prog = new As400Program();
-  prog.SetConnection( createAdgConnection("*Public/DG NET IBM i") );
+  prog.SetConnection( createAdgConnection("YourIBMi") );
   prog.SetProgramPath = "*Libl/Call400";
 ```
 

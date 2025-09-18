@@ -22,7 +22,7 @@ Specifies the mode for reading equal data.
 
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CSMASTERL1", "CSMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
   AdgDataSet myDS = null;

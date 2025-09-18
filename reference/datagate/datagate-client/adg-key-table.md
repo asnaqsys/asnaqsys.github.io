@@ -81,7 +81,7 @@ bool Equals(DataRow other)
      the customer "Thilmany of Bread Co Resources".
      It omits error trapping for clarity's sake. */
 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   db.Open();
   FileAdapter file = new FileAdapter(db);
   file.FileName = "Examples//CMastNewL2";

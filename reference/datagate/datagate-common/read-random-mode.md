@@ -23,7 +23,7 @@ Specifies the mode for reading data randomly.
 
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL2", "CMMASTERL2");
   dbFile.AccessMode = AccessMode.RWCD;
 

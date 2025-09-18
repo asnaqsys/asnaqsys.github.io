@@ -22,7 +22,7 @@ Specifies the first range of a sequence.
 ## Examples
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
 

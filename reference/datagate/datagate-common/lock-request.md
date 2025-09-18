@@ -26,7 +26,7 @@ Specifies the type of lock to request on a resource.
 ## Example 1. Requesting to avoid locking records in a file, while we read sequentially through it.
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
 
@@ -87,7 +87,7 @@ Specifies the type of lock to request on a resource.
 ## Example 2. First read with NoLock request, immediately read backwards without locking.
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.RWCD;
 

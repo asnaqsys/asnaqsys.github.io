@@ -23,7 +23,7 @@ Specifies the direction of data flow for a data operation.
 ## Examples
 
 ```cs
-   AdgConnection ProdDB = createAdgConnection("*Public/DG NET IBM i");
+   AdgConnection ProdDB = createAdgConnection("YourIBMi");
    char Quit400App = '1';
    string CustName;
    decimal TimeOfDay;

@@ -26,7 +26,7 @@ Specifies the mode for reading data sequentially.
 The follwing code examples demonstrate how to use the `ReadSequentialMode` enumeration.
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET iSeries");
+  AdgConnection db = createAdgConnection("YourIBMi");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.ReadWrite; 
   AdgDataSet myDS = null;

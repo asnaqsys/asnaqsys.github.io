@@ -42,7 +42,7 @@ The `AccessMode` property of **FileAdapter** contains a value of AccessMode, whi
 ## Examples 
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   /* We need to open this file for Read as well as as Delete
    * in order search for the key value. */

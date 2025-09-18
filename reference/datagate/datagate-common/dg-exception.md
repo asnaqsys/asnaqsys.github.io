@@ -241,7 +241,7 @@ Several  of the following examples create an AdgConnection by calling the `creat
 ### Example 2. dgException Message property example.
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
 
@@ -266,7 +266,7 @@ Several  of the following examples create an AdgConnection by calling the `creat
    * of several of dgException's properties and also shows the
    * stack trace. While not very user friendly, it can come in handy
    * developing a program. */
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read ;
 
@@ -296,7 +296,7 @@ Several  of the following examples create an AdgConnection by calling the `creat
 
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMMASTERL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
 

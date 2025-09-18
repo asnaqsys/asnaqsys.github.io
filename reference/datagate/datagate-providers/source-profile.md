@@ -257,198 +257,26 @@ This method overrides the base ToString method and provides a string representat
 string ToString()
 ```
 
-## Example 1. Most simple constructor.
+## Examples
+
+### Example: Using a Constructor
 
 ```cs 
-  /* Opens the database "*PUBLIC/DG NET iSeries" and changes the user
-   * name and password. */
-  SourceProfile sp = new SourceProfile("*PUBLIC/DG NET iSeries");
-  sp.User = "NewUser";
-  sp.Password = "NewPassword";
-  sp.Register(); /* Updates the information. */
+  SourceProfile newDbProfile = new SourceProfile();
+  newDbProfile.Server = "valid ip address";
+  newDbProfile.User = "User1";
+  newDbProfile.Password = "password"; /* Note- not very secure. */
+  newDbProfile.Port = 5047;
+  newDbProfile.PoolingTimeout = 0;
+  newDbProfile.PlatformAttribute = "*DATALINK";
+  newDbProfile.Text = "New database at valid ip address, on port 5047.";
 
 ```
 
-## Example 2. Using Constructor using an existing Source Profile.
+### Example : Using a Constructor with an existing Source Profile.
 
 ```cs 
   /* This creates a brand new database name using the
    * old source profile.*/
-  SourceProfile newDbProfile2 = new SourceProfile("Brand New DB Name", sp);
+  SourceProfile newDbProfile2 = new SourceProfile(sp);
 ```
-
-## Example 3. Using Constructor bypassing Registry.
-
-
-```cs 
-  /* When we specify false with this constructor, we're
-   * telling Datagate not to get information from the
-   * registry. Thus we can use it to create an entirely
-   * new database name. */
-  SourceProfile newDbProfile = new SourceProfile("New database", false);
-  newDbProfile.Server = "valid ip address";
-  newDbProfile.User = "User1";
-  newDbProfile.Password = "password"; /* Note- not very secure. */
-  newDbProfile.Port = 5047;
-  newDbProfile.PoolingTimeout = 0;
-  newDbProfile.PlatformAttribute = "*DATALINK";
-  newDbProfile.Text = "New database at valid ip address, on port 5047.";
-  /* Register the database name. */
-  newDbProfile.Register();
-
-```
-
-
-## Example 4. Unregistering a Database Profile
-
-```cs 
-  /* Open up and unregistered the database profile "Worthless Db". */
-  try
-  {
-      SourceProfile.Unregister("Worthless Db");
-  }
-  catch(dgException)
-  {
-      MessageBox.Show("\"Worthless DB\" is not a 
-            registered database profile.",
-          "Could not unregister.");
-      return;
-  }
-```
-
-## Example 5. Getting a List of Database Names
-
-```cs 
-  /* This code displays all of the *PUBLIC database
-   * names, along with their descriptive text, to the list view
-   * "lvDbNames" whose view is set to "View.Details". */
-  ListViewItem newItem;
-  SourceProfile currentProfile;
-  foreach(string name in SourceProfile.GetNames(true))
-  {
-      currentProfile = new SourceProfile(name);
-      newItem = new ListViewItem(currentProfile.DatabaseName);
-      newItem.SubItems.Add(currentProfile.Text);
-      lvDbNames.Items.Add(newItem);
-  }
-```
-
-## Example 6. Use of Server property.
-
-```cs 
-  /* The code below updates a database profile to use a different IP address. */
-  SourceProfile sp = new SourceProfile("CustomerDB");
-  sp.Server = "555.93.279.303";
-  sp.Register(); /* Save changes. */
-
-```
-
-## Example 7. Updating User and password, and then saves the changes by calling Register. 
-
-```cs 
-  /* When we specify false with this constructor, we're
-   * telling Datagate not to get information from the
-   * registry. Thus we can use it to create an entirely
-   * new database name. */
-  SourceProfile newDbProfile = new SourceProfile("New database", false);
-  newDbProfile.Server = "valid ip address";
-  newDbProfile.User = "User1";
-  newDbProfile.Password = "password"; /* Note- not very secure. */
-  newDbProfile.Port = 5047;
-  newDbProfile.PoolingTimeout = 0;
-  newDbProfile.PlatformAttribute = "*DATALINK";
-  newDbProfile.Text = "New database at valid ip address, on port 5047.";
-  /* Register the database name. */
-  newDbProfile.Register();
-```
-
-## Example 8. Using the PoolingTimeout property.
-
-```cs 
-  /* Connect using the already established database name 
-   * "*PUBLIC/DG NET iSeries" but use a different idle
-   * timeout time. */
-  SourceProfile sp = new SourceProfile("*PUBLIC/DG NET iSeries");
-  sp.PoolingTimeout = 10;
-  AdgConnection database = new AdgConnection(sp);
-
-```
-
-## Example 9. Using the Platform property.
-
-```cs 
-  /* Register the database name "My Local" to specify the local database. */
-  SourceProfile newDbProfile = new SourceProfile("My Local", false);
-  newDbProfile.Server = "*LOCAL";
-  newDbProfile.User = "User1";
-  newDbProfile.Password = "password"; /* Note- not very secure. */
-  newDbProfile.Label = "DG 7 Database";
-  newDbProfile.PoolingTimeout = 0;
-  /* Specify *DATALINK since we're connecting to the datagate engine. */
-  newDbProfile.PlatformAttribute = "*DATALINK";
-  newDbProfile.Text = "New database at valid ip address, on port 5047.";
-  /* Register the database name. */
-  newDbProfile.Register();
-```
-
-## Example 10. Using the PasswordType property.
-
-```cs 
-  /* Connect using the already established database name 
-   * "*PUBLIC/DG NET iSeries" but use a different
-   * username and password. */
-  SourceProfile sp = new SourceProfile("*PUBLIC/DG NET iSeries");
-  sp.User = "NewUser";
-  sp.Password = "NewPassword";
-  sp.PasswordType = "Legacy";
-  AdgConnection database = new AdgConnection(sp);
-
-```
-
-## Example 11. Using the Label property.
-
-```cs 
-  /* Register the database name "My Local" to specify the local database.
-   * Because the local database is a Windows DataGate server, 
-   * you need to include a valid label as well. */
-  SourceProfile newDbProfile = new SourceProfile("My Local", false);
-  newDbProfile.Server = "*LOCAL";
-  newDbProfile.User = "User1";
-  newDbProfile.Password = "password"; /* Note- not very secure. */
-  newDbProfile.Label = "DG 7 Database";
-  newDbProfile.PoolingTimeout = 0;
-  /* Specify *DATALINK since we're connecting to the datagate engine. */
-  newDbProfile.PlatformAttribute = "*DATALINK";
-  newDbProfile.Text = "New database at valid ip address, on port 5047.";
-  /* Register the database name. */
-  newDbProfile.Register();
-```
-
-## Example 12. Changing the Initial Library List.
-
-```cs 
-  /* This code will update the database name "SalesDB" to include
-   * "IMPORTS" in its library list. */
-  SourceProfile sp = new SourceProfile("SalesDB");
-  string[] newList = new string[sp.InitialLibl.Length + 1];
-  int i;
-  for (i = 0; i< sp.InitialLibl.Length; i ++)
-  {
-      newList[i] = sp.InitialLibl[i];
-  }
-  newList[i] = "IMPORTS";
-  sp.InitialLibl = newList;
-  sp.Register();
-```
-
-## Example 13. Loading a ComboBox with Database Names.
-
-```cs 
-  /* This code will fill a combo box with all of the available database
-   * names. */
-  foreach(string name in SourceProfile.GetNames(true)) /* Get *PUBLIC databases. */
-      cbDbName.Items.Add(name); /* NOTE: The names appear without the "*PUBLIC/" prefix. */
-  foreach(string name in SourceProfile.GetNames(false)) /* Get non public databases. */
-      cbDbName.Items.Add(name);
-```
-

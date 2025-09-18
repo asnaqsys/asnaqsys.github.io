@@ -572,7 +572,7 @@ bool SetActive(string strFormat, int rrn)
      the customer "Thilmany of Bread Co Resources".
      It omits error trapping for clearity's sake. */
 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   db.Open();
   FileAdapter file = new FileAdapter(db);
   file.FileName = "Examples//CMastNewL2";

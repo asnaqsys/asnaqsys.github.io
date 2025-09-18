@@ -562,7 +562,7 @@ Represents the different error numbers generated as a result of Acceler8DB or Da
 ## Example. Showing more details when opening a file fails due to Member or File not found.
 
 ```cs 
-  AdgConnection db = createAdgConnection("*Public/DG NET Local");
+  AdgConnection db = createAdgConnection("MyLocalDB");
   FileAdapter dbFile = new FileAdapter(db, "*Libl/CMASTNEWL1", "CMMASTERL1");
   dbFile.AccessMode = AccessMode.Read;
 
