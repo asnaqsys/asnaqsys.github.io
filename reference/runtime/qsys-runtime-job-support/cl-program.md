@@ -55,6 +55,7 @@ CLProgram()
 | [CreateDecDataArea](#void-createdecdataareastring-library-string-dataareaname-int-len-int-decimals-decimal-initvalue-string-text)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a new decimal data area.
 | [CreateDuplicateFile](#void-createduplicatefilestring-fromlibrary-string-filename-string-tolibrary-string-newname-bool-copydata)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Create a copy of an existing file.
 | [CreateLglDataArea](#void-createlgldataareastring-library-string-dataareaname-char-initvalue-string-text)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a logical data area capable of holding a value of '1' or '0'.
+| [CreateLibrary](#void-createlibrarystring-libraryname-string-text)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Create a new database library with optional text.
 | [DataAreaExists](#bool-dataareaexistsstring-library-string-dataarea)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Check for existence of a data area.
 | [DelayJob_ResumeTime](#void-delayjob-resumetimestring-hhmmss)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Suspends the execution on the job until a specific time in the future.
 | [DelayJob_Seconds](#void-delayjob-secondsdecimal-seconds)([Decimal](https://docs.microsoft.com/en-us/dotnet/api/system.decimal)) | Suspends the execution on the job for the specified time.
@@ -62,6 +63,7 @@ CLProgram()
 | [DelayJob_Seconds](#void-delayjob-secondsint-seconds)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Suspends the execution on the job for the specified time.
 | [DeleteDataArea](#void-deletedataareastring-dataarea)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete an existing data area.
 | [DeleteFile](#void-deletefilestring-filepath)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a file database or printer file.
+| [DeleteLibrary](#void-deletelibrarystring-libraryname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Delete a library and all its contents.
 | [DeleteOverride](#void-deleteoverridestring-filename-overridescope-scope)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [OverrideScope](/reference/runtime/qsys-runtime-job-support/override-scope.html)) | Removes a previous override for a file. 
 | [FileExists](#bool-fileexistsstring-filepath)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Test for the existence of a database or printer file.
 | [InitializePFM](#void-initializepfmstring-file-string-mbr-initializepfmoption-records-int-totrcds)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [InitializePFMOption](/reference/runtime/qsys-runtime-job-support/initialize-pfm-option.html), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initialize records in a physical file member.
@@ -398,6 +400,21 @@ void CreateLglDataArea(string library, string dataAreaName, char initValue, stri
 | [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) | initValue | The initial value of the data area.
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | text | The text describing the data area.
 
+### void CreateLibrary([string libraryName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string Text](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Creates a new library with the specified name and optional text content.
+
+```cs
+void CreateLibrary(string libraryName, string Text = null)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | libraryName | The name of the library to create. Cannot be null or empty.
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | Text | Optional text to associate with the library. If null, no text is added.
+
 ### bool DataAreaExists([string library](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string dataArea](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Check for existence of a data area.
@@ -502,6 +519,21 @@ void DeleteFile(string FilePath)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | FilePath | Qualified file name (library/file).
+
+
+### void DeleteLibrary([string libraryName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
+
+Deletes the specified library and all its contents, including dependent objects.
+
+```cs
+void DeleteLibrary(string libraryName)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | libraryName | The name of the library to delete within the current database.
 
 ### void DeleteOverride([string fileName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [OverrideScope scope](/reference/runtime/qsys-runtime-job-support/override-scope.html))
 
