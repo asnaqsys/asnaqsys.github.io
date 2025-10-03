@@ -37,6 +37,9 @@ Specifies that the `SubfileControl` named **SFLC** enables `F9`, `PageUp` and `P
 
 | Type | Name | Description
 | --- | --- | --- 
+| [AidKey](/reference/expo/qsys-expo-model/aid-key.html) | AlternateHelpKey | Gets or sets the Alternate Help Key. Defaults to AidKey.None, valid values are AidKey.F1 through AidKey.F24 |
+| [AidKey](/reference/expo/qsys-expo-model/aid-key.html) | AlternatePageUpKey | Gets or sets the Alternate PageUp Key. Defaults to AidKey.None, valid values are AidKey.F1 through AidKey.F24 |
+| [AidKey](/reference/expo/qsys-expo-model/aid-key.html) | AlternatePageDownKey | Gets or sets the Alternate PageDown Key. Defaults to AidKey.None, valid values are AidKey.F1 through AidKey.F24 |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | AttentionKeys | Gets or sets the valid Attention Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | CommandKeyIndicator | Gets or sets the Command Key indicator number |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FunctionKeys | Gets or sets the valid Function Key collection as a semi-colon separated list of key expressions. Each expression has the form: key result-indicator : option-indicator. To negate option-indicator precede indicator with ! |
