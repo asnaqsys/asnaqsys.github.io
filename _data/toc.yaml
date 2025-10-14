@@ -438,6 +438,81 @@ Reference:
         path: /reference/datagate/datagate-client/export-to-csv-options.html
       - title: ExportToXmlOptions
         path: /reference/datagate/datagate-client/export-to-xml-options.html
+      - sectiontitle: FileAdapter
+        sectionpath: /reference/datagate/datagate-client/file-adapter.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/file-adapter-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Close  
+            path: /reference/datagate/datagate-client/file-adapter-close.html
+          - title: AddRecord
+            path: /reference/datagate/datagate-client/file-adapter-addrecord.html
+          - title: ChangeCurrent
+            path: /reference/datagate/datagate-client/file-adapter-changecurrent.html
+          - title: ChangeRRN
+            path: /reference/datagate/datagate-client/file-adapter-changerrn.html
+          - title: CheckKey
+            path: /reference/datagate/datagate-client/file-adapter-checkkey.html
+          - title: CreateDataSet
+            path: /reference/datagate/datagate-client/file-adapter-createdataset.html
+          - title: DeleteAllRecords
+            path: /reference/datagate/datagate-client/file-adapter-deleteallrecords.html
+          - title: DeleteCurrent
+            path: /reference/datagate/datagate-client/file-adapter-deletecurrent.html
+          - title: DeleteKey
+            path: /reference/datagate/datagate-client/file-adapter-deletekey.html
+          - title: DeleteRange
+            path: /reference/datagate/datagate-client/file-adapter-deleterange.html
+          - title: DeleteRRN
+            path: /reference/datagate/datagate-client/file-adapter-deleterrn.html
+          - title: Dispose
+            path: /reference/datagate/datagate-client/file-adapter-dispose.html
+          - title: Finalize
+            path: /reference/datagate/datagate-client/file-adapter-finalize.html
+          - title: ForceEOD
+            path: /reference/datagate/datagate-client/file-adapter-forceeod.html
+          - title: GetFormatName
+            path: /reference/datagate/datagate-client/file-adapter-getformatname.html
+          - title: GetPrintProperties
+            path: /reference/datagate/datagate-client/file-adapter-getprintproperties.html
+          - title: Open
+            path: /reference/datagate/datagate-client/file-adapter-open.html
+          - title: OpenNewAdgDataSet
+            path: /reference/datagate/datagate-client/file-adapter-opennewadgdataset.html
+          - title: OpenSimpleQuery
+            path: /reference/datagate/datagate-client/file-adapter-opensimplequery.html
+          - title: ReadRandomKey
+            path: /reference/datagate/datagate-client/file-adapter-readrandomkey.html
+          - title: ReadRandomRRN
+            path: /reference/datagate/datagate-client/file-adapter-readrandomrrn.html
+          - title: ReadRange
+            path: /reference/datagate/datagate-client/file-adapter-readrange.html
+          - title: ReadSequential
+            path: /reference/datagate/datagate-client/file-adapter-readsequential.html
+          - title: ReadSequentialEqual
+            path: /reference/datagate/datagate-client/file-adapter-readsequentialequal.html
+          - title: ReleaseCurrent
+            path: /reference/datagate/datagate-client/file-adapter-releasecurrent.html
+          - title: ReleaseRRN
+            path: /reference/datagate/datagate-client/file-adapter-releaserrn.html
+          - title: ResetFormat
+            path: /reference/datagate/datagate-client/file-adapter-resetformat.html
+          - title: ResetPrintAttr
+            path: /reference/datagate/datagate-client/file-adapter-resetprintattr.html
+          - title: ReuseRRN
+            path: /reference/datagate/datagate-client/file-adapter-reuserrn.html
+          - title: SeekKey
+            path: /reference/datagate/datagate-client/file-adapter-seekkey.html
+          - title: SeekRange
+            path: /reference/datagate/datagate-client/file-adapter-seekrange.html
+          - title: SeekRRN
+            path: /reference/datagate/datagate-client/file-adapter-seekrrn.html
+          - title: SetFormat
+            path: /reference/datagate/datagate-client/file-adapter-setformat.html
+          - title: ThrowIfNotOpen
+            path: /reference/datagate/datagate-client/file-adapter-throwifnotopen.html
       - title: Import
         path: /reference/datagate/datagate-client/import.html
       - title: ImportFromCsvOptions
@@ -456,8 +531,6 @@ Reference:
         path: /reference/datagate/datagate-client/data-row-column-comparer-1.html
       - title: Dependent
         path: /reference/datagate/datagate-client/dependent.html
-      - title: FileAdapter
-        path: /reference/datagate/datagate-client/file-adapter.html
       - title: PrintingProps
         path: /reference/datagate/datagate-client/printing-props.html
       - title: XmlCancelEventArgs

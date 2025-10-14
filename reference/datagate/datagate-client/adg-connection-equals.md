@@ -12,7 +12,7 @@ description: "Determines whether the current AdgConnection instance is equal to 
 
 Determines whether the current AdgConnection instance is equal to the specified object.
 
-#### Remarks
+## Remarks
 This method checks if the specified object is an AdgConnection and if its SourceProfile is equal to the SourceProfile of the current instance.
 
 Returns  false if _obj_ refers to a null instance.  Otherwise returns the value of the [op_Equality](/reference/datagate/datagate-providers/source-profile.html#bool-equalssourceprofile-other) method invoked on the **SourceProfile** proprety of this **AdgConnection** object against the **SourceProfile** of the **AdgConnection** object being compared.  

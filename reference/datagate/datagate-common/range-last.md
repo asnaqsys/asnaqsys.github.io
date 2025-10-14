@@ -39,8 +39,8 @@ Specifies the last range of a sequence.
   }
 
   /* We read all records with a customer number greater
-   * than, but not equal to 6000 and less than or equal
-   * to, 7000. */
+   * than, but not equal to 10000 and less than or equal
+   * to, 40000. */
   AdgKeyTable OneKey = myDS.NewKeyTable("RCMMastL1");
   OneKey.Row["CMCustNo"] = 10000;
   AdgKeyTable TwoKey = myDS.NewKeyTable("RCMMastL1");
@@ -48,10 +48,9 @@ Specifies the last range of a sequence.
 
   try
   {
-      dbFile.ReadRange(myDS, RangeMode.First, 
-      LockRequest.Read, OneKey, 
-      RangeFirst.Exclude, TwoKey,
-      RangeLast.Include);
+      dbFile.ReadRange(myDS, RangeMode.First, LockRequest.Read, 
+                       OneKey, RangeFirst.Exclude, 
+                       TwoKey, RangeLast.Include);
   }
   catch(dgException dgEx)
   {

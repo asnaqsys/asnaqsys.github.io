@@ -8,7 +8,7 @@ description: "Open a database connection."
 **Namespace:** ASNA.DataGate.Client<br/>
 **Assembly:** ASNA.QSys.DataGate.Client.dll
 
-Open a database connection.
+Open a database connection by establishing communication with the database server.
 
 ## Overloads
 
