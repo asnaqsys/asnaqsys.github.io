@@ -5,7 +5,7 @@ description: "Discover how to establish database connections using a name effect
 
 The DataGate notions of "database source profile name" or "database name" (a registered client-side reference to a set of database connection parameters) and "database label" (the server-side identifier for database servers) are provided to help you identify and connect to a database.
 
-The way to connect to a database is through the [AdgConnection](adg-connection-class.html) object. DataGate provide the `AsnaConfig` class to assist in Resolving Names.
+The way to connect to a database is through the [AdgConnection](/reference/datagate/datagate-client/adg-connection.html) object. DataGate provide the `AsnaConfig` class to assist in Resolving Names.
 
 The following code fragment creates an AdgConnection object and connects to a database referred to by the name "My Local DB".
 
@@ -48,7 +48,7 @@ The following code fragment creates an AdgConnection object and connects to a da
 
 ## See Also
 
-[AdgConnection Class](adg-connection-class.html) <br />
+[AdgConnection Class](/reference/datagate/datagate-client/adg-connection.html) <br />
 [Disconnecting from a Database](disconnectingfroma-database.html)<br />
 
 

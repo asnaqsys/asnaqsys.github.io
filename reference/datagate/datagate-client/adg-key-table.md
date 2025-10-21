@@ -21,9 +21,9 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [AdgKeyTable](#adgkeytabledatatable)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0)) | Initializes a new instance of the  class with a specified key table template.
+| [AdgKeyTable](#adgkeytabledatatable)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable)) | Initializes a new instance of the  class with a specified key table template.
 
-### AdgKeyTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0))
+### AdgKeyTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable))
 
 Initializes a new instance of the  class with a specified key table template.
 
@@ -35,22 +35,24 @@ AdgKeyTable(DataTable)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | keyTableTemplate | The DataTable to be used as a template for the key table.
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) | keyTableTemplate | The DataTable to be used as a template for the key table.
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
 | [DataRowColumnComparer\<DataRow\>](/reference/datagate/datagate-client/data-row-column-comparer-1.html) | Comparer | Gets the DataRowColumnComparer used for comparing rows in the key table. |
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) | DataTable | Gets the DataTable associated with this instance of the AdgTable. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | KeyPartCount | Gets or sets the number of key parts in the key table. |
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow) | Row | Gets the current active DataRow in the AdgTable. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#bool-equalsdatarow-other)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Determines whether the specified DataRow is equal to the current DataRow.
+| [Equals](#bool-equalsdatarow-other)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow)) | Determines whether the specified DataRow is equal to the current DataRow.
 
-### bool Equals([DataRow other](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
+### bool Equals([DataRow other](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow))
 
 Determines whether the specified DataRow is equal to the current DataRow.
 
@@ -66,7 +68,7 @@ bool Equals(DataRow other)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | other | The DataRow to compare with the current DataRow.
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow) | other | The DataRow to compare with the current DataRow.
 
 #### Returns
 

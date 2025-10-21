@@ -46,9 +46,9 @@ To name the path of a program you use the As400Program class, as in the followin
 ### Procedural Construction of Parameter Lists
 To procedurally describe the parameters and attach the description to the As400Program object, three classes in the ASNA.DataGate.Client.DataLink namespace are provided:
 
-- [ProgParmClass](prog-parm-class.html) is the data instance of a ProgParmType or StructureType description in an As400Program object, and includes a description of how the data of the parameter will be marshalled across the client/server connection.
-- [ProgParmType](prog-parm-type-class.html) describes scalar parameters of the traditional IBM i database types, such as "packed", "char", etc.
-- [StructureType](structure-type-class.html) describes complex types composed of combinations of scalars, arrays and embedded complex types.
+- [ProgParmClass](/reference/datagate/datagate-data-link/prog-parm.html) is the data instance of a ProgParmType or StructureType description in an As400Program object, and includes a description of how the data of the parameter will be marshalled across the client/server connection.
+- [ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html) describes scalar parameters of the traditional IBM i database types, such as "packed", "char", etc.
+- [StructureType](/reference/datagate/datagate-data-link/structure-type.html) describes complex types composed of combinations of scalars, arrays and embedded complex types.
 
 ProgParm objects reference an instance of ProgParmType or StructureType. The As400Program object references a list of ProgParm objects representing the ordered list of program parameters passed to the program. ProgParm objects are used to access the data associated with a particular parameter. To construct a parameter list procedurally using the parameter classes, construct instances of ProgParmType (and/or instances of StructureType, as will be discussed in a later section). Then append instances of ProgParm referencing the corresponding ProgParmType to the As400Program object.
 
@@ -78,7 +78,7 @@ ProgParmType object parmType is constructed with three parameters.
 
 The ProgParm object countParm is constructed by passing a reference to the previously constructed ProgParmType object and a marshalling directive. In this case, DataDirection.InputOutput tells DG that the value of the parameter will be copied across the client/server link both prior to calling the program and then again upon return. InputOutput effectively emulates the "pass by reference" semantics of the traditional IBM i CALL command. If you know that your parameter is either an input-only or an output-only parameter (or unused), then you may specify another directive (Input, Output, or None) to improve performance by reducing the amount of data transferred on the client/server link. In this case however, the packed decimal parameter described by parmType will be used as both an input and output parameter.
 
-The [AppendParm](as400program-class-append-parm-method.html) method of As400Program associates the ProgParm object with the program as the first parameter in the stack to be passed. In this case, countParm is the only parameter to be passed. If there were more than one, you would use successive calls to AppendParm to list the parameters in the order they would be passed to the program.
+The [AppendParm](/reference/datagate/datagate-client/as400-program.html#methods) method of As400Program associates the ProgParm object with the program as the first parameter in the stack to be passed. In this case, countParm is the only parameter to be passed. If there were more than one, you would use successive calls to AppendParm to list the parameters in the order they would be passed to the program.
 
 ### Accessing Parameter Data
 For input parameters, you will want to set the data value of the parameter before calling the program. You may only do this after appending the parameter to the As400Program object as follows.
@@ -186,5 +186,5 @@ To access the particular member of the TestDS element we have chosen, we use the
 
 [AdgDataSet Class](adg-dataset-class.html)
         <br />
-[FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](/reference/datagate/datagate-client/file-adapter.html)
 

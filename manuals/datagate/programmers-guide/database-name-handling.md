@@ -31,14 +31,14 @@ To discover the currently registered database names available for use in a progr
   Endfor;
 ```
 
-Console.WriteLine( " " + DbName ) Endfor <p> **SourceProfile** objects may be assigned to the [ AdgConnection.SourceProfile](adg-connection-class-source-profile-property.html) property to force a subsequent call to [ AdgConnection.Open](adg-connection-class-open-method.html) to use the SourceProfile’s connection parameters. Changing **AdgConnection.SourceProfile** has no effect on the database connection of an **AdgConnection** object in the *Open* state. Rather, **AdgConnection.SourceProfile** is used by the **AdgConnection.Open** method to initialize the database connection. 
+Console.WriteLine( " " + DbName ) Endfor <p> **SourceProfile** objects may be assigned to the [ AdgConnection.SourceProfile](/reference/datagate/datagate-client/adg-connection.html#properties) property to force a subsequent call to [ AdgConnection.Open](/reference/datagate/datagate-client/adg-connection-open.html) to use the SourceProfile’s connection parameters. Changing **AdgConnection.SourceProfile** has no effect on the database connection of an **AdgConnection** object in the *Open* state. Rather, **AdgConnection.SourceProfile** is used by the **AdgConnection.Open** method to initialize the database connection. 
 ## See Also
 
 [Database Name Handling](database-name-handling.html)<br />
-[AdgConnection Class](adg-connection-class.html)<br />
-[AdgConnection.Open Method](adg-connection-class-open-method.html)<br />
-[AdgConnection.SourceProfile Property](adg-connection-class-source-profile-property.html)<br />
-[AdgConnection.State Property](adg-connection-class-state-property.html)<br />
+[AdgConnection Class](/reference/datagate/datagate-client/adg-connection.html)<br />
+[AdgConnection.Open Method](/reference/datagate/datagate-client/adg-connection-open.html)<br />
+[AdgConnection.SourceProfile Property](/reference/datagate/datagate-client/adg-connection.html#properties)<br />
+[AdgConnection.State Property](/reference/datagate/datagate-client/adg-connection.html#properties)<br />
 [SourceProfile Class](source-profile-class.html)<br />
 [SourceProfile.Register Method](source-profile-class-register-method.html)<br />
 [SourceProfile.GetNames Method](source-profile-class-get-names-method.html)<br />

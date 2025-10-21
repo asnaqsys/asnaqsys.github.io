@@ -3,7 +3,7 @@ title: "Verifying Results with Exception Handling"
 description: "Ensure accurate outcomes by mastering exception handling for result verification. Learn best practices for robust code."
 ---
 
-Results of [FileAdapter](file-adapter-class.html) and [ AdgDataSet](adg-dataset-class.html) methods are provided via .NET exception handling. The standard exception object in DG is [dgException](dgexception-class.html). DG uses **dgException** to transmit both error conditions and "normal" procedural conditions, such as "end-of-file". In the examples shown so far, tests for dgException have been omitted for clarity. In your own DG programs, you would use these checks to improve the reliability of your program. The DG reference documentation for access and other methods lists the common **dgException** objects thrown. 
+Results of [FileAdapter](/reference/datagate/datagate-client/file-adapter.html) and [ AdgDataSet](adg-dataset-class.html) methods are provided via .NET exception handling. The standard exception object in DG is [dgException](/reference/datagate/datagate-common/dg-exception.html). DG uses **dgException** to transmit both error conditions and "normal" procedural conditions, such as "end-of-file". In the examples shown so far, tests for dgException have been omitted for clarity. In your own DG programs, you would use these checks to improve the reliability of your program. The DG reference documentation for access and other methods lists the common **dgException** objects thrown. 
 
 Revising a previous example, the following code will check for certain conditions, such as end-of-file.
 
@@ -76,14 +76,14 @@ namespace NetworkRecovery
 
 ```
 
-The code in this simple example opens a keyed-access file, then enters a "<span>try-catch</span>" block, to perform read operations. The first [ReadSequential](file-adapter-class-read-sequential-method.html) method reads the first record in the file. Next, [ ReadRandomKey](file-adapter-class-read-random-key-method.html) is called to read the first record with a particular key. If the file has no records, <span>dgException</span> will be thrown from the <span>ReadSequential</span> method, and the value of the <span>dgException.Error</span> property will be dgEaEOF. In this case, the program will print the result "End of file." If the file has at least one record, but none with a CMCustNo value of 200000, then dgException will be thrown from <span>ReadRandomKey</span> with an Error value of dgEaNOTFND. 
+The code in this simple example opens a keyed-access file, then enters a "<span>try-catch</span>" block, to perform read operations. The first [ReadSequential](/reference/datagate/datagate-client/file-adapter-readsequential.html) method reads the first record in the file. Next, [ ReadRandomKey](/reference/datagate/datagate-client/file-adapter-readrandomkey.html) is called to read the first record with a particular key. If the file has no records, <span>dgException</span> will be thrown from the <span>ReadSequential</span> method, and the value of the <span>dgException.Error</span> property will be dgEaEOF. In this case, the program will print the result "End of file." If the file has at least one record, but none with a CMCustNo value of 200000, then dgException will be thrown from <span>ReadRandomKey</span> with an Error value of dgEaNOTFND. 
 
-Note that not all traditional "feedback" information regarding the last access performed is transmitted through dgException. Other properties of FileAdapter, such as [ ExactSeek](file-adapter-class-exact-seek-property.html), [RRN](file-adapter-class-rrn-property.html) and [ CurrentFormatIndex](file-adapter-class-current-format-index-property.html) are provided for this purpose. 
+Note that not all traditional "feedback" information regarding the last access performed is transmitted through dgException. Other properties of FileAdapter, such as [ ExactSeek](/reference/datagate/datagate-client/file-adapter.html#properties), [RRN](/reference/datagate/datagate-client/file-adapter.html#properties) and [ CurrentFormatIndex](/reference/datagate/datagate-client/file-adapter.html#properties) are provided for this purpose. 
 
 For a general introduction to .NET exception handling, please see the <span>.NET Framework referenc</span>e. 
 ## See Also
 
 [AdgDataSet Class](adg-dataset-class.html)<br />[Database File Records and 
-						AdgDataSet](database-file-recordsand-adg-dataset.html)<br />[Efficient File Access](efficient-file-access.html)<br />[FileAdapter Class](file-adapter-class.html)<br />[Reading and Writing to Database 
+						AdgDataSet](database-file-recordsand-adg-dataset.html)<br />[Efficient File Access](efficient-file-access.html)<br />[FileAdapter Class](/reference/datagate/datagate-client/file-adapter.html)<br />[Reading and Writing to Database 
 						Files](readingand-writingto-database-files.html)<br />[Using the FileAdapter Class](usingthe-file-adapter-class.html)   
 

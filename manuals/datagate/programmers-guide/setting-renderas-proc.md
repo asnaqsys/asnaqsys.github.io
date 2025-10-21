@@ -31,7 +31,7 @@ To resolve this issue, DataGate can be instructed to Render-in-Proc, rather than
 [AdgDataSet Class](adg-dataset-class.html)<br />
 [Database File Records and AdgDataSet](database-file-recordsand-adg-dataset.html)<br />
 [Efficient File Access](efficient-file-access.html)<br />
-[FileAdapter Class](file-adapter-class.html)<br />
+[FileAdapter Class](/reference/datagate/datagate-client/file-adapter.html)<br />
 [Reading and Writing to Database Files](readingand-writingto-database-files.html)<br />
 [Using the FileAdapter Class](usingthe-file-adapter-class.html)   
 

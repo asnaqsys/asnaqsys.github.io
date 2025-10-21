@@ -20,5 +20,5 @@ description: "Learn how to access and manage files using DataGate. This guide pr
 
 [AdgDataSet Class](adg-dataset-class.html)
       <br />
-[FileAdapter Class](file-adapter-class.html)
+[FileAdapter Class](/reference/datagate/datagate-client/file-adapter.html)
 

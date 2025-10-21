@@ -18,7 +18,7 @@ Database access with DG follows the traditional client/server pattern:
 ## See Also
 
 
-[AdgConnection Class](adg-connection-class.html)
+[AdgConnection Class](/reference/datagate/datagate-client/adg-connection.html)
       <br />
       [Connecting to a Database Using a Database Name Property](connectingtoa-database.html)
       <br />

@@ -17,9 +17,9 @@ The AdgTable class supports DG infrastructure and is not intended to be used dir
 
 | Name | Description |
 | --- | --- |
-| [AdgTable](#adgtabledatatable-adgdataset)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Initializes a new instance of the  class with a specified DataTable and parent AdgDataSet.
+| [AdgTable](#adgtabledatatable-adgdataset)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html)) | Initializes a new instance of the  class with a specified DataTable and parent AdgDataSet.
 
-### AdgTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html))
+### AdgTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable), [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html))
 
 Initializes a new instance of the  class with a specified DataTable and parent AdgDataSet.
 
@@ -31,23 +31,23 @@ AdgTable(DataTable, AdgDataSet)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | table | The DataTable to be associated with this instance.
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) | table | The DataTable to be associated with this instance.
 | [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) | parent | The parent AdgDataSet to which this AdgTable belongs.
 
 ## Properties
 
 | Type | Name | Description
 | --- | --- | --- 
-| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.select?view=net-8.0) | DataTable | Gets the DataTable associated with this instance of the AdgTable. |
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | Row | Gets the current active DataRow in the AdgTable. |
+| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) | DataTable | Gets the DataTable associated with this instance of the AdgTable. |
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow) | Row | Gets the current active DataRow in the AdgTable. |
 
 ## Methods
 
 | Signature | Description |
 | --- | --- |
-| [SetRowDefaultValues](#void-setrowdefaultvaluesdatarow-row)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0)) | Sets the default values for each column in the provided DataRow.
+| [SetRowDefaultValues](#void-setrowdefaultvaluesdatarow-row)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow)) | Sets the default values for each column in the provided DataRow.
 
-### void SetRowDefaultValues([DataRow row](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
+### void SetRowDefaultValues([DataRow row](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow))
 
 Sets the default values for each column in the provided DataRow.
 
@@ -63,4 +63,4 @@ void SetRowDefaultValues(DataRow row)
 
 | Type | Parameter name | Description
 | --- | --- | ---
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0) | row | The DataRow for which to set default values.
+| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow) | row | The DataRow for which to set default values.
