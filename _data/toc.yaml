@@ -535,6 +535,16 @@ Reference:
         path: /reference/datagate/datagate-client/printing-props.html
       - title: XmlCancelEventArgs
         path: /reference/datagate/datagate-client/xml-cancel-event-args.html
+    - sectiontitle: Delegates
+      section:
+      - title: AdgEnumerator
+        path: /reference/datagate/datagate-client/adg-enumerator.html
+      - title: AdgObserver
+        path: /reference/datagate/datagate-client/adg-observer.html
+      - title: XmlCancelEventHandler
+        path: /reference/datagate/datagate-client/xml-cancel-event-handler.html
+      - title: OpenFileAdapterDelegate
+        path: /reference/datagate/datagate-client/open-file-adapter-delegate.html
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/datagate-client/landing-page-enumerations.html
       section:
@@ -745,6 +755,10 @@ Reference:
         path: /reference/datagate/datagate-data-link/alt-encoding.html
       - title: AltEncodingInfo
         path: /reference/datagate/datagate-data-link/alt-encoding-info.html
+    - sectiontitle: Delegates
+      section:
+      - title: OpenAccessRpg
+        path: /reference/datagate/datagate-data-link/open-access-rpg.html
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/datagate-data-link/landing-page-interfaces.html
       section:
@@ -790,6 +804,12 @@ Reference:
         path: /reference/datagate/datagate-providers/source-profile.html
       - title: UserPasswordCredential
         path: /reference/datagate/datagate-providers/user-password-credential.html
+    - sectiontitle: Delegates
+      section:
+      - title: ReadOrWriteMetadata
+        path: /reference/datagate/datagate-providers/read-or-write-metadata.html
+      - title: Exchange5250DS
+        path: /reference/datagate/datagate-providers/exchange5250ds.html
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/datagate-providers/landing-page-enumerations.html
       section:

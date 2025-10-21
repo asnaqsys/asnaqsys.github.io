@@ -1,7 +1,6 @@
 ---
 title: "FileAdapter.DeleteKey Method"
 description: "Deletes the record with the specified key from the file that the FileAdapter is working with."
-last_modified_at: 2025-09-26
 ---
 
 ## Definition
