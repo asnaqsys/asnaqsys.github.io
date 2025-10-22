@@ -80,7 +80,7 @@ The code in this simple example opens a keyed-access file, then enters a "<span>
 
 Note that not all traditional "feedback" information regarding the last access performed is transmitted through dgException. Other properties of FileAdapter, such as [ ExactSeek](/reference/datagate/datagate-client/file-adapter.html#properties), [RRN](/reference/datagate/datagate-client/file-adapter.html#properties) and [ CurrentFormatIndex](/reference/datagate/datagate-client/file-adapter.html#properties) are provided for this purpose. 
 
-For a general introduction to .NET exception handling, please see the <span>.NET Framework referenc</span>e. 
+For a general introduction to .NET exception handling, please see the .NET reference. 
 ## See Also
 
 [AdgDataSet Class](/reference/datagate/datagate-client/adg-data-set.html)<br />[Database File Records and 
