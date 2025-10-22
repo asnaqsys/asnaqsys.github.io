@@ -184,7 +184,7 @@ To access the particular member of the TestDS element we have chosen, we use the
 
 ### See Also
 
-[AdgDataSet Class](adg-dataset-class.html)
+[AdgDataSet Class](/reference/datagate/datagate-client/adg-data-set.html)
         <br />
 [FileAdapter Class](/reference/datagate/datagate-client/file-adapter.html)
 

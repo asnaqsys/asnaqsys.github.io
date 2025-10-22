@@ -412,8 +412,47 @@ Reference:
             path: /reference/datagate/datagate-client/adg-connection-operator-not-equal.html
           - title: Synchronized
             path: /reference/datagate/datagate-client/adg-connection-synchronized.html
-      - title: AdgDataSet
-        path: /reference/datagate/datagate-client/adg-data-set.html
+      - sectiontitle: AdgDataSet
+        sectionpath: /reference/datagate/datagate-client/adg-data-set.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/adg-data-set-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: AddPreparedRowAndSetActive
+            path: /reference/datagate/datagate-client/adg-data-set-addpreparedrowandsetactive.html
+          - title: AddRow
+            path: /reference/datagate/datagate-client/adg-data-set-addrow.html
+          - title: Contains
+            path: /reference/datagate/datagate-client/adg-data-set-contains.html
+          - title: ContainsKey
+            path: /reference/datagate/datagate-client/adg-data-set-containskey.html
+          - title: CopyTo
+            path: /reference/datagate/datagate-client/adg-data-set-copyto.html
+          - title: DeleteRow
+            path: /reference/datagate/datagate-client/adg-data-set-deleterow.html
+          - title: GetEnumerator
+            path: /reference/datagate/datagate-client/adg-data-set-getenumerator.html
+          - title: GetFormatIndex
+            path: /reference/datagate/datagate-client/adg-data-set-getformatindex.html
+          - title: GetFormatName
+            path: /reference/datagate/datagate-client/adg-data-set-getformatname.html
+          - title: GetFormatTable
+            path: /reference/datagate/datagate-client/adg-data-set-getformattable.html
+          - title: Initialize
+            path: /reference/datagate/datagate-client/adg-data-set-initialize.html
+          - title: InitializeCommon
+            path: /reference/datagate/datagate-client/adg-data-set-initializecommon.html
+          - title: InitializeFormats
+            path: /reference/datagate/datagate-client/adg-data-set-initializeformats.html
+          - title: InsertRow
+            path: /reference/datagate/datagate-client/adg-data-set-insertrow.html
+          - title: NewKeyTable
+            path: /reference/datagate/datagate-client/adg-data-set-newkeytable.html
+          - title: PrepareRow
+            path: /reference/datagate/datagate-client/adg-data-set-preparerow.html
+          - title: SetActive
+            path: /reference/datagate/datagate-client/adg-data-set-setactive.html
       - title: AdgFactory
         path: /reference/datagate/datagate-client/adg-factory.html
       - title: AdgKeyTable
@@ -800,8 +839,27 @@ Reference:
         path: /reference/datagate/datagate-providers/source-profile-converter.html
       - title: UserPasswordCredentialInlineConverter
         path: /reference/datagate/datagate-providers/user-password-credential-inline-converter.html
-      - title: SourceProfile
-        path: /reference/datagate/datagate-providers/source-profile.html
+      - sectiontitle: SourceProfile
+        sectionpath: /reference/datagate/datagate-providers/source-profile.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/source-profile-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Clone
+            path: /reference/datagate/datagate-providers/source-profile-clone.html
+          - title: Equals
+            path: /reference/datagate/datagate-providers/source-profile-equals.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-providers/source-profile-gethashcode.html
+          - title: IsKnownPlatformAttribute
+            path: /reference/datagate/datagate-providers/source-profile-isknownplatformattribute.html
+          - title: operator ==
+            path: /reference/datagate/datagate-providers/source-profile-op-equality.html
+          - title: operator !=
+            path: /reference/datagate/datagate-providers/source-profile-op-inequality.html
+          - title: ToString
+            path: /reference/datagate/datagate-providers/source-profile-tostring.html
       - title: UserPasswordCredential
         path: /reference/datagate/datagate-providers/user-password-credential.html
     - sectiontitle: Delegates

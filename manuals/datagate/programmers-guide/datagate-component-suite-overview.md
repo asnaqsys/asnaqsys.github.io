@@ -22,7 +22,7 @@ All of these tasks and more can be accomplished with the help of a few DG object
 
 | Task | Object |
 | ---- | ---- |
-| [File/data access](usingthe-file-adapter-class.html) | [ASNA.DataGate.Client.FileAdapter](/reference/datagate/datagate-client/file-adapter.html) and [ASNA.DataGate.Client.AdgDataSet](adg-dataset-class.html) classes provide the core functionality. [AdgDataSet](adg-dataset-class.html) inherits <span>System.Data.DataSet</span> and its rich ADO.NET utility. |
+| [File/data access](usingthe-file-adapter-class.html) | [ASNA.DataGate.Client.FileAdapter](/reference/datagate/datagate-client/file-adapter.html) and [ASNA.DataGate.Client.AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) classes provide the core functionality. [AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) inherits <span>System.Data.DataSet</span> and its rich ADO.NET utility. |
 | [Manage database connections ](managing-database-connections.html) | The [ASNA.DataGate.Client.AdgConnection](/reference/datagate/datagate-client/adg-connection.html) and [ASNA.DataGate.Providers.SourceProfile](source-profile-class.html) classes manage database connections and connection parameters including DataGate database names and transaction processing. |
 | [Stored procedure call ](calling-stored-procedures.html) | Functionality provided by: - [ASNA.DataGate.Client.As400Program](/reference/datagate/datagate-client/as400-program.html) - [ASNA.DataGate.DataLink.ProgParm](/reference/datagate/datagate-data-link/prog-parm.html) - [ASNA.DataGate.DataLink.ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html) |
 

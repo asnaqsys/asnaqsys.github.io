@@ -3,7 +3,7 @@ title: "Verifying Results with Exception Handling"
 description: "Ensure accurate outcomes by mastering exception handling for result verification. Learn best practices for robust code."
 ---
 
-Results of [FileAdapter](/reference/datagate/datagate-client/file-adapter.html) and [ AdgDataSet](adg-dataset-class.html) methods are provided via .NET exception handling. The standard exception object in DG is [dgException](/reference/datagate/datagate-common/dg-exception.html). DG uses **dgException** to transmit both error conditions and "normal" procedural conditions, such as "end-of-file". In the examples shown so far, tests for dgException have been omitted for clarity. In your own DG programs, you would use these checks to improve the reliability of your program. The DG reference documentation for access and other methods lists the common **dgException** objects thrown. 
+Results of [FileAdapter](/reference/datagate/datagate-client/file-adapter.html) and [ AdgDataSet](/reference/datagate/datagate-client/adg-data-set.html) methods are provided via .NET exception handling. The standard exception object in DG is [dgException](/reference/datagate/datagate-common/dg-exception.html). DG uses **dgException** to transmit both error conditions and "normal" procedural conditions, such as "end-of-file". In the examples shown so far, tests for dgException have been omitted for clarity. In your own DG programs, you would use these checks to improve the reliability of your program. The DG reference documentation for access and other methods lists the common **dgException** objects thrown. 
 
 Revising a previous example, the following code will check for certain conditions, such as end-of-file.
 
@@ -83,7 +83,7 @@ Note that not all traditional "feedback" information regarding the last access p
 For a general introduction to .NET exception handling, please see the <span>.NET Framework referenc</span>e. 
 ## See Also
 
-[AdgDataSet Class](adg-dataset-class.html)<br />[Database File Records and 
+[AdgDataSet Class](/reference/datagate/datagate-client/adg-data-set.html)<br />[Database File Records and 
 						AdgDataSet](database-file-recordsand-adg-dataset.html)<br />[Efficient File Access](efficient-file-access.html)<br />[FileAdapter Class](/reference/datagate/datagate-client/file-adapter.html)<br />[Reading and Writing to Database 
 						Files](readingand-writingto-database-files.html)<br />[Using the FileAdapter Class](usingthe-file-adapter-class.html)   
 
