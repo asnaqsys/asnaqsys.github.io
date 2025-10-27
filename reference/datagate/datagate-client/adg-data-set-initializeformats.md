@@ -11,11 +11,12 @@ description: "Initializes the format strings of the AdgDataSet instance."
 Initializes the format strings of the AdgDataSet instance.
 
 ```cs
-void InitializeFormats()
+abstract void InitializeFormats()
 ```
 
 ## Remarks
 Intended to be overridden in derived classes to parse and set format strings for each DataTable in the AdgDataSet. Called in constructors and deserialization methods.
+
 
 ## See Also
 - [AdgDataSet class](adg-data-set.html)

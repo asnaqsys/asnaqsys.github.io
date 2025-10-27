@@ -3,14 +3,14 @@ title: "How to Disconnect from a Database Safely"
 description: "Learn the best practices for safely disconnecting from a database, ensuring data integrity and system stability."
 ---
 
-After database connection and access are complete, applications *must* disconnect from the database to properly release un-managed resources. These un-managed resources are provided to DG by the <span>Common Language Runtime (CLR)</span> for network access. In general, DG and the CLR will not release these un-managed resources for you, and if not released, unexpected results, including loss of data, can occur. You must explicitly release un-managed resources associated with **AdgConnection** objects using the [ AdgConnection.Close](/reference/datagate/) or [AdgConnection.Dispose](/reference/datagate/datagate-client/adg-connection-dispose.html) methods. You should call one of these methods before the **AdgConnection** variable loses scope or is reassigned.
+After database connection and access are complete, applications *must* disconnect from the database to properly release un-managed resources. These un-managed resources are provided to DG by the *Common Language Runtime (CLR)* for network access. In general, DG and the CLR will not release these un-managed resources for you, and if not released, unexpected results, including loss of data, can occur. You must explicitly release un-managed resources associated with **AdgConnection** objects using the [ AdgConnection.Close](/reference/datagate/datagate-client/adg-connection-close.html) or [AdgConnection.Dispose](/reference/datagate/datagate-client/adg-connection-dispose.html) methods. You should call one of these methods before the **AdgConnection** variable loses scope or is reassigned.
 
 ```cs 
   Cx.Close();
   Cx = null;
 ```
 
-Whether you use <span> **AdgConnection.Close** </span> or <span> **AdgConnection.Dispose** </span> is a matter of preference since they perform the same task of disconnecting the database and releasing un-managed resources. Note that <span> **AdgConnection.Dispose** </span> implements the conventional <span> **System.IDisposable** </span> interface for **AdgConnection**. 
+Whether you use **AdgConnection.Close** or **AdgConnection.Dispose** is a matter of preference since they perform the same task of disconnecting the database and releasing un-managed resources. Note that **AdgConnection.Dispose** implements the conventional **System.IDisposable** interface for **AdgConnection**. 
 
 ## See Also
 [AdgConnection Class](/reference/datagate/datagate-client/adg-connection.html) <br />

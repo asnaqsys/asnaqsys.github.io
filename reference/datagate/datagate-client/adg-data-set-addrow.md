@@ -15,7 +15,7 @@ Adds a new row to the DataTable associated with the specified format.
 | Signature | Description |
 | --- | --- |
 | [AddRow](#void-addrowstring)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a new row to the DataTable associated with the specified format name.
-| [AddRow](#void-addrowint)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a new row to the DataTable associated with the specified format index.
+| [AddRow](#void-addrowint32)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Adds a new row to the DataTable associated with the specified format index.
 
 ## void AddRow(String)
 
@@ -32,7 +32,15 @@ void AddRow(string strFormat)
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | strFormat | The format name of the DataTable. |
 
 ### Remarks
-This method first calls GetFormatIndex with the provided format name to retrieve the corresponding format index, then calls AddRow with the retrieved format index to add a new row.
+This method first calls [GetFormatIndex](./adg-data-set-getformatindex.html) with the provided format name to retrieve the corresponding format index, then calls [AddRow](#void-addrowint32) with the retrieved format index to add a new row.
+
+**AddRow** appends a prepared row to the table specified by _strFormat_.  A prepared row can be created, or an existing DataRow can be set as a prepared row, using one of the [PrepareRow](adg-data-set-preparerow.html) methods of **AdgDataSet**.
+
+The usual pattern of use involves first staging the prepared DataRow object via **PrepareRow** , setting the field values in the DataRow as necessary, then calling **AddRow** or [AddPreparedRowAndSetActive](adg-data-set-addpreparedrowandsetactive.html) to append the row to the table.
+
+Note that prior to calling this method, you must call **PrepareRow** to stage a prepared row for insertion to the table. Also, upon return from this method, the prepared row of the table remains the row added to the table. Calling **AddRow** or **AddPreparedRowAndSetActive** again before calling **PrepareRow** will cause an exception.
+
+
 
 ## void AddRow(Int32)
 
@@ -49,7 +57,13 @@ void AddRow(int iFormat)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iFormat | The format index of the DataTable. |
 
 ### Remarks
-Retrieves the AdgTable instance for the provided format index and calls its AddRow method to add a new row.
+ 
+ **AddRow** appends a prepared row to the table specified by _iFormat_. A prepared row can be created, or an existing DataRow can be set as a prepared row, using one of the [PrepareRow](adg-data-set-preparerow.html) methods of **AdgDataSet**.  
+ 
+The usual pattern of use involves first staging the prepared DataRow object via **PrepareRow** , setting the field values in the DataRow as necessary, then calling **AddRow** or [AddPreparedRowAndSetActive](adg-data-set-addpreparedrowandsetactive.html) to append the row to the table.
+ 
+ Note that prior to calling this method, you must call **PrepareRow** to stage a prepared row for insertion to the table.  Also, upon return from this method, the prepared row of the table remains the row added to the table. Calling **AddRow** or **AddPreparedRowAndSetActive** again before calling **PrepareRow** will cause an exception.
+
 
 ## See Also
 - [AdgDataSet class](adg-data-set.html)
