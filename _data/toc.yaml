@@ -321,6 +321,8 @@ Manuals:
           path: /manuals/enhancements/enhancing-ui/unwinding-call-stack-via-endrequest.html
         - title: Accessing Session Values from MyJob Class
           path: /manuals/enhancements/enhancing-ui/session-values-from-myjob.html
+    - title: Surfacing Program Calls as Web APIs
+      path: /manuals/enhancements/logic/program-as-webapi.html
     - title: Display Report Manuscript as a PDF
       path: /manuals/enhancements/enhancing-reports/display-manuscript-as-pdf.html
   - sectiontitle: Hosting Monarch Applications
@@ -2074,6 +2076,8 @@ Reference:
         path: /reference/expo/qsys-expo-model/edited-value-provider-factory.html
       - title: EditWord
         path: /reference/expo/qsys-expo-model/edit-word.html
+      - title: ExpoAjaxRequest
+        path: /reference/expo/qsys-expo-model/expo-ajax-request.html
       - title: ExpoCssClassName
         path: /reference/expo/qsys-expo-model/expo-css-class-name.html
       - title: ExpoModelAssemblyAttribute
@@ -2132,10 +2136,10 @@ Reference:
         path: /reference/expo/qsys-expo-model/web-display-file-proxy.html
       - title: WrfHashAttribute
         path: /reference/expo/qsys-expo-model/wrf-hash-attribute.html
+      - title: YellowController
+        path: /reference/expo/qsys-expo-model/yellow-controller.html
       - title: YellowPageModel
         path: /reference/expo/qsys-expo-model/yellow-page-model.html
-      - title: ExpoAjaxRequest
-        path: /reference/expo/qsys-expo-model/expo-ajax-request.html
     - sectiontitle: Enumerations
       sectionpath: /reference/expo/qsys-expo-model/landing-page-enumerations.html
       section:
