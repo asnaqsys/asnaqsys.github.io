@@ -22,7 +22,10 @@ void DeleteRow(string strFormat, int rrn)
 | [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | rrn | The relative record number of the row to delete. |
 
 ## Remarks
-Sets the active row using SetActive; if not found, throws ArgumentException. Otherwise, deletes the active row via the corresponding AdgTable.
+ 
+**DeleteRow** marks the DataRow object specified by _rrn_ as deleted in the format table specified by _strFormat_. Upon return, the `ActiveRow Property` of the **AdgDataSet** is set to null and the RowState of the DataRow is RowDeleted.
+ 
+The _rrn_ parameter is a zero-relative index referring to a DataRow object contained in the Rows collection of the DataTable corresponding to the _strFormat_ parameter.  The Rows collection and its containing DataTable object is accessible via the [GetFormatTable](adg-data-set-getformattable.html) method.
 
 ## See Also
 - [AdgDataSet class](adg-data-set.html)

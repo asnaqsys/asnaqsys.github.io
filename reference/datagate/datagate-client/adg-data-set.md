@@ -82,7 +82,7 @@ For detailed constructor documentation, see [AdgDataSet Constructors](adg-data-s
 
 <!-- Inline constructor and method details removed; see dedicated pages linked above. -->
 
-## Example 1. NewKeyTable method example.
+## Example 1
 
 ```cs 
 /* This example will open a file and find the record for
@@ -99,15 +99,13 @@ For detailed constructor documentation, see [AdgDataSet Constructors](adg-data-s
   //This next line creates a key based on record format RCMMastL2
   AdgKeyTable key = dataSet.NewKeyTable("RCMMastL2");
 
-  //We specifiy KeyPartCount to avoid specifiying the second
-  //key field.
+  //We specifiy KeyPartCount to avoid specifiying the second key field.
   //We then set the keyfield "CMName" to our search argument.
   key.KeyPartCount = 1;
   key.Row["CMName"] = "Thilmany Of Bread Co Resources";
 
   //The following read will find the record associated with the 
-  //customer name "Thilmany Of Bread Co Resources" and store it
-  //in dataSet.
+  //customer name "Thilmany Of Bread Co Resources" and store it in dataSet.
   file.ReadRandomKey(dataSet, ReadRandomMode.Equal, LockRequest.Default, key);</pre>
 ```
 

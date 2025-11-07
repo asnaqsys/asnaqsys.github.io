@@ -27,7 +27,13 @@ bool AddPreparedRowAndSetActive(int iFormat)
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the active row was successfully set; otherwise, false. |
 
 ## Remarks
-This method is used to add a prepared row to a specific DataTable in the AdgDataSet and set it as the active row. The method retrieves the AdgTable instance from the AdgTable dictionary using the provided format index and calls its AddRow method to add a new row. Then, it sets the NewFormatIndex to the provided format index and calls the SetActive method with the index of the last row in the DataTable to set the new row as the active row. The SetActive method returns true if the active row was successfully set; otherwise, it returns false.
+ 
+**AddPreparedRowAndSetActive** combines the operations performed by the `AddRow`and `SetActive` methods into a single method call.  First, a prepared row is added to the specified format table, just as if **AddRow**(_iFormat_) had been called.  Then the row just added to the table is set to be the `ActiveRow` for the **AdgDataSet**, like using **SetActive**.  This is useful when adding a record format that is to be immediately used in a `FileAdapter` method which operates upon the **ActiveRow**, such as `AddRecord`.
+ 
+The usual pattern of use involves first staging the prepared DataRow object via `PrepareRow`setting the field values in the DataRow as necessary, then calling **AddRow** or **AddPreparedRowAndSetActive** to append the row to the table.
+ 
+ Note that prior to calling this method, you must call **PrepareRow** to stage a prepared row for insertion to the table.  Also, upon return from this method, the prepared row of the table remains the row added to the table.  Calling **AddRow** or **AddPreparedRowAndSetActive** again before calling **PrepareRow** will cause an exception.
+
 
 ## See Also
 - [AdgDataSet class](adg-data-set.html)

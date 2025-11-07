@@ -11,7 +11,7 @@ description: "Initializes the instance of the AdgDataSet class."
 Initializes the instance of the AdgDataSet class.
 
 ```cs
-void Initialize()
+abstract void Initialize()
 ```
 
 ## Remarks

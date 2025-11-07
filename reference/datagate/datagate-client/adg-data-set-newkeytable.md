@@ -38,7 +38,12 @@ AdgKeyTable NewKeyTable(int iFormat)
 | [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | A new AdgKeyTable for the DataTable associated with the specified format index. |
 
 ### Remarks
-Retrieves the AdgTable for the index, creates a new AdgKeyTable, and sets its key row.
+
+`FileAdapter` provides methods for accessing a file by key value using `AdgKeyTable`. **AdgKeyTable** is a class for manipulating a DataTable which represents a DataGate file key.  **NewKeyTable** generates an instance of **AdgKeyTable** corresponding to a key in a particular file format.  Generally, this is the way application programs create key buffers for use in <b>FileAdapter</b> keyed access methods.
+
+This overload of **NewKeyTable** specifies the format as an index, where zero indicates the first format.
+
+
 
 ## AdgKeyTable NewKeyTable(String)
 
@@ -61,7 +66,11 @@ AdgKeyTable NewKeyTable(string strFormat)
 | [AdgKeyTable](/reference/datagate/datagate-client/adg-key-table.html) | A new AdgKeyTable for the DataTable associated with the specified format name. |
 
 ### Remarks
-Resolves the format via GetFormatIndex and delegates to the integer overload.
+
+`FileAdapter` provides methods for accessing a file by key value using `AdgKeyTable`. **AdgKeyTable** is a class for manipulating a DataTable which represents a DataGate file key.  **NewKeyTable** generates an instance of **AdgKeyTable** corresponding to a key in a particular file format.  Generally, this is the way application programs create key buffers for use in **FileAdapter** keyed access methods.
+
+This overload of **NewKeyTable** specifies the format by its name.
+
 
 ## See Also
 - [AdgDataSet class](adg-data-set.html)
