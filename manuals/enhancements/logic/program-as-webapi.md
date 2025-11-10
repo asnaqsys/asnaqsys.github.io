@@ -233,6 +233,57 @@ In order to distinguish the name of the other (the API) Job class the [GetJobCom
 
 The `GetJobCommand("Service")` call would instantiate an object of type `Acme.RUNCI_Job.MyJobService`.
 
+#### Example
+Using the configuration above, then the application would define two Job classes, first the `Acme.RUNCI_Job.MyJob` as follows:
+
+<details>
+  <summary>C# MyJob</summary>
+
+```csharp
+    // This is C#
+    public class MyJobService : MyJob
+    {
+
+        public static new MyJobService JobFactory()
+        {
+            MyJobService job = new MyJobService();
+            return job;
+        }
+
+        override protected void ExecuteStartupProgram()
+        {
+            ExecuteStartupProgramApi();
+        }
+    }
+```
+
+</details>
+
+<details>
+  <summary>Encore RPG example</summary>
+
+```csharp
+    // This pretends to be Encore RPG
+    public class MyJobService : MyJob
+    {
+
+        public static new MyJobService JobFactory()
+        {
+            MyJobService job = new MyJobService();
+            return job;
+        }
+
+        override protected void ExecuteStartupProgram()
+        {
+            ExecuteStartupProgramApi();
+        }
+    }
+```
+
+</details>
+
+
+
 ### Mapping of the Endpoint Controllers
 
 Migrated applications have in the `Startup` class the method `Configure` which establishes the main characteristics of the web application and includes the mapping of Razor Pages. When the website is to serve Web APIs, it is necessary to also map the Controllers as shown below:
