@@ -216,7 +216,7 @@ For a website that serves both Interactive users and API calls it is convenient 
 ```json
    . . . 
   "JobDescriptor": {
-    "Class": "Acme.RUNCI_Job.MyJob",
+    "Class": "Acme.ERP.MyJob",
     "Name": "ERCAP"
   },
   . . . 
@@ -231,84 +231,135 @@ In order to distinguish the name of the other (the API) Job class the [GetJobCom
     . . .
 ```
 
-The `GetJobCommand("Service")` call would instantiate an object of type `Acme.RUNCI_Job.MyJobService`.
+The `GetJobCommand("Service")` call would instantiate an object of type `Acme.ERP.MyJobService`.
 
-#### Example
-Using the configuration above, then the application would define two Job classes, first the `Acme.RUNCI_Job.MyJob` as follows:
+### Job Class Example
+Using the configuration above, the application would define two Job classes:
+ - `Acme.ERP.MyJob` for 'regular' users interacting with the application with their browsers
+ - `Acme.ERP.MyJobService` for Web API clients
 
-<details>
-<summary>
+Both classes would be defined within the same website. In their simplest form, the difference between the two lies in the implementation of their `ExecuteStartupProgram` methods: one ends up calling an interactive program (such as a menu), while the other invokes the `AcceptCommands` method from the base class.
 
-#### Markdown *in* `summary`
+#### MyJob Example
 
-</summary>
+Let's first look at the `Acme.ERP.MyJob` class.  A simplistic implementation follows:
 
-Hi.
-
-</details>
-
-### Some Details
-
-<details>
-
-  <summary>
-  
-  *C# MyJob*
-  
-  </summary>
+<details markdown="1">
+  <summary><h5> ▼ C# Example</h5></summary>
 
 ```csharp
-    // This is C#
-    public class MyJobService : MyJob
+namespace Acme.ERP
+{
+    public class MyJob : InteractiveJob
     {
-
-        public static new MyJobService JobFactory()
+        public Database MyDatabase = new Database("TheIBMi");
+        . . . 
+        public static MyJob JobFactory()
         {
-            MyJobService job = new MyJobService();
+            MyJob job = new MyJob();
             return job;
         }
 
         override protected void ExecuteStartupProgram()
         {
-            ExecuteStartupProgramApi();
+            MyDatabase.Open();
+            . . .
+            _DynamicCaller.CallD("Acme.ERP.COSTMENU", out _LR);
         }
     }
+    . . .
+}
 ```
 
 </details>
 
-<details>
-  <summary>
-  
-  ####Encore RPG example
-  
-  </summary>
+<details markdown="1">
+  <summary><h5> ▼ Encore RPG Example</h5></summary>
+
+```php
+DclNamespace Acme.ERP
+BegClass MyJob Extends(InteractiveJob)  Access(*Public)
+    DclDB Name(MyDatabase) DBName("TheIBMi") Access(*Public) 
+    . . . 
+    BegFunc JobFactory Access(*Public) Shared(*Yes) Type(MyJob)
+        DclFld job   Type(MyJob)
+        job = *new MyJob()
+        LeaveSr job     
+    EndFunc
+
+    BegSr  ExecuteStartupProgram Access(*Protected) Modifier(*Overrides)
+        Connect     MyDatabase
+        . . .
+        CallD  "Acme.ERP.COSTMENU"
+    EndSr
+    . . .
+EndClass    
+```
+
+</details>
+
+#### MyJobService Example
+
+Now let's see a trivial implementation of the `Acme.ERP.MyJobService` class. Both of these :
+
+<details markdown="1">
+  <summary><h5> ▼ C# Example</h5></summary>
 
 ```csharp
-    // This pretends to be Encore RPG
-    public class MyJobService : MyJob
+namespace Acme.ERP
+{
+    public class MyJobService : InteractiveJob
     {
-
+        public Database MyDatabase = new Database("TheIBMi");
+        . . . 
         public static new MyJobService JobFactory()
         {
-            MyJobService job = new MyJobService();
-            return job;
+            MyJobService serviceJob = new MyJobService();
+            return serviceJob;
         }
 
         override protected void ExecuteStartupProgram()
         {
-            ExecuteStartupProgramApi();
+            MyDatabase.Open();
+            . . .
+            AcceptCommands();
         }
     }
+    . . .
+}
+```
+
+</details>
+
+<details markdown="1">
+  <summary><h5> ▼ Encore RPG Example</h5></summary>
+
+```php
+DclNamespace Acme.ERP
+BegClass MyJobService Extends(InteractiveJob)  Access(*Public)
+    DclDB Name(MyDatabase) DBName("TheIBMi") Access(*Public) 
+    . . . 
+    BegFunc JobFactory Access(*Public) Shared(*Yes) Type(MyJobService)
+        DclFld serviceJob   Type(MyJobService)
+        serviceJob = *new MyJobService()
+        LeaveSr serviceJob     
+    EndFunc
+
+    BegSr  ExecuteStartupProgram Access(*Protected) Modifier(*Overrides)
+        Connect     MyDatabase
+        . . .
+        AcceptCommands()
+    EndSr
+    . . .
+EndClass    
 ```
 
 </details>
 
 
+### Mapping The Website Endpoint Controllers
 
-### Mapping of the Endpoint Controllers
-
-Migrated applications have in the `Startup` class the method `Configure` which establishes the main characteristics of the web application and includes the mapping of Razor Pages. When the website is to serve Web APIs, it is necessary to also map the Controllers as shown below:
+Migrated applications have in their Website's `Startup` class the method `Configure` which establishes the main characteristics of the web application and includes the mapping of Razor Pages. When the website is to also serve Web APIs, it is necessary to also map the Controllers as shown below:
 
 ```cs
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -322,7 +373,7 @@ Migrated applications have in the `Startup` class the method `Configure` which e
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapRazorPages();
-            endpoints.MapControllers();    // <<<<< Configure the WEB APIs
+            endpoints.MapControllers();    // <<<<< Configure the Web APIs
         });
     }
 ```

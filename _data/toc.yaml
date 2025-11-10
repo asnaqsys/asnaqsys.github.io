@@ -105,7 +105,7 @@ Concepts:
     - title: Adding New Functionality
       path: /concepts/enhancements/new-application-features.html
     - title: Enhancing the User Interface
-      path: /manuals/enhancements/enhancing-ui/enhancing-ui.html
+      path: /concepts/enhancements/enhancing-ui.html
     - title: Base Dev Tools
       path: /concepts/enhancements/dev-tools.html
   - sectiontitle: Legacy Application Background
