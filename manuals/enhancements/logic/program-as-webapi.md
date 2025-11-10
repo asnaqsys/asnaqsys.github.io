@@ -237,7 +237,25 @@ The `GetJobCommand("Service")` call would instantiate an object of type `Acme.RU
 Using the configuration above, then the application would define two Job classes, first the `Acme.RUNCI_Job.MyJob` as follows:
 
 <details>
-  <summary>C# MyJob</summary>
+<summary>
+
+#### Markdown *in* `summary`
+
+</summary>
+
+Hi.
+
+</details>
+
+### Some Details
+
+<details>
+
+  <summary>
+  
+  *C# MyJob*
+  
+  </summary>
 
 ```csharp
     // This is C#
@@ -260,7 +278,11 @@ Using the configuration above, then the application would define two Job classes
 </details>
 
 <details>
-  <summary>Encore RPG example</summary>
+  <summary>
+  
+  ####Encore RPG example
+  
+  </summary>
 
 ```csharp
     // This pretends to be Encore RPG
