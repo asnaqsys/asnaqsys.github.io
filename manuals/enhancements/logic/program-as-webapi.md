@@ -202,7 +202,7 @@ The application could then use the `SalesApiClient` class like this:
 ```    
 
 ## Configuration
-There are two main aspects that require some configuration settings or additional application support. These are:
+There are three main aspects that require some configuration settings or additional application support. These are:
  - A Service Job class to support the programs called
  - Mapping of the endpoint controllers
  - And most important security
@@ -225,11 +225,15 @@ Let's now go back to the basic configuration required to make the Web APIs funct
 
 
 ### Service Job Class
+
+#### Job Class for Users
 Under typical scenarios, a migrated application's website defines its main [InteractiveJob](/reference/runtime/qsys-runtime-job-support/interactive-job.html) class in such a way that it invokes an interactive program to communicate with the user.  The steps taken by this InteractiveJob class, particularly in the implementation of the `ExecuteStartupProgram()` is not conducive to support Web API calls.
 
+#### Job Class for Web APIs
 What is needed to service API calls is a Job class that invokes not an Interactive Program but that instead calls the `AcceptCommands()` method.  The steps to setup the Job and the use of the Command class are similar to the steps needed to [call Programs from Non-Display Pages](/manuals/enhancements/enhancing-ui/calling-program-from-non-displayfile-page.html), please read the article for background knowledge.
 
-For a website that serves both Interactive users and API calls it is convenient then to have two Job classes, one for each use case. The name of the default (the user's) Job class is defined in the `appsettings.json` file, for example, if the class were called `MyJob`, the appsettings.json would look like this:
+#### Defining the Job Classes Names
+For a website that serves both Interactive users and API calls it is convenient then to have two Job classes, one for each use case. The name of the default (the user's) Job class is defined in the `appsettings.json` file, for example, if the class were called `Acme.ERP.MyJob`, the appsettings.json would look like this:
 
 ```json
    . . . 
@@ -240,7 +244,9 @@ For a website that serves both Interactive users and API calls it is convenient 
   . . . 
 ```
 
-In order to distinguish the name of the other (the API) Job class the [GetJobCommand](/reference/expo/qsys-expo-model/yellow-controller.html#command-getjobcommandstring-jobclasssuffix) receives an optional parameter with the suffix to append to the job class name when starting the job. If the class for the Web APIs was called `MyJobService`, then the `GetJobCommand` call would look like this:
+In order to distinguish the name of the other (the API) Job class the [GetJobCommand](/reference/expo/qsys-expo-model/yellow-controller.html#command-getjobcommandstring-jobclasssuffix) receives an optional parameter with the suffix to append to the job class name when starting the job. The name of the API Job class used is the concatenation of the class in the appsettings `"Class"` value plus the suffix modifier passed to the GetJobCommand method. 
+
+If the class for the Web APIs was called `MyJobService` in the same namespace as used in the appsettings.json shown above, then the `GetJobCommand` call would have to look like this:
 
 ```cs
     Command command = GetJobCommand("Service");
@@ -249,7 +255,7 @@ In order to distinguish the name of the other (the API) Job class the [GetJobCom
     . . .
 ```
 
-The `GetJobCommand("Service")` call would instantiate an object of type `Acme.ERP.MyJobService`.
+The `GetJobCommand("Service")` call would instantiate an object of type `Acme.ERP.MyJobService` and return a Command on that MyJobServce. 
 
 ### Job Class Example
 Using the configuration above, the application would define two Job classes:
