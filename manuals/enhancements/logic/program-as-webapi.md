@@ -205,6 +205,24 @@ The application could then use the `SalesApiClient` class like this:
 There are two main aspects that require some configuration settings or additional application support. These are:
  - A Service Job class to support the programs called
  - Mapping of the endpoint controllers
+ - And most important security
+
+### Securing the Web API Services
+A big WORD regarding Security.
+
+It is imperative that prior to relasing a set of Web APIs to the wild, just as prior to releasing any website in general, the security of the services be well established.
+
+The security concerns of a Web API service are well beyond the scope of this article. There is a plethora of [ASP.NET Core security](https://learn.microsoft.com/en-us/aspnet/core/security/) facilities that you should consider when configuring your services.
+
+Exposing a service only to a single, trusted internal server (rather than the public internet or a broad internal network segment) significantly reduces the attack surface. This approach helps to:
+ - Mitigate common attacks: Many automated attacks like vulnerability scans, brute-force attempts, and certain types of denial-of-service attacks are entirely avoided because they cannot reach the service from outside the trusted perimeter.
+ - Implement defense in depth: This strategy uses the principle of least privilege, limiting access strictly to systems that absolutely require it, making it harder for an attacker who has compromised a different system to move laterally to this specific service.
+ - Simplify security controls: Security efforts can be focused on securing the single trusted intermediary and the communication channel to it, rather than securing every possible entry point. 
+
+Exposing the service exclusively to a single trusted internal server may alleviate many of the most common attacks but ask your **Security Department** to assist you in this matter.
+
+Let's now go back to the basic configuration required to make the Web APIs functional.
+
 
 ### Service Job Class
 Under typical scenarios, a migrated application's website defines its main [InteractiveJob](/reference/runtime/qsys-runtime-job-support/interactive-job.html) class in such a way that it invokes an interactive program to communicate with the user.  The steps taken by this InteractiveJob class, particularly in the implementation of the `ExecuteStartupProgram()` is not conducive to support Web API calls.
