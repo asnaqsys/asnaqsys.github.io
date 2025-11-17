@@ -1,5 +1,5 @@
 ---
-title: "Effective Database Store Naming Conventions Guide"
+title: "Database Store Naming Conventions Guide"
 description: "This document provides detailed instructions on how to configure the database name store, including setting up the initial environment, defining database names, and ensuring secure access."
 ---
 
@@ -20,10 +20,10 @@ Before the constructor or the SetDBName are executed, one or more Configuration 
 
 ## Configuration Sources
 The [PrepareNameStore](/reference/runtime/qsys-runtime/database.html#void-preparenamestoretnamestoreoptions-options-string-configfiles) method supports the following sources:
-1. JSON Files
-2. User Secrets
-3. Environmental Variables
-4. Command Line Arguments
+1. [JSON Files](#json-files)
+2. [User Secrets](#secrets)
+3. [Environmental Variables](#environmental-variables)
+4. [Command Line Arguments](#command-line-arguments)
 
 
 ### JSON Files
@@ -105,13 +105,14 @@ dotnet run /asna:dataGate:sources:AppDB:password=TEMP1234
 ```
 
 ## PrepareNameStore
-The `PrepareNameStore<T>()` method accepts an options parameter and a list of JSON configuration files.
+The [PrepareNameStore\<T\>\(\)](/reference/runtime/qsys-runtime/database.html#void-preparenamestoretnamestoreoptions-options-string-configfiles)
+ method accepts an options parameter and a list of JSON configuration files.
 
 ```cs
 public static bool PrepareNameStore<T>(NameStoreOptions options, params string[] configFiles) where T : class
 ```
 
-The ``options`` parameter, of enumerated type NameStoreOptions, has the following set of flags:
+The ``options`` parameter, of enumerated type [NameStoreOptions](//asnaqsys.github.io/reference/runtime/qsys-runtime/name-store-options.html), has the following set of flags:
 
  * UseJsonDefaultPath = 1,
  * UseSecrets = 2,
