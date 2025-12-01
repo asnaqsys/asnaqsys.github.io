@@ -1,5 +1,5 @@
 ---
-title: "DataGate for IBM i vs. DataGate Linear: Key Differences Explained"
+title: "DataGate for IBM i vs. DataGate Linear: Key Differences"
 description: "Understand the crucial differences between DataGate for IBM i and DataGate Linear for SQL Server. This guide highlights their unique features, uses, and which to choose for your needs."
 ---
 
@@ -29,7 +29,7 @@ For reference, here are the [Maximum capacity specifications for SQL Server](htt
 | **ITEM** | **DG/400** | **DGL** | **Affects Code** |
 | ---      | ---        | ---     | ---        |
 | Indexed logical files per physical file |  3,686   | 249 | 
-| Imposing 'uniqueness' via select/omit rules in logical files | Supported &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Not directly supported. <br/>See **work-around**  note below. | 
+| Imposing 'uniqueness' via select/omit rules in logical files | Supported | Not directly supported. <br/>See **work-around**  note below. | 
 | Logical field used as a key field must be based on a physical field with the same name | No  | Yes.  Notice that this eliminates the possibility of using Renamed, Concatenated and Sub-stringed fields as keys. | 
 | Maximum number of key fields per key |   120  | 32  | <span style="background-color:red"> Possibly</span>
 | Maximum length of key in bytes | 2,000 | 900 | <span style="background-color:red"> Possibly </span>
@@ -66,7 +66,7 @@ These operation behave different.
 | ---      | ---        | ---     | ---        |
 | Unlock Record Operation| Cursor position is unchanged. | The file **loses it 'current' position** after the _Unlock_ | <span style="background-color:red">Yes</span>
 | Update Record Operation | The record just updated is released. | The record just updated is **kept locked**. | <span style="background-color:red">Yes</span>
-| `Access(*NoLock)` option on _Read_ operations | Supported but deprecated. | **Unsupported.** | <span style="background-color:red">Yes</span>
+| `Access(*NoLock)` option on _Read_ operations | Supported. | It is not possible to switch between sequential reads with-lock and without-lock. In order to switch modes, a random-access operation is needed between the reads, this operation could be a seek (SETLL) or random-read (CHAIN).  | <span style="background-color:red">Possibly</span>
 
 These operations behave in an equivalent way.
 
