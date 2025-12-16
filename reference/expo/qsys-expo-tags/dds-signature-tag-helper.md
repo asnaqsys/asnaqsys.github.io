@@ -41,3 +41,40 @@ When the sketches of the signature being captured should exceeds the length of t
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SignEditorTitleText | Gets or sets the stroke editor's Title text  |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | SignLinkText | Gets or sets the value of the label used as a link to the image stroke editor |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | ValueFieldLength | Gets or sets value defining the maximum length of the field which holds the image encoded   |
+
+## Page Example
+
+The following field specification on a Page defines a field named `SIGNATURE` on a class derived from `DisplayPageModel`, for record format `RECORD`.
+
+> Note: When capturing strokes for a handwritten signature, ensure the field length can accommodate the SVG vector data stored as a string. Keep in mind that [Base64-encoding increases size by roughly 33%](https://en.wikipedia.org/wiki/Base64).
+
+```html
+<div Row="18">
+    <DdsConstant Col="2" Text="Signature:" />
+    <DdsSignature Col="15" ColSpan="60"
+        For="RECORD.SIGNATURE" 
+        SignLinkText="Sign Here!" 
+        SignEditorTitleText="Use mouse or finger to sign"
+        DateStampWhenSigning=true 
+        />
+</div>
+```
+
+A constant labeled `Signature:` appears on row 18, column 2. The `DdsSignature` tag helper appears on the same row at column 15, with a width of 60 characters.
+
+The `DisplayPageModel` model code would look like:
+
+```cs
+        [
+            Record(EraseFormats = "*ALL")
+        ]
+        public class RECORD_Model : RecordModel
+        {
+            .
+            .
+            .
+
+            [Char(8192)]
+            public string SIGNATURE { get; set; }
+```
+
