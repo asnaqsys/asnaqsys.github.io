@@ -107,3 +107,36 @@ description: TOC Landing page for Fixed Size Type Length
 | [_97](/reference/runtime/qsys-runtime/fixed-size-type-len/97.html) | Used as type argument for fixed size types, indicates a length of 97  |
 | [_98](/reference/runtime/qsys-runtime/fixed-size-type-len/98.html) | Used as type argument for fixed size types, indicates a length of 98  |
 | [_99](/reference/runtime/qsys-runtime/fixed-size-type-len/99.html) | Used as type argument for fixed size types, indicates a length of 99  |
+
+## C# Notation
+
+When converting migrated projects to C#, the following [Encore RPG](https://asnaencorerpg.github.io/manuals/intro/IntroducingECR.html) definition:
+
+```vb
+DclFld MY_FIELD Type(*Char) Len(13)
+```
+
+Would be converted as the following code:
+
+```csharp
+FixedString<_13> MY_FIELD;
+```
+
+This notation makes the code very readable, but has one limitation: the runtime provides interfaces only for lengths between 1 and 99 elements ( [_1](/reference/runtime/qsys-runtime/fixed-size-type-len/1.html) and [_99](/reference/runtime/qsys-runtime/fixed-size-type-len/99.html) ).
+
+## C# Notation for Fixed types larger than 99 elements.
+
+When a Fixed type is needed with larger number of elements, for example:
+
+```vb
+DclFld SIGNATURE Type(*Char) Len(8192)
+```
+
+The C# equivalent code would use an enhanced notation:
+
+```csharp
+FixedString<Len<_8, _1, _9, _2>> SIGNATURE;
+```
+Note the introduction of `Len<T1,T2,T3,T4>`notation, where one or more single-digit length specifying interfaces are used. The maximum number of parameters is five.
+
+The notation should still be readable, but it is a bit more advanced.
