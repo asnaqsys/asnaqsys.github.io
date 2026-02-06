@@ -1,6 +1,6 @@
 ---
-title: "Effective App Architecture Strategies"
-description: "Master application architecture with our strategies guide. Enhance scalability, maintainability, and performance."
+title: Application Architecture
+description: Outlines the architecture of the application, detailing its components, how they interact, and the principles guiding its design.
 ---
 
 
@@ -54,6 +54,12 @@ _Batch Job running on its own process_
 
 ### Interactive Job Architecture
 As mentioned earlier, a set of interactive programs is packaged as a  class library derived from the CL and RPG programs and an Area in a website with the set of Razor Pages representing the programs' screens.
+
+The following diagram depicts a high level architecture view. 
+
+![High Level Architecture Diagram](images/high-level-architecture-diagram.svg)
+
+_High Level Architecture Diagram_
 
 #### Monarch Application Server
 The Monarch Application Server (MAS) is an execution environment that provides the facilities to host interactive Monarch Jobs and enables their interaction with the website hosting the Razor Pages serving as their user interface.
