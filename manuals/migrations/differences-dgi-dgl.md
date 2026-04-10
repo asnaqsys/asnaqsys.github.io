@@ -104,9 +104,9 @@ For DGL, object locking is implemented only for Data Area objects.
 | \- Binary | `*BINARY` | numeric | 
 | \- Float | `*FLOAT` | Float(4): float<br><br>Float(8): real | 
 | \- Integer | `*INTEGER` | Integer(2): smallint<br><br>Integer(4): int | 
-| \- Date | `*DATE` | `ASNA_DSS.DATE`<br><br>datetime: 00:00:00 | 
-| \- Time | `*TIME` | `ASNA_DSS.TIME`<br><br>`datetime: 1899/12/30` | 
-| \- Timestamp | `*TIMESTAMP` | datetime | 
+| \- Date | `*DATE` | `ASNA_DSS_NEWDATE_xxx (date)`[^1}] | 
+| \- Time | `*TIME` | `ASNA_DSS_NEWTIME_xxx (time)`[^1] | 
+| \- Timestamp | `*TIMESTAMP` | `ASNA_DSS_NEWDT2_xxx (datetime2)`[^1] | 
 | \- Hex | `*HEX` | binary | 
 | \- DBCS | `*DBCS` | nchar | 
 | \- Unicode | `*DBCS` | nchar | 
@@ -140,3 +140,6 @@ For DGL, object locking is implemented only for Data Area objects.
 | Maximum Length of Stored Procedure Name | N/A | 31  | 
 | Parameter Direction | \*Input, \*Output, *Both | \*Input, \*Both | 
 
+---
+
+[^1]: xxx stands for the format (ISO, MDY, …)
