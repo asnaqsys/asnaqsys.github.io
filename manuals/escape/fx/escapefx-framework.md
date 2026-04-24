@@ -1,6 +1,7 @@
 ---
 title: "ASNA QSys EscapeFX Library"
 description: "Introduction to the ASNA.QSys.EscapeFX Framework"
+mermaid: true
 ---
 
 
