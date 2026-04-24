@@ -361,7 +361,7 @@ Manuals:
       - title: XML Dictionary Schema
         path: /manuals/cocoon/cl-user-def-schema.html
   - sectiontitle: Synon Escape
-    sectionpath: /manuals/escape/synon-escape-overview.html
+    sectionpath: /manuals/escape/synon-escape-overview.html 
     section:
     - sectiontitle: EscapeFX Library
       sectionpath: /manuals/escape/fx/escapefx-framework.html
