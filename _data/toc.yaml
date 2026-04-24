@@ -298,7 +298,6 @@ Manuals:
       path: /manuals/configuration/configure-batch-processor.html
     - title: Edit Code Configuration
       path: /manuals/configuration/edit-codes.html
-  
   - sectiontitle: Enhancing your Migrated Application
     section:
     - sectiontitle: Enhancing the User Interface
@@ -361,6 +360,40 @@ Manuals:
         path: /manuals/cocoon/cl-user-def-call-to-execute-on-class.html
       - title: XML Dictionary Schema
         path: /manuals/cocoon/cl-user-def-schema.html
+  - sectiontitle: Synon Escape
+    section:
+    - sectiontitle: EscapeFX Library
+      sectionpath: /manuals/escape/fx/escapefx-framework.html
+      section:
+      - title: External Functions are Escape Programs
+        path: /manuals/escape/fx/escape-program.html
+      - sectiontitle: Interactive Functions
+        sectionpath: /manuals/escape/fx/interactive-program.html
+        section:
+        - sectiontitle: Single Record Functions
+          sectionpath: /manuals/escape/fx/single-record-program.html
+          section:
+          - title: Display Record Function
+            path: /manuals/escape/fx/display-record-function.html
+          - title: Edit Record Function
+            path: /manuals/escape/fx/edit-record-function.html
+        - sectiontitle: Subfile Record Functions
+          sectionpath: /manuals/escape/fx/subfile-program.html
+          section:
+          - title: Display File Function
+            path: /manuals/escape/fx/display-file-function.html
+          - title: Display Transaction Function
+            path: /manuals/escape/fx/display-transaction-function.html
+          - title: Edit File Function
+            path: /manuals/escape/fx/edit-file-function.html
+          - title: Edit Transaction Function
+            path: /manuals/escape/fx/edit-transaction-function.html
+          - title: Select Record Function
+            path: /manuals/escape/fx/select-record-function.html
+      - title: Print Function 
+        path: /manuals/escape/fx/print-function.html
+      - title: External Function 
+        path: /manuals/escape/fx/external-function.html
 
 ##
 Reference:
