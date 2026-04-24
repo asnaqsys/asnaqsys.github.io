@@ -1,11 +1,10 @@
 ---
-title: "EscapeFX Program Function"
-description: "ProgramFunction the base class for all External Functions"
+title: "EscapeFX EscapeProgram Class"
+description: "EscapeProgram is the base class for all External Functions"
+mermaid: true
 ---
 
 ## EscapeProgram Class
-
-Key Responsibilities of the EscapeProgram Class
 
 The _EscapeProgram_ class serves as the foundational abstract base class in the ASNA.QSys.EscapeFX framework, extending _ASNA.QSys.Runtime.JobSupport.Program_. It provides essential infrastructure for program execution, data handling, and system interactions, enabling subclasses to focus on domain-specific logic. Its primary responsibilities include:
 
@@ -45,13 +44,12 @@ The Escape Program class does not include a workflow implementation, that is lef
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
       hideEmptyMembersBox: true
 ---
-
 classDiagram
    class EscapeProgram {
       +InitProgram() virtual
@@ -114,12 +112,19 @@ classDiagram
       +InitMainFileInfo() virtual
       +_instanceInit()
    }
+   EscapeProgram <|-- PrintFunction
+   EscapeProgram <|-- InteractiveProgram 
+   EscapeProgram <|-- ExternalFunction
+   InteractiveProgram <|-- SingleRecordProgram
+   InteractiveProgram <|-- PromptRecordFunction
+   InteractiveProgram <|-- SubfileProgram
 
-    EscapeProgram <|-- PrintFunction
-    EscapeProgram <|-- InteractiveProgram 
-    EscapeProgram <|-- ExternalFunction
-    InteractiveProgram <|-- SingleRecordProgram
-    InteractiveProgram <|-- PromptRecordFunction
-    InteractiveProgram <|-- SubfileProgram
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
+   link ExternalFunction             "external-function.html"              "class ExternalFunction"
+   link PrintFunction                "print-function.html"                 "class PrintFunction"
+   link PromptRecordFunction         "prompt-record-function.html"         "class PromptRecordFunction"
+   link SingleRecordProgram          "single-record-program.html"          "class SingleRecordProgram"
+   link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
 
-```
+</pre>

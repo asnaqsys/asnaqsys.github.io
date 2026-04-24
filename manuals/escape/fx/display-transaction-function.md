@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Display Transaction Function"
 description: "EscapeFX Display Transaction Function"
+mermaid: true
 ---
 
 ## DisplayTransactionFunction
@@ -30,7 +31,7 @@ In summary, <u>DisplayTransactionFunction</u> specializes in presenting transact
 
 ## Flowchart
 
-```mermaid
+<pre class="mermaid">
 
 flowchart TD
     A["DisplayTransaction()"] --> B["InitProgram()"]
@@ -64,12 +65,12 @@ flowchart TD
     classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
     class A,G,O virtual;
     class E abstract;
-```
+</pre>
 
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -91,5 +92,9 @@ classDiagram
    EscapeProgram <|-- InteractiveProgram 
    InteractiveProgram <|-- SubfileProgram
    SubfileProgram <|-- DisplayTransactionFunction
-```
 
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
+
+</pre>

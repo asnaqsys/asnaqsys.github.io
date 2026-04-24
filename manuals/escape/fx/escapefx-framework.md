@@ -4,7 +4,6 @@ description: "Introduction to the ASNA.QSys.EscapeFX Framework"
 mermaid: true
 ---
 
-
 The ASNA.QSys.EscapeFX framework is a comprehensive, object-oriented library designed to simplify the development of business applications in .NET environments, particularly those migrating from legacy systems like IBM i (AS/400). Implemented in the *ASNA.QSys.EscapeFX* namespace, it provides a structured hierarchy of abstract base classes that encapsulate common program patterns, user interactions, data handling, and system integrations. This framework abstracts low-level details such as program initialization, messaging, database operations, and UI management, allowing developers to focus on domain-specific logic while ensuring consistency, reusability, and maintainability.
 
 # Framework Architecture
@@ -36,9 +35,8 @@ In summary, the ASNA.QSys.EscapeFX framework empowers developers to build scalab
 
 ## Class Herachy
 
+<pre class="mermaid">
 
-
-```mermaid
 classDiagram
     class DisplayFileFunction
     class DisplayRecordFunction
@@ -83,5 +81,4 @@ classDiagram
     SingleRecordProgram <|-- DisplayRecordFunction
     SingleRecordProgram <|-- EditRecordFunction
 
-
-```
+</pre>

@@ -1,11 +1,10 @@
 ---
 title: "EscapeFX Edit Record Function"
 description: "EscapeFX Edit Record Function"
+mermaid: true
 ---
 
 ## EditRecordFunction
-
-Key Responsibilities of EditRecordFunction
 
 The _EditRecordFunction_ class is an abstract subclass of _SingleRecordProgram_, tailored for editable single-record applications. It supports adding or changing records, with built-in mode switching and validation. Its primary responsibilities include:
 
@@ -33,8 +32,7 @@ In summary, _EditRecordFunction_ focuses on mutable record interactions, providi
 
 ## Flowchart
 
-```mermaid
-
+<pre class="mermaid">
 flowchart TD
     A["DisplayRecord()"] --> B["ProgramMainLoop()"]
     B --> C["InitProgram()"]
@@ -80,11 +78,11 @@ flowchart TD
     class A,N,Y virtual;
     class G,BB abstract;
 
-```
+</pre>
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -104,4 +102,8 @@ classDiagram
    InteractiveProgram <|-- SingleRecordProgram
    SingleRecordProgram <|-- EditRecordFunction
     
-```
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SingleRecordProgram          "single-record-program.html"          "class SingleRecordProgram"
+
+</pre>

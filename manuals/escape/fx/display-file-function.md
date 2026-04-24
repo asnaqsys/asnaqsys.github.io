@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Display File Function"
 description: "EscapeFX Display File Function"
+mermaid: true
 ---
 
 ## DisplayFileFunction
@@ -35,7 +36,7 @@ In summary, <u>DisplayFileFunction</u> enables read-only subfile displays of fil
 
 ## Flowchart
 
-```mermaid
+<pre class="mermaid">
 
 flowchart TD
     A["DisplayFile()"] --> B["InitProgram()"]
@@ -64,11 +65,11 @@ flowchart TD
    class C,L,M abstract;
    class PR,UR virtual;
 
-```
+</pre>
    
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -96,4 +97,8 @@ classDiagram
    InteractiveProgram <|-- SubfileProgram
    SubfileProgram <|-- DisplayFileFunction
 
-```
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
+
+</pre>

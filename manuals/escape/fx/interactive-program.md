@@ -1,11 +1,10 @@
 ---
 title: "EscapeFX Interactive Program"
 description: "EscapeFX Interactive Program"
+mermaid: true
 ---
 
 ## InteractiveProgram Class
-
-Key Responsibilities of the InteractiveProgram Class
 
 The _InteractiveProgram_ class is an abstract subclass of _EscapeProgram_, designed specifically for user-interactive applications. It extends the base functionality with screen-based interactions, prompting, and UI management, making it suitable for programs that require user input and display handling. Its primary responsibilities include:
 
@@ -47,7 +46,7 @@ The Interactive Program class does not include a workflow implementation, that i
 
 
 ## Class Diagram
-```mermaid
+<pre class="mermaid">
 
 classDiagram
     class InteractiveProgram {
@@ -77,5 +76,9 @@ classDiagram
     EscapeProgram <|-- InteractiveProgram 
     InteractiveProgram <|-- SingleRecordProgram
     InteractiveProgram <|-- SubfileProgram
-    
-```
+
+    link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+    link SingleRecordProgram          "single-record-program.html"          "class SingleRecordProgram"
+    link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
+
+</pre>

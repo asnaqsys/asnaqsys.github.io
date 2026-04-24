@@ -1,11 +1,10 @@
 ---
 title: "EscapeFX Display Record Function"
 description: "EscapeFX Display Record Function"
+mermaid: true
 ---
 
 ## DisplayRecordFunction
-
-Key Responsibilities of DisplayRecordFunction
 
 The _DisplayRecordFunction_ class is an abstract subclass of _SingleRecordProgram_, designed for read-only or display-oriented single-record applications. It provides a framework for presenting record data to users without allowing modifications, emphasizing data retrieval and visualization. Its key responsibilities include:
 
@@ -32,8 +31,7 @@ In summary, _DisplayRecordFunction_ specializes in read-only record presentation
 
 ## Flowchart
 
-```mermaid
-
+<pre class="mermaid">
 flowchart TD
     A["DisplayRecord()"] --> B["ProgramMainLoop()"]
     B --> C["InitProgram()"]
@@ -78,12 +76,11 @@ flowchart TD
     classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
     class A,N,Y virtual;
     class G,BB abstract;
-
-```
+</pre>
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -101,4 +98,8 @@ classDiagram
    InteractiveProgram <|-- SingleRecordProgram
    SingleRecordProgram <|-- DisplayRecordFunction
     
-```
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SingleRecordProgram          "single-record-program.html"          "class SingleRecordProgram"
+
+</pre>

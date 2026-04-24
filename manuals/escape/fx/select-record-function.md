@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Select Record Function"
 description: "EscapeFX Select Record Function"
+mermaid: true
 ---
 
 ## SelectRecordFunction
@@ -35,7 +36,7 @@ In summary, <u>SelectRecordFunction</u> specializes in subfile-based record sele
 
 ## Flowchart
 
-```mermaid
+<pre class="mermaid">
 
 flowchart TD
     A["SelectRecord()"] --> B["InitProgram()"]
@@ -63,17 +64,16 @@ flowchart TD
     class A virtual;
     class C,L,M,PR abstract;
 
-```
+</pre>
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
       hideEmptyMembersBox: true
 ---
-
 classDiagram
    class SelectRecordFunction {
       +InitSubfile() abstract
@@ -93,4 +93,8 @@ classDiagram
    InteractiveProgram <|-- SubfileProgram
    SubfileProgram <|-- SelectRecordFunction
 
-```
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
+
+</pre>

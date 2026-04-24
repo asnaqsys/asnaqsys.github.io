@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Edit File Function"
 description: "EscapeFX Edit File Function"
+mermaid: true
 ---
 
 ## EditFileFunction
@@ -39,7 +40,7 @@ In summary, <u>EditFileFunction</u> supports editable subfile interfaces for fil
 
 ## Flowchart
 
-```mermaid
+<pre class="mermaid">
 
 flowchart TD
     A["EditFile()"] --> B["InitProgram()"]
@@ -68,11 +69,11 @@ flowchart TD
     class C,L,M virtual;
     class PR,UR abstract;
 
-```
+</pre>
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -102,4 +103,8 @@ classDiagram
    InteractiveProgram <|-- SubfileProgram
    SubfileProgram <|-- EditFileFunction
 
-```
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
+
+</pre>

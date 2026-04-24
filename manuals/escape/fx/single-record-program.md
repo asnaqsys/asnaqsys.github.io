@@ -1,12 +1,10 @@
 ---
 title: "EscapeFX Single Record Function"
 description: "EscapeFX Single Record Function"
+mermaid: true
 ---
 
 ## SingleRecordProgram
-
-
- Key Responsibilities of SingleRecordProgram
 
 The *SingleRecordProgram* class is an abstract base class in the ASNA.QSys.EscapeFX framework, extending *InteractiveProgram* to provide a structured foundation for single-record-based user interactions. It manages the overall program flow for applications that handle individual records (e.g., display or edit operations), supporting multi-screen workflows and record validation. Its primary responsibilities include:
 
@@ -36,7 +34,7 @@ In summary, *SingleRecordProgram* abstracts the complexities of single-record wo
 
 ## Flowchart
 
-```mermaid
+<pre class="mermaid">
 
 flowchart TD
     A["ProgramMainLoop()"] --> B["InitProgram()"]
@@ -52,11 +50,11 @@ flowchart TD
     class A,C virtual;
     class E abstract;
 
-```
+</pre>
 
 ## Class Diagrams
-```mermaid
- ---
+<pre class="mermaid">
+---
   config:
     class:
       hideEmptyMembersBox: true
@@ -92,4 +90,9 @@ classDiagram
     SingleRecordProgram <|-- DisplayRecordFunction
     SingleRecordProgram <|-- EditRecordFunction
     
-```
+    link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+    link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+    link DisplayRecordFunction        "display-record-function.html"        "class DisplayRecordFunction"
+    link EditRecordFunction           "edit-record-function.html"           "class EditRecordFunction"
+
+</pre>

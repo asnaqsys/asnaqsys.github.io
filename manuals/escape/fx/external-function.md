@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Execute External Function"
 description: "EscapeFX Execute External Function"
+mermaid: true
 ---
 
 ## ExternalFunction Class
@@ -31,7 +32,7 @@ The External Function class does not include a workflow implementation, that is 
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -44,4 +45,6 @@ classDiagram
 
     EscapeProgram <|-- ExternalFunction
 
-```
+    link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+
+</pre>

@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Print Function"
 description: "EscapeFX Print Function"
+mermaid: true
 ---
 
 ## PrintFunction
@@ -55,7 +56,7 @@ In summary, *PrintObject* acts as a utility for organizing print output in layer
 
 ## Flowchart
 
-```mermaid
+<pre class="mermaid">
 
 flowchart TD
     A["PrintFile()"] --> B["InitProgram()"]
@@ -69,12 +70,12 @@ flowchart TD
     class A virtual;
     class C,D abstract;
     
-```
+</pre>
 
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -110,4 +111,6 @@ classDiagram
 
     EscapeProgram <|-- PrintFunction
 
-```
+    link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+
+</pre>

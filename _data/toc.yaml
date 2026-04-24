@@ -390,10 +390,12 @@ Manuals:
             path: /manuals/escape/fx/edit-transaction-function.html
           - title: Select Record Function
             path: /manuals/escape/fx/select-record-function.html
-      - title: Print Function 
-        path: /manuals/escape/fx/print-function.html
+        - title: Prompt Record Function 
+          path: /manuals/escape/fx/prompt-record-function.html
       - title: External Function 
         path: /manuals/escape/fx/external-function.html
+      - title: Print Function 
+        path: /manuals/escape/fx/print-function.html
 
 ##
 Reference:

@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Edit Transaction Function"
 description: "EscapeFX Edit Transaction Function"
+mermaid: true
 ---
 
 ## EditTransactionFunction
@@ -35,7 +36,7 @@ In summary, <u>EditTransactionFunction</u> focuses on editable transactional sub
 
 ## Flowchart
 
-```mermaid 
+<pre class="mermaid">
 
 flowchart TD
     A["EditTransaction()"] --> B["InitProgram()"]
@@ -75,11 +76,11 @@ flowchart TD
     class A,G,Q,T,V virtual;
     class D abstract;
 
-```
+</pre>
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 ---
   config:
     class:
@@ -105,5 +106,10 @@ classDiagram
    EscapeProgram <|-- InteractiveProgram 
    InteractiveProgram <|-- SubfileProgram
    SubfileProgram <|-- EditTransactionFunction
-```
+
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link SubfileProgram               "subfile-program.html"                "class SubfileProgram"
+
+</pre>
 

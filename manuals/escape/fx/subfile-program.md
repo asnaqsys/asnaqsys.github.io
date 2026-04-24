@@ -1,6 +1,7 @@
 ---
 title: "EscapeFX Subfile Program"
 description: "EscapeFX Subfile Program"
+mermaid: true
 ---
 
 ## SubfileProgram
@@ -41,13 +42,12 @@ The Subfile Program class does not include a workflow implementation, that is le
 
 ## Class Diagrams
 
-```mermaid
- ---
+<pre class="mermaid">
+---
   config:
     class:
       hideEmptyMembersBox: true
 ---
-
 classDiagram
     class SubfileProgram {
         +ProcessSubfile() virtual
@@ -71,7 +71,6 @@ classDiagram
         +ConvertMajorFieldsToExternalForm() abstract
     }
 
-
     EscapeProgram <|-- InteractiveProgram 
     InteractiveProgram <|-- SubfileProgram
     SubfileProgram <|-- DisplayTransactionFunction
@@ -80,4 +79,13 @@ classDiagram
     SubfileProgram <|-- DisplayFileFunction
     SubfileProgram <|-- EditFileFunction
 
-```
+   link EscapeProgram                "escape-program.html"                 "class EscapeProgram"
+   link InteractiveProgram           "interactive-program.html"            "class InteractiveProgram"
+   link DisplayFileFunction          "display-file-function.html"          "class DisplayFileFunction"
+   link DisplayTransactionFunction   "display-transaction-function.html"   "class DisplayTransactionFunction"
+   link EditFileFunction             "edit-file-function.html"             "class EditFileFunction"
+   link EditTransactionFunction      "edit-transaction-function.html"      "class EditTransactionFunction"
+   link SelectRecordFunction         "select-record-function.html"         "class SelectRecordFunction"
+
+
+</pre>
