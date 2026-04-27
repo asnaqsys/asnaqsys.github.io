@@ -63,12 +63,12 @@ flowchart TD
     T --> U{"in27PageDown?"}
     U -->|Yes| V["InitSubfile()"]
     U -->|No| W["ProcessSubfile()"]
-    V --> F
-    W --> F
+    V --> |loopback| F
+    W --> |loopback| F
     S -->|No| X{"SetCursor == 'Y'?"}
     X -->|Yes| Y["ClearCursor()"]
     X -->|No| C
-    Y --> C
+    Y --> |loopback| C
     M --> Z["End"]
 
    subgraph subA [" "]

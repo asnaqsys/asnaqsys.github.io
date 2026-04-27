@@ -44,6 +44,7 @@ flowchart TD
     C --> D["ReloadSubfile = 'N'"]
     D --> E{"ReloadSubfile == 'N'?"}
     E -->|Yes| F["ShowScreen()"]
+    E -->|No| C
     F --> G{"CancelRequested?"}
     G -->|Yes| H["CancelProgram()"]
     G -->|No| I{"RefreshScreenRequested?"}
@@ -54,12 +55,10 @@ flowchart TD
     M --> PR["ProcessSubfileRecord()"]
     M --> UR["UpdateSubfileRecordDB()"]
     H --> N["End"]
-    J --> E
-    L --> E
-    M --> E
-    E -->|No| O["Loop back"]
-    O --> C
-
+    J --> |loopback| E
+    L --> |loopback| E
+    M --> |loopback| E
+    
    subgraph subA [" "]
       A
       VirtualTag["Method is Virtual"]

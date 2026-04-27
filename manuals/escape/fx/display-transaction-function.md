@@ -49,15 +49,15 @@ flowchart TD
     L -->|No| N{"RefreshScreenRequested?"}
     N -->|Yes| O["ProcessHomeKey()"]
     N -->|No| P["ProcessSubfile()"]
-    O --> F
-    P --> F
+    O --> |loopback| F
+    P --> |loopback| F
     F -->|No| Q{"SetCursor == 'Y'?"}
     Q -->|Yes| R["ClearCursor()"]
     Q -->|No| S{"IsTransaction == 'N'?"}
     R --> S
     S -->|Yes| T["FirstCycle = 'Y'"]
     T --> U["RefreshScreenRequested = false"]
-    U --> D
+    U --> |loopback| D
     S -->|No| D
     M --> V["End"]
 
