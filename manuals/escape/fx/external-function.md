@@ -25,7 +25,7 @@ The <u>ExternalFunction</u> class is a concrete subclass of <u>EscapeProgram</u>
 In summary, <u>ExternalFunction</u> acts as a lightweight, extensible base for non-specialized programs, emphasizing simplicity and inheritance of core program mechanics while delegating specific behaviors to subclasses. It is ideal for background processes, utilities, or applications with custom I/O requirements.
 
 
-## No Flowchart
+## Workflow
 
 The External Function class does not include a workflow implementation, that is left to its derived classes to provide.
 

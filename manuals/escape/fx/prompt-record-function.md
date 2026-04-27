@@ -41,7 +41,7 @@ The <u>PromptRecordFunction</u> class is a key component in the ASNA.QSys.Escape
 
 In summary, <u>PromptRecordFunction</u> acts as a controller for user-driven workflows, abstracting the repetitive aspects of screen interaction while enforcing a consistent structure. Subclasses implement the abstract methods to tailor the behavior to specific use cases, such as processing form inputs or loading dynamic parameters. This design promotes reusability and separation of concerns in interactive applications.
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 
@@ -62,8 +62,19 @@ flowchart TD
     E -->|No| C
     I --> M["End"]
 
-    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
-    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
+   classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
+   classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
     class A,G virtual;
     class K,L abstract;
 </pre>

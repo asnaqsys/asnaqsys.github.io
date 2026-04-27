@@ -38,7 +38,7 @@ The <u>EditFileFunction</u> class is an abstract subclass of <u>SubfileProgram</
 In summary, <u>EditFileFunction</u> supports editable subfile interfaces for file records, providing mode management and update hooks while inhering core subfile functionality.
 
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 
@@ -64,10 +64,21 @@ flowchart TD
     E -->|No| O["Loop back"]
     O --> C
 
-    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
-    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
-    class C,L,M virtual;
-    class PR,UR abstract;
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
+   classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
+   classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
+   class C,L,M virtual;
+   class PR,UR abstract;
 
 </pre>
 

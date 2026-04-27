@@ -30,53 +30,69 @@ The _EditRecordFunction_ class is an abstract subclass of _SingleRecordProgram_,
 In summary, _EditRecordFunction_ focuses on mutable record interactions, providing mode management and edit controls while delegating specifics to subclasses, suitable for data entry or modification screens.
 
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 flowchart TD
-    A["DisplayRecord()"] --> B["ProgramMainLoop()"]
+    A["EditRecord()"] --> B["ProgramMainLoop()"]
     B --> C["InitProgram()"]
     C --> D["CheckParms()"]
     D --> E["Loop while RepeatDisplay == 'N'"]
     E --> F["DisplayKeyScreen()"]
-    F --> G["InitKeyScreenFields()"]
-    G --> H["BypassFirstScreen = 'Y'"]
-    H --> I["IsTransaction = 'Y'"]
-    I --> J{"IsTransaction == 'Y' or 'K'?"}
-    J -->|Yes| K["IsTransaction = 'Y'"]
-    K --> L["ScreenKind = 1"]
-    L --> M{"IsTransaction == 'Y'?"}
-    M -->|Yes| N["ConvertKeyToExternal()"]
-    N --> O{"BypassFirstScreen == 'Y' and (IsAnyKeyFieldBlank() or RefreshScreenRequested)?"}
-    O -->|Yes| P["BypassFirstScreen = 'N'"]
-    O -->|No| R
-    P --> R{"BypassFirstScreen != 'Y'?"}
-    R -->|Yes| S["ShowKeyScreen()"]
-    R -->|No| U
-    S --> U["BypassFirstScreen = 'N'"]
-    U --> V{"CancelRequested?"}
-    V -->|Yes| W["CancelProgram()"]
-    V -->|No| X{"RefreshScreenRequested?"}
-    X -->|Yes| Y["ProcessHome()"]
-    X -->|No| Z{"in26Clear?"}
-    Z -->|Yes| AA["RepositionWindow()"]
-    Z -->|No| BB["ProcessKeyScreen()"]
-    Y --> CC{"IsTransaction == 'R'?"}
-    AA --> CC
-    BB --> CC
-    CC -->|Yes| DD["IsTransaction = 'Y'"]
-    DD --> EE["ProcessKeyScreen()"]
-    EE --> CC
-    CC -->|No| M
-    M -->|No| J
-    J -->|No| E
-    E --> GG["CancelProgram()"]
-    W --> HH["End"]
+    F --> G{"EncourageBypass?"}
+    G -->|Yes| H["BypassFirstScreen = 'Y'"]
+    G -->|No| J
+    H --> J["InitKeyScreenFields()"]
+    J --> K["IsTransaction = 'Y'"]
+    K --> L{"IsTransaction == 'Y' or 'K'?"}
+    L -->|Yes| M["IsTransaction = 'Y'"]
+    M --> N["ScreenKind = 1"]
+    N --> O{"IsTransaction == 'Y'?"}
+    O -->|Yes| P["ConvertKeyToExternal()"]
+    P --> Q{"BypassFirstScreen == 'Y' and (IsAnyKeyFieldBlank() or RefreshScreenRequested)?"}
+    Q -->|Yes| R["BypassFirstScreen = 'N'"]
+    Q -->|No| T
+    R --> T{"BypassFirstScreen == 'N'?"}
+    T -->|Yes| U["ShowKeyScreen()"]
+    T -->|No| W
+    U --> W["BypassFirstScreen = 'N'"]
+    W --> X{"CancelRequested?"}
+    X -->|Yes| Y["CancelProgram()"]
+    X -->|No| Z{"inF09ChangeMode?"}
+    Z -->|Yes| AA["ToggleAddChangeMode()"]
+    Z -->|No| BB{"RefreshScreenRequested?"}
+    BB -->|Yes| CC["ProcessHome()"]
+    BB -->|No| DD{"in26Clear?"}
+    DD -->|Yes| EE["RepositionWindow()"]
+    DD -->|No| FF["ProcessKeyScreen()"]
+    AA --> GG{"IsTransaction == 'R'?"}
+    CC --> GG
+    EE --> GG
+    FF --> GG
+    GG -->|Yes| HH["IsTransaction = 'Y'"]
+    HH --> II["ProcessKeyScreen()"]
+    II --> GG
+    GG -->|No| O
+    O -->|No| L
+    L -->|No| E
+    E --> KK["CancelProgram()"]
+    Y --> LL["End"]
 
-    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
-    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
-    class A,N,Y virtual;
-    class G,BB abstract;
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
+   classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
+   classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
+   class A,AA,CC virtual;
+   class J,FF abstract;
 
 </pre>
 

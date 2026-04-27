@@ -4,7 +4,7 @@ description: "Introduction to the ASNA.QSys.EscapeFX Framework"
 mermaid: true
 ---
 
-The ASNA.QSys.EscapeFX framework is a comprehensive, object-oriented library designed to simplify the development of business applications in .NET environments, particularly those migrating from legacy systems like IBM i (AS/400). Implemented in the *ASNA.QSys.EscapeFX* namespace, it provides a structured hierarchy of abstract base classes that encapsulate common program patterns, user interactions, data handling, and system integrations. This framework abstracts low-level details such as program initialization, messaging, database operations, and UI management, allowing developers to focus on domain-specific logic while ensuring consistency, reusability, and maintainability.
+The ASNA.QSys.EscapeFX framework is a comprehensive, object-oriented library designed to simplify the migration of applications originally developed in Synon/2E (CA 2E) to the .NET environment. Implemented in the *ASNA.QSys.EscapeFX* namespace, it provides a structured hierarchy of abstract base classes that encapsulate common program patterns, user interactions, data handling, and system integrations. This framework abstracts low-level details such as program initialization, messaging, database operations, and UI management, allowing developers to focus on domain-specific logic while ensuring consistency, reusability, and maintainability.
 
 # Framework Architecture
 
@@ -33,7 +33,7 @@ The framework promotes separation of concerns by abstracting repetitive tasks, r
 In summary, the ASNA.QSys.EscapeFX framework empowers developers to build scalable, user-centric business applications efficiently. Its modular design ensures that from simple external functions to complex interactive subfile programs, the framework adapts to diverse needs, fostering productivity and reliability in modern .NET ecosystems. For detailed implementation, refer to the class diagrams and API documentation.
 
 
-## Class Herachy
+## Class Hierarchy
 
 <pre class="mermaid">
 

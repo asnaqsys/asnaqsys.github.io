@@ -38,7 +38,7 @@ The _EscapeProgram_ class serves as the foundational abstract base class in the 
 In summary, _EscapeProgram_ abstracts low-level program mechanics, error handling, and data utilities, allowing subclasses to inherit robust, reusable functionality for building business applications.
 
 
-## No Flowchart
+## Workflow
 
 The Escape Program class does not include a workflow implementation, that is left to the final derived classes withing the framework toprovide.
 

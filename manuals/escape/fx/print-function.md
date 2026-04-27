@@ -12,7 +12,7 @@ The *PrintFunction* class is an abstract subclass of *EscapeProgram*, designed s
     *   The **PrintFile()** method orchestrates the main report process: initializing the program, executing the mainline (**Prt_A_Main()**), printing formats, handling end-of-report, and exiting.
     *   Requires subclasses to implement abstract methods like **Prt_A_Main()**, **PrintFormats()**, **EvalPrintLength()**, and **PrintEndReport()** for custom report logic.
 
-2.  **Print File and Page Managemelnt**:
+2.  **Print File and Page Management**:
     *   Abstracts the print file via *MainPrintFile* (abstract property) and line height via *MainPrintFileLineHeight*.
     *   Computes page-related properties like *PageLength*, *CurrentLineNumber*, *FooterSize*, and *OverflowSize* based on print file metrics.
     *   Handles page headers with **PrintPageHeader()** and overflow indicators (*in97PageOverflow*).
@@ -54,7 +54,7 @@ The *PrintObject* class is a supporting class within the *PrintFunction* context
 
 In summary, *PrintObject* acts as a utility for organizing print output in layered reports, providing state management for breaks and flags.
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 
@@ -65,10 +65,22 @@ flowchart TD
     D --> E["CancelProgram()"]
     E --> F["End"]
 
-    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
-    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
+   classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
+   classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
     class A virtual;
     class C,D abstract;
+
     
 </pre>
 

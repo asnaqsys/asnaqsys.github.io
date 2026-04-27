@@ -34,7 +34,7 @@ The <u>EditTransactionFunction</u> class is an abstract subclass of <u>SubfilePr
 In summary, <u>EditTransactionFunction</u> focuses on editable transactional subfiles, providing mode switching and processing hooks while inheriting core subfile functionality.
 
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 
@@ -71,10 +71,21 @@ flowchart TD
     Y --> C
     M --> Z["End"]
 
-    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
-    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
-    class A,G,Q,T,V virtual;
-    class D abstract;
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
+   classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
+   classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
+   class A,G,Q,T,V virtual;
+   class D abstract;
 
 </pre>
 

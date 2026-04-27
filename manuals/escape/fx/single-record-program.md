@@ -1,8 +1,10 @@
 ---
-title: "EscapeFX Single Record Function"
-description: "EscapeFX Single Record Function"
+title: "EscapeFX Single Record Program"
+description: "EscapeFX Single Record Program"
 mermaid: true
 ---
+
+Migrated Functions employing a single record for their user interface extend the SingleRecordProgram.
 
 ## SingleRecordProgram
 
@@ -32,7 +34,7 @@ The *SingleRecordProgram* class is an abstract base class in the ASNA.QSys.Escap
 In summary, *SingleRecordProgram* abstracts the complexities of single-record workflows, enabling subclasses to focus on domain-specific logic while ensuring consistent screen handling, validation, and user interaction patterns.
 
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 
@@ -45,8 +47,19 @@ flowchart TD
     D --> F["CancelProgram()"]
     F --> G["End"]
 
-    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
-    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
+   classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
+   classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
     class A,C virtual;
     class E abstract;
 

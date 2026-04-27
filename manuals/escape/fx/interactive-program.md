@@ -4,6 +4,8 @@ description: "EscapeFX Interactive Program"
 mermaid: true
 ---
 
+Migrated Functions that have a user interface extend either the SingleSubfileProgram or the SubfileProgram classes which in turn extend the InteractiveProgram class.
+
 ## InteractiveProgram Class
 
 The _InteractiveProgram_ class is an abstract subclass of _EscapeProgram_, designed specifically for user-interactive applications. It extends the base functionality with screen-based interactions, prompting, and UI management, making it suitable for programs that require user input and display handling. Its primary responsibilities include:
@@ -40,7 +42,7 @@ The _InteractiveProgram_ class is an abstract subclass of _EscapeProgram_, desig
 In summary, _InteractiveProgram_ specializes in user-facing interactions, providing tools for screen handling, prompting, cursor management, and validation, while inheriting core program infrastructure from _EscapeProgram_. This enables subclasses to create responsive, interactive applications with consistent UI behavior.
 
 
-## No Flowchart
+## Workflow
 
 The Interactive Program class does not include a workflow implementation, that is left to the SingleRecordProgram and the derived classes of SubfileProgram to provide.
 

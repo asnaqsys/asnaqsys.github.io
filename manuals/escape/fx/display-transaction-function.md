@@ -29,7 +29,7 @@ The <u>DisplayTransactionFunction</u> class is an abstract subclass of <u>Subfil
 In summary, <u>DisplayTransactionFunction</u> specializes in presenting transactional subfile data, abstracting display logic while requiring subclasses to handle setup and data conversion.
 
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 
@@ -61,8 +61,19 @@ flowchart TD
     S -->|No| D
     M --> V["End"]
 
-    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
-    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
+   classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
+   classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
     class A,G,O virtual;
     class E abstract;
 </pre>

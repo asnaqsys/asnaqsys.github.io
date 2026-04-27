@@ -4,6 +4,8 @@ description: "EscapeFX Subfile Program"
 mermaid: true
 ---
 
+Migrated Functions employing a subfile for their user interface extend the SubfileProgram.
+
 ## SubfileProgram
 
 The <u>SubfileProgram</u> class is an abstract base class in the ASNA.QSys.EscapeFX framework, extending <u>InteractiveProgram</u> to provide infrastructure for managing subfile-based user interfaces (e.g., scrollable lists or tables of records). It handles subfile initialization, loading, prompting, and processing, supporting multi-page displays and record navigation. Its primary responsibilities include:
@@ -35,7 +37,7 @@ The <u>SubfileProgram</u> class is an abstract base class in the ASNA.QSys.Escap
 In summary, <u>SubfileProgram</u> abstracts subfile operations, providing reusable components for loading, displaying, and interacting with record lists, while delegating specifics to subclasses.
 
 
-## No Flowchart
+## Workflow
 
 The Subfile Program class does not include a workflow implementation, that is left to its derived classes to provide.
 

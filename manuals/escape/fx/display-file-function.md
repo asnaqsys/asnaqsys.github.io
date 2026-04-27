@@ -34,7 +34,7 @@ The <u>DisplayFileFunction</u> class is an abstract subclass of <u>SubfileProgra
 In summary, <u>DisplayFileFunction</u> enables read-only subfile displays of file data, abstracting display logic while supporting extensible loading and processing.
 
 
-## Flowchart
+## Workflow
 
 <pre class="mermaid">
 
@@ -60,8 +60,19 @@ flowchart TD
     E -->|No| O["Loop back"]
     O --> C
 
+   subgraph subA [" "]
+      A
+      VirtualTag["Method is Virtual"]
+      AbstractTag["Method is Abstract"]
+      class VirtualTag virtual;
+      class AbstractTag abstract;
+   end
+
    classDef virtual fill:#ff9800,stroke:#e65100,stroke-width:2px;
    classDef abstract fill:#2196f3,stroke:#0d47a1,stroke-width:2px;
+   classDef colorKey fill:transparent,stroke-width:0;
+   class subA colorKey
+
    class C,L,M abstract;
    class PR,UR virtual;
 
