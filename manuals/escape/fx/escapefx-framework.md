@@ -6,7 +6,7 @@ mermaid: true
 
 The ASNA.QSys.EscapeFX framework is a comprehensive, object-oriented library designed to simplify the migration of applications originally developed in Synon/2E (CA 2E) to the .NET environment. Implemented in the *ASNA.QSys.EscapeFX* namespace, it provides a structured hierarchy of abstract base classes that encapsulate common program patterns, user interactions, data handling, and system integrations. This framework abstracts low-level details such as program initialization, messaging, database operations, and UI management, allowing developers to focus on domain-specific logic while ensuring consistency, reusability, and maintainability.
 
-# Framework Architecture
+## Framework Architecture
 
 At its core, the framework follows a hierarchical inheritance model, with *EscapeProgram* as the root abstract class extending *ASNA.QSys.Runtime.JobSupport.Program*. This base class establishes the foundation for all programs, handling essential lifecycle management, error handling, and system utilities. It includes features like program status data structures, indicator management (e.g., for error flags), messaging queues, date/time conversions, string manipulations, and database record locking. Subclasses build upon this by adding specialized capabilities for different application types.
 
@@ -19,7 +19,7 @@ The hierarchy branches into several key categories:
 
 Supporting classes like *PrintObject* and *PrintFlag* assist in print operations, while enums and utilities enhance functionality across the framework.
 
-# Key Responsibilities and Benefits
+## Key Responsibilities and Benefits
 
 Each class in the hierarchy has well-defined responsibilities:
 
