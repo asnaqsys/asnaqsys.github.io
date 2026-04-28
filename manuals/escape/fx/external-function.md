@@ -4,9 +4,9 @@ description: "EscapeFX Execute External Function"
 mermaid: true
 ---
 
-## ExternalFunction Class
+## Execute ExternalFunction Class
 
-The <u>ExternalFunction</u> class is a concrete subclass of <u>EscapeProgram</u>, designed as a base for generic application programs that do not require predefined I/O styles (such as interactive screens or print reports). It provides a minimal, flexible foundation for programs that handle custom logic without inheriting specialized UI or output behaviors from other framework classes. Its primary responsibilities include:
+The Execute <u>ExternalFunction</u> class is a concrete subclass of <u>EscapeProgram</u>, designed as a base for generic application programs that do not require predefined I/O styles (such as interactive screens or print reports). It provides a minimal, flexible foundation for programs that handle custom logic without inheriting specialized UI or output behaviors from other framework classes. Its primary responsibilities include:
 
 1.  **Program Cancellation and Exit**:
     *   Overrides **CancelProgram()** to directly call **ExitProgram()**, ensuring a straightforward exit without additional cleanup or messaging specific to interactive or print contexts. This allows subclasses to handle cancellation simply by terminating the program.
