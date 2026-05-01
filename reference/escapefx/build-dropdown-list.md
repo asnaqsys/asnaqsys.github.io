@@ -21,7 +21,7 @@ BuildDropdownList is implemented as an EscapeProgram with four string parameters
 | ListID      | input     | The ID of the desired List
 | TargetValue | input     | The value that will be used to determine which *row*, if any, will be marked as 'selected'.
 
-The output parameter ListHTML will contain a string representing a 3 'column table', with each *row* delimited by a new line and each column with a Tab, something like this (where → > represents a Tab character /u0009):<br/>
+The output parameter ListHTML will contain a string representing a 3 'column table', with each *row* delimited by a new line character and each column separated with a Tab, something like this (where → represents a Tab character /u0009):<br/>
 ```
      A →           →  A-Allowed
      B →  selected →  B-Bypassed
@@ -41,5 +41,5 @@ The program utilizes a database file with a name equal to the concatenation of t
 The BuildDropdownList can be the target of a [Dynamic Program CALL](/reference/runtime/qsys-runtime/dynamic-caller.html) or, more typically, can be invoked by a [DdsDynamicList](/reference/expo/qsys-expo-tags/dds-dynamic-list-tag-helper.html).
 
 ```html
-<ddsDynamicList Col="60" ProgramName="ASNA.QSys.EscapeFX.BuildDropdownList" TargetField="REC1.STATUS" ParmsData="Y2,1100123">
+<DdsDynamicList Col="60" ProgramName="ASNA.QSys.EscapeFX.BuildDropdownList" TargetField="REC1.STATUS" ParmsData="Y2,1100123">
 ```
