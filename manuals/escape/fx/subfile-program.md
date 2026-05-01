@@ -1,14 +1,14 @@
 ---
-title: "EscapeFX Subfile Program"
-description: "EscapeFX Subfile Program"
+title: "EscapeFX Subfile Functions"
+description: "EscapeFX Subfile Functions"
 mermaid: true
 ---
 
-Migrated Functions employing a subfile for their user interface extend the SubfileProgram.
+Migrated Functions employing a subfile for their user interface extend the SubfileProgram class.
 
 ## SubfileProgram
 
-The <u>SubfileProgram</u> class is an abstract base class in the ASNA.QSys.EscapeFX framework, extending <u>InteractiveProgram</u> to provide infrastructure for managing subfile-based user interfaces (e.g., scrollable lists or tables of records). It handles subfile initialization, loading, prompting, and processing, supporting multi-page displays and record navigation. Its primary responsibilities include:
+The [SubfileProgram](/reference/escapefx/subfile-program.html) class is an abstract base class in the ASNA.QSys.EscapeFX framework, extending [InteractiveProgram](interactive-program.html) to provide infrastructure for managing subfile-based user interfaces (e.g., scrollable lists or tables of records). It handles subfile initialization, loading, prompting, and processing, supporting multi-page displays and record navigation. Its primary responsibilities include:
 
 1. **Subfile Management and Initialization**:
    - Initializes subfile-related fields (e.g., <u>SubfileRRN</u>, <u>MaxSubfileRRN</u>, scan limits) and overrides **InitProgram()** to set up subfile parameters like pages and records per page.

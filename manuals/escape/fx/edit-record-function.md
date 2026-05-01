@@ -6,7 +6,7 @@ mermaid: true
 
 ## EditRecordFunction
 
-The _EditRecordFunction_ class is an abstract subclass of _SingleRecordProgram_, tailored for editable single-record applications. It supports adding or changing records, with built-in mode switching and validation. Its primary responsibilities include:
+The EditRecordFunction](/reference/escapefx/edit-record-function.html) class is an abstract subclass of [SingleRecordProgram](single-record-program.html), tailored for editable single-record applications. It supports adding or changing records, with built-in mode switching and validation. Its primary responsibilities include:
 
 1. **Driving the Edit Workflow**:
    - The **EditRecord()** method calls **ProgramMainLoop()** to manage the edit cycle, initializing and looping through key screen interactions until the program ends.

@@ -6,7 +6,7 @@ mermaid: true
 
 ## EditTransactionFunction
 
-The <u>EditTransactionFunction</u> class is an abstract subclass of <u>SubfileProgram</u>, tailored for editable transactional subfiles. It supports adding or changing records, with mode switching and subfile management. Its primary responsibilities include:
+The [EditTransactionFunction](/reference/escapefx/edit-transaction-function.html) class is an abstract subclass of [SubfileProgram](subfile-program.html), tailored for editable transactional subfiles. It supports adding or changing records, with mode switching and subfile management. Its primary responsibilities include:
 
 1. **Transaction Editing Workflow**:
    - The **EditTransaction()** method initializes the program and loops through screen conversations, handling mode-based bypassing and processing user inputs like mode toggles or page navigation.

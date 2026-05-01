@@ -6,7 +6,7 @@ mermaid: true
 
 ## EscapeProgram Class
 
-The _EscapeProgram_ class serves as the foundational abstract base class in the ASNA.QSys.EscapeFX framework, extending _ASNA.QSys.Runtime.JobSupport.Program_. It provides essential infrastructure for program execution, data handling, and system interactions, enabling subclasses to focus on domain-specific logic. Its primary responsibilities include:
+The [EscapeProgram](/reference/escapefx/escape-program.html) class serves as the foundational abstract base class in the ASNA.QSys.EscapeFX framework, extending [ASNA.QSys.Runtime.JobSupport.Program](/reference/runtime/qsys-runtime-job-support/program.html). It provides essential infrastructure for program execution, data handling, and system interactions, enabling subclasses to focus on domain-specific logic. Its primary responsibilities include:
 
 1. **Program Initialization and Lifecycle Management**:
    - Initializes program status data structures (e.g., program name, job details, start date/time) and sets up global fields like _ResultingCode_ and indicators.
@@ -40,7 +40,7 @@ In summary, _EscapeProgram_ abstracts low-level program mechanics, error handlin
 
 ## Workflow
 
-The Escape Program class does not include a workflow implementation, that is left to the final derived classes withing the framework toprovide.
+The Escape Program class does not include a workflow implementation, that is left to the final derived classes withing the framework to provide.
 
 ## Class Diagram
 

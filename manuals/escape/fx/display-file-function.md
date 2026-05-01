@@ -6,7 +6,7 @@ mermaid: true
 
 ## DisplayFileFunction
 
-The <u>DisplayFileFunction</u> class is an abstract subclass of <u>SubfileProgram</u>, focused on displaying file records in subfiles without editing. It supports loading, viewing, and basic processing. Its primary responsibilities include:
+The [DisplayFileFunction](/reference/escapefx/display-file-function.html) class is an abstract subclass of [SubfileProgram](subfile-program.html), focused on displaying file records in subfiles without editing. It supports loading, viewing, and basic processing. Its primary responsibilities include:
 
 1. **File Display Workflow**:
    - The **DisplayFile()** method initializes the program and loops through subfile initialization, display, and user response handling.

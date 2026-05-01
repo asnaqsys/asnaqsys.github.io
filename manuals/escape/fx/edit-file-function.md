@@ -6,7 +6,7 @@ mermaid: true
 
 ## EditFileFunction
 
-The <u>EditFileFunction</u> class is an abstract subclass of <u>SubfileProgram</u>, designed for editing file records in subfiles. It supports adding, changing, and updating records with mode switching. Its primary responsibilities include:
+The [EditFileFunction](/reference/escapefx/edit-file-function.html) class is an abstract subclass of [SubfileProgram](subfile-program.html) designed for editing file records in subfiles. It supports adding, changing, and updating records with mode switching. Its primary responsibilities include:
 
 1. **File Editing Workflow**:
    - The **EditFile()** method initializes the program and loops through subfile loading, display, and user input processing.

@@ -6,7 +6,7 @@ mermaid: true
 
 ## DisplayTransactionFunction
 
-The <u>DisplayTransactionFunction</u> class is an abstract subclass of <u>SubfileProgram</u>, designed for read-only display of transactional data in subfiles. It focuses on presenting data without allowing modifications, supporting screen initialization and navigation. Its primary responsibilities include:
+The [DisplayTransactionFunction](/reference/escapefx/display-transaction-function.html) class is an abstract subclass of [SubfileProgram](subfile-program.html), designed for read-only display of transactional data in subfiles. It focuses on presenting data without allowing modifications, supporting screen initialization and navigation. Its primary responsibilities include:
 
 1. **Transaction Display Workflow**:
    - The **DisplayTransaction()** method initializes the program and conducts a loop for displaying screens, bypassing the first screen on initial cycles (<u>FirstCycle</u>) and handling user responses like cancel or refresh.

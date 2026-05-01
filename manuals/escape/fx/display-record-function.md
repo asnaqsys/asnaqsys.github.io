@@ -6,7 +6,7 @@ mermaid: true
 
 ## DisplayRecordFunction
 
-The _DisplayRecordFunction_ class is an abstract subclass of _SingleRecordProgram_, designed for read-only or display-oriented single-record applications. It provides a framework for presenting record data to users without allowing modifications, emphasizing data retrieval and visualization. Its key responsibilities include:
+The [DisplayRecordFunction](/reference/escapefx/display-record-function.html) class is an abstract subclass of [SingleRecordProgram](single-record-program.html), designed for read-only or display-oriented single-record applications. It provides a framework for presenting record data to users without allowing modifications, emphasizing data retrieval and visualization. Its key responsibilities include:
 
 1. **Driving the Display Workflow**:
    - The **DisplayRecord()** method invokes **ProgramMainLoop()** to initialize and manage the display cycle, ensuring the program runs until completion or cancellation.

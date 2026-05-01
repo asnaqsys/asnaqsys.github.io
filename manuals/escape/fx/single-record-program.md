@@ -1,14 +1,14 @@
 ---
-title: "EscapeFX Single Record Program"
-description: "EscapeFX Single Record Program"
+title: "EscapeFX Single Record Functions"
+description: "EscapeFX Single Record Functions"
 mermaid: true
 ---
 
-Migrated Functions employing a single record for their user interface extend the SingleRecordProgram.
+Migrated Functions employing a single record for their user interface extend the SingleRecordProgram class.
 
 ## SingleRecordProgram
 
-The *SingleRecordProgram* class is an abstract base class in the ASNA.QSys.EscapeFX framework, extending *InteractiveProgram* to provide a structured foundation for single-record-based user interactions. It manages the overall program flow for applications that handle individual records (e.g., display or edit operations), supporting multi-screen workflows and record validation. Its primary responsibilities include:
+The [SingleRecordProgram](/reference/escapefx/single-record-program.html) class is an abstract base class in the ASNA.QSys.EscapeFX framework, extending [InteractiveProgram](interactive-program.html) to provide a structured foundation for single-record-based user interactions. It manages the overall program flow for applications that handle individual records (e.g., display or edit operations), supporting multi-screen workflows and record validation. Its primary responsibilities include:
 
 1.  **Managing the Main Program Loop**:
     *   The **ProgramMainLoop()** method initializes the program, checks parameters, and repeatedly calls **DisplayKeyScreen()** until *RepeatDisplay* indicates no repetition. This ensures the program can handle multiple iterations for record processing or re-display.

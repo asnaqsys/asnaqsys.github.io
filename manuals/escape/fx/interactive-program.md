@@ -1,14 +1,14 @@
 ---
-title: "EscapeFX Interactive Program"
-description: "EscapeFX Interactive Program"
+title: "EscapeFX Interactive Functions"
+description: "EscapeFX Interactive Functions"
 mermaid: true
 ---
 
-Migrated Functions that have a user interface extend either the SingleSubfileProgram or the SubfileProgram classes which in turn extend the InteractiveProgram class.
+Migrated Functions that have a user interface extend either the SingleRecordProgram or the SubfileProgram classes which in turn extend the InteractiveProgram class.
 
 ## InteractiveProgram Class
 
-The _InteractiveProgram_ class is an abstract subclass of _EscapeProgram_, designed specifically for user-interactive applications. It extends the base functionality with screen-based interactions, prompting, and UI management, making it suitable for programs that require user input and display handling. Its primary responsibilities include:
+The [InteractiveProgram](/reference/escapefx/interactive-program.html) class is an abstract subclass of [EscapeProgram](escape-program.html), designed specifically for user-interactive applications. It extends the base functionality with screen-based interactions, prompting, and UI management, making it suitable for programs that require user input and display handling. Its primary responsibilities include:
 
 1. **Interactive Initialization and Setup**:
    - Overrides **InitProgram()** to initialize interactive-specific fields (e.g., _CompanyName_, _CursorFieldName_, _SetCursor_), set up window locations, and configure large display support.

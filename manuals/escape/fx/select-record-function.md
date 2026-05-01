@@ -6,7 +6,7 @@ mermaid: true
 
 ## SelectRecordFunction
 
-The <u>SelectRecordFunction</u> class is an abstract subclass of <u>SubfileProgram</u>, designed for selecting records from subfiles. It supports loading, displaying, and processing selections without editing. Its primary responsibilities include:
+The [SelectRecordFunction](/reference/escapefx/select-record-function.html) class is an abstract subclass of [SubfileProgram](subfile-program.html), designed for selecting records from subfiles. It supports loading, displaying, and processing selections without editing. Its primary responsibilities include:
 
 1. **Record Selection Workflow**:
    - The **SelectRecord()** method initializes the program and loops through subfile loading, display, and user response processing until a selection or cancel occurs.
