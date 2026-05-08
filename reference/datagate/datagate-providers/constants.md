@@ -1,5 +1,5 @@
 ---
-title: "Constants class               | QSYS API Reference Guide"
+title: "Constants class"
 description: "Contains constant values related to file opening attributes. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

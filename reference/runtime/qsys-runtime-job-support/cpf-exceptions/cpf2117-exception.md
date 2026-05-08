@@ -1,5 +1,5 @@
 ---
-title: "CPF2117Exception class        | QSYS API Reference Guide"
+title: "CPF2117Exception class"
 description: "The exception that is thrown when {0} Objects of type {1} were deleted but {2} were not deleted. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

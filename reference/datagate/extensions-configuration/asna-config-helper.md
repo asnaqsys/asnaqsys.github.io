@@ -1,5 +1,5 @@
 ---
-title: "AsnaConfigHelper class        | QSYS API Reference Guide"
+title: "AsnaConfigHelper class"
 description: "Provides helper functions and properties for accessing IAsnaConfig properties encoded in JSON configuration texts. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

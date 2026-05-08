@@ -1,5 +1,5 @@
 ---
-title: "DependentTypes enum           | QSYS API Reference Guide"
+title: "DependentTypes enum"
 description: "Specifies the type of a dependent object. "
 last_modified_at: 2024-08-09T17:25:07Z
 sitemap: false

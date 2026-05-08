@@ -1,5 +1,5 @@
 ---
-title: "FixedArray<T1, T2> struct     | QSYS API Reference Guide"
+title: "FixedArray<T1, T2> struct"
 description: "Defines the functionality of a fixed-sized unidimensional array. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

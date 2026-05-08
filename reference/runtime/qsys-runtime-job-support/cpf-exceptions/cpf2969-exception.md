@@ -1,5 +1,5 @@
 ---
-title: "CPF2969Exception class        | QSYS API Reference Guide"
+title: "CPF2969Exception class"
 description: "The exception that is thrown when FMTOPT(*MAP *DROP) or FMTOPT(*NOCHK) required. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

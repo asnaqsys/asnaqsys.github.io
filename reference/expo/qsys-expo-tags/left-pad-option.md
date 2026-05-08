@@ -1,5 +1,5 @@
 ---
-title: "LeftPadOption enum            | QSYS API Reference Guide"
+title: "LeftPadOption enum"
 description: "Describes the Left padding option. "
 last_modified_at: 2024-08-09T17:26:18Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "ScanBuff class                | QSYS API Reference Guide"
+title: "ScanBuff class"
 description: "Summary Canonical example of GPLEX automaton "
 last_modified_at: 2024-08-09T17:26:04Z
 sitemap: false

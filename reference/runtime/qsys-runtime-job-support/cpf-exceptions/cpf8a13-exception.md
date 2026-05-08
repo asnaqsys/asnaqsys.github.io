@@ -1,5 +1,5 @@
 ---
-title: "CPF8A13Exception class        | QSYS API Reference Guide"
+title: "CPF8A13Exception class"
 description: "The exception that is thrown when Document {0} in folder {1} not moved. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

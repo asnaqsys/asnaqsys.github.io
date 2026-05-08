@@ -1,5 +1,5 @@
 ---
-title: "ValuesAttribute class         | QSYS API Reference Guide"
+title: "ValuesAttribute class"
 description: "Defines ValuesAttribute class "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

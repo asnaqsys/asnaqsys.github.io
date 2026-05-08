@@ -1,5 +1,5 @@
 ---
-title: "FileAdapter class   | QSYS API Reference Guide"
+title: "FileAdapter class"
 description: "The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings. "
 ---
 

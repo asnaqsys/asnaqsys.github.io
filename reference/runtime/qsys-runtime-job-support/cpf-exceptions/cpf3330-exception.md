@@ -1,5 +1,5 @@
 ---
-title: "CPF3330Exception class        | QSYS API Reference Guide"
+title: "CPF3330Exception class"
 description: "The exception that is thrown when Necessary resource not available {0} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

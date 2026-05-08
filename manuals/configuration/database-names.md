@@ -1,5 +1,5 @@
 ---
-title: "Database Store Naming Conventions Guide"
+title: "Configuring the Database Name Store"
 description: "This document provides detailed instructions on how to configure the database name store, including setting up the initial environment, defining database names, and ensuring secure access."
 ---
 
@@ -14,9 +14,9 @@ Monarch Base provides the class `QSys.Runtime.Database` to encapsulate a DataGat
 ## Database Name
 Database Names are unique, human-friendly character strings associated with the properties of a Source Profile within a Configuration Source.  Database Name identifiers may follow any mnemonic convention the user or enterprise chooses (for example, "milwaukee-10234-sql-server").  For purposes of comparison within DataGate, Database Name identifiers are [culturally-sensitive, but case-insensitive](https://docs.microsoft.com/en-us/dotnet/standard/base-types/best-practices-strings#recommendations-for-string-usage).
 
-The `QSys.Runtime.Database` constructor accepts a Database Name string and it also provides the method SetDBName to set the string at run time.
+The `QSys.Runtime.Database` constructor accepts a Database Name string and it also provides the method `SetDBName` to set the string at run time.
 
-Before the constructor or the SetDBName are executed, one or more Configuration Sources should be established via the static method `PrepareNameStore()`.
+Before the constructor or the `SetDBName` are executed, one or more Configuration Sources should be established via the static method `PrepareNameStore()`.
 
 ## Configuration Sources
 The [PrepareNameStore](/reference/runtime/qsys-runtime/database.html#void-preparenamestoretnamestoreoptions-options-string-configfiles) method supports the following sources:

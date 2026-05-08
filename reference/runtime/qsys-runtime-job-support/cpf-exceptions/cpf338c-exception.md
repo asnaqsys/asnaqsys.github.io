@@ -1,5 +1,5 @@
 ---
-title: "CPF338CException class        | QSYS API Reference Guide"
+title: "CPF338CException class"
 description: "The exception that is thrown when Internal spool control file/folder &#39;{0}&#39; not accessible. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Calling Stored Procedures with DataGate"
+title: "Calling Stored Procedures"
 description: "Master the process of calling stored procedures in DataGate. This guide offers step-by-step instructions for seamless integration."
 ---
 

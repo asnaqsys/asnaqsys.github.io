@@ -1,5 +1,5 @@
 ---
-title: "Mastering BTerm Macros: A Step-by-Step Guide"
+title: "BTerm Macros"
 description: "Learn to automate tasks in BTerm with macros. This guide provides easy steps to create, manage, and use macros for efficiency."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "FixedDateMethods class        | QSYS API Reference Guide"
+title: "FixedDateMethods class"
 description: "Contains extension methods for handling RPG operations for FixedDate values. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

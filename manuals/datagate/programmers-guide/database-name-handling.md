@@ -1,5 +1,5 @@
 ---
-title: "Effective Database Name Handling Techniques"
+title: "Database Name Handling"
 description: "This document focuses on the methods and best practices for handling database names within applications, including naming conventions, case sensitivity issues, and strategies for avoiding naming conflicts."
 ---
 

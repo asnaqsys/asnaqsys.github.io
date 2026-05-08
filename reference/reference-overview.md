@@ -1,5 +1,5 @@
 ---
-title: "ASNA Monarch® Base: Comprehensive Reference Guide Overview"
+title: "ASNA Monarch® Base - Reference"
 description: "Get a quick overview of our complete reference guide. This summary provides insights into the resources available for your needs."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "ProgParmType class            | QSYS API Reference Guide"
+title: "ProgParmType class"
 description: "Represents the type of a program parameter in a DataLink connection. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

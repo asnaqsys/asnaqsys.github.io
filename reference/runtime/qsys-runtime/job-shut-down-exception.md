@@ -1,5 +1,5 @@
 ---
-title: "JobShutDownException class    | QSYS API Reference Guide"
+title: "JobShutDownException class"
 description: "The exception that is thrown to end a job. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

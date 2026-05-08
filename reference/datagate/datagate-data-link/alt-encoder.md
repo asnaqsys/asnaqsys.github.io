@@ -1,5 +1,5 @@
 ---
-title: "AltEncoder class              | QSYS API Reference Guide"
+title: "AltEncoder class"
 description: "Represents an encoder that converts a set of characters into a sequence of encoded bytes. This class is abstract. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

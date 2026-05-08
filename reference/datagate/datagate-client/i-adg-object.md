@@ -1,5 +1,5 @@
 ---
-title: "IAdgObject interface          | QSYS API Reference Guide"
+title: "IAdgObject interface"
 description: "Defines the properties and methods for an ADG (ASNA DataGate) object. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

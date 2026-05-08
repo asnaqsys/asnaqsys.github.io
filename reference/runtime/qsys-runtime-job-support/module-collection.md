@@ -1,5 +1,5 @@
 ---
-title: "ModuleCollection class        | QSYS API Reference Guide"
+title: "ModuleCollection class"
 description: "A dictionary of the modules making up this program. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

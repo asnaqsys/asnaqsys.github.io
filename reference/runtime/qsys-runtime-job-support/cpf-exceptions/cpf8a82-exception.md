@@ -1,5 +1,5 @@
 ---
-title: "CPF8A82Exception class        | QSYS API Reference Guide"
+title: "CPF8A82Exception class"
 description: "The exception that is thrown when Document {0} not found in folder {1} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

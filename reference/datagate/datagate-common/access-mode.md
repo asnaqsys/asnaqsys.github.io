@@ -1,5 +1,5 @@
 ---
-title: "AccessMode enum               | QSYS API Reference Guide"
+title: "AccessMode enum"
 description: "Specifies the access mode for a data operation. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

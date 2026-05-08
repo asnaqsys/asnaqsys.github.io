@@ -1,5 +1,5 @@
 ---
-title: "FieldBase class               | QSYS API Reference Guide"
+title: "FieldBase class"
 description: "Provides common methods for DdsFields and DdsConstants. "
 last_modified_at: 2024-08-09T17:26:18Z
 ---

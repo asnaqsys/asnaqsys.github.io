@@ -1,5 +1,5 @@
 ---
-title: "Database Overview"
+title: "Database Overview: Navigating Monarch Application's Data"
 description: "Gain insights into Monarch Application's database management. Learn about data structures, access methods, and optimization strategies for efficient data handling."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "CPF2108Exception class        | QSYS API Reference Guide"
+title: "CPF2108Exception class"
 description: "The exception that is thrown when Object {1} type {2} not added to library {0} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

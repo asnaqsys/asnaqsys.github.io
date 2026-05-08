@@ -1,5 +1,5 @@
 ---
-title: "MessageFormatter class        | QSYS API Reference Guide"
+title: "MessageFormatter class"
 description: "Provides functionality to format a message. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

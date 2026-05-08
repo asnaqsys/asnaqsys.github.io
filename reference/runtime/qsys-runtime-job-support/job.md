@@ -1,5 +1,5 @@
 ---
-title: "Job class                     | QSYS API Reference Guide"
+title: "Job class"
 description: "Defines the core behavior of a Job that provides an environment to submit, control, and keep track of Program activation and execution. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

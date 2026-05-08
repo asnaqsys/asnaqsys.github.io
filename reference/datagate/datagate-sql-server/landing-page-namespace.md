@@ -1,5 +1,5 @@
 ---
-title: ASNA.DataGate.SqlServer Namespace
+title: "ASNA.DataGate.SqlServer Namespace"
 description: TOC Landing page for ASNA.DataGate.SqlServer Namespace
 sitemap: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Limits enum                   | QSYS API Reference Guide"
+title: "Limits enum"
 description: "Defines the maximum limits for decimal values, including the maximum number of digits, integral digits, and decimal positions. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

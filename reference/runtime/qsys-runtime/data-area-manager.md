@@ -1,5 +1,5 @@
 ---
-title: "DataAreaManager class         | QSYS API Reference Guide"
+title: "DataAreaManager class"
 description: "Handles DataArea operations. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

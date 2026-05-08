@@ -1,5 +1,5 @@
 ---
-title: "IFS and DLO: Understanding basic Support"
+title: "Support for IFS and DLO"
 description: "Dive into the essentials of Integrated File System (IFS) and Document Library Objects (DLO). Learn their roles, differences, and how to the new implementation works."
 ---
 

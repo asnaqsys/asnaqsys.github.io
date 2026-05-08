@@ -1,5 +1,5 @@
 ---
-title: "WebDevice class               | QSYS API Reference Guide"
+title: "WebDevice class"
 description: "Defines the core behavior of the device handling the user interface for an interactive job and provides a base for derived classes. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Display Reports as PDF: A Guide"
+title: "Display Report Manuscript as a PDF"
 description: "Transform your report manuscripts into shareable PDF documents and present them to users on their Browsers." 
 ---
 

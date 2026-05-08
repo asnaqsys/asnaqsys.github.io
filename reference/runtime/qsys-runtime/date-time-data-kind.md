@@ -1,5 +1,5 @@
 ---
-title: "DateTimeDataKind enum         | QSYS API Reference Guide"
+title: "DateTimeDataKind enum"
 description: "Describes the valid values for Kind in a date/time fixed type. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

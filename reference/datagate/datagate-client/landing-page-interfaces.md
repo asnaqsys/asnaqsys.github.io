@@ -1,5 +1,5 @@
 ---
-title: ASNA.DataGate.Client Interfaces
+title: "ASNA.DataGate.Client Interfaces"
 description: TOC Landing page for ASNA.DataGate.Client Interfaces
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "DataGate Error Handling Best Practices Guide"
+title: "Error Handling"
 description: "Learn the essentials of effective error handling to improve application reliability and user experience with our concise guide."
 ---
 

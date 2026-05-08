@@ -1,5 +1,5 @@
 ---
-title: "IDSArrayField interface       | QSYS API Reference Guide"
+title: "IDSArrayField interface"
 description: "Describes the common operations for an array field in a Data Structure. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

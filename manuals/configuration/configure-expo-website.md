@@ -1,5 +1,5 @@
 ---
-title: "Setting Up Your Expo Website: A Guide"
+title: "Configuring the Expo Website"
 description: "Effortlessly configure your Expo website with our guide. Ideal for developers looking to launch or improve their Expo project's web presence."
 ---
 

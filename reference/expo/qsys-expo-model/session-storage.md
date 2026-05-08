@@ -1,5 +1,5 @@
 ---
-title: "SessionStorage class          | QSYS API Reference Guide"
+title: "SessionStorage class"
 description: "Defines the SessionStorage class "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

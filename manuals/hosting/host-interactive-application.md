@@ -1,5 +1,5 @@
 ---
-title: "Hosting Interactive Applications: A Guide"
+title: "Hosting an Interactive Application"
 description: "Learn how to host interactive applications effectively. This guide covers essential tips for seamless user engagement and performance."
 ---
 

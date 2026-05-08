@@ -1,5 +1,5 @@
 ---
-title: "Call class                    | QSYS API Reference Guide"
+title: "Call class"
 description: "Provides functionality to handle calling a program residing in an IBMi server. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "MemberDecimalDescription enum | QSYS API Reference Guide"
+title: "MemberDecimalDescription enum"
 description: "Specifies a numerical member attribute. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

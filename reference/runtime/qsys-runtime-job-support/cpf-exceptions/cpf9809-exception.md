@@ -1,5 +1,5 @@
 ---
-title: "CPF9809Exception class        | QSYS API Reference Guide"
+title: "CPF9809Exception class"
 description: "The exception that is thrown when Library {0} cannot be accessed. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

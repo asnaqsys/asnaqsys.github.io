@@ -1,5 +1,5 @@
 ---
-title: "NewLineDelimeter class        | QSYS API Reference Guide"
+title: "NewLineDelimeter class"
 description: "Represents a newline delimiter in a data stream. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

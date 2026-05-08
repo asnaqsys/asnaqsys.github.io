@@ -1,5 +1,5 @@
 ---
-title: "IPhysicalMember interface     | QSYS API Reference Guide"
+title: "IPhysicalMember interface"
 description: "Defines the contract for managing a physical member in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

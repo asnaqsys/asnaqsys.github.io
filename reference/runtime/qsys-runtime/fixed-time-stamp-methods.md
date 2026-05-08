@@ -1,5 +1,5 @@
 ---
-title: "FixedTimeStampMethods class   | QSYS API Reference Guide"
+title: "FixedTimeStampMethods class"
 description: "Contains extension methods for handling RPG operations for FixedTimestamp values. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

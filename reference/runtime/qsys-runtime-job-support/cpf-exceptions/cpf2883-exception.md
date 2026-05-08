@@ -1,5 +1,5 @@
 ---
-title: "CPF2883Exception class        | QSYS API Reference Guide"
+title: "CPF2883Exception class"
 description: "The exception that is thrown when Error creating file {0} in library {1}. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

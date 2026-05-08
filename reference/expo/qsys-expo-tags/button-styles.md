@@ -1,5 +1,5 @@
 ---
-title: "ButtonStyles enum             | QSYS API Reference Guide"
+title: "ButtonStyles enum"
 description: "Specifies the DdsButton rendering shape. "
 last_modified_at: 2024-08-09T17:26:17Z
 ---

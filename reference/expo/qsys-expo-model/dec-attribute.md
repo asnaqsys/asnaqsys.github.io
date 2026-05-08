@@ -1,5 +1,5 @@
 ---
-title: "DecAttribute class            | QSYS API Reference Guide"
+title: "DecAttribute class"
 description: "Provides Decimal Attributes (for Properties) "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

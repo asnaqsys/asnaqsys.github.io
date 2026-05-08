@@ -1,5 +1,5 @@
 ---
-title: "Migrating to MS SQL: A Step-by-Step Guide"
+title: "Migrating to SQL Server"
 description: "Learn how to seamlessly migrate your database to Microsoft SQL Server. This guide covers preparation, execution, and optimization tips."
 ---
 

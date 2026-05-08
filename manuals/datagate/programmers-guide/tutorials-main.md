@@ -1,5 +1,5 @@
 ---
-title: "Comprehensive DataGate Tutorials for Beginners"
+title: "DG for Visual Studio Tutorials"
 description: "This collection of tutorials provides step-by-step guidance on using DataGate with Visual Studio."
 ---
 

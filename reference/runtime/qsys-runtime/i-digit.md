@@ -1,5 +1,5 @@
 ---
-title: "IDigit interface              | QSYS API Reference Guide"
+title: "IDigit interface"
 description: "Interface that identifies a subset of length type arguments that represent digits, from 0 to 9. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

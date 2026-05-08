@@ -1,5 +1,5 @@
 ---
-title: "LDACapacityException class    | QSYS API Reference Guide"
+title: "LDACapacityException class"
 description: "The exception that is thrown when a field being get or set on the LDA is beyond the LDA length. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

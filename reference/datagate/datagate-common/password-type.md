@@ -1,5 +1,5 @@
 ---
-title: "PasswordType enum             | QSYS API Reference Guide"
+title: "PasswordType enum"
 description: "Specifies the type of password. "
 last_modified_at: 2024-08-09T17:25:07Z
 sitemap: false

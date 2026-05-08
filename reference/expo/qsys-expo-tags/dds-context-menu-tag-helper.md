@@ -1,5 +1,5 @@
 ---
-title: "DdsContextMenuTagHelper class | QSYS API Reference Guide"
+title: "DdsContextMenuTagHelper class"
 description: "Defines a Context Menu container. Children elements define its options. "
 last_modified_at: 2024-08-09T17:26:17Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "StructureType class           | QSYS API Reference Guide"
+title: "StructureType class"
 description: "Represents a structured type in a DataLink connection, which can contain multiple other types. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

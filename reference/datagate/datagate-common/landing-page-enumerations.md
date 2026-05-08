@@ -1,5 +1,5 @@
 ---
-title: ASNA.DataGate.Common Enumerations
+title: "ASNA.DataGate.Common Enumerations"
 description: TOC Landing page for ASNA.DataGate.Common Enumerations
 ---
 

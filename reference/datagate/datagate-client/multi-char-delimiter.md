@@ -1,5 +1,5 @@
 ---
-title: "MultiCharDelimiter class      | QSYS API Reference Guide"
+title: "MultiCharDelimiter class"
 description: "Represents a delimiter in a data stream. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

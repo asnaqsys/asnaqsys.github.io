@@ -1,5 +1,5 @@
 ---
-title: "Handling MSSQL's Multi-Format Limitation"
+title: "Lack of support for Multi-format Files under SQL Server"
 description: "Learn strategies to overcome MSSQL's lack of multi-format support. This guide provides practical solutions for efficient database management."
 ---
 

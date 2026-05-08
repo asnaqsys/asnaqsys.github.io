@@ -1,5 +1,5 @@
 ---
-title: ASNA.Extensions.Configuration Namespace
+title: "ASNA.Extensions.Configuration Namespace"
 description: TOC Landing page for ASNA.Extensions.Configuration Namespace
 sitemap: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Upgrading Subfiles to Tables: A Guide"
+title: "Upgrading Subfiles to HTML Tables"
 description: "Transform your subfiles into standard HTML tables with our step-by-step guide. Enhance your database management and UI design seamlessly."
 ---
 

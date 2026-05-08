@@ -1,5 +1,5 @@
 ---
-title: "Import class                  | QSYS API Reference Guide"
+title: "Import class"
 description: "Provides functionality for importing data into the application. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

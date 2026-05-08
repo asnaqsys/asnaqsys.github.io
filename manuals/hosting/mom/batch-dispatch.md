@@ -1,5 +1,5 @@
 ---
-title: "Efficient Batch Dispatching Techniques"
+title: "ASNA - Batch Dispatch"
 description: "Explore strategies for efficient batch dispatching to optimize processing time and resource utilization in your applications."
 ---
 

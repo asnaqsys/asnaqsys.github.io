@@ -1,5 +1,5 @@
 ---
-title: "FixedTimeMethods class        | QSYS API Reference Guide"
+title: "FixedTimeMethods class"
 description: "Contains extension methods for handling RPG operations for FixedTime values. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

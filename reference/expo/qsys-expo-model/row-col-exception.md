@@ -1,5 +1,5 @@
 ---
-title: "RowColException class         | QSYS API Reference Guide"
+title: "RowColException class"
 description: "Provides an Exception derived class with the detailed invalid row, col string format (typically from VirtualRowCol field property) "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

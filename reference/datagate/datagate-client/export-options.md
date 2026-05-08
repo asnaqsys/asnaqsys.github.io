@@ -1,5 +1,5 @@
 ---
-title: "ExportOptions class           | QSYS API Reference Guide"
+title: "ExportOptions class"
 description: "Provides methods for exporting data to XML or CSV formats. This class includes functionality for transforming data using XSLT, logging, and handling c"
 last_modified_at: 2024-08-09T17:25:07Z
 ---

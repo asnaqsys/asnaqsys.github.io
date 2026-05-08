@@ -1,5 +1,5 @@
 ---
-title: "DSField class                 | QSYS API Reference Guide"
+title: "DSField class"
 description: "Describes a field in a Data Structure. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "CPF210DException class        | QSYS API Reference Guide"
+title: "CPF210DException class"
 description: "The exception that is thrown when Library {0} in use. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

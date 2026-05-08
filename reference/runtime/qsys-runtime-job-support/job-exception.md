@@ -1,5 +1,5 @@
 ---
-title: "JobException class            | QSYS API Reference Guide"
+title: "JobException class"
 description: "Defines the core behavior of the the base class that is thrown when there is a job exception. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

@@ -1,5 +1,5 @@
 ---
-title: "PrintTrueType enum            | QSYS API Reference Guide"
+title: "PrintTrueType enum"
 description: "Specifies the handling of TrueType fonts during printing. "
 last_modified_at: 2024-08-09T17:25:07Z
 sitemap: false

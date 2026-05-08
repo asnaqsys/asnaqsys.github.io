@@ -1,5 +1,5 @@
 ---
-title: "WebDisplayFile class          | QSYS API Reference Guide"
+title: "WebDisplayFile class"
 description: "Provides a program with an interface to the user interactions, supporting read and write operation to the user&#39;s screen. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

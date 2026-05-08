@@ -1,5 +1,5 @@
 ---
-title: "RPG Migration: Strategies & Tips"
+title: "Migration of RPG Programs"
 description: "Master RPG migration with our guide. Learn effective strategies, tips, and best practices for a smooth transition to modern platforms."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "CallHostSpecs class           | QSYS API Reference Guide"
+title: "CallHostSpecs class"
 description: "Defines CallHostSpecs class "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

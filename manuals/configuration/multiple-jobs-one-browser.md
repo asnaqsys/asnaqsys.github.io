@@ -1,5 +1,5 @@
 ---
-title: "Running Multiple Jobs in One Browser: Tips & Tricks"
+title: "Running Multiple Jobs from a Single Browser"
 description: "Learn how to efficiently run multiple jobs in a single browser. Maximize productivity with our expert tips and tricks for seamless multitasking."
 ---
 

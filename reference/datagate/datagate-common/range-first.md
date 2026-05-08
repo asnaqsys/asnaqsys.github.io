@@ -1,5 +1,5 @@
 ---
-title: "RangeFirst enum               | QSYS API Reference Guide"
+title: "RangeFirst enum"
 description: "Specifies the first range of a sequence. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

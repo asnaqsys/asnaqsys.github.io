@@ -1,5 +1,5 @@
 ---
-title: "RecordAttribute class         | QSYS API Reference Guide"
+title: "RecordAttribute class"
 description: "Defines  the Record Attribute on a type "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

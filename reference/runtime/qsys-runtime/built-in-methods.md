@@ -1,5 +1,5 @@
 ---
-title: "BuiltInMethods class          | QSYS API Reference Guide"
+title: "BuiltInMethods class"
 description: "Contains extension methods for handling Built-in functions according to RPG semantics. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

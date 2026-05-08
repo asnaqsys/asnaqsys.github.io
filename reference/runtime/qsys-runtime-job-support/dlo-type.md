@@ -1,5 +1,5 @@
 ---
-title: "DLOType enum                  | QSYS API Reference Guide"
+title: "DLOType enum"
 description: "Specifies the type of a DLO document. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

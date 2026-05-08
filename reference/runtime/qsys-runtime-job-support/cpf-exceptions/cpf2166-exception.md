@@ -1,5 +1,5 @@
 ---
-title: "CPF2166Exception class        | QSYS API Reference Guide"
+title: "CPF2166Exception class"
 description: "The exception that is thrown when Library name {0} not valid. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

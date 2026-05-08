@@ -1,5 +1,5 @@
 ---
-title: "ShuttingDownException class   | QSYS API Reference Guide"
+title: "ShuttingDownException class"
 description: "The exception that is thrown to signal the Job is being shut down. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

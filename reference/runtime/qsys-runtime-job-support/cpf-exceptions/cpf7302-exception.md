@@ -1,5 +1,5 @@
 ---
-title: "CPF7302Exception class        | QSYS API Reference Guide"
+title: "CPF7302Exception class"
 description: "The exception that is thrown when File {0} not created in library {1} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

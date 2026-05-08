@@ -1,5 +1,5 @@
 ---
-title: "Database Connection Management Tips"
+title: "Managing Database Connections"
 description: "Learn how to manage database connections effectively. Our guide covers best practices for stability and performance."
 ---
 

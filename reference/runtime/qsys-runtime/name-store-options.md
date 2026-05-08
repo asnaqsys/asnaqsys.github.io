@@ -1,5 +1,5 @@
 ---
-title: "NameStoreOptions enum         | QSYS API Reference Guide"
+title: "NameStoreOptions enum"
 description: "Defines flags that tell the name store which name sources to use. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

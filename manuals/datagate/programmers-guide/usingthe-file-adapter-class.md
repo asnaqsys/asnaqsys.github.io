@@ -1,5 +1,5 @@
 ---
-title: "Mastering DataGate File Adapter Class"
+title: "Accessing a File Using the FileAdapter Class"
 description: "Access files using the FileAdapter class for operations such as reading, writing, and managing file metadata."
 ---
 

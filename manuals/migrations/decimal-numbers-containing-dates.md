@@ -1,5 +1,5 @@
 ---
-title: "Handling Dates in Decimal Formats: A Guide"
+title: "Decimal Numbers Containing Dates"
 description: "Learn to manage dates stored as decimal numbers. This guide provides techniques for conversion and interpretation, simplifying data handling."
 ---
 

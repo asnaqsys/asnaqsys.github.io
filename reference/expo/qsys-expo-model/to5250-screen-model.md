@@ -1,5 +1,5 @@
 ---
-title: "To5250Screen_Model class      | QSYS API Reference Guide"
+title: "To5250Screen_Model class"
 description: "Defines  the To5250Screen_Model class "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

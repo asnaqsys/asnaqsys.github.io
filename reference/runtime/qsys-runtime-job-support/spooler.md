@@ -1,5 +1,5 @@
 ---
-title: "Spooler class                 | QSYS API Reference Guide"
+title: "Spooler class"
 description: "Provides the infrastructure to manage spooled output from print files.  "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

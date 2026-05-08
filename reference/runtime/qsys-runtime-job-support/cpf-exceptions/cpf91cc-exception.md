@@ -1,5 +1,5 @@
 ---
-title: "CPF91CCException class        | QSYS API Reference Guide"
+title: "CPF91CCException class"
 description: "The exception that is thrown when Command did not complete successfully. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

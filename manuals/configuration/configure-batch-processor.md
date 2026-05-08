@@ -1,5 +1,5 @@
 ---
-title: "Batch Processor Setup: A Step-by-Step Guide"
+title: "Configure Batch Processor"
 description: "Learn how to configure your batch processor efficiently with our easy-to-follow guide. Perfect for optimizing your data processing tasks."
 ---
 

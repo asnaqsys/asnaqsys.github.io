@@ -1,5 +1,5 @@
 ---
-title: "OverrideScope enum            | QSYS API Reference Guide"
+title: "OverrideScope enum"
 description: "Indicates the scope of the override option. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

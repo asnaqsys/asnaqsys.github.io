@@ -1,5 +1,5 @@
 ---
-title: "Parameter class               | QSYS API Reference Guide"
+title: "Parameter class"
 description: "Describes a parameter sent into an IBMi program call. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "ServiceProgram class          | QSYS API Reference Guide"
+title: "ServiceProgram class"
 description: "Defines the core behavior of a service program and provides a base for migrated derived classes. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

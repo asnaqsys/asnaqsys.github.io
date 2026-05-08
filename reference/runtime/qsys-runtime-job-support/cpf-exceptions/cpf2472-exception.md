@@ -1,5 +1,5 @@
 ---
-title: "CPF2472Exception class        | QSYS API Reference Guide"
+title: "CPF2472Exception class"
 description: "The exception that is thrown when Invalid wait time specified: {0} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "CopyDataOptions enum          | QSYS API Reference Guide"
+title: "CopyDataOptions enum"
 description: "Specifies the options for copying data. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

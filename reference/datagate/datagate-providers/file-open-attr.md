@@ -1,5 +1,5 @@
 ---
-title: "FileOpenAttr class            | QSYS API Reference Guide"
+title: "FileOpenAttr class"
 description: "Represents the attributes for opening a file. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

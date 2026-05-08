@@ -1,5 +1,5 @@
 ---
-title: "CPF3220Exception class        | QSYS API Reference Guide"
+title: "CPF3220Exception class"
 description: "The exception that is thrown when Cannot do operation on {0} in {1}. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

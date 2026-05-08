@@ -1,5 +1,5 @@
 ---
-title: "IndicatorMethods class        | QSYS API Reference Guide"
+title: "IndicatorMethods class"
 description: "Contains extension methods for handling RPG operations for Indicator values. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

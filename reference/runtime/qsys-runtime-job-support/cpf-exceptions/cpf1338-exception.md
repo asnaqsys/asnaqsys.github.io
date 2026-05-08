@@ -1,5 +1,5 @@
 ---
-title: "CPF1338Exception class        | QSYS API Reference Guide"
+title: "CPF1338Exception class"
 description: "The exception that is thrown when Errors occurred on while submitting a job.. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

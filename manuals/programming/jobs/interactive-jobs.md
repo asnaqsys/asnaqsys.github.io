@@ -1,5 +1,5 @@
 ---
-title: "IBM i Interactive Jobs: A Migration Guide"
+title: "Interactive Jobs"
 description: "Unlock the potential of interactive jobs with our comprehensive guide. Learn key strategies for effective management and execution in real-time."
 ---
 

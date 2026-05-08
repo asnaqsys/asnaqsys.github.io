@@ -1,5 +1,5 @@
 ---
-title: "CPF7306Exception class        | QSYS API Reference Guide"
+title: "CPF7306Exception class"
 description: "The exception that is thrown when Member {0} not added to file {1} in {2} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

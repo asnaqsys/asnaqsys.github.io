@@ -1,5 +1,5 @@
 ---
-title: "Web Hosting Overview: Key Concepts & Tips"
+title: "Hosting a Monarch Application"
 description: "Get a comprehensive overview of web hosting. Learn key concepts, tips, and best practices to host your website effectively."
 ---
 

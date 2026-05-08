@@ -1,5 +1,5 @@
 ---
-title: "QueryResults class            | QSYS API Reference Guide"
+title: "QueryResults class"
 description: "Dictionary with Query result items. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Apps with Non-Display Files"
+title: "Enhancing Applications using Non-Display File Pages"
 description: "Discover how to use non-display files to enhance your applications, improving data handling and user experience."
 ---
 

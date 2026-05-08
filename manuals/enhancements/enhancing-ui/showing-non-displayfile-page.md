@@ -1,5 +1,5 @@
 ---
-title: "Showing a Non-DisplayFile Pages"
+title: "Showing a Non-DisplayFile Page"
 description: "Learn how to show Non-DisplayFile Page in your application without using display files, enhancing flexibility and user interface design."
 ---
 

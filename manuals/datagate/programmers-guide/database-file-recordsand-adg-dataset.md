@@ -1,5 +1,5 @@
 ---
-title: "Managing Database File Records and ADG Dataset"
+title: "Database File Records and AdgDataSet"
 description: "Learn how to manage and manipulate database file records and ADG datasets effectively. This guide covers techniques, tips, and best practices."
 ---
 

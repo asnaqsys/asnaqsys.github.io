@@ -1,5 +1,5 @@
 ---
-title: "Indicator struct              | QSYS API Reference Guide"
+title: "Indicator struct"
 description: "This class represents an IBM i RPG Indicator.  "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

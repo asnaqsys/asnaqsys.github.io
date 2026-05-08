@@ -1,5 +1,5 @@
 ---
-title: "CPF2182Exception class        | QSYS API Reference Guide"
+title: "CPF2182Exception class"
 description: "The exception that is thrown when Not authorized to library {0} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

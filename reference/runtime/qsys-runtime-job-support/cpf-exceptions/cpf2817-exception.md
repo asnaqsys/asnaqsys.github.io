@@ -1,5 +1,5 @@
 ---
-title: "CPF2817Exception class        | QSYS API Reference Guide"
+title: "CPF2817Exception class"
 description: "The exception that is thrown when Copy command ended because of error. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

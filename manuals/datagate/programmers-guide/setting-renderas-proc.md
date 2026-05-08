@@ -1,5 +1,5 @@
 ---
-title: "Guide: Setting Render-in-Process during Printing"
+title: "Render-in-Process Options"
 description: "This document details the options available for rendering Print content in-process effectively."
 ---
 

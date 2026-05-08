@@ -1,5 +1,5 @@
 ---
-title: "IntArrayInDS<T> struct        | QSYS API Reference Guide"
+title: "IntArrayInDS<T> struct"
 description: "Describes a fixed size array of integers contained in a DataStructure. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

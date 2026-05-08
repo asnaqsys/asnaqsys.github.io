@@ -1,5 +1,5 @@
 ---
-title: "DecimalMethods class          | QSYS API Reference Guide"
+title: "DecimalMethods class"
 description: "Contains extension methods for handling RPG operations for decimal numbers. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

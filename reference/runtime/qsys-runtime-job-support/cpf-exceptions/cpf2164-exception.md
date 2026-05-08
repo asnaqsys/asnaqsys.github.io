@@ -1,5 +1,5 @@
 ---
-title: "CPF2164Exception class        | QSYS API Reference Guide"
+title: "CPF2164Exception class"
 description: "The exception that is thrown when Rename of library {0} not complete. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

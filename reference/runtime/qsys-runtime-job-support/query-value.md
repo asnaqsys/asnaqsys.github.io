@@ -1,5 +1,5 @@
 ---
-title: "QueryValue class              | QSYS API Reference Guide"
+title: "QueryValue class"
 description: "Represents a Value stored in a SQL Query Result. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

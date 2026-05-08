@@ -1,5 +1,5 @@
 ---
-title: "PrintCreateAttr class         | QSYS API Reference Guide"
+title: "PrintCreateAttr class"
 description: "Represents the attributes for creating a print file. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

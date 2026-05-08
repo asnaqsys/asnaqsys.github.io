@@ -1,5 +1,5 @@
 ---
-title: "Guide to Printer Writer Configuration"
+title: "Printer Writer"
 description: "Explore how to use Printer Writer Configuration for writing formatted text to output streams with ease, including error handling tips."
 ---
 

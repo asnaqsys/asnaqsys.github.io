@@ -1,5 +1,5 @@
 ---
-title: "Program Entry Points: A Comprehensive Guide"
+title: "Program Entry"
 description: "Learn about program entry points, their importance in software development, and how to effectively manage them for optimal program execution."
 ---
 

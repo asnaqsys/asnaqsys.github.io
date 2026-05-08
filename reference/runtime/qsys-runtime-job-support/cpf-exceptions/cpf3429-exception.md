@@ -1,5 +1,5 @@
 ---
-title: "CPF3429Exception class        | QSYS API Reference Guide"
+title: "CPF3429Exception class"
 description: "The exception that is thrown when File {0} number {1} cannot be displayed, copied or sent. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

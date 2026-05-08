@@ -1,5 +1,5 @@
 ---
-title: "Retrieving Session Values in MyJob"
+title: "Accessing Session Values from MyJob Class"
 description: "Learn how to efficiently retrieve session values in MyJob, enhancing data management and user experience in your applications."
 ---
 

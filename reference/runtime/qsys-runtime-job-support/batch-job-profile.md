@@ -1,5 +1,5 @@
 ---
-title: "BatchJobProfile class         | QSYS API Reference Guide"
+title: "BatchJobProfile class"
 description: "Provides the facilities to configure and launch a batch job. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

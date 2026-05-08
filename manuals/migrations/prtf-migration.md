@@ -1,5 +1,5 @@
 ---
-title: "Efficient Printer-Files Migration Strategies"
+title: "Migration of Printer Files"
 description: "Master Printer-Files migration with our concise guide. Learn key strategies for a smooth transition, ensuring data integrity and system compatibility."
 ---
 

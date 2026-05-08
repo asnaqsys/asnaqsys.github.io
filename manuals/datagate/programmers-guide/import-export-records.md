@@ -1,5 +1,5 @@
 ---
-title: "Importing & Exporting Records: A Guide"
+title: "Importing and Exporting Records to Text Files"
 description: "Master the art of importing and exporting records with our comprehensive guide. Learn tips for efficient data management."
 ---
 

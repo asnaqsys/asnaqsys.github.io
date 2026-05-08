@@ -1,5 +1,5 @@
 ---
-title: "LocalScopeDS class            | QSYS API Reference Guide"
+title: "LocalScopeDS class"
 description: "Base class that contains functionality to support locally scoped data structures. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

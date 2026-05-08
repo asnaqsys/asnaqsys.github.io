@@ -1,5 +1,5 @@
 ---
-title: "Dependent class               | QSYS API Reference Guide"
+title: "Dependent class"
 description: "The `Dependent` class represents a dependency in the ASNA DataGate environment. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

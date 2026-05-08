@@ -1,5 +1,5 @@
 ---
-title: "User-Def CL translated to Execute method - new Class."
+title: "User Defined Command translated to a CALL to Execute method on new Class."
 description: "Describes one of the alternatives to translate User Defined commands (calling a class method)."
 ---
 

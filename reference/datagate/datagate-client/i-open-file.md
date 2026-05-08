@@ -1,5 +1,5 @@
 ---
-title: "IOpenFile interface           | QSYS API Reference Guide"
+title: "IOpenFile interface"
 description: "Defines the contract for managing an open file in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

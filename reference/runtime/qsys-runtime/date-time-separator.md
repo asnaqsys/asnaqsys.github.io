@@ -1,5 +1,5 @@
 ---
-title: "DateTimeSeparator enum        | QSYS API Reference Guide"
+title: "DateTimeSeparator enum"
 description: "DateTimeSeparator describes the character separator to use. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

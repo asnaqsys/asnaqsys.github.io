@@ -1,5 +1,5 @@
 ---
-title: "DecimalOps class              | QSYS API Reference Guide"
+title: "DecimalOps class"
 description: "Provide fixed length decimal storage and operations. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "CPFA000Exception class        | QSYS API Reference Guide"
+title: "CPFA000Exception class"
 description: "Defines the core behavior of CPFA0xx exceptions. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

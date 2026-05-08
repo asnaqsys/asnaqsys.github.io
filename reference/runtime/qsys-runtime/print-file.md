@@ -1,5 +1,5 @@
 ---
-title: "PrintFile class               | QSYS API Reference Guide"
+title: "PrintFile class"
 description: "Represents a Database print file. It contains methods to handle all Output operations on the file. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

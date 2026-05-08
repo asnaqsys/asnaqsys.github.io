@@ -1,5 +1,5 @@
 ---
-title: "DdsFileTagHelper class        | QSYS API Reference Guide"
+title: "DdsFileTagHelper class"
 description: "Renders the Monarch Base Application&#39;s Active records along with Active Aid Keys. "
 last_modified_at: 2024-08-09T17:26:17Z
 ---

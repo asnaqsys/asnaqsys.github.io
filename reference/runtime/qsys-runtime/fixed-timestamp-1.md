@@ -1,5 +1,5 @@
 ---
-title: "FixedTimestamp<T> struct      | QSYS API Reference Guide"
+title: "FixedTimestamp<T> struct"
 description: "Holds a fixed-timestamp value with the given separator. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

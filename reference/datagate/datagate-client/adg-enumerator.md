@@ -1,5 +1,5 @@
 ---
-title: "AdgEnumerator Delegate"
+title: "AdgEnumerator class"
 description: "Represents a method that handles an IAdgObject."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "WorkstationFileBase class     | QSYS API Reference Guide"
+title: "WorkstationFileBase class"
 description: "Base class for Workstation files. It contains functionality to support common input/output operations on Workstation files. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

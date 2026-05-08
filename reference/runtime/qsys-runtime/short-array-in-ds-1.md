@@ -1,5 +1,5 @@
 ---
-title: "ShortArrayInDS<T> struct      | QSYS API Reference Guide"
+title: "ShortArrayInDS<T> struct"
 description: "Describes a fixed size array of short numbers contained in a DataStructure. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

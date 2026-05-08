@@ -1,5 +1,5 @@
 ---
-title: "InitMemberOptions enum        | QSYS API Reference Guide"
+title: "InitMemberOptions enum"
 description: "Specifies the options to use when initializing a member. "
 last_modified_at: 2024-08-09T17:25:07Z
 sitemap: false

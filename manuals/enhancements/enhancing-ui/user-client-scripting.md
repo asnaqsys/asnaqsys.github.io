@@ -1,5 +1,5 @@
 ---
-title: "Client-Side Scripting Essentials for Developers"
+title: "Extending Functionality with Client-side Scripting"
 description: "Dive into client-side scripting basics. Perfect for developers looking to understand and leverage scripting in web applications."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "ServerCursors enum            | QSYS API Reference Guide"
+title: "ServerCursors enum"
 description: "Specifies the type of server cursor to use. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

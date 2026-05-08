@@ -1,5 +1,5 @@
 ---
-title: "CPF3067Exception class        | QSYS API Reference Guide"
+title: "CPF3067Exception class"
 description: "The exception that is thrown when Error while opening file {0} in {1} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

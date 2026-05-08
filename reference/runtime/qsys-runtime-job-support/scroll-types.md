@@ -1,5 +1,5 @@
 ---
-title: "ScrollTypes enum              | QSYS API Reference Guide"
+title: "ScrollTypes enum"
 description: "Defines the SQL Cursor Scroll types. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

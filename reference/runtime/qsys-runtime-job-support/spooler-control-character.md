@@ -1,5 +1,5 @@
 ---
-title: "SpoolerControlCharacter enum  | QSYS API Reference Guide"
+title: "SpoolerControlCharacter enum"
 description: "Indicates the manner in which control characters will be represented in the database. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

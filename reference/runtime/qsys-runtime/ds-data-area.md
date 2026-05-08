@@ -1,5 +1,5 @@
 ---
-title: "DSDataArea class              | QSYS API Reference Guide"
+title: "DSDataArea class"
 description: "Describes and manages the use of a Data Structure as a Data Area value. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

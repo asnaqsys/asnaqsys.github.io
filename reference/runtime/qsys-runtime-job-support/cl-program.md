@@ -1,5 +1,5 @@
 ---
-title: "CLProgram class               | QSYS API Reference Guide"
+title: "CLProgram class"
 description: "Defines the core behavior of programs migrated from CL program . "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

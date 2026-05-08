@@ -1,5 +1,5 @@
 ---
-title: "SourceProfile class           | QSYS API Reference Guide"
+title: "SourceProfile class"
 description: "The SourceProfile class represents a profile in the source system. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

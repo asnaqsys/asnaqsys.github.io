@@ -1,5 +1,5 @@
 ---
-title: "JobSession class              | QSYS API Reference Guide"
+title: "JobSession class"
 description: "Stores user data while the user navigates the application. JobSession state uses a store maintained by the Job to persist data across requests. "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

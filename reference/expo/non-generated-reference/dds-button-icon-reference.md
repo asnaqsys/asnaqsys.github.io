@@ -1,5 +1,5 @@
 ---
-title: "DdsButton  Icon Guide & Reference"
+title: "DdsButton Icon Reference"
 description: "Explore our guide on DDS button icons. Learn how to effectively use icons in your designs for enhanced user interfaces and experiences."
 ---
 

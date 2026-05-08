@@ -1,5 +1,5 @@
 ---
-title: "Effective Page Display Techniques"
+title: "Expo Display Pages"
 description: "Explore best practices for displaying pages on your website. Learn how to enhance user experience with responsive design and fast loading times."
 ---
 

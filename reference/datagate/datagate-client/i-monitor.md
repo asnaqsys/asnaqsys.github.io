@@ -1,5 +1,5 @@
 ---
-title: "IMonitor interface            | QSYS API Reference Guide"
+title: "IMonitor interface"
 description: "Defines the contract for monitoring resources in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

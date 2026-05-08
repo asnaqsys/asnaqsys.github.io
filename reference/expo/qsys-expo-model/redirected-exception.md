@@ -1,5 +1,5 @@
 ---
-title: "RedirectedException class     | QSYS API Reference Guide"
+title: "RedirectedException class"
 description: "Represents an exception used to indicate a redirection action within the application. "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "CPF2696Exception class        | QSYS API Reference Guide"
+title: "CPF2696Exception class"
 description: "The exception that is thrown when Object {0} type {1} not renamed. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

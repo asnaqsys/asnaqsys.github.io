@@ -1,5 +1,5 @@
 ---
-title: "BaseRecordAttribute class     | QSYS API Reference Guide"
+title: "BaseRecordAttribute class"
 description: "Defines Base Record Attributes on a type "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Configuring Job Idle Timeout: A Quick Guide"
+title: "Configuring Job Idle Timeout"
 description: "Learn how to set up job idle timeout settings effectively. This guide ensures your jobs manage resources efficiently, avoiding unnecessary costs."
 ---
 

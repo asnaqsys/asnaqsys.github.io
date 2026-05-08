@@ -1,5 +1,5 @@
 ---
-title: "LibraryListException class    | QSYS API Reference Guide"
+title: "LibraryListException class"
 description: "There was an error of type -error- while trying to modify the library list. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

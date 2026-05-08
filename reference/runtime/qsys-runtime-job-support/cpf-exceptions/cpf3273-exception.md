@@ -1,5 +1,5 @@
 ---
-title: "CPF3273Exception class        | QSYS API Reference Guide"
+title: "CPF3273Exception class"
 description: "The exception that is thrown when File or member not created, deleted or changed. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

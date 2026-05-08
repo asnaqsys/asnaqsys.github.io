@@ -1,5 +1,5 @@
 ---
-title: "DdsDayNames enum              | QSYS API Reference Guide"
+title: "DdsDayNames enum"
 description: "Specifies the names of the calendar days. "
 last_modified_at: 2024-08-09T17:26:17Z
 ---

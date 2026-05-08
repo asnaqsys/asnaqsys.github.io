@@ -1,5 +1,5 @@
 ---
-title: "ILabel interface              | QSYS API Reference Guide"
+title: "ILabel interface"
 description: "Represents information on a database label "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

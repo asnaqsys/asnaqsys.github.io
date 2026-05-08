@@ -1,5 +1,5 @@
 ---
-title: "ProgParm class                | QSYS API Reference Guide"
+title: "ProgParm class"
 description: "Represents a parameter in a program call in a DataLink connection. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

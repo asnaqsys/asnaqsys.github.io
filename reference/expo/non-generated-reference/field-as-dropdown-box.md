@@ -1,5 +1,5 @@
 ---
-title: "Transforming Fields into Dropdown Boxes"
+title: "Displaying a Field as a Dropdown Box"
 description: "Learn how to convert input fields into dropdown boxes for a better user experience. This guide covers techniques and best practices."
 ---
 

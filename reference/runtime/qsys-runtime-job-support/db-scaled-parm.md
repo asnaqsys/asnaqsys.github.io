@@ -1,5 +1,5 @@
 ---
-title: "DBScaledParm class            | QSYS API Reference Guide"
+title: "DBScaledParm class"
 description: "Represents a parameter for a Scalar type. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "CPF9870Exception class        | QSYS API Reference Guide"
+title: "CPF9870Exception class"
 description: "The exception that is thrown when Object {0} type {2} already exists in library {1} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

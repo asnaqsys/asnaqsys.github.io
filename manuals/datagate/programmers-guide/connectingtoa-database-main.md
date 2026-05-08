@@ -1,5 +1,5 @@
 ---
-title: "Database Connectivity: A Complete Guide"
+title: "Connecting To/From a Database"
 description: "Learn how to connect to and from databases with our guide. Covers connection strings, troubleshooting, and secure connectivity practices."
 ---
 

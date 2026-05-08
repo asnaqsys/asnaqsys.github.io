@@ -1,5 +1,5 @@
 ---
-title: "QueryCursor class             | QSYS API Reference Guide"
+title: "QueryCursor class"
 description: "Represents the SQL Query Cursor. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

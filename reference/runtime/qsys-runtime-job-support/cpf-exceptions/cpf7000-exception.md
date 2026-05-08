@@ -1,5 +1,5 @@
 ---
-title: "CPF7000Exception class        | QSYS API Reference Guide"
+title: "CPF7000Exception class"
 description: "Defines the core behavior of CPF70xx exceptions. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

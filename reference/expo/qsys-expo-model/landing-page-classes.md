@@ -1,5 +1,5 @@
 ---
-title: ASNA.QSys.Expo.Model Classes
+title: "ASNA.QSys.Expo.Model Classes"
 description: TOC Landing page for ASNA.QSys.Expo.Model Classes
 ---
 

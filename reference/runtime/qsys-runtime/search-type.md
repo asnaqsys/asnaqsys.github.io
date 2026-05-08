@@ -1,5 +1,5 @@
 ---
-title: "SearchType enum               | QSYS API Reference Guide"
+title: "SearchType enum"
 description: "Type of search to perform. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "OpenAccessRpg Delegate"
+title: "OpenAccessRpg class"
 description: "Represents a method that handles I/O operations with an Open Access RPG program."
 ---
 

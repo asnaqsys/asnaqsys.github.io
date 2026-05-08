@@ -1,5 +1,5 @@
 ---
-title: "CredentialType enum           | QSYS API Reference Guide"
+title: "CredentialType enum"
 description: "Specifies the type of credentials used for authentication. "
 last_modified_at: 2024-08-09T17:25:07Z
 sitemap: false

@@ -1,5 +1,5 @@
 ---
-title: "Optimizing BTerm Window Sizing for Productivity"
+title: "BTerm Sizing"
 description: "Enhance your workflow with our guide on BTerm window sizing. Learn to adjust and optimize window dimensions for maximum efficiency."
 ---
 

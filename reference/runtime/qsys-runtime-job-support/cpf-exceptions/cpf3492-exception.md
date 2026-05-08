@@ -1,5 +1,5 @@
 ---
-title: "CPF3492Exception class        | QSYS API Reference Guide"
+title: "CPF3492Exception class"
 description: "The exception that is thrown when Not authorized to spooled file {0} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

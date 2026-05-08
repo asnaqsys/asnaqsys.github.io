@@ -1,5 +1,5 @@
 ---
-title: "_MDY interface                | QSYS API Reference Guide"
+title: "_MDY interface"
 description: "Describes the MDY date/time format in the declaration of date/time types. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

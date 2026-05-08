@@ -1,5 +1,5 @@
 ---
-title: ASNA.DataGate.Client Classes
+title: "ASNA.DataGate.Client Classes"
 description: TOC Landing page for ASNA.DataGate.Client Classes
 ---
 

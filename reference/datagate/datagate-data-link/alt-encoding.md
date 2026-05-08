@@ -1,5 +1,5 @@
 ---
-title: "AltEncoding class             | QSYS API Reference Guide"
+title: "AltEncoding class"
 description: "Represents a custom encoding that extends the base Encoding class, providing additional functionality for transforming data. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

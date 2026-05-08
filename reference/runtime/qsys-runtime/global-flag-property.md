@@ -1,5 +1,5 @@
 ---
-title: "GlobalFlagProperty class      | QSYS API Reference Guide"
+title: "GlobalFlagProperty class"
 description: "GlobalFlagProperty class. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

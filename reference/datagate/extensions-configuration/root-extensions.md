@@ -1,5 +1,5 @@
 ---
-title: "RootExtensions class          | QSYS API Reference Guide"
+title: "RootExtensions class"
 description: "Provides extension methods for the root configuration. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

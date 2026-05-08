@@ -1,5 +1,5 @@
 ---
-title: "AccessResult enum             | QSYS API Reference Guide"
+title: "AccessResult enum"
 description: "Specifies the result of an access operation. "
 last_modified_at: 2024-08-09T17:25:07Z
 sitemap: false

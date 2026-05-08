@@ -1,5 +1,5 @@
 ---
-title: "Explore New Features in Version 5.0"
+title: "What's new in Monarch Base 5.0"
 description: "Version 5.0 brings exciting updates. Learn about the latest features, enhancements, and how they can elevate your project's efficiency."
 ---
 

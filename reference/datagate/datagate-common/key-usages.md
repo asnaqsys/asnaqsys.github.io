@@ -1,5 +1,5 @@
 ---
-title: "KeyUsages enum                | QSYS API Reference Guide"
+title: "KeyUsages enum"
 description: "Specifies the usage of a key. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

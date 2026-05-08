@@ -1,5 +1,5 @@
 ---
-title: "CPF323DException class        | QSYS API Reference Guide"
+title: "CPF323DException class"
 description: "The exception that is thrown when User does not have correct authority. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Program class                 | QSYS API Reference Guide"
+title: "Program class"
 description: "Defines the core behavior of a program and provides a base for migrated derived classes. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

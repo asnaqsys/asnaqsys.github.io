@@ -1,5 +1,5 @@
 ---
-title: "Display-File Migration: Best Practices Guide"
+title: "Migration of Display Files"
 description: "Master Display-File migration with our guide. Learn key strategies, tips for smooth transition, and how to avoid common pitfalls in the process."
 ---
 

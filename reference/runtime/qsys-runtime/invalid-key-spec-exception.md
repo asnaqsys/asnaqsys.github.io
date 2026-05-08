@@ -1,5 +1,5 @@
 ---
-title: "InvalidKeySpecException class | QSYS API Reference Guide"
+title: "InvalidKeySpecException class"
 description: "Key part -name- is invalid exception. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

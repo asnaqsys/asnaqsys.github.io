@@ -1,5 +1,5 @@
 ---
-title: "CPF2963Exception class        | QSYS API Reference Guide"
+title: "CPF2963Exception class"
 description: "The exception that is thrown when NFMTOPT(*NOCHK) required to copy file. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

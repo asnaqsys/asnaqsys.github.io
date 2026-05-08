@@ -1,5 +1,5 @@
 ---
-title: "Read & Write Database Files Efficiently"
+title: "Reading and Writing to Database Files"
 description: "Master the techniques for reading and writing to database files with our guide, ensuring data accuracy and performance."
 ---
 

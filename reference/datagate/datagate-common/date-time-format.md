@@ -1,5 +1,5 @@
 ---
-title: "DateTimeFormat enum           | QSYS API Reference Guide"
+title: "DateTimeFormat enum"
 description: "Specifies the format for a date/time field. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

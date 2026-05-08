@@ -1,5 +1,5 @@
 ---
-title: ASNA.DataGate.SqlServer Classes
+title: "ASNA.DataGate.SqlServer Classes"
 description: TOC Landing page for ASNA.DataGate.SqlServer Classes
 sitemap: false
 ---

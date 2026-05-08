@@ -1,5 +1,5 @@
 ---
-title: "CPF6760Exception class        | QSYS API Reference Guide"
+title: "CPF6760Exception class"
 description: "The exception that is thrown when Device {0} not ready. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Connecting to named Databases"
+title: "Connecting to a Database Using a Database Name"
 description: "Discover how to establish database connections using a name effectively. This guide covers essential techniques, tips, and best practices for developers."
 ---
 

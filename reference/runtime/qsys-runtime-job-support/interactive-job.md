@@ -1,5 +1,5 @@
 ---
-title: "InteractiveJob class          | QSYS API Reference Guide"
+title: "InteractiveJob class"
 description: "Defines the core behavior of an interactive job. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

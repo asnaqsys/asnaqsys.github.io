@@ -1,5 +1,5 @@
 ---
-title: "ISimpleSerializer interface   | QSYS API Reference Guide"
+title: "ISimpleSerializer interface"
 description: "Provides an interface for simple serialization and deserialization operations. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

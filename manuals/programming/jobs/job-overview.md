@@ -1,5 +1,5 @@
 ---
-title: "Execution Jobs: A Comprehensive Job Migration Overview"
+title: "Jobs"
 description: "Explore the essentials of job management. This guide provides insights into effective strategies, tools, and tips for managing jobs efficiently."
 ---
 

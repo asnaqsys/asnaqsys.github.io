@@ -1,5 +1,5 @@
 ---
-title: "ASNA.QSys.Expo.Tag namespace: Essential Resource Guide"
+title: "ASNA.QSys.Expo.Tag Resources"
 description: "Discover the full potential of the ASNA.QSys.Expo.Tag with our comprehensive resource guide. Designed for developers and system architects"
 ---
 

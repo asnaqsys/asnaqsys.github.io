@@ -1,5 +1,5 @@
 ---
-title: "EditCodes enum                | QSYS API Reference Guide"
+title: "EditCodes enum"
 description: "Defines the equivalent code-names for the supported [IBM i Edit Codes. "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

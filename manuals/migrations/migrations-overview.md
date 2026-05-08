@@ -1,5 +1,5 @@
 ---
-title: "Comprehensive Guide to Application Migrations"
+title: "Migrations Overview"
 description: "Explore the fundamentals of system migrations, including planning, execution, and best practices for a smooth transition."
 ---
 

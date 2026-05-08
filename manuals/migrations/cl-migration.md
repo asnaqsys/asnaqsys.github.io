@@ -1,5 +1,5 @@
 ---
-title: "Migration of CL Programs: A Step-by-Step Guide"
+title: "Migration of CL Programs"
 description: "Learn the essentials of migrating CL programs to a new environment, ensuring compatibility and performance optimization."
 ---
 

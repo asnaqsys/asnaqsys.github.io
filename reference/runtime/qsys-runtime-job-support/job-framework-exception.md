@@ -1,5 +1,5 @@
 ---
-title: "JobFrameworkException class   | QSYS API Reference Guide"
+title: "JobFrameworkException class"
 description: "Defined the core behavior of exceptions thrown by Monarch Base and provides a base for derived exceptions. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

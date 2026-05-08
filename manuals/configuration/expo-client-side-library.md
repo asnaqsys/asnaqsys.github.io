@@ -1,5 +1,5 @@
 ---
-title: "Expo for Monarch Apps: A Client-Side Guide"
+title: "Expo Client-Side Content"
 description: "Master Expo for Monarch app development. Learn to build, deploy, and manage client-side content with our concise Expo guide."
 ---
 

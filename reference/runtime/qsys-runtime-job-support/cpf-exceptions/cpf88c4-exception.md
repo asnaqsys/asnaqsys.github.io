@@ -1,5 +1,5 @@
 ---
-title: "CPF88C4Exception class        | QSYS API Reference Guide"
+title: "CPF88C4Exception class"
 description: "The exception that is thrown when Value {0} for new object is not valid. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "WorkstationDataSet class      | QSYS API Reference Guide"
+title: "WorkstationDataSet class"
 description: "Represents the dataset of a workstation file. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

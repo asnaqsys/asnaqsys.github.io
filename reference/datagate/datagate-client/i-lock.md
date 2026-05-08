@@ -1,5 +1,5 @@
 ---
-title: "ILock interface               | QSYS API Reference Guide"
+title: "ILock interface"
 description: "Defines the contract for managing a lock in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

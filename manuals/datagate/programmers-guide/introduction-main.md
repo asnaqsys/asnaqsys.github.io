@@ -1,5 +1,5 @@
 ---
-title: "Comprehensive DataGate Introduction Guide"
+title: "Introduction"
 description: "Dive into our guide for a comprehensive introduction to our key concepts, tools, and practices. Perfect for beginners."
 ---
 

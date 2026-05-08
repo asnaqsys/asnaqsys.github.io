@@ -1,5 +1,5 @@
 ---
-title: "Customizing BTerm: A Comprehensive Guide"
+title: "BTerm Customization"
 description: "Unlock the full potential of BTerm with our customization guide. Tailor your experience with tips on themes, shortcuts, and more."
 ---
 

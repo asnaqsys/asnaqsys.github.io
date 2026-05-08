@@ -1,5 +1,5 @@
 ---
-title: "How to Disconnect from a Database Safely"
+title: "Disconnecting From a Database"
 description: "Learn the best practices for safely disconnecting from a database, ensuring data integrity and system stability."
 ---
 

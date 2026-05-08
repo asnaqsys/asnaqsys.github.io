@@ -1,5 +1,5 @@
 ---
-title: "OSExecute class               | QSYS API Reference Guide"
+title: "OSExecute class"
 description: "This class contains methods to start an external process. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

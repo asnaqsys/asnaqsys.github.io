@@ -1,5 +1,5 @@
 ---
-title: "DdsRecordTagHelper class      | QSYS API Reference Guide"
+title: "DdsRecordTagHelper class"
 description: "Defines a Display record where fields or constants are contained to display application data. "
 last_modified_at: 2024-08-09T17:26:17Z
 ---

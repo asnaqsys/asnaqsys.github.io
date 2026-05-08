@@ -1,5 +1,5 @@
 ---
-title: "Intercept Model to Program <=> Data Flow Guide"
+title: "Intercept Model to Program (and back) Data Flow Guide"
 description: "Uncover the dynamics of the intercepting Model and Program Data Flow with this insightful guide." 
 ---
 

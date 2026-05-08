@@ -1,5 +1,5 @@
 ---
-title: "CPF9899Exception class        | QSYS API Reference Guide"
+title: "CPF9899Exception class"
 description: "The exception that is thrown when Error occurred during processing of command. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

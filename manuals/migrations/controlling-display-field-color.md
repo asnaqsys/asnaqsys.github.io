@@ -1,5 +1,5 @@
 ---
-title: "Control Display Fields and Constants Color: Easy Guide"
+title: "Controlling the Color of a Screen Constant or Field"
 description: "Master the art of changing display field colors in your UI. This concise guide offers practical tips for dynamic color control."
 ---
 

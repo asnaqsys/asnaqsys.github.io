@@ -1,5 +1,5 @@
 ---
-title: "IClientMonitor interface      | QSYS API Reference Guide"
+title: "IClientMonitor interface"
 description: "Defines the contract for monitoring a client in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

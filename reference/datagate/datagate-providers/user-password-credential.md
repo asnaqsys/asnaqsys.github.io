@@ -1,5 +1,5 @@
 ---
-title: "UserPasswordCredential class  | QSYS API Reference Guide"
+title: "UserPasswordCredential class"
 description: "The user name and password information of UserPasswordCredential may be used to establish authenticated connections to databases that require such inf"
 last_modified_at: 2024-08-09T17:25:07Z
 ---

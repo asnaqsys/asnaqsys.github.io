@@ -1,5 +1,5 @@
 ---
-title: "IFileObject interface         | QSYS API Reference Guide"
+title: "IFileObject interface"
 description: "Defines the contract for managing a file in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

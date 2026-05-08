@@ -1,5 +1,5 @@
 ---
-title: "DatabaseProfile class         | QSYS API Reference Guide"
+title: "DatabaseProfile class"
 description: "Represents the configuration settings for a database connection within a batch entry. This class encapsulates all necessary details required to establ"
 last_modified_at: 2024-08-09T17:25:29Z
 ---

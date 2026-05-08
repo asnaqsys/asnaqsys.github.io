@@ -1,5 +1,5 @@
 ---
-title: "JobLogger class               | QSYS API Reference Guide"
+title: "JobLogger class"
 description: "Defines the core behavior of a job message logger and provides a base for derived classes. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

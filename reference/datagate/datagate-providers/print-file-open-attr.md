@@ -1,5 +1,5 @@
 ---
-title: "PrintFileOpenAttr class       | QSYS API Reference Guide"
+title: "PrintFileOpenAttr class"
 description: "Represents the attributes for opening a print file. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

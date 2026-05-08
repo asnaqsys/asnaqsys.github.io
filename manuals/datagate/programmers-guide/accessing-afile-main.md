@@ -1,5 +1,5 @@
 ---
-title: "Accessing Files with DataGate: A Guide"
+title: "Accessing a File"
 description: "Learn how to access and manage files using DataGate. This guide provides essential tips for efficient file handling and operations."
 ---
 

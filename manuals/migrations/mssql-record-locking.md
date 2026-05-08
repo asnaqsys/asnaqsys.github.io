@@ -1,5 +1,5 @@
 ---
-title: "Migrating Record Locking/Unlocking to MSSQL: Best Practices"
+title: "Migrating Record Locking/Unlocking to SQL Server"
 description: "This document provides a detailed guide on migrating record locking and unlocking mechanisms from legacy systems to SQL Server."
 ---
 

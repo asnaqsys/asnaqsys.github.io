@@ -1,5 +1,5 @@
 ---
-title: "CPF2125Exception class        | QSYS API Reference Guide"
+title: "CPF2125Exception class"
 description: "The exception that is thrown when No objects were deleted for object {0}. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

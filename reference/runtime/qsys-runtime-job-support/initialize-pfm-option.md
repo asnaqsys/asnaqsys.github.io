@@ -1,5 +1,5 @@
 ---
-title: "InitializePFMOption enum      | QSYS API Reference Guide"
+title: "InitializePFMOption enum"
 description: "Specifies constants that define the record values used to initialize a physical file member. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

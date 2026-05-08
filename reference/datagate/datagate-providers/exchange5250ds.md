@@ -1,5 +1,5 @@
 ---
-title: "Exchange5250DS Delegate"
+title: "Exchange5250DS class"
 description: "Represents a method that exchanges 5250 data streams."
 ---
 

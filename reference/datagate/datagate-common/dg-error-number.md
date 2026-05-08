@@ -1,5 +1,5 @@
 ---
-title: "dgErrorNumber enum            | QSYS API Reference Guide"
+title: "dgErrorNumber enum"
 description: "Represents the different error numbers generated as a result of Acceler8DB or Datagate/400 server errors. These errors occur programmatically on the s"
 last_modified_at: 2024-08-09T17:25:07Z
 ---

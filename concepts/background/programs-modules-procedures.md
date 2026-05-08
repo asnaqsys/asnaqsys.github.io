@@ -1,5 +1,5 @@
 ---
-title: Programs, Modules and Procedures
+title: "Programs, Modules and Procedures"
 description: Delve into the foundational elements of software architecture with an in-depth look at Programs, Modules, and Procedures. This guide elucidates their roles, interactions, and best practices for structuring scalable and maintainable software systems.
 ---
 

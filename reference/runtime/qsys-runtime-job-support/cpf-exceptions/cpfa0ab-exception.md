@@ -1,5 +1,5 @@
 ---
-title: "CPFA0ABException class        | QSYS API Reference Guide"
+title: "CPFA0ABException class"
 description: "The exception that is thrown when Operation failed for object. Object is {0} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

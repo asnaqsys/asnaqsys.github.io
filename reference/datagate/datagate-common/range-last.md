@@ -1,5 +1,5 @@
 ---
-title: "RangeLast enum                | QSYS API Reference Guide"
+title: "RangeLast enum"
 description: "Specifies the last range of a sequence. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

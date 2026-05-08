@@ -1,5 +1,5 @@
 ---
-title: "DBDecimalParm class           | QSYS API Reference Guide"
+title: "DBDecimalParm class"
 description: "Represents a parameter for a decimal type. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

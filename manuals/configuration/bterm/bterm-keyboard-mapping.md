@@ -1,5 +1,5 @@
 ---
-title: "BTerm Keyboard Mapping: Customize Your Actions"
+title: "BTerm Keyboard Mapping"
 description: "Effortlessly customize your keyboard with BTerm mapping. This guide helps you tailor key functions for an optimized typing experience."
 ---
 

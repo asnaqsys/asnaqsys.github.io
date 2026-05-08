@@ -1,5 +1,5 @@
 ---
-title: ASNA.Extensions.Configuration Classes
+title: "ASNA.Extensions.Configuration Classes"
 description: TOC Landing page for ASNA.Extensions.Configuration Classes
 ---
 

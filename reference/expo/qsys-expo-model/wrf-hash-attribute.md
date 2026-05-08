@@ -1,5 +1,5 @@
 ---
-title: "WrfHashAttribute class        | QSYS API Reference Guide"
+title: "WrfHashAttribute class"
 description: "Holds the computed hash value for the Wrf corresponding to this class. "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

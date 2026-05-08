@@ -1,5 +1,5 @@
 ---
-title: "DdsTimeFieldTagHelper class   | QSYS API Reference Guide"
+title: "DdsTimeFieldTagHelper class"
 description: "Defines an input element to capture Times. "
 last_modified_at: 2024-08-09T17:26:18Z
 ---

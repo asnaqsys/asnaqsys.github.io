@@ -1,5 +1,5 @@
 ---
-title: "CPF2207Exception class        | QSYS API Reference Guide"
+title: "CPF2207Exception class"
 description: "The exception that is thrown when Not authorized to use object {0} type {1} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

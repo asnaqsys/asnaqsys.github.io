@@ -1,5 +1,5 @@
 ---
-title: "PaperOrientation enum         | QSYS API Reference Guide"
+title: "PaperOrientation enum"
 description: "Specifies the orientation of the paper. "
 last_modified_at: 2024-08-09T17:25:07Z
 sitemap: false

@@ -1,5 +1,5 @@
 ---
-title: "IndicatorTypeAttribute class  | QSYS API Reference Guide"
+title: "IndicatorTypeAttribute class"
 description: "A non-RPG class may stamp a char member with this attribute to be considered as an indicator field by a consumer RPG program. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

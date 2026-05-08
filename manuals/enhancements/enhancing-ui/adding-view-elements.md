@@ -1,5 +1,5 @@
 ---
-title: "Adding Visual Elements: A Step-by-Step Guide"
+title: "Adding Elements to Display File Pages"
 description: "Learn how to add view elements to your UI effectively. This guide provides easy steps for enhancing user interfaces."
 ---
 

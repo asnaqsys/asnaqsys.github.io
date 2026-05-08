@@ -1,5 +1,5 @@
 ---
-title: "DdsDecFieldTagHelper class    | QSYS API Reference Guide"
+title: "DdsDecFieldTagHelper class"
 description: "Defines an input element where numbers can be typed using a keyboard. The captured value will be posted as the value entered into a field.  "
 last_modified_at: 2024-08-09T17:26:17Z
 ---

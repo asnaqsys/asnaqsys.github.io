@@ -1,5 +1,5 @@
 ---
-title: "Command class                 | QSYS API Reference Guide"
+title: "Command class"
 description: "Provides functionality to interact directly with a Job. "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

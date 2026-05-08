@@ -1,5 +1,5 @@
 ---
-title: "Convert class                 | QSYS API Reference Guide"
+title: "Convert class"
 description: "Converts a base data type to another base data type, using RPG type conversion rules. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

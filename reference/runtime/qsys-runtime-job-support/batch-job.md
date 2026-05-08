@@ -1,5 +1,5 @@
 ---
-title: "BatchJob class                | QSYS API Reference Guide"
+title: "BatchJob class"
 description: "Defines the core behavior of a batch job. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

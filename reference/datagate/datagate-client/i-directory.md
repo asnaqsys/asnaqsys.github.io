@@ -1,5 +1,5 @@
 ---
-title: "IDirectory interface          | QSYS API Reference Guide"
+title: "IDirectory interface"
 description: "Defines the contract for managing a directory in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

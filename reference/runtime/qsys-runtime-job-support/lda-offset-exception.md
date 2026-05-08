@@ -1,5 +1,5 @@
 ---
-title: "LDAOffsetException class      | QSYS API Reference Guide"
+title: "LDAOffsetException class"
 description: "The exception that is thrown when a field being get or set from the LDA has a negative offset. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

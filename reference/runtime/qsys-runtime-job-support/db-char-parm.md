@@ -1,5 +1,5 @@
 ---
-title: "DBCharParm class              | QSYS API Reference Guide"
+title: "DBCharParm class"
 description: "Represents a parameter for a Character type. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

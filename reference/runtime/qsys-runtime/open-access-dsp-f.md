@@ -1,5 +1,5 @@
 ---
-title: "OpenAccessDspF enum           | QSYS API Reference Guide"
+title: "OpenAccessDspF enum"
 description: "Enumerates the various supported files for Open Access RPG. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

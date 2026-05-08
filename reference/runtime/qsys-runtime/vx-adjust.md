@@ -1,5 +1,5 @@
 ---
-title: "vxAdjust enum                 | QSYS API Reference Guide"
+title: "vxAdjust enum"
 description: "Half adjust options. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

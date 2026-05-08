@@ -1,5 +1,5 @@
 ---
-title: "InfSrReturnPoint enum         | QSYS API Reference Guide"
+title: "InfSrReturnPoint enum"
 description: "Defines the possible execution state where the program cycle is at any given time. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "AdgObserver Delegate"
+title: "AdgObserver class"
 description: "Represents a method that processes a string."
 ---
 

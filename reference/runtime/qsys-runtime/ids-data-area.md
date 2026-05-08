@@ -1,5 +1,5 @@
 ---
-title: "IDSDataArea interface         | QSYS API Reference Guide"
+title: "IDSDataArea interface"
 description: "Describes a data structure that can be stored in a data area. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

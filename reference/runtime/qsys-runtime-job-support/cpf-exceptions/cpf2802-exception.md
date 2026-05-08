@@ -1,5 +1,5 @@
 ---
-title: "CPF2802Exception class        | QSYS API Reference Guide"
+title: "CPF2802Exception class"
 description: "The exception that is thrown when From-file {0} in {1} not found. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "IFileAdapter interface        | QSYS API Reference Guide"
+title: "IFileAdapter interface"
 description: "Provides an interface for file operations. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

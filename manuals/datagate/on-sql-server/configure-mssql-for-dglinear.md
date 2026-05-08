@@ -1,5 +1,5 @@
 ---
-title: "Configuring MSSQL for DGLinear: A Step-by-Step Guide"
+title: "Configure MS SQL Server for DataGate Linear"
 description: "Learn how to configure Microsoft SQL Server for DGLinear integration. This guide covers setup, optimization, and troubleshooting tips."
 ---
 

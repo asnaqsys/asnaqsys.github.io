@@ -1,5 +1,5 @@
 ---
-title: "ILibraryList interface        | QSYS API Reference Guide"
+title: "ILibraryList interface"
 description: "Defines the contract for managing a library list in the ASNA DataGate client. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

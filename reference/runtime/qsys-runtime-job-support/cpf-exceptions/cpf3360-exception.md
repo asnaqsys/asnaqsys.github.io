@@ -1,5 +1,5 @@
 ---
-title: "CPF3360Exception class        | QSYS API Reference Guide"
+title: "CPF3360Exception class"
 description: "The exception that is thrown when Output queue {0} not deleted. Output queue in use. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

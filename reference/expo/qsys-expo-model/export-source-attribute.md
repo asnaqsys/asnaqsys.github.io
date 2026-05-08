@@ -1,5 +1,5 @@
 ---
-title: "ExportSourceAttribute class   | QSYS API Reference Guide"
+title: "ExportSourceAttribute class"
 description: "Defines Export Source Attribute on a type "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

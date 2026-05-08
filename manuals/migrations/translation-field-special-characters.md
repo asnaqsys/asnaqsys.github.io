@@ -1,5 +1,5 @@
 ---
-title: "Handling Special Characters in Translations"
+title: "Translation of Special Characters in Field Names"
 description: "Learn to manage special characters in translation fields effectively. This guide offers insights and best practices for accurate translations."
 ---
 

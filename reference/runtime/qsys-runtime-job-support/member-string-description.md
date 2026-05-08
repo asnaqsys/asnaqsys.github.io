@@ -1,5 +1,5 @@
 ---
-title: "MemberStringDescription enum  | QSYS API Reference Guide"
+title: "MemberStringDescription enum"
 description: "Specifies a string member attribute. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

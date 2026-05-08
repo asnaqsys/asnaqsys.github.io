@@ -1,5 +1,5 @@
 ---
-title: "DimArrayTypeAttribute class   | QSYS API Reference Guide"
+title: "DimArrayTypeAttribute class"
 description: "A non-RPG class may stamp an array member with this attribute to be considered as a fixed-sized array by a consumer RPG program. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

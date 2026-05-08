@@ -1,5 +1,5 @@
 ---
-title: "DataStructure class           | QSYS API Reference Guide"
+title: "DataStructure class"
 description: "Contains the functionality to support the semantics of a RPG Data Structure with a memory layout. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

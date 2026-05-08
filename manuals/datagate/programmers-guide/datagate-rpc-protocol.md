@@ -1,5 +1,5 @@
 ---
-title: "Datagate RPC Protocol: A Comprehensive Guide"
+title: "DataGate RPC Protocol Highlights"
 description: "Explore the Datagate RPC Protocol for efficient remote procedure calls. Learn setup, usage, and best practices in this detailed guide."
 ---
 

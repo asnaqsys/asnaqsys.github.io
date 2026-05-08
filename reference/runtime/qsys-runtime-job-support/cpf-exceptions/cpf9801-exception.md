@@ -1,5 +1,5 @@
 ---
-title: "CPF9801Exception class        | QSYS API Reference Guide"
+title: "CPF9801Exception class"
 description: "The exception that is thrown when Object {0} in library {1} not found. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

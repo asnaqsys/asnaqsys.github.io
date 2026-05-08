@@ -1,5 +1,5 @@
 ---
-title: "FixedDecimalMethods class     | QSYS API Reference Guide"
+title: "FixedDecimalMethods class"
 description: "Contains extension methods for handling RPG operations for FixedDecimal values. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

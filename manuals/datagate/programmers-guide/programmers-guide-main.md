@@ -1,5 +1,5 @@
 ---
-title: "DataGate Programmer's Guide: Key Concepts & Tools"
+title: "Programmers Guide"
 description: "Unlock the full potential of our platform with this DataGate Programmer's Guide. Learn the key concepts and tools essential for development."
 ---
 

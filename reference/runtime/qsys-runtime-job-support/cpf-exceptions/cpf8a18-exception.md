@@ -1,5 +1,5 @@
 ---
-title: "CPF8A18Exception class        | QSYS API Reference Guide"
+title: "CPF8A18Exception class"
 description: "The exception that is thrown when Folder {0} not created. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "OpenAccessFile class          | QSYS API Reference Guide"
+title: "OpenAccessFile class"
 description: "Provides the facilities to use a display file without prior infrastructure. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

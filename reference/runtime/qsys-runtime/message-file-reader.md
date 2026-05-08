@@ -1,5 +1,5 @@
 ---
-title: "MessageFileReader class       | QSYS API Reference Guide"
+title: "MessageFileReader class"
 description: "Provides the contents of a message file. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

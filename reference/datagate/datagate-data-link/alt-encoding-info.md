@@ -1,5 +1,5 @@
 ---
-title: "AltEncodingInfo class         | QSYS API Reference Guide"
+title: "AltEncodingInfo class"
 description: "Represents information about an alternative encoding. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

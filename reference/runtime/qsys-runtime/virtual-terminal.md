@@ -1,5 +1,5 @@
 ---
-title: "VirtualTerminal enum          | QSYS API Reference Guide"
+title: "VirtualTerminal enum"
 description: "Available virtual terminal options for Monarch applications against the IBMi. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

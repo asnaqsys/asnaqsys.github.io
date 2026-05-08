@@ -1,5 +1,5 @@
 ---
-title: "DdsGridRowTagHelper class     | QSYS API Reference Guide"
+title: "DdsGridRowTagHelper class"
 description: "Defines a Page Row where elements are positioned "
 last_modified_at: 2024-08-09T17:26:17Z
 ---

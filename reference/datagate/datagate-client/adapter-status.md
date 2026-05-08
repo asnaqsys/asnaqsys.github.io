@@ -1,5 +1,5 @@
 ---
-title: "AdapterStatus enum            | QSYS API Reference Guide"
+title: "AdapterStatus enum"
 description: "Enumerates the possible statuses of the FileAdapter. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

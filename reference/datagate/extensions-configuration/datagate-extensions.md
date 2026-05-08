@@ -1,5 +1,5 @@
 ---
-title: "DataGateExtensions class      | QSYS API Reference Guide"
+title: "DataGateExtensions class"
 description: "Provides extension methods for the DataGate configuration. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

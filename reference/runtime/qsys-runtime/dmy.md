@@ -1,5 +1,5 @@
 ---
-title: "_DMY interface                | QSYS API Reference Guide"
+title: "_DMY interface"
 description: "Describes the DMY date/time format in the declaration of date/time types. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

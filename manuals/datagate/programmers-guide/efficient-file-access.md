@@ -1,5 +1,5 @@
 ---
-title: "Efficient File Access Techniques"
+title: "Efficient File Access"
 description: "Master efficient file access with our guide. Learn to improve performance and security when accessing files in your applications."
 ---
 

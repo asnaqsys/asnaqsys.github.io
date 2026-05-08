@@ -1,5 +1,5 @@
 ---
-title: "IDataGateConfig interface     | QSYS API Reference Guide"
+title: "IDataGateConfig interface"
 description: "Provides an interface for accessing DataGate configuration. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

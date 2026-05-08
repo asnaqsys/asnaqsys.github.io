@@ -1,5 +1,5 @@
 ---
-title: "Unwinding the Call Stack with EndRequest"
+title: "Unwinding the Call Stack via EndRequest"
 description: "Master the technique of unwinding the call stack using EndRequest for cleaner, more efficient code execution in your applications."
 ---
 

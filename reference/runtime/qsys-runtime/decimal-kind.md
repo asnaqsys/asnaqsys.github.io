@@ -1,5 +1,5 @@
 ---
-title: "DecimalKind enum              | QSYS API Reference Guide"
+title: "DecimalKind enum"
 description: "Indicates the kind of decimal field. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

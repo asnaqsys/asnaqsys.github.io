@@ -1,5 +1,5 @@
 ---
-title: "ExpoCssClassName class        | QSYS API Reference Guide"
+title: "ExpoCssClassName class"
 description: "Defines ExpoCssClassName class "
 last_modified_at: 2024-08-09T17:26:04Z
 sitemap: false

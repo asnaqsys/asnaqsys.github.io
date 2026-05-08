@@ -1,5 +1,5 @@
 ---
-title: "CPF320BException class        | QSYS API Reference Guide"
+title: "CPF320BException class"
 description: "The exception that is thrown when Operation was not valid for database file {0}. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

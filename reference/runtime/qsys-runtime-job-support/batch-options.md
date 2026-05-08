@@ -1,5 +1,5 @@
 ---
-title: "BatchOptions class            | QSYS API Reference Guide"
+title: "BatchOptions class"
 description: "Defines the options for a batch job. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

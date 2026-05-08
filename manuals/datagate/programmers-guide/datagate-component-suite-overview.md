@@ -1,5 +1,5 @@
 ---
-title: "Datagate Component Suite: An Overview"
+title: "ASNA DataGate Client"
 description: "This document provides an overview of the ASNA DataGate Client, including its features, how it integrates with various development environments, and guidance on setup and configuration for optimal use."
 ---
 

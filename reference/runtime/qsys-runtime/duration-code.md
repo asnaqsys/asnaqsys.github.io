@@ -1,5 +1,5 @@
 ---
-title: "DurationCode enum             | QSYS API Reference Guide"
+title: "DurationCode enum"
 description: "Describes the valid durations to use in date/time operations. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "ICycleFile interface          | QSYS API Reference Guide"
+title: "ICycleFile interface"
 description: "Defines functionality that a file which participates in the RPG cycle must provide. "
 last_modified_at: 2024-08-09T17:25:29Z
 sitemap: false

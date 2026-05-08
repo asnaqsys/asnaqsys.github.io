@@ -1,5 +1,5 @@
 ---
-title: "DataDirection enum            | QSYS API Reference Guide"
+title: "DataDirection enum"
 description: "Specifies the direction of data flow for a data operation. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

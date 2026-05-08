@@ -1,5 +1,5 @@
 ---
-title: "LocalDataCollection class     | QSYS API Reference Guide"
+title: "LocalDataCollection class"
 description: "Represents a versioned collection of name/value pairs. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "CPFA094Exception class        | QSYS API Reference Guide"
+title: "CPFA094Exception class"
 description: "The exception that is thrown when Path name not specified. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Monarch Operations Management (MOM) Explained"
+title: "ASNA - Monarch Operations Management"
 description: "Understand the basics of Monarch Operations Management (MOM). This essential resource is tailored for system administrators, operations managers, and IT professionals tasked with overseeing the smooth running of the Monarch system."
 ---
 

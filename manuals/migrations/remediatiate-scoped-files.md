@@ -1,5 +1,5 @@
 ---
-title: "Procedure-Scoped Files Remediation: A Complete Guide"
+title: "Remediation of Procedure Scoped Files"
 description: "Strategies and best practices for the remediation of Procedure-Scoped files."
 ---
 

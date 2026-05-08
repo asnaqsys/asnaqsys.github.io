@@ -1,5 +1,5 @@
 ---
-title: "OpenFileAdapterDelegate Delegate"
+title: "OpenFileAdapterDelegate class"
 description: "Represents the method that will handle the opening of a file adapter."
 ---
 

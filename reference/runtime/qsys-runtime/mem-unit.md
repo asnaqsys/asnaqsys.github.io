@@ -1,5 +1,5 @@
 ---
-title: "MemUnit class                 | QSYS API Reference Guide"
+title: "MemUnit class"
 description: "Defines methods to handle RPG MOVE semantics. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

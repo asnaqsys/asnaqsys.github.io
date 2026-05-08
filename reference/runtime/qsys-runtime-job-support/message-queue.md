@@ -1,5 +1,5 @@
 ---
-title: "MessageQueue class            | QSYS API Reference Guide"
+title: "MessageQueue class"
 description: "Holds a group of messages in a queue. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "FetchOrientation enum         | QSYS API Reference Guide"
+title: "FetchOrientation enum"
 description: "Defines Fetch Orientation types. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

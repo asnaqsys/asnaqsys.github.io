@@ -1,5 +1,5 @@
 ---
-title: "IBM i Programs: Migration Comprehensive Overview"
+title: "Programs"
 description: "Dive into how Legacy Programs are migrated. Discover key techniques used to preserve legacy program execution in the new environment,providing better analysis and insights."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "DBStrParm class               | QSYS API Reference Guide"
+title: "DBStrParm class"
 description: "Represents a String SQL Parameter. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

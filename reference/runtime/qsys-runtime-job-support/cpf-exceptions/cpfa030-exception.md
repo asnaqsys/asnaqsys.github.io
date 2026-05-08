@@ -1,5 +1,5 @@
 ---
-title: "CPFA030Exception class        | QSYS API Reference Guide"
+title: "CPFA030Exception class"
 description: "The exception that is thrown when Object {0} already in use. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "UserDefinedCommand class      | QSYS API Reference Guide"
+title: "UserDefinedCommand class"
 description: "Defines the core behavior of user defined commands and provide a base for derived classes. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

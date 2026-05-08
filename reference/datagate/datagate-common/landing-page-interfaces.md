@@ -1,5 +1,5 @@
 ---
-title: ASNA.DataGate.Common Interfaces
+title: "ASNA.DataGate.Common Interfaces"
 description: TOC Landing page for ASNA.DataGate.Common Interfaces
 sitemap: false
 ---

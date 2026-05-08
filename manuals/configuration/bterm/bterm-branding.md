@@ -1,5 +1,5 @@
 ---
-title: "BTerm Branding Guidelines: Enhance Your Identity"
+title: "BTerm Branding"
 description: "Elevate your brand with our BTerm branding guidelines. Learn to apply our visual and verbal identity principles for maximum impact."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "DateTimeMethods class         | QSYS API Reference Guide"
+title: "DateTimeMethods class"
 description: "Contains extension methods for handling Date/Time/Timestamp conversions. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

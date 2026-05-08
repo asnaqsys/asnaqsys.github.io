@@ -1,5 +1,5 @@
 ---
-title: "IBM i Batch Jobs: Migration Guide"
+title: "Batch Jobs"
 description: "Learn how to streamline your batch jobs for maximum efficiency. This guide covers optimization techniques, scheduling, and resource management."
 ---
 

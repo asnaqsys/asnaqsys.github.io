@@ -1,5 +1,5 @@
 ---
-title: "MonaServerConfig class        | QSYS API Reference Guide"
+title: "MonaServerConfig class"
 description: "Provides Mona-Server Configuration functionality. "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

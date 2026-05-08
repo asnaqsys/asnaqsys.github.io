@@ -1,5 +1,5 @@
 ---
-title: "RepairOptions enum            | QSYS API Reference Guide"
+title: "RepairOptions enum"
 description: "Specifies the options for a repair operation. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

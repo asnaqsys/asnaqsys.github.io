@@ -1,5 +1,5 @@
 ---
-title: "IConverter interface          | QSYS API Reference Guide"
+title: "IConverter interface"
 description: "Defines functionality to perform conversions between EBCDIC and Unicode. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

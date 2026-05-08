@@ -1,5 +1,5 @@
 ---
-title: Application Architecture
+title: "Effective App Architecture Strategies"
 description: Outlines the architecture of the application, detailing its components, how they interact, and the principles guiding its design.
 ---
 

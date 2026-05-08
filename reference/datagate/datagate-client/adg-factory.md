@@ -1,5 +1,5 @@
 ---
-title: "AdgFactory class              | QSYS API Reference Guide"
+title: "AdgFactory class"
 description: "The AdgFactory class static methods construct instances of IAdgObject representing database files, libraries, and members along with IDataArea for dat"
 last_modified_at: 2024-08-09T17:25:07Z
 ---

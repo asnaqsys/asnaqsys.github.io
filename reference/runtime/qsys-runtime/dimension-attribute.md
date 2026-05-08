@@ -1,5 +1,5 @@
 ---
-title: "DimensionAttribute class      | QSYS API Reference Guide"
+title: "DimensionAttribute class"
 description: "A non-RPG class, property or field may be stamped with this attribute to indicate a consumer RPG program to consider it as an array with the specified"
 last_modified_at: 2024-08-09T17:25:29Z
 ---

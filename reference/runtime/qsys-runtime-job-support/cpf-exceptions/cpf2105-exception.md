@@ -1,5 +1,5 @@
 ---
-title: "CPF2105Exception class        | QSYS API Reference Guide"
+title: "CPF2105Exception class"
 description: "The exception that is thrown when Object {1} in {0} type {2} not found. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

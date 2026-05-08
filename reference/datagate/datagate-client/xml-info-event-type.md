@@ -1,5 +1,5 @@
 ---
-title: "XmlInfoEventType enum         | QSYS API Reference Guide"
+title: "XmlInfoEventType enum"
 description: "Enumerate the possible event types for XML information. This includes different levels of errors, warnings, and information. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

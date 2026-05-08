@@ -1,5 +1,5 @@
 ---
-title: "CPF9999Exception class        | QSYS API Reference Guide"
+title: "CPF9999Exception class"
 description: "The exception that is thrown when a generic abnormal condition is found. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

@@ -1,5 +1,5 @@
 ---
-title: "DataGate Overview: Unlocking Data Access"
+title: "DataGate Overview"
 description: "Explore DataGate's capabilities to manage and analyze data efficiently. This overview introduces features, benefits, and use cases."
 ---
 

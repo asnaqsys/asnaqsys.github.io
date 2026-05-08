@@ -1,5 +1,5 @@
 ---
-title: "RPG Indicators: Migration & Best Practices"
+title: "Migrating Indicators"
 description: "Comprehensive overview of migrating RPG indicators to modern programming paradigms, replacement and mapping to new constructs"
 ---
 

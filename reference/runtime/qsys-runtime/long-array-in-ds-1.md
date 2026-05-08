@@ -1,5 +1,5 @@
 ---
-title: "LongArrayInDS<T> struct       | QSYS API Reference Guide"
+title: "LongArrayInDS<T> struct"
 description: "Describes a fixed size array of long numbers contained in a DataStructure. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

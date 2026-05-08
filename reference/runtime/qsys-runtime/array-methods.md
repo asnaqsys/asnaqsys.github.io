@@ -1,5 +1,5 @@
 ---
-title: "ArrayMethods class            | QSYS API Reference Guide"
+title: "ArrayMethods class"
 description: "Contains extension methods for handling Arrays according to RPG semantics. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

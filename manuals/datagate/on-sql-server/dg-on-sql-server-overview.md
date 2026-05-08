@@ -1,5 +1,5 @@
 ---
-title: "DataGate on SQL Server: Comprehensive Overview"
+title: "DataGate on SQL Server Overview"
 description: "Unlock the power of DataGate on SQL Server. This overview provides insights into integration, benefits, and key features for users."
 ---
 

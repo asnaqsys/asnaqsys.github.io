@@ -1,5 +1,5 @@
 ---
-title: "What's New in Version 4.0: Key Features"
+title: "What's new in Monarch Base 4.0"
 description: "Discover the latest updates in Version 4.0. This guide highlights new features, improvements, and how they benefit your projects."
 ---
 

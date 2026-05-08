@@ -1,5 +1,5 @@
 ---
-title: "MSSQL Logical Field Restrictions Explained"
+title: "Logical Field Restrictions when moving to SQL Server"
 description: "This document examines the constraints and considerations associated with logical field restrictions when migrating databases to SQL Server, offering insights into compatibility, performance, and data integrity challenges."
 ---
 

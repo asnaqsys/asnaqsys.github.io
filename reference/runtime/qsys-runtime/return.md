@@ -1,5 +1,5 @@
 ---
-title: "Return class                  | QSYS API Reference Guide"
+title: "Return class"
 description: "RETURN operation is implemented as a long jump using the exception catching C# mechanism. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

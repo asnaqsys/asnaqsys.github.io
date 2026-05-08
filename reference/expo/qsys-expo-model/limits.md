@@ -1,5 +1,5 @@
 ---
-title: "Limits enum                   | QSYS API Reference Guide"
+title: "Limits enum"
 description: "Specifies numeric limits used by EditCode data formatting. "
 last_modified_at: 2024-08-09T17:26:04Z
 sitemap: false

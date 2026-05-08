@@ -1,5 +1,5 @@
 ---
-title: "Terminal5250_PageModel class  | QSYS API Reference Guide"
+title: "Terminal5250_PageModel class"
 description: "Defines Terminal5250_PageModel class "
 last_modified_at: 2024-08-09T17:26:04Z
 ---

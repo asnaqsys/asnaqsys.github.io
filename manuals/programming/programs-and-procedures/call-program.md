@@ -1,5 +1,5 @@
 ---
-title: "Effective Program Call Strategies"
+title: "Call Program"
 description: "Master the art of calling programs with our guide. Learn best practices, tips, and techniques for efficient program execution and integration."
 ---
 

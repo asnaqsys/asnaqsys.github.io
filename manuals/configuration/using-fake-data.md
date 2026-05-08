@@ -1,5 +1,5 @@
 ---
-title: "Leveraging Fake Data for Development Testing"
+title: "Using Fake Data"
 description: "Discover how using fake data can accelerate development and testing. This guide covers benefits, tools, and best practices for effective use."
 ---
 

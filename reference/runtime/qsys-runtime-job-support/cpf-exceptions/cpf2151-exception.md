@@ -1,5 +1,5 @@
 ---
-title: "CPF2151Exception class        | QSYS API Reference Guide"
+title: "CPF2151Exception class"
 description: "The exception that is thrown when Operation failed for {1} in {0} type{2} "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

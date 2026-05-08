@@ -1,5 +1,5 @@
 ---
-title: "DocumentLibraryObject class   | QSYS API Reference Guide"
+title: "DocumentLibraryObject class"
 description: "Provides functionality to manipulate Document Library Objects (DLO). "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

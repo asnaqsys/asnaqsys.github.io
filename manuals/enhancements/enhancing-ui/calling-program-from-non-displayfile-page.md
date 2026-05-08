@@ -1,5 +1,5 @@
 ---
-title: "Calling Programs from Non-Display Pages"
+title: "Calling a Program from a Non-DisplayFile Page"
 description: "Learn how to call programs from non-display pages, enhancing web app functionality. Ideal for developers seeking integration tips."
 ---
 

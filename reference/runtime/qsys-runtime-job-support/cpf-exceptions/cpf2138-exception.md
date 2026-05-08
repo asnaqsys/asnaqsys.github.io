@@ -1,5 +1,5 @@
 ---
-title: "CPF2138Exception class        | QSYS API Reference Guide"
+title: "CPF2138Exception class"
 description: "The exception that is thrown when Creation of library {0} not allowed. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

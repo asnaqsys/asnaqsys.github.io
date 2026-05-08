@@ -1,5 +1,5 @@
 ---
-title: ASNA.DataGate.DataLink Namespace
+title: "ASNA.DataGate.DataLink Namespace"
 description: TOC Landing page for ASNA.DataGate.DataLink Namespace
 sitemap: false
 ---

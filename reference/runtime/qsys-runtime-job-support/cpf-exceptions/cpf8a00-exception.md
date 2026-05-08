@@ -1,5 +1,5 @@
 ---
-title: "CPF8A00Exception class        | QSYS API Reference Guide"
+title: "CPF8A00Exception class"
 description: "Defines the core behavior of CPF8Axx exceptions. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

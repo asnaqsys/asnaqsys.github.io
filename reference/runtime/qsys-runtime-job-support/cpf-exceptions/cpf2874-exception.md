@@ -1,5 +1,5 @@
 ---
-title: "CPF2874Exception class        | QSYS API Reference Guide"
+title: "CPF2874Exception class"
 description: "The exception that is thrown when Both to-file and from-file are the same. To-file {0} in library {1} is the same as the from-file. "
 last_modified_at: 2024-08-09T17:25:29Z
 ---

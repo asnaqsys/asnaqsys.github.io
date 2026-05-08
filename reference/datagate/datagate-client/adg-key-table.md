@@ -1,5 +1,5 @@
 ---
-title: "AdgKeyTable class             | QSYS API Reference Guide"
+title: "AdgKeyTable class"
 description: "The AdgKeyTable class contains a DataTable object for manipulating key values. "
 last_modified_at: 2024-08-09T17:25:07Z
 ---

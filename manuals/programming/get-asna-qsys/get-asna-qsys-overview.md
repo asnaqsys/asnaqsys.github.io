@@ -1,5 +1,5 @@
 ---
-title: "ASNA Monarch® Base: Downloading Components Explained"
+title: "Getting ASNA Monarch® Base"
 description: "Learn how to download the components required to execute applications migrated to ASNA Monarch® Base."
 ---
 
