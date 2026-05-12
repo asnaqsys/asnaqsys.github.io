@@ -62,6 +62,9 @@ To run multiple jobs, we would add the `__ASNA_JobHandle__` as a hidden field of
 The first time `OnGet()` is called, `__ASNA_JobHandle__` would be zero and the `command.JobStarted` would return false.  Subsequent calls would return true as the `__ASNA_JobHandle__` would have the value returned by `command.StartJob()`.
 
 ### Calling a Program
+
+> The model behind a razor page can make use of the [Command](/reference/expo/qsys-expo-model/command.html) class to [Call](/reference/expo/qsys-expo-model/command.html#void-callstring-assemblypath-string-programname-string-parms) as specific Program in an especific Assembly or it can [Call](/reference/expo/qsys-expo-model/command.html#void-callstring-programname-string-parms) a program passing only the Program name, in this last case, the [AssemblyList](/manuals/programming/programs-and-procedures/call-program.html#assembly-list) is used to locate the assembly containing the called program.
+
 The menu could present various options, we could add the following code to the OnPost() method of the Minutus page to handle the user selection:
 
 ```cs
