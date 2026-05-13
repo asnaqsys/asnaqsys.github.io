@@ -21,7 +21,7 @@ The DdsDynamicListTagHelper renders a button-like chevron element that when clic
 This TagHelper is intended for scenarios where list values depend on host-side logic and the current page state.
 
 DdsDynamicList provides properties to specify:
- - The program to call via `LibraryName` and `ProgramName`
+ - The `ProgramName` to call 
  - The `TargetField` that will get the value selected by the user. The Field's current value is utilized to pre-select the list item
  - Any number of comma-separated string values the Program may need to perform its task of producing the list, this property is named `ParmsData`.
 
@@ -47,7 +47,7 @@ The code that follows shows two DdsDynamicLists, one for helping the user select
    <div Row="13">
        <DdsConstant Col="15"     Text="State" />
        <DdsCharField Col="27"    ColSpan="3" For="CUSTREC.SFSTATE" VirtualRowCol="11,27" PositionCursor="43" />
-       <DdsDynamicList Col="30"  LibraryName="Acme" ProgramName="Acme.BuildDropdownList" 
+       <DdsDynamicList Col="30"  ProgramName="Acme.BuildDropdownList" 
                                  TargetField="CUSTREC.SFSTATE" ParmsData="STATES" OptionsPageSize=10  />
    </div>
     <div Row="14">
@@ -57,7 +57,7 @@ The code that follows shows two DdsDynamicLists, one for helping the user select
     <div Row="15">
         <DdsConstant Col="18"    Text="Status:" />
         <DdsCharField Col="27"   ColSpan="2" For="CUSTREC.hsSTATUS" VirtualRowCol="15,27" PositionCursor="44" />
-        <DdsDynamicList Col="29" LibraryName="Acme" ProgramName="Acme.BuildDropdownList" 
+        <DdsDynamicList Col="29" ProgramName="Acme.BuildDropdownList" 
                                  TargetField="CUSTREC.hsSTATUS" ParmsData="STATUS" />
     </div>
 ```
@@ -72,7 +72,7 @@ If the user clicks on the Status' chevron, then the `Acme.BuildDropdownList` pro
 
 ## The Called Program
 
-The sample DdsDynamicList above expect to call a program named Acme.BuildDropdownList which should receive three user parameters as follows:
+The sample DdsDynamicList above expects to call a program named Acme.BuildDropdownList which should receive three user parameters as follows:
 
 ```
         public static void _ENTRY(ICaller _caller, out Indicator __inLR,        // First 2 params in C# are used by the system
@@ -81,6 +81,8 @@ The sample DdsDynamicList above expect to call a program named Acme.BuildDropdow
             Optional<string> CurrentValue)
 ```
 
+The `ProgramName` should include any necessary name qualifications. If the program is a .NET Class, it should be locate in one of the Assemblies listed in the [AssemblyList](/manuals/programming/programs-and-procedures/call-program.html#assembly-list). 
+
 ## Properties
 
 | Type | Name | Description |
@@ -88,7 +90,6 @@ The sample DdsDynamicList above expect to call a program named Acme.BuildDropdow
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | Col | Gets or sets a value that indicates the horizontal position within a row. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | MaxOutputLength | Gets or sets the maximum VARYING length of a character field returned by the host program. |
 | [Int32](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types) | OptionsPageSize | Gets or sets the number of options visible at a time in the selector. |
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | LibraryName | Gets or sets the program library or assembly name. |
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParmsData | Gets or sets comma-separated literal parameter values passed to the host program. |
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ParmsElements | Gets or sets comma-separated HTML element names whose current browser values are passed as host parameters. |
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | ProgramName | Gets or sets the program or class name to be invoked. |
