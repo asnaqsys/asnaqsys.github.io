@@ -78,9 +78,9 @@ While Database Sources in `asnasettings.json` are stored in clear text, DataGate
 
 For more information, see:  
 - **Introducing DataGate Print File Designer**  
-  [https://docs.asna.com/documentation/Help170/PFD/_HTML/Welcome.htm](https://docs.asna.com/documentation/Help170/PFD/_HTML/Welcome.htm)  
+  [https://docs.asna.com/documentation/Help180/PFD/_HTML/Welcome.htm](https://docs.asna.com/documentation/Help180/PFD/_HTML/Welcome.htm)  
 - **Creating and Opening Database Connections**  
-  [https://docs.asna.com/documentation/Help170/DGStudio/_HTML/dgCreatingNewConnection.htm](https://docs.asna.com/documentation/Help170/DGStudio/_HTML/dgCreatingNewConnection.htm)
+  [https://docs.asna.com/documentation/Help180/DGStudio/_HTML/dgCreatingNewConnection.htm](https://docs.asna.com/documentation/Help180/DGStudio/_HTML/dgCreatingNewConnection.htm)
 
 ---
 
