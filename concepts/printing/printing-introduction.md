@@ -116,11 +116,11 @@ Once an application has created a report (printer output) in the form of a manus
 4. The report will be processed by a Printer Writer on a printer (potentially a PDF printer).
 
 ## Consuming a Manuscript
-Rendering is the process of producing a paper of PDF version of report describied in a manuscript. 
+Rendering is the process of producing a paper of PDF version of report described in a manuscript. 
 
 There are four mechanisms for users to typically consume a report.  
 1.	The application can direct the runtime to directly render the APM to a physical printer and produce an actual paper report.
-2.	The application can render the manuscript to a PDF file and present it immediatly via the user’s web browser.
+2.	The application can render the manuscript to a PDF file and present it immediately via the user’s web browser.
 3.	A user or operator can request at a later time to render the manuscript directing it to a printer or as PDF.
 4. It is also possible to have an application consume the Manuscript's XML directly possibly, 'scraping' only a few values.
 

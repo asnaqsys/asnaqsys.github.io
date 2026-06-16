@@ -16,8 +16,8 @@ DataGate provides the following controls:
    + DateTimeField - Defines and prints a Date, Time or Timestamp field.   
  - AutoField - Prints an Attribute of the report: Computer Name, Page Number or Count, Creation date/time, Process date/time.
  - Label - Prints a Constant character string.
- - Line - Prints a staight Line.
- - Shape - Prints a Rectange, Square, Oval or Circle.
+ - Line - Prints a straight Line.
+ - Shape - Prints a Rectangle, Square, Oval or Circle.
 
 In addition to the controls provided by DataGate it is theoretically possible to add to a record format any arbitrary .NET Framework Control, however, in practice only a few of them make sense to include on a printer file, most notably a [Windows.Forms.PictureBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.picturebox).
 
@@ -27,7 +27,7 @@ _Figure 1: DG Printer File in Visual Studio_
 
 Some of the attributes of Printer Files are:
  + XML representation of the file definition.
- + Conditional attributes at the file, format and field level with the ability to provide an array of Booleans to programatically control certain properties.
+ + Conditional attributes at the file, format and field level with the ability to provide an array of Booleans to programmatically control certain properties.
  + Capability to direct the output to a text file (a Manuscript) where the data is formatted in XML instead of being printed.
  + Capability to provide alternate rendering engines to print without the use of the .NET Framework controls.
 
@@ -36,14 +36,73 @@ The following diagram shows the processes of editing, printing and rendering Pri
 ![Edit, print, render](images/dg-printer-file.png)
 _Figure 2: DG Printer File &mdash; Edit, Print, Render_
 
-## Creating and Editing a Printer File Defintion
-DataGate provides an editor via the DataGate Printer File Designer to facilitate the creation and modification of Printer Files.  The editor is hosted inside Visual Studio and operates very similarly to a forms designer.  A developer can create new files and record formats with this editor.  A record format gets composed with fields taken from the tool palette where the developer will find DataGate provided controls and third party controls installed on the machine.
+## Creating and Editing a Printer File Definition
+DataGate provides a dedicated editor—the **DataGate Printer File Designer**—to create and modify Printer Files. The designer runs inside Visual Studio and behaves much like a standard forms designer. Developers can create new Printer Files, define record formats, and add fields using the tool palette. The palette includes both DataGate‑provided controls and any compatible third‑party controls installed on the machine.
 
 ![Editing Printer File](images/printer-file-and-controls.png)
 _Figure 3: Editing a Printer File with DataGate Designer_
 
-An alternate way of editing a Printer File is to request the XML description from DataGate and manipulate it directly via normal XML processing; afterwards, a new Printer File can be created using the new XML description.
+Alternatively, developers can request the Printer File’s XML definition directly from DataGate, modify it using standard XML tooling, and then create a new Printer File from the updated XML.
 
+### DataGate Studio in Visual Studio
+Visual Studio is a native Windows application built partly on the .NET Framework and supports extensibility through .NET Framework–based extensions. ASNA provides one such extension: **DataGate Studio (DG Studio)**. DG Studio enables developers to create, inspect, and manage DataGate objects—including Printer Files.
+
+DG Studio is a client‑side tool that communicates with a DataGate database server. In the .NET Framework version of DataGate, server connection information is stored in objects called **Database Names**. A Database Name encapsulates all the information required for a DG client to locate and authenticate with a server.
+
+A Database Name includes attributes such as:
+ - Location of the server
+ - Database within the server
+ - Credentials to access the Database
+ - Initial Library List
+
+Although the term is a bit redundant, a *Database Name* also has a **Name**—this serves as the identifier used by clients to reference the stored connection information.
+
+DG Studio extends Visual Studio with several windows and tools. Two of the most commonly used are the **DataGate Explorer**, where Database Names and connections are managed, and the **Printer File Designer**, shown below.
+
+![DataGate Explorer and Printer File Designer](images/dg-explorer-printer-file-designer.jpg)
+_Figure 4: DataGate Explorer and Printer File Designer_
+
+In DataGate for .NET (Core), the equivalent of Database Names is called **Database Sources**. These are typically stored in the `asnasettings.json` file located in the user’s profile at:
+```
+%LocalAppData%\ASNA\DataGate
+```
+(e.g., `C:\Users\<user>\AppData\Local\ASNA\DataGate` on Windows).
+
+While Database Sources in `asnasettings.json` are stored in clear text, DataGate for .NET Framework stores Database Names in an encrypted file named `DatabaseNames.config`, also located under `%LocalAppData%\ASNA\DataGate`. The .NET Framework version also supports *public* Database Names, stored in:
+
+```
+%ProgramData%\ASNA\DataGate
+```
+
+(e.g., `C:\ProgramData\ASNA\DataGate`).
+
+For more information, see:  
+- **Introducing DataGate Print File Designer**  
+  [https://docs.asna.com/documentation/Help170/PFD/_HTML/Welcome.htm](https://docs.asna.com/documentation/Help170/PFD/_HTML/Welcome.htm)  
+- **Creating and Opening Database Connections**  
+  [https://docs.asna.com/documentation/Help170/DGStudio/_HTML/dgCreatingNewConnection.htm](https://docs.asna.com/documentation/Help170/DGStudio/_HTML/dgCreatingNewConnection.htm)
+
+---
+
+### A Note on Moving the `DatabaseNames.config` File
+
+`DatabaseNames.config` files are encrypted.  
+- User‑specific Database Names are encrypted using the **user profile key**.  
+- Public Database Names are encrypted using the **machine key**.
+
+These files can become unreadable if the associated key changes—for example, when a user profile is recreated or when a virtual machine is moved to a different host.
+
+To safely copy or move Database Names, **export them** using DG Explorer rather than copying the config file directly.
+
+![Exporting a Database Name](images/export-databasename.jpg)
+_Figure 5: Exporting a Database Name_
+
+The export option displays a dialog where you can choose a destination file and specify a password to protect the exported Database Names.
+
+![Export Database Name Dialog](images/export-databasename-dialog.jpg)
+_Figure 6: Export Database Name Dialog_
+
+Keeping a copy of the exported Database Names is a good precaution in case of the `DatabaseNames.config` file become unreadable.
 
 ## Printing
 To create a report, a user program issues operations against the Printer File.  After connecting to the database, the program opens the Printer File and as the program executes, multiple write operations against different record formats are made; additionally, the controls property values might be modify as part of the execution.  The write operations cause DataGate to record the values of fields and properties in a _manuscript_.
@@ -59,7 +118,7 @@ The Schema defines the record formats and control fields found in the document p
 When the Printer File is open, it is possible to provide an actual location to store the manuscript, if no location is provided then it is left to DataGate to determine a temporary disk location for the manuscript.
 
 ## Rendering
-The final phase in the process of creating a report is the rendering of the manuscript.  A renderer sends the formated contents of a manuscript to a printer or a PDF file.  DataGate provides a default renderer program (Renderer.exe) which yields a printout produced to a Windows installed printer.  The Renderer can be executed automatically when a Printer File is closed or be invoked by an operator or application. There are command options that can be set to control certain aspects of the rendering operation when Renderer.exe is executed from the Command Line.
+The final phase in the process of creating a report is the rendering of the manuscript.  A renderer sends the formatted contents of a manuscript to a printer or a PDF file.  DataGate provides a default renderer program (Renderer.exe) which yields a printout produced to a Windows installed printer.  The Renderer can be executed automatically when a Printer File is closed or be invoked by an operator or application. There are command options that can be set to control certain aspects of the rendering operation when Renderer.exe is executed from the Command Line.
 
 ASNA provides [three Renderers](/manuals/hosting/mom/manuscript-renderer.html):
  1. DataGate Renderer
@@ -70,7 +129,7 @@ The [first two renderers](/manuals/hosting/mom/rendering-in-windows.html) depend
  
 The [third renderer](/manuals/hosting/mom/rendering-in-linux.html), `ASNA.QSys.Renderer.PDFOnly`, creates a PDF document and is independent of the Windows OS. `ASNA.QSys.Renderer.PDFOnly` is a .NET (Core) executable.
 
-As a convinience for deployment, ASNA provides a front-end program called `ASNA.QSys.Renderer` which will invoke one of the two ASNA.QSys.Renderers depending on the operating system where it is being executed.
+As a convenience for deployment, ASNA provides a front-end program called `ASNA.QSys.Renderer` which will invoke one of the two ASNA.QSys.Renderers depending on the operating system where it is being executed.
 
 ## Alternate Manuscript Uses
 Having the manuscript formatted as an XML document makes it easy to create custom 'renderers' which can process the manuscript in arbitrary ways.  For instance a custom program can use the manuscript as input to a process that 'grabs' the data from the report much like a traditional report 'scraper' would.
