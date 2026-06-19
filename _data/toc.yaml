@@ -574,18 +574,57 @@ Reference:
           path: /reference/datagate/datagate-client/authority-entry-ctor.html
       - title: CopyFromImportFileOptions
         path: /reference/datagate/datagate-client/copy-from-import-file-options.html
-      - title: DbXmlNameConverter
-        path: /reference/datagate/datagate-client/db-xml-name-converter.html
-      - title: Delimiter
-        path: /reference/datagate/datagate-client/delimiter.html
-      - title: Export
-        path: /reference/datagate/datagate-client/export.html
+      - sectiontitle: DbXmlNameConverter
+        sectionpath: /reference/datagate/datagate-client/db-xml-name-converter.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Decode
+            path: /reference/datagate/datagate-client/db-xml-name-converter-decode.html
+          - title: Encode
+            path: /reference/datagate/datagate-client/db-xml-name-converter-encode.html
+      - sectiontitle: Delimiter
+        sectionpath: /reference/datagate/datagate-client/delimiter.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/delimiter-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: ClearValue
+            path: /reference/datagate/datagate-client/delimiter-clearvalue.html
+          - title: Equals
+            path: /reference/datagate/datagate-client/delimiter-equals.html
+          - title: FromChar
+            path: /reference/datagate/datagate-client/delimiter-fromchar.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-client/delimiter-gethashcode.html
+          - title: op Equality
+            path: /reference/datagate/datagate-client/delimiter-op-equality.html
+          - title: op Inequality
+            path: /reference/datagate/datagate-client/delimiter-op-inequality.html
+          - title: ToChar
+            path: /reference/datagate/datagate-client/delimiter-tochar.html
+          - title: ToString
+            path: /reference/datagate/datagate-client/delimiter-tostring.html
+      - sectiontitle: Export
+        sectionpath: /reference/datagate/datagate-client/export.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: With
+            path: /reference/datagate/datagate-client/export-with.html
       - title: ExportOptions
         path: /reference/datagate/datagate-client/export-options.html
-      - title: ExportToCsvOptions
-        path: /reference/datagate/datagate-client/export-to-csv-options.html
-      - title: ExportToXmlOptions
-        path: /reference/datagate/datagate-client/export-to-xml-options.html
+      - sectiontitle: ExportToCsvOptions
+        sectionpath: /reference/datagate/datagate-client/export-to-csv-options.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/export-to-csv-options-ctor.html
+      - sectiontitle: ExportToXmlOptions
+        sectionpath: /reference/datagate/datagate-client/export-to-xml-options.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/export-to-xml-options-ctor.html
       - sectiontitle: FileAdapter
         sectionpath: /reference/datagate/datagate-client/file-adapter.html
         section:
@@ -661,28 +700,112 @@ Reference:
             path: /reference/datagate/datagate-client/file-adapter-setformat.html
           - title: ThrowIfNotOpen
             path: /reference/datagate/datagate-client/file-adapter-throwifnotopen.html
-      - title: Import
-        path: /reference/datagate/datagate-client/import.html
-      - title: ImportFromCsvOptions
-        path: /reference/datagate/datagate-client/import-from-csv-options.html
-      - title: ImportOptions
-        path: /reference/datagate/datagate-client/import-options.html
-      - title: MultiCharDelimiter
-        path: /reference/datagate/datagate-client/multi-char-delimiter.html
-      - title: NewLineDelimeter
-        path: /reference/datagate/datagate-client/new-line-delimeter.html
-      - title: OpMessageArgs
-        path: /reference/datagate/datagate-client/op-message-args.html
-      - title: DatabaseLabel
-        path: /reference/datagate/datagate-client/database-label.html
+      - sectiontitle: Import
+        sectionpath: /reference/datagate/datagate-client/import.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: With
+            path: /reference/datagate/datagate-client/import-with.html
+      - sectiontitle: ImportFromCsvOptions
+        sectionpath: /reference/datagate/datagate-client/import-from-csv-options.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/import-from-csv-options-ctor.html
+      - sectiontitle: ImportOptions
+        sectionpath: /reference/datagate/datagate-client/import-options.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/import-options-ctor.html
+      - sectiontitle: MultiCharDelimiter
+        sectionpath: /reference/datagate/datagate-client/multi-char-delimiter.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Equals
+            path: /reference/datagate/datagate-client/multi-char-delimiter-equals.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-client/multi-char-delimiter-gethashcode.html
+          - title: op Equality
+            path: /reference/datagate/datagate-client/multi-char-delimiter-op-equality.html
+          - title: op Inequality
+            path: /reference/datagate/datagate-client/multi-char-delimiter-op-inequality.html
+          - title: ToString
+            path: /reference/datagate/datagate-client/multi-char-delimiter-tostring.html
+      - sectiontitle: NewLineDelimeter
+        sectionpath: /reference/datagate/datagate-client/new-line-delimeter.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Equals
+            path: /reference/datagate/datagate-client/new-line-delimeter-equals.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-client/new-line-delimeter-gethashcode.html
+          - title: op Equality
+            path: /reference/datagate/datagate-client/new-line-delimeter-op-equality.html
+          - title: op Inequality
+            path: /reference/datagate/datagate-client/new-line-delimeter-op-inequality.html
+          - title: ToString
+            path: /reference/datagate/datagate-client/new-line-delimeter-tostring.html
+      - sectiontitle: OpMessageArgs
+        sectionpath: /reference/datagate/datagate-client/op-message-args.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/op-message-args-ctor.html
+      - sectiontitle: DatabaseLabel
+        sectionpath: /reference/datagate/datagate-client/database-label.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: ChangeDatabase
+            path: /reference/datagate/datagate-client/database-label-changedatabase.html
+          - title: CreateDatabase
+            path: /reference/datagate/datagate-client/database-label-createdatabase.html
+          - title: CreateLabelObject
+            path: /reference/datagate/datagate-client/database-label-createlabelobject.html
+          - title: GetLabel
+            path: /reference/datagate/datagate-client/database-label-getlabel.html
+          - title: GetLabels
+            path: /reference/datagate/datagate-client/database-label-getlabels.html
+          - title: LabelDatabase
+            path: /reference/datagate/datagate-client/database-label-labeldatabase.html
+          - title: RemoveDatabase
+            path: /reference/datagate/datagate-client/database-label-removedatabase.html
+          - title: UnlabelDatabase
+            path: /reference/datagate/datagate-client/database-label-unlabeldatabase.html
       - title: DataRowColumnComparer&lt;T&gt;
         path: /reference/datagate/datagate-client/data-row-column-comparer-1.html
-      - title: Dependent
-        path: /reference/datagate/datagate-client/dependent.html
-      - title: PrintingProps
-        path: /reference/datagate/datagate-client/printing-props.html
-      - title: XmlCancelEventArgs
-        path: /reference/datagate/datagate-client/xml-cancel-event-args.html
+      - sectiontitle: Dependent
+        sectionpath: /reference/datagate/datagate-client/dependent.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Equals
+            path: /reference/datagate/datagate-client/dependent-equals.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-client/dependent-gethashcode.html
+          - title: ToString
+            path: /reference/datagate/datagate-client/dependent-tostring.html
+      - sectiontitle: PrintingProps
+        sectionpath: /reference/datagate/datagate-client/printing-props.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: GetRendererPath
+            path: /reference/datagate/datagate-client/printing-props-getrendererpath.html
+          - title: IsRendererPathMissing
+            path: /reference/datagate/datagate-client/printing-props-isrendererpathmissing.html
+          - title: SetRendererPath
+            path: /reference/datagate/datagate-client/printing-props-setrendererpath.html
+          - title: SetRendererPathInMachineConfig
+            path: /reference/datagate/datagate-client/printing-props-setrendererpathinmachineconfig.html
+      - sectiontitle: XmlCancelEventArgs
+        sectionpath: /reference/datagate/datagate-client/xml-cancel-event-args.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: ToString
+            path: /reference/datagate/datagate-client/xml-cancel-event-args-tostring.html
     - sectiontitle: Delegates
       section:
       - title: AdgEnumerator

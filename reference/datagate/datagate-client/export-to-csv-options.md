@@ -18,23 +18,7 @@ This class includes properties for specifying whether field names should be incl
 
 | Name | Description |
 | --- | --- |
-| [ExportToCsvOptions](#exporttocsvoptionsimember-string-exportaccessmode)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/datagate-client/export-access-mode.html)) | Initializes a new instance of the  class.
-
-### ExportToCsvOptions([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/datagate-client/export-access-mode.html))
-
-Initializes a new instance of the  class.
-
-```cs
-ExportToCsvOptions(IMember, String, ExportAccessMode)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IMember](/reference/datagate/datagate-client/i-member.html) | src | The source data to be exported.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | target | The target path where the data will be exported.
-| [ExportAccessMode](/reference/datagate/datagate-client/export-access-mode.html) | seq | The access mode for data export.
+| [ExportToCsvOptions](export-to-csv-options-ctor.html#exporttocsvoptions-imember-string-exportaccessmode)([IMember](/reference/datagate/datagate-client/i-member.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [ExportAccessMode](/reference/datagate/datagate-client/export-access-mode.html)) | Initializes a new instance of the  class.
 
 ## Properties
 
@@ -45,3 +29,4 @@ ExportToCsvOptions(IMember, String, ExportAccessMode)
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | IncludeNames | Gets or sets a value indicating whether field names should be included in the exported CSV data. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | OmitTrailingDelimiter | Gets or sets a value indicating whether trailing delimiters should be omitted in the exported CSV data. |
 | [Nullable\<Char\>](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types) | TextDelimiter | Gets or sets the text delimiter to be used in the exported CSV data. |
+

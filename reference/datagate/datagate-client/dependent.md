@@ -35,79 +35,8 @@ Each `Dependent` has an `AdgObjectType` indicating the type of the ASNA DataGate
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#bool-equalsdependent-other)([Dependent](/reference/datagate/datagate-client/dependent.html)) | Determines whether the specified  is equal to the current .
-| [Equals](#bool-equalsobject-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current .
-| [GetHashCode()](#int-gethashcode) | Serves as the default hash function.
-| [ToString()](#string-tostring) | Returns a string that represents the current object.
+| [Equals](dependent-equals.html#bool-equals-dependent-other)([Dependent](/reference/datagate/datagate-client/dependent.html)) | Determines whether the specified  is equal to the current .
+| [Equals](dependent-equals.html#bool-equals-object-obj)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Determines whether the specified object is equal to the current .
+| [GetHashCode()](dependent-gethashcode.html#int-gethashcode) | Serves as the default hash function.
+| [ToString()](dependent-tostring.html#string-tostring) | Returns a string that represents the current object.
 
-### bool Equals([Dependent other](/reference/datagate/datagate-client/dependent.html))
-
-Determines whether the specified  is equal to the current .
-
-
-#### Remarks
-This method checks if the provided  is not null and if its , , and  properties are equal to those of the current instance.The comparison of  is case-insensitive.
-
-```cs
-bool Equals(Dependent other)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Dependent](/reference/datagate/datagate-client/dependent.html) | other | The  to compare with the current .
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified  is equal to the current ; otherwise, false.
-
-### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Determines whether the specified object is equal to the current .
-
-
-#### Remarks
-This method overrides the  method.It casts the provided object to a  and calls the  method to perform the comparison.If the cast is unsuccessful (i.e., if the object is not a ), the method returns false.
-
-```cs
-bool Equals(object obj)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | obj | The object to compare with the current .
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified object is a  and is equal to the current ; otherwise, false.
-
-### int GetHashCode()
-
-Serves as the default hash function.
-
-
-#### Remarks
-This method overrides the  method.It calculates the hash code for the current instance based on the , , and  properties.The hash code for  is calculated using a case-insensitive method.This hash code will be used when the  instance is used in a hash-based collection, like a hash set or a dictionary.
-
-```cs
-int GetHashCode()
-```
-
-### string ToString()
-
-Returns a string that represents the current object.
-
-
-#### Remarks
-This method overrides the  method and returns the  property of the current instance.This provides a string representation of the dependent that is the path name of the ASNA DataGate object it represents.
-
-```cs
-string ToString()
-```

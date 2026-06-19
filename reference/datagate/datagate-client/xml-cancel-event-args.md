@@ -37,16 +37,5 @@ This can be useful for handling errors or interruptions during XML operations.
 
 | Signature | Description |
 | --- | --- |
-| [ToString()](#string-tostring) | Returns a string that represents the current object.
+| [ToString()](xml-cancel-event-args-tostring.html#string-tostring) | Returns a string that represents the current object.
 
-### string ToString()
-
-Returns a string that represents the current object.
-
-
-#### Remarks
-This method overrides the base ToString method and returns the Message property of the XmlCancelEventArgs object. The Message property contains a formatted string that represents the details of the event. This can be useful for logging or displaying detailed information about the event.
-
-```cs
-string ToString()
-```
