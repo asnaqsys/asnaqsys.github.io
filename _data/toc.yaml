@@ -491,16 +491,87 @@ Reference:
             path: /reference/datagate/datagate-client/adg-data-set-preparerow.html
           - title: SetActive
             path: /reference/datagate/datagate-client/adg-data-set-setactive.html
-      - title: AdgFactory
-        path: /reference/datagate/datagate-client/adg-factory.html
-      - title: AdgKeyTable
-        path: /reference/datagate/datagate-client/adg-key-table.html
-      - title: AdgTable
-        path: /reference/datagate/datagate-client/adg-table.html
-      - title: As400Program
-        path: /reference/datagate/datagate-client/as400-program.html
-      - title: AuthorityEntry
-        path: /reference/datagate/datagate-client/authority-entry.html
+      - sectiontitle: AdgFactory
+        sectionpath: /reference/datagate/datagate-client/adg-factory.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: NewDataArea
+            path: /reference/datagate/datagate-client/adg-factory-newdataarea.html
+          - title: NewDirectory
+            path: /reference/datagate/datagate-client/adg-factory-newdirectory.html
+          - title: NewFile
+            path: /reference/datagate/datagate-client/adg-factory-newfile.html
+          - title: NewLibraryList
+            path: /reference/datagate/datagate-client/adg-factory-newlibrarylist.html
+          - title: NewMember
+            path: /reference/datagate/datagate-client/adg-factory-newmember.html
+          - title: NewObject
+            path: /reference/datagate/datagate-client/adg-factory-newobject.html
+          - title: NewSystemValue
+            path: /reference/datagate/datagate-client/adg-factory-newsystemvalue.html
+          - title: ReadXml
+            path: /reference/datagate/datagate-client/adg-factory-readxml.html
+          - title: Synchronized
+            path: /reference/datagate/datagate-client/adg-factory-synchronized.html
+      - sectiontitle: AdgKeyTable
+        sectionpath: /reference/datagate/datagate-client/adg-key-table.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/adg-key-table-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Equals
+            path: /reference/datagate/datagate-client/adg-key-table-equals.html
+      - sectiontitle: AdgTable
+        sectionpath: /reference/datagate/datagate-client/adg-table.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/adg-table-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: SetRowDefaultValues
+            path: /reference/datagate/datagate-client/adg-table-setrowdefaultvalues.html
+      - sectiontitle: As400Program
+        sectionpath: /reference/datagate/datagate-client/as400-program.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/as400-program-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: AppendParm
+            path: /reference/datagate/datagate-client/as400-program-appendparm.html
+          - title: AppendParms
+            path: /reference/datagate/datagate-client/as400-program-appendparms.html
+          - title: Dispose
+            path: /reference/datagate/datagate-client/as400-program-dispose.html
+          - title: Execute
+            path: /reference/datagate/datagate-client/as400-program-execute.html
+          - title: Finalize
+            path: /reference/datagate/datagate-client/as400-program-finalize.html
+          - title: GetParameters
+            path: /reference/datagate/datagate-client/as400-program-getparameters.html
+          - title: GetParmByName
+            path: /reference/datagate/datagate-client/as400-program-getparmbyname.html
+          - title: ObjectToParm
+            path: /reference/datagate/datagate-client/as400-program-objecttoparm.html
+          - title: ParmToObject
+            path: /reference/datagate/datagate-client/as400-program-parmtoobject.html
+          - title: ReadParmXml
+            path: /reference/datagate/datagate-client/as400-program-readparmxml.html
+          - title: SetConnection
+            path: /reference/datagate/datagate-client/as400-program-setconnection.html
+          - title: SetParmsZeroValue
+            path: /reference/datagate/datagate-client/as400-program-setparmszerovalue.html
+          - title: SetProgramPath
+            path: /reference/datagate/datagate-client/as400-program-setprogrampath.html
+          - title: WriteParmXml
+            path: /reference/datagate/datagate-client/as400-program-writeparmxml.html
+      - sectiontitle: AuthorityEntry
+        sectionpath: /reference/datagate/datagate-client/authority-entry.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-client/authority-entry-ctor.html
       - title: CopyFromImportFileOptions
         path: /reference/datagate/datagate-client/copy-from-import-file-options.html
       - title: DbXmlNameConverter

@@ -21,21 +21,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [AdgKeyTable](#adgkeytabledatatable)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable)) | Initializes a new instance of the  class with a specified key table template.
-
-### AdgKeyTable([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable))
-
-Initializes a new instance of the  class with a specified key table template.
-
-```cs
-AdgKeyTable(DataTable)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable) | keyTableTemplate | The DataTable to be used as a template for the key table.
+| [AdgKeyTable](adg-key-table-ctor.html#adgkeytable-datatable)([DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable)) | Initializes a new instance of the  class with a specified key table template.
 
 ## Properties
 
@@ -50,31 +36,7 @@ AdgKeyTable(DataTable)
 
 | Signature | Description |
 | --- | --- |
-| [Equals](#bool-equalsdatarow-other)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow)) | Determines whether the specified DataRow is equal to the current DataRow.
-
-### bool Equals([DataRow other](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow))
-
-Determines whether the specified DataRow is equal to the current DataRow.
-
-
-#### Remarks
-This method uses the DataRowColumnComparer associated with this AdgKeyTable instance to compare the specified DataRow with the current DataRow.The DataRowColumnComparer compares the rows based on the first m_cParts columns of the DataTable associated with this AdgKeyTable instance.
-
-```cs
-bool Equals(DataRow other)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow) | other | The DataRow to compare with the current DataRow.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the specified DataRow is equal to the current DataRow; otherwise, false.
+| [Equals](adg-key-table-equals.html#bool-equals-datarow-other)([DataRow](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow)) | Determines whether the specified DataRow is equal to the current DataRow.
 
 ## Example 1. Creating a Key Table to read records by Key. Also uses Row property.
 
@@ -106,4 +68,5 @@ bool Equals(DataRow other)
 ```
 
 > See [AdgConnection Example](/reference/datagate/datagate-client/adg-connection.html#create-an-adgconnection) for an implementation of `createAdgConnection()`
+
 
