@@ -24,16 +24,5 @@ It can be implemented by any class that needs to manage connections, such as a d
 
 | Signature | Description |
 | --- | --- |
-| [EnsureConnectionOpened()](#bool-ensureconnectionopened) | Ensures that the connection is open.
+| [EnsureConnectionOpened()](i-connection-handler-ensureconnectionopened.html#bool-ensureconnectionopened) | Ensures that the connection is open.
 
-### bool EnsureConnectionOpened()
-
-Ensures that the connection is open.
-
-
-#### Remarks
-This method checks if the connection is already open. If it is not, it attempts to open the connection. It returns true if the connection had to be opened, and false if the connection was already open. This can be useful to ensure that a connection is open before performing operations that require it.
-
-```cs
-bool EnsureConnectionOpened()
-```

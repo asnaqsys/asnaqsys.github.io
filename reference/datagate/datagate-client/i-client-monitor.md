@@ -45,22 +45,5 @@ and current open files. It also provides a method to forcibly terminate the clie
 
 | Signature | Description |
 | --- | --- |
-| [Kill](#void-killint-delay)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Forcibly terminates the current client.
+| [Kill](i-client-monitor-kill.html#void-kill-int-delay)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Forcibly terminates the current client.
 
-### void Kill([int delay](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
-
-Forcibly terminates the current client.
-
-
-#### Remarks
-This method will forcibly terminate the client after the specified delay. Use this method with caution as it can lead to data loss if the client is in the middle of a transaction.
-
-```cs
-void Kill(int delay)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | delay | Wait time in milliseconds before terminating the client.

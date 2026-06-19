@@ -37,28 +37,6 @@ removing all records, and to initialize the member with a specified number of re
 
 | Signature | Description |
 | --- | --- |
-| [Clear()](#void-clear) | Clears the member, removing all records.
-| [Initialize](#void-initializeinitmemberoptions-options-long-records)([InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with a specified number of records.
+| [Clear()](i-member-clear.html#void-clear) | Clears the member, removing all records.
+| [Initialize](i-member-initialize.html#void-initialize-initmemberoptions-options-long-records)([InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html), [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64)) | Initializes the member with a specified number of records.
 
-### void Clear()
-
-Clears the member, removing all records.
-
-```cs
-void Clear()
-```
-
-### void Initialize([InitMemberOptions Options](/reference/datagate/datagate-client/init-member-options.html), [long Records](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
-
-Initializes the member with a specified number of records.
-
-```cs
-void Initialize(InitMemberOptions Options, long Records)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [InitMemberOptions](/reference/datagate/datagate-client/init-member-options.html) | Options | The options to use when initializing the member.
-| [Int64](https://docs.microsoft.com/en-us/dotnet/api/system.int64) | Records | The number of records to initialize the member with.

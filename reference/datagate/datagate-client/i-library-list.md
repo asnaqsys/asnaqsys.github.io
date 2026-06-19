@@ -38,65 +38,8 @@ the current system and user libraries as IAdgObject instances, and to add and re
 
 | Signature | Description |
 | --- | --- |
-| [AddEntry](#void-addentrystring-path-liblposition-pos-string-reflib)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/datagate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at a specified position.
-| [EnumerateCurrentSystem](#void-enumeratecurrentsystemadgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current system libraries as IAdgObject instances.
-| [EnumerateCurrentUser](#void-enumeratecurrentuseradgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current user libraries as IAdgObject instances.
-| [RemoveEntry](#void-removeentrystring-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a library from the user portion of the library list.
+| [AddEntry](i-library-list-addentry.html#void-addentry-string-path-liblposition-pos-string-reflib)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [LiblPosition](/reference/datagate/datagate-client/libl-position.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Adds a library to the library list at a specified position.
+| [EnumerateCurrentSystem](i-library-list-enumeratecurrentsystem.html#void-enumeratecurrentsystem-adgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current system libraries as IAdgObject instances.
+| [EnumerateCurrentUser](i-library-list-enumeratecurrentuser.html#void-enumeratecurrentuser-adgenumerator-enumerator)([AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html)) | Enumerates the current user libraries as IAdgObject instances.
+| [RemoveEntry](i-library-list-removeentry.html#void-removeentry-string-path)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a library from the user portion of the library list.
 
-### void AddEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [LiblPosition pos](/reference/datagate/datagate-client/libl-position.html), [string refLib](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Adds a library to the library list at a specified position.
-
-```cs
-void AddEntry(string path, LiblPosition pos, string refLib)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | The path of the library to add.
-| [LiblPosition](/reference/datagate/datagate-client/libl-position.html) | pos | The position to add the library at.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | refLib | Optional reference library.
-
-### void EnumerateCurrentSystem([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html))
-
-Enumerates the current system libraries as IAdgObject instances.
-
-```cs
-void EnumerateCurrentSystem(AdgEnumerator enumerator)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | The enumerator to use.
-
-### void EnumerateCurrentUser([AdgEnumerator enumerator](/reference/datagate/datagate-client/adg-enumerator.html))
-
-Enumerates the current user libraries as IAdgObject instances.
-
-```cs
-void EnumerateCurrentUser(AdgEnumerator enumerator)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [AdgEnumerator](/reference/datagate/datagate-client/adg-enumerator.html) | enumerator | The enumerator to use.
-
-### void RemoveEntry([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Removes a library from the user portion of the library list.
-
-```cs
-void RemoveEntry(string path)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | path | The path of the library to remove.

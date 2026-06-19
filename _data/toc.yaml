@@ -844,28 +844,147 @@ Reference:
       section:
       - title: ILabel
         path: /reference/datagate/datagate-client/i-label.html
-      - title: IAdgObject
-        path: /reference/datagate/datagate-client/i-adg-object.html
-      - title: IAdgTransaction
-        path: /reference/datagate/datagate-client/i-adg-transaction.html
+      - sectiontitle: IAdgObject
+        sectionpath: /reference/datagate/datagate-client/i-adg-object.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Create
+            path: /reference/datagate/datagate-client/i-adg-object-create.html
+          - title: Duplicate
+            path: /reference/datagate/datagate-client/i-adg-object-duplicate.html
+          - title: GrantAuthority
+            path: /reference/datagate/datagate-client/i-adg-object-grantauthority.html
+          - title: HasLock
+            path: /reference/datagate/datagate-client/i-adg-object-haslock.html
+          - title: Lock
+            path: /reference/datagate/datagate-client/i-adg-object-lock.html
+          - title: MoveTo
+            path: /reference/datagate/datagate-client/i-adg-object-moveto.html
+          - title: ReadBases
+            path: /reference/datagate/datagate-client/i-adg-object-readbases.html
+          - title: Remove
+            path: /reference/datagate/datagate-client/i-adg-object-remove.html
+          - title: Rename
+            path: /reference/datagate/datagate-client/i-adg-object-rename.html
+          - title: ResolvePathName
+            path: /reference/datagate/datagate-client/i-adg-object-resolvepathname.html
+          - title: RevokeAuthority
+            path: /reference/datagate/datagate-client/i-adg-object-revokeauthority.html
+          - title: ToString
+            path: /reference/datagate/datagate-client/i-adg-object-tostring.html
+          - title: Unlock
+            path: /reference/datagate/datagate-client/i-adg-object-unlock.html
+          - title: WriteBases
+            path: /reference/datagate/datagate-client/i-adg-object-writebases.html
+          - title: WriteXml
+            path: /reference/datagate/datagate-client/i-adg-object-writexml.html
+      - sectiontitle: IAdgTransaction
+        sectionpath: /reference/datagate/datagate-client/i-adg-transaction.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Commit
+            path: /reference/datagate/datagate-client/i-adg-transaction-commit.html
+          - title: Rollback
+            path: /reference/datagate/datagate-client/i-adg-transaction-rollback.html
       - title: IChannelSecurity
         path: /reference/datagate/datagate-client/i-channel-security.html
-      - title: IClientMonitor
-        path: /reference/datagate/datagate-client/i-client-monitor.html
-      - title: IConnectionHandler
-        path: /reference/datagate/datagate-client/i-connection-handler.html
-      - title: IDataArea
-        path: /reference/datagate/datagate-client/i-data-area.html
-      - title: IDirectory
-        path: /reference/datagate/datagate-client/i-directory.html
-      - title: IFileObject
-        path: /reference/datagate/datagate-client/i-file-object.html
-      - title: ILibraryList
-        path: /reference/datagate/datagate-client/i-library-list.html
+      - sectiontitle: IClientMonitor
+        sectionpath: /reference/datagate/datagate-client/i-client-monitor.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Kill
+            path: /reference/datagate/datagate-client/i-client-monitor-kill.html
+      - sectiontitle: IConnectionHandler
+        sectionpath: /reference/datagate/datagate-client/i-connection-handler.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: EnsureConnectionOpened
+            path: /reference/datagate/datagate-client/i-connection-handler-ensureconnectionopened.html
+      - sectiontitle: IDataArea
+        sectionpath: /reference/datagate/datagate-client/i-data-area.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: AppendParm
+            path: /reference/datagate/datagate-client/i-data-area-appendparm.html
+          - title: Change
+            path: /reference/datagate/datagate-client/i-data-area-change.html
+          - title: ObjectToParm
+            path: /reference/datagate/datagate-client/i-data-area-objecttoparm.html
+          - title: ParmToObject
+            path: /reference/datagate/datagate-client/i-data-area-parmtoobject.html
+          - title: Retrieve
+            path: /reference/datagate/datagate-client/i-data-area-retrieve.html
+          - title: SetInitialValue
+            path: /reference/datagate/datagate-client/i-data-area-setinitialvalue.html
+      - sectiontitle: IDirectory
+        sectionpath: /reference/datagate/datagate-client/i-directory.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: AttachRemoteDirectory
+            path: /reference/datagate/datagate-client/i-directory-attachremotedirectory.html
+          - title: CreateSubDirectory
+            path: /reference/datagate/datagate-client/i-directory-createsubdirectory.html
+          - title: Enumerate
+            path: /reference/datagate/datagate-client/i-directory-enumerate.html
+          - title: RepairObjects
+            path: /reference/datagate/datagate-client/i-directory-repairobjects.html
+      - sectiontitle: IFileObject
+        sectionpath: /reference/datagate/datagate-client/i-file-object.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: AsyncCopyFromImportFile
+            path: /reference/datagate/datagate-client/i-file-object-asynccopyfromimportfile.html
+          - title: Copy
+            path: /reference/datagate/datagate-client/i-file-object-copy.html
+          - title: CopyData
+            path: /reference/datagate/datagate-client/i-file-object-copydata.html
+          - title: CopyFromImportFile
+            path: /reference/datagate/datagate-client/i-file-object-copyfromimportfile.html
+          - title: GetAdgDataSet
+            path: /reference/datagate/datagate-client/i-file-object-getadgdataset.html
+          - title: InspectFile
+            path: /reference/datagate/datagate-client/i-file-object-inspectfile.html
+          - title: ReadCreationAttributes
+            path: /reference/datagate/datagate-client/i-file-object-readcreationattributes.html
+          - title: ReadDefinition
+            path: /reference/datagate/datagate-client/i-file-object-readdefinition.html
+          - title: RepairFile
+            path: /reference/datagate/datagate-client/i-file-object-repairfile.html
+          - title: WriteCreationAttributes
+            path: /reference/datagate/datagate-client/i-file-object-writecreationattributes.html
+          - title: WriteDefinition
+            path: /reference/datagate/datagate-client/i-file-object-writedefinition.html
+      - sectiontitle: ILibraryList
+        sectionpath: /reference/datagate/datagate-client/i-library-list.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: AddEntry
+            path: /reference/datagate/datagate-client/i-library-list-addentry.html
+          - title: EnumerateCurrentSystem
+            path: /reference/datagate/datagate-client/i-library-list-enumeratecurrentsystem.html
+          - title: EnumerateCurrentUser
+            path: /reference/datagate/datagate-client/i-library-list-enumeratecurrentuser.html
+          - title: RemoveEntry
+            path: /reference/datagate/datagate-client/i-library-list-removeentry.html
       - title: ILock
         path: /reference/datagate/datagate-client/i-lock.html
-      - title: IMember
-        path: /reference/datagate/datagate-client/i-member.html
+      - sectiontitle: IMember
+        sectionpath: /reference/datagate/datagate-client/i-member.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Clear
+            path: /reference/datagate/datagate-client/i-member-clear.html
+          - title: Initialize
+            path: /reference/datagate/datagate-client/i-member-initialize.html
       - title: IMonitor
         path: /reference/datagate/datagate-client/i-monitor.html
       - title: IOpenFile
