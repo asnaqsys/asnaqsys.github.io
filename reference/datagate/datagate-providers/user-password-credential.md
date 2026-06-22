@@ -23,32 +23,8 @@ never return null values.
 
 | Name | Description |
 | --- | --- |
-| [UserPasswordCredential](#userpasswordcredentialstring-string-passwordtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/datagate-common/password-type.html)) | Construct a UserPasswordCredential instance from component parts.
-| [UserPasswordCredential()](#userpasswordcredential) | Construct a UserPasswordCredential with default values.
-
-### UserPasswordCredential([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/datagate-common/password-type.html))
-
-Construct a UserPasswordCredential instance from component parts.
-
-```cs
-UserPasswordCredential(String, String, PasswordType)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | user | Traditional user name for logon.
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | password | Traditional character passphrase for logon,            or .            
-| [PasswordType](/reference/datagate/datagate-common/password-type.html) | passwordType | For old servers with limited password            length requirements, set this to .            In most cases use the default value.
-
-### UserPasswordCredential()
-
-Construct a UserPasswordCredential with default values.
-
-```cs
-UserPasswordCredential()
-```
+| [UserPasswordCredential](user-password-credential-ctor.html#userpasswordcredential-string-string-passwordtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [PasswordType](/reference/datagate/datagate-common/password-type.html)) | Construct a UserPasswordCredential instance from component parts.
+| [UserPasswordCredential()](user-password-credential-ctor.html#userpasswordcredential) | Construct a UserPasswordCredential with default values.
 
 ## Properties
 
@@ -63,54 +39,7 @@ UserPasswordCredential()
 
 | Signature | Description |
 | --- | --- |
-| [Clone()](#object-clone) | Creates a new object that is a copy of the current instance.
-| [Equals](#bool-equalsidatagatecredential-other)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the current instance of  is equal to the specified instance.
-| [GetHashCodeInternal()](#int-gethashcodeinternal) | Serves as the default hash function for the current instance.
+| [Clone()](user-password-credential-clone.html#object-clone) | Creates a new object that is a copy of the current instance.
+| [Equals](user-password-credential-equals.html#bool-equals-idatagatecredential-other)([IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html)) | Determines whether the current instance of  is equal to the specified instance.
+| [GetHashCodeInternal()](user-password-credential-gethashcodeinternal.html#int-gethashcodeinternal) | Serves as the default hash function for the current instance.
 
-### object Clone()
-
-Creates a new object that is a copy of the current instance.
-
-
-#### Remarks
-This method is used to create a copy of the current instance of the UserPasswordCredential class. The copy is made by creating a new instance of the UserPasswordCredential class with the same user, password, and password type as the current instance.
-
-```cs
-object Clone()
-```
-
-### bool Equals([IDataGateCredential other](/reference/datagate/datagate-providers/i-datagate-credential.html))
-
-Determines whether the current instance of  is equal to the specified instance.
-
-
-#### Remarks
-This method is used to compare the current instance with another instance of the UserPasswordCredential class. The comparison is based on the user, password type, and password of the instances.
-
-```cs
-bool Equals(IDataGateCredential other)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [IDataGateCredential](/reference/datagate/datagate-providers/i-datagate-credential.html) | other | The instance to compare with the current instance.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | True if the current instance is equal to the specified instance; otherwise, false.
-
-### int GetHashCodeInternal()
-
-Serves as the default hash function for the current instance.
-
-
-#### Remarks
-This method is used to generate a hash code for the current instance of the UserPasswordCredential class. It takes into account the user, password type, and password of the instance to generate a unique hash code.
-
-```cs
-int GetHashCodeInternal()
-```

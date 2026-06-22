@@ -22,15 +22,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [PrintDevAttr()](#printdevattr) | Initializes a new instance of the  class.
-
-### PrintDevAttr()
-
-Initializes a new instance of the  class.
-
-```cs
-PrintDevAttr()
-```
+| [PrintDevAttr()](print-dev-attr-ctor.html#printdevattr) | Initializes a new instance of the  class.
 
 ## Properties
 
@@ -58,33 +50,6 @@ PrintDevAttr()
 
 | Signature | Description |
 | --- | --- |
-| [ReadXml](#void-readxmlxmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Generates an object from its XML representation.
-| [WriteXml](#void-writexmlxmlwriter-writer)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Converts the current instance into an XML string.
+| [ReadXml](print-dev-attr-readxml.html#void-readxml-xmlreader-reader)([XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0)) | Generates an object from its XML representation.
+| [WriteXml](print-dev-attr-writexml.html#void-writexml-xmlwriter-writer)([XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0)) | Converts the current instance into an XML string.
 
-### void ReadXml([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
-
-Generates an object from its XML representation.
-
-```cs
-void ReadXml(XmlReader reader)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0) | reader | The XmlReader stream from which the object is deserialized.
-
-### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
-
-Converts the current instance into an XML string.
-
-```cs
-void WriteXml(XmlWriter writer)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0) | writer | The XmlWriter stream to which the object is serialized.

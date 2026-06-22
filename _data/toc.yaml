@@ -1445,30 +1445,99 @@ Reference:
     - sectiontitle: Classes
       sectionpath: /reference/datagate/datagate-providers/landing-page-classes.html
       section:
-      - title: DatabaseAttributes
-        path: /reference/datagate/datagate-providers/database-attributes.html
-      - title: DataGateCredential
-        path: /reference/datagate/datagate-providers/datagate-credential.html
-      - title: DataGateCredentialEqualityComparer
-        path: /reference/datagate/datagate-providers/datagate-credential-equality-comparer.html
-      - title: DataGateCredentialExtensions
-        path: /reference/datagate/datagate-providers/datagate-credential-extensions.html
-      - title: FileOpenAttr
-        path: /reference/datagate/datagate-providers/file-open-attr.html
+      - sectiontitle: DatabaseAttributes
+        sectionpath: /reference/datagate/datagate-providers/database-attributes.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/database-attributes-ctor.html
+      - sectiontitle: DataGateCredential
+        sectionpath: /reference/datagate/datagate-providers/datagate-credential.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/datagate-credential-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Clone
+            path: /reference/datagate/datagate-providers/datagate-credential-clone.html
+          - title: Equals
+            path: /reference/datagate/datagate-providers/datagate-credential-equals.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-providers/datagate-credential-gethashcode.html
+          - title: GetHashCodeInternal
+            path: /reference/datagate/datagate-providers/datagate-credential-gethashcodeinternal.html
+      - sectiontitle: DataGateCredentialConverter
+        sectionpath: /reference/datagate/datagate-providers/datagate-credential-converter.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Read
+            path: /reference/datagate/datagate-providers/datagate-credential-converter-read.html
+          - title: Write
+            path: /reference/datagate/datagate-providers/datagate-credential-converter-write.html
+      - sectiontitle: DataGateCredentialEqualityComparer
+        sectionpath: /reference/datagate/datagate-providers/datagate-credential-equality-comparer.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Equals
+            path: /reference/datagate/datagate-providers/datagate-credential-equality-comparer-equals.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-providers/datagate-credential-equality-comparer-gethashcode.html
+      - sectiontitle: DataGateCredentialExtensions
+        sectionpath: /reference/datagate/datagate-providers/datagate-credential-extensions.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: IsStarDomainCredential
+            path: /reference/datagate/datagate-providers/datagate-credential-extensions-isstardomaincredential.html
+          - title: ThrowIfNotUserPassword
+            path: /reference/datagate/datagate-providers/datagate-credential-extensions-throwifnotuserpassword.html
+      - sectiontitle: FileOpenAttr
+        sectionpath: /reference/datagate/datagate-providers/file-open-attr.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/file-open-attr-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Add
+            path: /reference/datagate/datagate-providers/file-open-attr-add.html
+          - title: ContainsKey
+            path: /reference/datagate/datagate-providers/file-open-attr-containskey.html
+          - title: Remove
+            path: /reference/datagate/datagate-providers/file-open-attr-remove.html
+          - title: TryGetValue
+            path: /reference/datagate/datagate-providers/file-open-attr-trygetvalue.html
       - title: Constants
         path: /reference/datagate/datagate-providers/constants.html
-      - title: PrintCreateAttr
-        path: /reference/datagate/datagate-providers/print-create-attr.html
-      - title: PrintDevAttr
-        path: /reference/datagate/datagate-providers/print-dev-attr.html
-      - title: PrintFileOpenAttr
-        path: /reference/datagate/datagate-providers/print-file-open-attr.html
-      - title: DataGateCredentialConverter
-        path: /reference/datagate/datagate-providers/datagate-credential-converter.html
-      - title: SourceProfileConverter
-        path: /reference/datagate/datagate-providers/source-profile-converter.html
-      - title: UserPasswordCredentialInlineConverter
-        path: /reference/datagate/datagate-providers/user-password-credential-inline-converter.html
+      - sectiontitle: PrintCreateAttr
+        sectionpath: /reference/datagate/datagate-providers/print-create-attr.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/print-create-attr-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: ReadXml
+            path: /reference/datagate/datagate-providers/print-create-attr-readxml.html
+          - title: TryGetValue
+            path: /reference/datagate/datagate-providers/print-create-attr-trygetvalue.html
+          - title: WriteXml
+            path: /reference/datagate/datagate-providers/print-create-attr-writexml.html
+      - sectiontitle: PrintDevAttr
+        sectionpath: /reference/datagate/datagate-providers/print-dev-attr.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/print-dev-attr-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: ReadXml
+            path: /reference/datagate/datagate-providers/print-dev-attr-readxml.html
+          - title: WriteXml
+            path: /reference/datagate/datagate-providers/print-dev-attr-writexml.html
+      - sectiontitle: PrintFileOpenAttr
+        sectionpath: /reference/datagate/datagate-providers/print-file-open-attr.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/print-file-open-attr-ctor.html
       - sectiontitle: SourceProfile
         sectionpath: /reference/datagate/datagate-providers/source-profile.html
         section:
@@ -1490,8 +1559,39 @@ Reference:
             path: /reference/datagate/datagate-providers/source-profile-op-inequality.html
           - title: ToString
             path: /reference/datagate/datagate-providers/source-profile-tostring.html
-      - title: UserPasswordCredential
-        path: /reference/datagate/datagate-providers/user-password-credential.html
+      - sectiontitle: SourceProfileConverter
+        sectionpath: /reference/datagate/datagate-providers/source-profile-converter.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/source-profile-converter-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Read
+            path: /reference/datagate/datagate-providers/source-profile-converter-read.html
+          - title: Write
+            path: /reference/datagate/datagate-providers/source-profile-converter-write.html
+      - sectiontitle: UserPasswordCredential
+        sectionpath: /reference/datagate/datagate-providers/user-password-credential.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-providers/user-password-credential-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Clone
+            path: /reference/datagate/datagate-providers/user-password-credential-clone.html
+          - title: Equals
+            path: /reference/datagate/datagate-providers/user-password-credential-equals.html
+          - title: GetHashCodeInternal
+            path: /reference/datagate/datagate-providers/user-password-credential-gethashcodeinternal.html
+      - sectiontitle: UserPasswordCredentialInlineConverter
+        sectionpath: /reference/datagate/datagate-providers/user-password-credential-inline-converter.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Read
+            path: /reference/datagate/datagate-providers/user-password-credential-inline-converter-read.html
+          - title: Write
+            path: /reference/datagate/datagate-providers/user-password-credential-inline-converter-write.html
     - sectiontitle: Delegates
       section:
       - title: ReadOrWriteMetadata
@@ -1512,16 +1612,55 @@ Reference:
       section:
       - title: IDataGateCredential
         path: /reference/datagate/datagate-providers/i-datagate-credential.html
-      - title: IExchange5250
-        path: /reference/datagate/datagate-providers/i-exchange5250.html
-      - title: IFileAdapter
-        path: /reference/datagate/datagate-providers/i-file-adapter.html
-      - title: IPrintProperties
-        path: /reference/datagate/datagate-providers/i-print-properties.html
-      - title: ISimpleSerializer
-        path: /reference/datagate/datagate-providers/i-simple-serializer.html
-      - title: IStreamTransformerFactory
-        path: /reference/datagate/datagate-providers/i-stream-transformer-factory.html
+      - sectiontitle: IExchange5250
+        sectionpath: /reference/datagate/datagate-providers/i-exchange5250.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: CompleteOpen
+            path: /reference/datagate/datagate-providers/i-exchange5250-completeopen.html
+          - title: GetDeviceInfo
+            path: /reference/datagate/datagate-providers/i-exchange5250-getdeviceinfo.html
+      - sectiontitle: IFileAdapter
+        sectionpath: /reference/datagate/datagate-providers/i-file-adapter.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Open
+            path: /reference/datagate/datagate-providers/i-file-adapter-open.html
+          - title: ReadSequentialEqual
+            path: /reference/datagate/datagate-providers/i-file-adapter-readsequentialequal.html
+      - sectiontitle: IPrintProperties
+        sectionpath: /reference/datagate/datagate-providers/i-print-properties.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: GetBoundType
+            path: /reference/datagate/datagate-providers/i-print-properties-getboundtype.html
+          - title: GetTypedObject
+            path: /reference/datagate/datagate-providers/i-print-properties-gettypedobject.html
+          - title: GetValue
+            path: /reference/datagate/datagate-providers/i-print-properties-getvalue.html
+          - title: SetValue
+            path: /reference/datagate/datagate-providers/i-print-properties-setvalue.html
+      - sectiontitle: ISimpleSerializer
+        sectionpath: /reference/datagate/datagate-providers/i-simple-serializer.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Deserialize
+            path: /reference/datagate/datagate-providers/i-simple-serializer-deserialize.html
+          - title: Serialize
+            path: /reference/datagate/datagate-providers/i-simple-serializer-serialize.html
+      - sectiontitle: IStreamTransformerFactory
+        sectionpath: /reference/datagate/datagate-providers/i-stream-transformer-factory.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: MakeDecoder
+            path: /reference/datagate/datagate-providers/i-stream-transformer-factory-makedecoder.html
+          - title: MakeEncoder
+            path: /reference/datagate/datagate-providers/i-stream-transformer-factory-makeencoder.html
       - title: ITransformProperties
         path: /reference/datagate/datagate-providers/i-transform-properties.html
   - sectiontitle: ASNA.DataGate.SqlServer

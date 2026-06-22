@@ -22,15 +22,7 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [FileOpenAttr()](#fileopenattr) | Initializes a new instance of the FileOpenAttr class.
-
-### FileOpenAttr()
-
-Initializes a new instance of the FileOpenAttr class.
-
-```cs
-FileOpenAttr()
-```
+| [FileOpenAttr()](file-open-attr-ctor.html#fileopenattr) | Initializes a new instance of the FileOpenAttr class.
 
 ## Properties
 
@@ -53,83 +45,8 @@ FileOpenAttr()
 
 | Signature | Description |
 | --- | --- |
-| [Add](#void-addstring-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds an element with the provided key and value to the FileOpenAttr.
-| [ContainsKey](#bool-containskeystring-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the FileOpenAttr contains an element with the specified key.
-| [Remove](#bool-removestring-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the element with the specified key from the FileOpenAttr.
-| [TryGetValue](#bool-trygetvaluestring-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object&](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Gets the value associated with the specified key.
+| [Add](file-open-attr-add.html#void-add-string-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Adds an element with the provided key and value to the FileOpenAttr.
+| [ContainsKey](file-open-attr-containskey.html#bool-containskey-string-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Determines whether the FileOpenAttr contains an element with the specified key.
+| [Remove](file-open-attr-remove.html#bool-remove-string-key)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes the element with the specified key from the FileOpenAttr.
+| [TryGetValue](file-open-attr-trygetvalue.html#bool-trygetvalue-string-key-object-value)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Object&](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Gets the value associated with the specified key.
 
-### void Add([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Adds an element with the provided key and value to the FileOpenAttr.
-
-```cs
-void Add(string key, object value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The object to use as the key of the element to add.
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | The object to use as the value of the element to add.
-
-### bool ContainsKey([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Determines whether the FileOpenAttr contains an element with the specified key.
-
-```cs
-bool ContainsKey(string key)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The key to locate in the FileOpenAttr.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the FileOpenAttr contains an element with the key; otherwise, false.
-
-### bool Remove([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Removes the element with the specified key from the FileOpenAttr.
-
-```cs
-bool Remove(string key)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The key of the element to remove.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the element is successfully found and removed; otherwise, false.
-
-### bool TryGetValue([string key](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Object& value](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Gets the value associated with the specified key.
-
-```cs
-bool TryGetValue(string key, Object& value)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | key | The key of the value to get.
-| [Object&](https://docs.microsoft.com/en-us/dotnet/api/system.object) | value | When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | true if the FileOpenAttr contains an element with the specified key; otherwise, false.

@@ -17,15 +17,7 @@ Represents the attributes for opening a print file.
 
 | Name | Description |
 | --- | --- |
-| [PrintFileOpenAttr()](#printfileopenattr) | Initializes a new instance of the PrintFileOpenAttr class.
-
-### PrintFileOpenAttr()
-
-Initializes a new instance of the PrintFileOpenAttr class.
-
-```cs
-PrintFileOpenAttr()
-```
+| [PrintFileOpenAttr()](print-file-open-attr-ctor.html#printfileopenattr) | Initializes a new instance of the PrintFileOpenAttr class.
 
 ## Properties
 
@@ -39,3 +31,4 @@ PrintFileOpenAttr()
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | Prompt | Gets or sets a value indicating whether a prompt should be displayed when the print file is opened. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | SaveAfter | Gets or sets a value indicating whether the print file should be saved after being opened. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | UserData | Gets or sets the user data for the print file to be opened. |
+
