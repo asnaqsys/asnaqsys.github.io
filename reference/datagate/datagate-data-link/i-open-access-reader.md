@@ -17,53 +17,8 @@ Defines methods for reading data from an open access channel.
 
 | Signature | Description |
 | --- | --- |
-| [Flush()](#void-flush) | Flushes the reader, clearing any buffered data.
-| [Read](#int-readbyte--inbuf-int-ibegin-int-cbytes)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the channel into the specified buffer.
-| [ReadByte()](#int-readbyte) | Reads a single byte from the channel.
-| [Receive()](#void-receive) | Receives data from the channel.
+| [Flush()](i-open-access-reader-flush.html#void-flush) | Flushes the reader, clearing any buffered data.
+| [Read](i-open-access-reader-read.html#int-read-byte-inbuf-https-docs-microsoft-com-en-us-dotnet-api-system-byte-int-ibegin-int-cbytes)([Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Reads a sequence of bytes from the channel into the specified buffer.
+| [ReadByte()](i-open-access-reader-readbyte.html#int-readbyte) | Reads a single byte from the channel.
+| [Receive()](i-open-access-reader-receive.html#void-receive) | Receives data from the channel.
 
-### void Flush()
-
-Flushes the reader, clearing any buffered data.
-
-```cs
-void Flush()
-```
-
-### int Read([Byte\[\] inBuf](https://docs.microsoft.com/en-us/dotnet/api/system.byte), [int iBegin](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int cBytes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
-
-Reads a sequence of bytes from the channel into the specified buffer.
-
-```cs
-int Read(Byte[] inBuf, int iBegin, int cBytes)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Byte\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.byte) | inBuf | The buffer to store the data read from the channel.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | iBegin | The zero-based byte offset in inBuf at which to begin storing the data read from the channel.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cBytes | The maximum number of bytes to read.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | The total number of bytes read into the buffer.
-
-### int ReadByte()
-
-Reads a single byte from the channel.
-
-```cs
-int ReadByte()
-```
-
-### void Receive()
-
-Receives data from the channel.
-
-```cs
-void Receive()
-```

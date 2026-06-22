@@ -22,20 +22,5 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [ProgParmType](#progparmtypestring-int32-fieldtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html)) | Initializes a new instance of the  class with the specified name, number of elements, and field type.
+| [ProgParmType](prog-parm-type-ctor.html#progparmtype-string-int32-fieldtype)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html)) | Initializes a new instance of the  class with the specified name, number of elements, and field type.
 
-### ProgParmType([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [FieldType](/reference/datagate/datagate-common/field-type.html))
-
-Initializes a new instance of the  class with the specified name, number of elements, and field type.
-
-```cs
-ProgParmType(String, Int32, FieldType)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the program parameter.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | The number of elements in the program parameter.
-| [FieldType](/reference/datagate/datagate-common/field-type.html) | type | The field type of the program parameter.

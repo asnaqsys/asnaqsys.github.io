@@ -23,24 +23,5 @@ Defines methods for creating instances of AltEncoding and getting information ab
 
 | Signature | Description |
 | --- | --- |
-| [GetEncoding](#altencoding-getencodingstring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Generally, this method should only return an instance ofAltEncoding if the encoding is represented by one of theAltEncodingInfo objects returned by the Encodings property.This method should throw ArgumentException if the name given is notsupported by the factory.
+| [GetEncoding](i-alt-encoding-factory-getencoding.html#altencoding-getencoding-string-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Generally, this method should only return an instance ofAltEncoding if the encoding is represented by one of theAltEncodingInfo objects returned by the Encodings property.This method should throw ArgumentException if the name given is notsupported by the factory.
 
-### AltEncoding GetEncoding([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Generally, this method should only return an instance ofAltEncoding if the encoding is represented by one of theAltEncodingInfo objects returned by the Encodings property.This method should throw ArgumentException if the name given is notsupported by the factory.
-
-```cs
-AltEncoding GetEncoding(string name)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the encoding, as returned by             AltEncoding.EncodingName.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html) | An instance of AltEncoding representing the desiredencoding translation facility.

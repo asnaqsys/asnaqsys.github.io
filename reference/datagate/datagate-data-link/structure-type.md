@@ -21,20 +21,5 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [StructureType](#structuretypestring-int32-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the  class with the specified name, number of elements, and members.
+| [StructureType](structure-type-ctor.html#structuretype-string-int32-object-https-docs-microsoft-com-en-us-dotnet-api-system-object)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object)) | Initializes a new instance of the  class with the specified name, number of elements, and members.
 
-### StructureType([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object))
-
-Initializes a new instance of the  class with the specified name, number of elements, and members.
-
-```cs
-StructureType(String, Int32, Object[])
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the structure.
-| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | cElems | The number of elements in the structure.
-| [Object\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.object) | members | The members of the structure.

@@ -21,38 +21,8 @@ Any public static (Shared) members of this type are safe for multithreaded opera
 
 | Name | Description |
 | --- | --- |
-| [ProgParm](#progparmprogparmtype-datadirection)([ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class with the specified parameter type and data direction.
-| [ProgParm](#progparmstructuretype-datadirection)([StructureType](/reference/datagate/datagate-data-link/structure-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class with the specified structure type and data direction.
-
-### ProgParm([ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html))
-
-Initializes a new instance of the  class with the specified parameter type and data direction.
-
-```cs
-ProgParm(ProgParmType, DataDirection)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html) | ppt | The type of the parameter.
-| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | dir | The direction of the data (input, output, or both).
-
-### ProgParm([StructureType](/reference/datagate/datagate-data-link/structure-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html))
-
-Initializes a new instance of the  class with the specified structure type and data direction.
-
-```cs
-ProgParm(StructureType, DataDirection)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [StructureType](/reference/datagate/datagate-data-link/structure-type.html) | st | The structure type of the parameter.
-| [DataDirection](/reference/datagate/datagate-common/data-direction.html) | dir | The direction of the data (input, output, or both).
+| [ProgParm](prog-parm-ctor.html#progparm-progparmtype-datadirection)([ProgParmType](/reference/datagate/datagate-data-link/prog-parm-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class with the specified parameter type and data direction.
+| [ProgParm](prog-parm-ctor.html#progparm-structuretype-datadirection)([StructureType](/reference/datagate/datagate-data-link/structure-type.html), [DataDirection](/reference/datagate/datagate-common/data-direction.html)) | Initializes a new instance of the  class with the specified structure type and data direction.
 
 ## Properties
 
@@ -83,4 +53,5 @@ ProgParm(StructureType, DataDirection)
   //Now we execute the call to the As400Program, "Call400".
   prog.Execute();
 ```
+
 

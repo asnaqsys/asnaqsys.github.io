@@ -1326,24 +1326,77 @@ Reference:
     - sectiontitle: Classes
       sectionpath: /reference/datagate/datagate-data-link/landing-page-classes.html
       section:
-      - title: ChannelIOStreamException
-        path: /reference/datagate/datagate-data-link/channel-io-stream-exception.html
-      - title: EndStreamModeException
-        path: /reference/datagate/datagate-data-link/end-stream-mode-exception.html
-      - title: ProgParm
-        path: /reference/datagate/datagate-data-link/prog-parm.html
-      - title: ProgParmType
-        path: /reference/datagate/datagate-data-link/prog-parm-type.html
-      - title: StructureType
-        path: /reference/datagate/datagate-data-link/structure-type.html
+      - sectiontitle: ChannelIOStreamException
+        sectionpath: /reference/datagate/datagate-data-link/channel-io-stream-exception.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-data-link/channel-io-stream-exception-ctor.html
+      - sectiontitle: EndStreamModeException
+        sectionpath: /reference/datagate/datagate-data-link/end-stream-mode-exception.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-data-link/end-stream-mode-exception-ctor.html
+      - sectiontitle: ProgParm
+        sectionpath: /reference/datagate/datagate-data-link/prog-parm.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-data-link/prog-parm-ctor.html
+      - sectiontitle: ProgParmType
+        sectionpath: /reference/datagate/datagate-data-link/prog-parm-type.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-data-link/prog-parm-type-ctor.html
+      - sectiontitle: StructureType
+        sectionpath: /reference/datagate/datagate-data-link/structure-type.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-data-link/structure-type-ctor.html
       - title: AltDecoder
         path: /reference/datagate/datagate-data-link/alt-decoder.html
       - title: AltEncoder
         path: /reference/datagate/datagate-data-link/alt-encoder.html
-      - title: AltEncoding
-        path: /reference/datagate/datagate-data-link/alt-encoding.html
-      - title: AltEncodingInfo
-        path: /reference/datagate/datagate-data-link/alt-encoding-info.html
+      - sectiontitle: AltEncoding
+        sectionpath: /reference/datagate/datagate-data-link/alt-encoding.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-data-link/alt-encoding-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: DictionaryFromITransformProps
+            path: /reference/datagate/datagate-data-link/alt-encoding-dictionaryfromitransformprops.html
+          - title: Equal
+            path: /reference/datagate/datagate-data-link/alt-encoding-equal.html
+          - title: GetAltDecoder
+            path: /reference/datagate/datagate-data-link/alt-encoding-getaltdecoder.html
+          - title: GetAltEncoder
+            path: /reference/datagate/datagate-data-link/alt-encoding-getaltencoder.html
+          - title: GetAltEncoding
+            path: /reference/datagate/datagate-data-link/alt-encoding-getaltencoding.html
+          - title: GetAltEncodingInfo
+            path: /reference/datagate/datagate-data-link/alt-encoding-getaltencodinginfo.html
+          - title: GetDecoder
+            path: /reference/datagate/datagate-data-link/alt-encoding-getdecoder.html
+          - title: GetDecoderImpl
+            path: /reference/datagate/datagate-data-link/alt-encoding-getdecoderimpl.html
+          - title: GetEncoder
+            path: /reference/datagate/datagate-data-link/alt-encoding-getencoder.html
+          - title: GetEncoderImpl
+            path: /reference/datagate/datagate-data-link/alt-encoding-getencoderimpl.html
+          - title: TransformPropertiesFromDictionary
+            path: /reference/datagate/datagate-data-link/alt-encoding-transformpropertiesfromdictionary.html
+          - title: TransformPropertiesFromStream
+            path: /reference/datagate/datagate-data-link/alt-encoding-transformpropertiesfromstream.html
+          - title: TransformPropertiesToStream
+            path: /reference/datagate/datagate-data-link/alt-encoding-transformpropertiestostream.html
+      - sectiontitle: AltEncodingInfo
+        sectionpath: /reference/datagate/datagate-data-link/alt-encoding-info.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-data-link/alt-encoding-info-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: GetEncoding
+            path: /reference/datagate/datagate-data-link/alt-encoding-info-getencoding.html
     - sectiontitle: Delegates
       section:
       - title: OpenAccessRpg
@@ -1351,12 +1404,39 @@ Reference:
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/datagate-data-link/landing-page-interfaces.html
       section:
-      - title: IOpenAccessReader
-        path: /reference/datagate/datagate-data-link/i-open-access-reader.html
-      - title: IOpenAccessWriter
-        path: /reference/datagate/datagate-data-link/i-open-access-writer.html
-      - title: IAltEncodingFactory
-        path: /reference/datagate/datagate-data-link/i-alt-encoding-factory.html
+      - sectiontitle: IOpenAccessReader
+        sectionpath: /reference/datagate/datagate-data-link/i-open-access-reader.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Flush
+            path: /reference/datagate/datagate-data-link/i-open-access-reader-flush.html
+          - title: Read
+            path: /reference/datagate/datagate-data-link/i-open-access-reader-read.html
+          - title: ReadByte
+            path: /reference/datagate/datagate-data-link/i-open-access-reader-readbyte.html
+          - title: Receive
+            path: /reference/datagate/datagate-data-link/i-open-access-reader-receive.html
+      - sectiontitle: IOpenAccessWriter
+        sectionpath: /reference/datagate/datagate-data-link/i-open-access-writer.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: Flush
+            path: /reference/datagate/datagate-data-link/i-open-access-writer-flush.html
+          - title: Prepare
+            path: /reference/datagate/datagate-data-link/i-open-access-writer-prepare.html
+          - title: Write
+            path: /reference/datagate/datagate-data-link/i-open-access-writer-write.html
+          - title: WriteByte
+            path: /reference/datagate/datagate-data-link/i-open-access-writer-writebyte.html
+      - sectiontitle: IAltEncodingFactory
+        sectionpath: /reference/datagate/datagate-data-link/i-alt-encoding-factory.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: GetEncoding
+            path: /reference/datagate/datagate-data-link/i-alt-encoding-factory-getencoding.html
       - title: IAltEncodingJsonSerializer
         path: /reference/datagate/datagate-data-link/i-alt-encoding-json-serializer.html
   - sectiontitle: ASNA.DataGate.Providers

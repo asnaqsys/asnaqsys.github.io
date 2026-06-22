@@ -17,21 +17,7 @@ Represents information about an alternative encoding.
 
 | Name | Description |
 | --- | --- |
-| [AltEncodingInfo](#altencodinginfoaltencoding)([AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html)) | Initializes a new instance of the AltEncodingInfo class with the specified AltEncoding.
-
-### AltEncodingInfo([AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html))
-
-Initializes a new instance of the AltEncodingInfo class with the specified AltEncoding.
-
-```cs
-AltEncodingInfo(AltEncoding)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html) | enc | The AltEncoding to use.
+| [AltEncodingInfo](alt-encoding-info-ctor.html#altencodinginfo-altencoding)([AltEncoding](/reference/datagate/datagate-data-link/alt-encoding.html)) | Initializes a new instance of the AltEncodingInfo class with the specified AltEncoding.
 
 ## Properties
 
@@ -45,12 +31,5 @@ AltEncodingInfo(AltEncoding)
 
 | Signature | Description |
 | --- | --- |
-| [GetEncoding()](#altencoding-getencoding) | Returns the AltEncoding for this instance of AltEncodingInfo.
+| [GetEncoding()](alt-encoding-info-getencoding.html#altencoding-getencoding) | Returns the AltEncoding for this instance of AltEncodingInfo.
 
-### AltEncoding GetEncoding()
-
-Returns the AltEncoding for this instance of AltEncodingInfo.
-
-```cs
-AltEncoding GetEncoding()
-```
