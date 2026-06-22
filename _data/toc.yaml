@@ -1669,8 +1669,17 @@ Reference:
     - sectiontitle: Classes
       sectionpath: /reference/datagate/datagate-sql-server/landing-page-classes.html
       section:
-      - title: SqlObjectName
-        path: /reference/datagate/datagate-sql-server/sql-object-name.html
+      - sectiontitle: SqlObjectName
+        sectionpath: /reference/datagate/datagate-sql-server/sql-object-name.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-sql-server/sql-object-name-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Parse
+            path: /reference/datagate/datagate-sql-server/sql-object-name-parse.html
+          - title: TryParse
+            path: /reference/datagate/datagate-sql-server/sql-object-name-tryparse.html
   - sectiontitle: ASNA.Extensions.Configuration
     sectionpath: /reference/datagate/extensions-configuration/landing-page-namespace.html
     section:
