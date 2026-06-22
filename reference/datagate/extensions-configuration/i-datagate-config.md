@@ -23,28 +23,5 @@ Provides an interface for accessing DataGate configuration.
 
 | Signature | Description |
 | --- | --- |
-| [ResolveSourceName](#sourceprofile-resolvesourcenamestring-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Resolves a configured SourceProfile with behavior similar to the DatabaseName.ToSourceProfile methods for traditional database names.
+| [ResolveSourceName](i-datagate-config-resolvesourcename.html#sourceprofile-resolvesourcename-string-name)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Resolves a configured SourceProfile with behavior similar to the DatabaseName.ToSourceProfile methods for traditional database names.
 
-### SourceProfile ResolveSourceName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
-
-Resolves a configured SourceProfile with behavior similar to the DatabaseName.ToSourceProfile methods for traditional database names.
-
-
-#### Remarks
-This method is used to resolve a SourceProfile from its name. If the name is not found, it throws a NoDbNameException.
-
-```cs
-SourceProfile ResolveSourceName(string name)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | name | The name of the source to resolve.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | The resolved SourceProfile.

@@ -1686,21 +1686,48 @@ Reference:
     - sectiontitle: Classes
       sectionpath: /reference/datagate/extensions-configuration/landing-page-classes.html
       section:
-      - title: AsnaConfig
-        path: /reference/datagate/extensions-configuration/asna-config.html
-      - title: AsnaConfigHelper
-        path: /reference/datagate/extensions-configuration/asna-config-helper.html
-      - title: DataGateExtensions
-        path: /reference/datagate/extensions-configuration/datagate-extensions.html
-      - title: RootExtensions
-        path: /reference/datagate/extensions-configuration/root-extensions.html
+      - sectiontitle: AsnaConfig
+        sectionpath: /reference/datagate/extensions-configuration/asna-config.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/extensions-configuration/asna-config-ctor.html
+      - sectiontitle: AsnaConfigHelper
+        sectionpath: /reference/datagate/extensions-configuration/asna-config-helper.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: LoadFromJson
+            path: /reference/datagate/extensions-configuration/asna-config-helper-loadfromjson.html
+          - title: TryLoadFromDefaultFile
+            path: /reference/datagate/extensions-configuration/asna-config-helper-tryloadfromdefaultfile.html
+      - sectiontitle: DataGateExtensions
+        sectionpath: /reference/datagate/extensions-configuration/datagate-extensions.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: GetSourceProfiles
+            path: /reference/datagate/extensions-configuration/datagate-extensions-getsourceprofiles.html
+      - sectiontitle: RootExtensions
+        sectionpath: /reference/datagate/extensions-configuration/root-extensions.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: GetAsnaConfig
+            path: /reference/datagate/extensions-configuration/root-extensions-getasnaconfig.html
+          - title: GetDataGateConfig
+            path: /reference/datagate/extensions-configuration/root-extensions-getdatagateconfig.html
     - sectiontitle: Interfaces
       sectionpath: /reference/datagate/extensions-configuration/landing-page-interfaces.html
       section:
       - title: IAsnaConfig
         path: /reference/datagate/extensions-configuration/i-asna-config.html
-      - title: IDataGateConfig
-        path: /reference/datagate/extensions-configuration/i-datagate-config.html
+      - sectiontitle: IDataGateConfig
+        sectionpath: /reference/datagate/extensions-configuration/i-datagate-config.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: ResolveSourceName
+            path: /reference/datagate/extensions-configuration/i-datagate-config-resolvesourcename.html
   - sectiontitle: ASNA.QSys.Runtime
     sectionpath: /reference/runtime/qsys-runtime/landing-page-namespace.html
     section:
