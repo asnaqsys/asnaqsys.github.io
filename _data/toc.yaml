@@ -1005,28 +1005,227 @@ Reference:
       section:
       - title: AdgTrace
         path: /reference/datagate/datagate-common/adg-trace.html
-      - title: DecNumZPRep
-        path: /reference/datagate/datagate-common/dec-num-zp-rep.html
-      - title: dgException
-        path: /reference/datagate/datagate-common/dg-exception.html
-      - title: DgNegotiateException
-        path: /reference/datagate/datagate-common/dg-negotiate-exception.html
-      - title: FieldType
-        path: /reference/datagate/datagate-common/field-type.html
-      - title: IndicatorExpression
-        path: /reference/datagate/datagate-common/indicator-expression.html
-      - title: InvariantCultureTypeConverter
-        path: /reference/datagate/datagate-common/invariant-culture-type-converter.html
-      - title: NoDbNameException
-        path: /reference/datagate/datagate-common/no-db-name-exception.html
-      - title: TraceSinkSectionHandler
-        path: /reference/datagate/datagate-common/trace-sink-section-handler.html
-      - title: ClrStringHelpers
-        path: /reference/datagate/datagate-common/clr-string-helpers.html
-      - title: InputStreamAggregator
-        path: /reference/datagate/datagate-common/input-stream-aggregator.html
-      - title: XmlElementConverter
-        path: /reference/datagate/datagate-common/xml-element-converter.html
+      - sectiontitle: DecNumZPRep
+        sectionpath: /reference/datagate/datagate-common/dec-num-zp-rep.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/dec-num-zp-rep-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: IsNegativePacked
+            path: /reference/datagate/datagate-common/dec-num-zp-rep-isnegativepacked.html
+          - title: IsNegativeZone
+            path: /reference/datagate/datagate-common/dec-num-zp-rep-isnegativezone.html
+          - title: IsPositivePacked
+            path: /reference/datagate/datagate-common/dec-num-zp-rep-ispositivepacked.html
+          - title: IsPositiveZone
+            path: /reference/datagate/datagate-common/dec-num-zp-rep-ispositivezone.html
+      - sectiontitle: dgException
+        sectionpath: /reference/datagate/datagate-common/dg-exception.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/dg-exception-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: FormatMessage
+            path: /reference/datagate/datagate-common/dg-exception-formatmessage.html
+          - title: GetDefaultErrorClass
+            path: /reference/datagate/datagate-common/dg-exception-getdefaulterrorclass.html
+          - title: GetVerboseText
+            path: /reference/datagate/datagate-common/dg-exception-getverbosetext.html
+      - sectiontitle: DgNegotiateException
+        sectionpath: /reference/datagate/datagate-common/dg-negotiate-exception.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/dg-negotiate-exception-ctor.html
+      - sectiontitle: FieldType
+        sectionpath: /reference/datagate/datagate-common/field-type.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: GetSystemTypeOfType
+            path: /reference/datagate/datagate-common/field-type-getsystemtypeoftype.html
+          - title: NewBinary
+            path: /reference/datagate/datagate-common/field-type-newbinary.html
+          - title: NewByte
+            path: /reference/datagate/datagate-common/field-type-newbyte.html
+          - title: NewChar
+            path: /reference/datagate/datagate-common/field-type-newchar.html
+          - title: NewDate
+            path: /reference/datagate/datagate-common/field-type-newdate.html
+          - title: NewDBCS
+            path: /reference/datagate/datagate-common/field-type-newdbcs.html
+          - title: NewDontCare
+            path: /reference/datagate/datagate-common/field-type-newdontcare.html
+          - title: NewFloat
+            path: /reference/datagate/datagate-common/field-type-newfloat.html
+          - title: NewHex
+            path: /reference/datagate/datagate-common/field-type-newhex.html
+          - title: NewInteger
+            path: /reference/datagate/datagate-common/field-type-newinteger.html
+          - title: NewPacked
+            path: /reference/datagate/datagate-common/field-type-newpacked.html
+          - title: NewTime
+            path: /reference/datagate/datagate-common/field-type-newtime.html
+          - title: NewTimestamp
+            path: /reference/datagate/datagate-common/field-type-newtimestamp.html
+          - title: NewUnicode
+            path: /reference/datagate/datagate-common/field-type-newunicode.html
+          - title: NewZoned
+            path: /reference/datagate/datagate-common/field-type-newzoned.html
+      - sectiontitle: IndicatorExpression
+        sectionpath: /reference/datagate/datagate-common/indicator-expression.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/indicator-expression-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Eval
+            path: /reference/datagate/datagate-common/indicator-expression-eval.html
+      - sectiontitle: InvariantCultureTypeConverter
+        sectionpath: /reference/datagate/datagate-common/invariant-culture-type-converter.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/invariant-culture-type-converter-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: CanConvertFrom
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-canconvertfrom.html
+          - title: CanConvertTo
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-canconvertto.html
+          - title: ConvertFrom
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-convertfrom.html
+          - title: ConvertTo
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-convertto.html
+          - title: CreateInstance
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-createinstance.html
+          - title: Equals
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-equals.html
+          - title: GetCreateInstanceSupported
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-getcreateinstancesupported.html
+          - title: GetHashCode
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-gethashcode.html
+          - title: GetProperties
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-getproperties.html
+          - title: GetPropertiesSupported
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-getpropertiessupported.html
+          - title: GetStandardValues
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-getstandardvalues.html
+          - title: GetStandardValuesExclusive
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-getstandardvaluesexclusive.html
+          - title: GetStandardValuesSupported
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-getstandardvaluessupported.html
+          - title: IsValid
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-isvalid.html
+          - title: ToString
+            path: /reference/datagate/datagate-common/invariant-culture-type-converter-tostring.html
+      - sectiontitle: NoDbNameException
+        sectionpath: /reference/datagate/datagate-common/no-db-name-exception.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/no-db-name-exception-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: FormatMessage
+            path: /reference/datagate/datagate-common/no-db-name-exception-formatmessage.html
+      - sectiontitle: TraceSinkSectionHandler
+        sectionpath: /reference/datagate/datagate-common/trace-sink-section-handler.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/trace-sink-section-handler-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Create
+            path: /reference/datagate/datagate-common/trace-sink-section-handler-create.html
+      - sectiontitle: ClrStringHelpers
+        sectionpath: /reference/datagate/datagate-common/clr-string-helpers.html
+        section:
+        - sectiontitle: Methods
+          section:
+          - title: ContainsInvariantIgnoreCase
+            path: /reference/datagate/datagate-common/clr-string-helpers-containsinvariantignorecase.html
+          - title: ContainsOrdinal
+            path: /reference/datagate/datagate-common/clr-string-helpers-containsordinal.html
+          - title: ContainsOrdinalIgnoreCase
+            path: /reference/datagate/datagate-common/clr-string-helpers-containsordinalignorecase.html
+          - title: GetHashCodeCurrentCultureIgnoreCase
+            path: /reference/datagate/datagate-common/clr-string-helpers-gethashcodecurrentcultureignorecase.html
+          - title: GetHashCodeInvariantCultureIgnoreCase
+            path: /reference/datagate/datagate-common/clr-string-helpers-gethashcodeinvariantcultureignorecase.html
+          - title: GetHashCodeOrdinal
+            path: /reference/datagate/datagate-common/clr-string-helpers-gethashcodeordinal.html
+          - title: GetHashCodeOrdinalIgnoreCase
+            path: /reference/datagate/datagate-common/clr-string-helpers-gethashcodeordinalignorecase.html
+          - title: IndexOfOrdinal
+            path: /reference/datagate/datagate-common/clr-string-helpers-indexofordinal.html
+          - title: ReplaceOrdinal
+            path: /reference/datagate/datagate-common/clr-string-helpers-replaceordinal.html
+          - title: ReplaceOrdinalIgnoreCase
+            path: /reference/datagate/datagate-common/clr-string-helpers-replaceordinalignorecase.html
+      - sectiontitle: InputStreamAggregator
+        sectionpath: /reference/datagate/datagate-common/input-stream-aggregator.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/input-stream-aggregator-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: Append
+            path: /reference/datagate/datagate-common/input-stream-aggregator-append.html
+          - title: Dispose
+            path: /reference/datagate/datagate-common/input-stream-aggregator-dispose.html
+          - title: Finalize
+            path: /reference/datagate/datagate-common/input-stream-aggregator-finalize.html
+          - title: Flush
+            path: /reference/datagate/datagate-common/input-stream-aggregator-flush.html
+          - title: Read
+            path: /reference/datagate/datagate-common/input-stream-aggregator-read.html
+          - title: ReadByte
+            path: /reference/datagate/datagate-common/input-stream-aggregator-readbyte.html
+          - title: Seek
+            path: /reference/datagate/datagate-common/input-stream-aggregator-seek.html
+          - title: SetLength
+            path: /reference/datagate/datagate-common/input-stream-aggregator-setlength.html
+          - title: Write
+            path: /reference/datagate/datagate-common/input-stream-aggregator-write.html
+      - sectiontitle: XmlElementConverter
+        sectionpath: /reference/datagate/datagate-common/xml-element-converter.html
+        section:
+        - title: Constructors
+          path: /reference/datagate/datagate-common/xml-element-converter-ctor.html
+        - sectiontitle: Methods
+          section:
+          - title: CreateElement
+            path: /reference/datagate/datagate-common/xml-element-converter-createelement.html
+          - title: GetAttribute
+            path: /reference/datagate/datagate-common/xml-element-converter-getattribute.html
+          - title: GetChildCount
+            path: /reference/datagate/datagate-common/xml-element-converter-getchildcount.html
+          - title: GetChildren
+            path: /reference/datagate/datagate-common/xml-element-converter-getchildren.html
+          - title: GetChildrenOrThrow
+            path: /reference/datagate/datagate-common/xml-element-converter-getchildrenorthrow.html
+          - title: GetDocumentOrThrow
+            path: /reference/datagate/datagate-common/xml-element-converter-getdocumentorthrow.html
+          - title: GetElementOrThrow
+            path: /reference/datagate/datagate-common/xml-element-converter-getelementorthrow.html
+          - title: GetElementText
+            path: /reference/datagate/datagate-common/xml-element-converter-getelementtext.html
+          - title: GetFirstElement
+            path: /reference/datagate/datagate-common/xml-element-converter-getfirstelement.html
+          - title: GetParentOrThrow
+            path: /reference/datagate/datagate-common/xml-element-converter-getparentorthrow.html
+          - title: GetXsdBool
+            path: /reference/datagate/datagate-common/xml-element-converter-getxsdbool.html
+          - title: GetXsdBooleanAttribute
+            path: /reference/datagate/datagate-common/xml-element-converter-getxsdbooleanattribute.html
+          - title: HasAttribute
+            path: /reference/datagate/datagate-common/xml-element-converter-hasattribute.html
+          - title: SetAttribute
+            path: /reference/datagate/datagate-common/xml-element-converter-setattribute.html
+          - title: SetElementName
+            path: /reference/datagate/datagate-common/xml-element-converter-setelementname.html
+          - title: SetElementText
+            path: /reference/datagate/datagate-common/xml-element-converter-setelementtext.html
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/datagate-common/landing-page-enumerations.html
       section:

@@ -18,15 +18,7 @@ Implements the  interface.
 
 | Name | Description |
 | --- | --- |
-| [TraceSinkSectionHandler()](#tracesinksectionhandler) | Initializes a new instance of the  class.
-
-### TraceSinkSectionHandler()
-
-Initializes a new instance of the  class.
-
-```cs
-TraceSinkSectionHandler()
-```
+| [TraceSinkSectionHandler()](trace-sink-section-handler-ctor.html#tracesinksectionhandler) | Initializes a new instance of the  class.
 
 ## Properties
 
@@ -40,26 +32,5 @@ TraceSinkSectionHandler()
 
 | Signature | Description |
 | --- | --- |
-| [Create](#object-createobject-parent-object-context-xmlnode-section)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0)) | Creates a new instance of the TraceSinkSectionHandler class.
+| [Create](trace-sink-section-handler-create.html#object-create-object-parent-object-context-xmlnode-section)([Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object), [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0)) | Creates a new instance of the TraceSinkSectionHandler class.
 
-### object Create([object parent](https://docs.microsoft.com/en-us/dotnet/api/system.object), [object context](https://docs.microsoft.com/en-us/dotnet/api/system.object), [XmlNode section](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0))
-
-Creates a new instance of the TraceSinkSectionHandler class.
-
-```cs
-object Create(object parent, object context, XmlNode section)
-```
-
-#### Parameters
-
-| Type | Parameter name | Description
-| --- | --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | parent | The parent object.
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | context | The context object.
-| [XmlNode](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlnode?view=net-8.0) | section | The XML node that contains the configuration information to be handled.
-
-#### Returns
-
-| Type | Description
-| --- | ---
-| [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) | A new instance of the TraceSinkSectionHandler class.
