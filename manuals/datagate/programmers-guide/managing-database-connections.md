@@ -1,11 +1,13 @@
 ---
 title: "Managing Database Connections"
-description: "Learn how to manage database connections effectively. Our guide covers best practices for stability and performance."
+description: "Learn how to manage database connections effectively."
 ---
 
-[AdgConnection](/reference/datagate/datagate-client/adg-connection.html) objects exist in one of two modes, as reflected by the [State](/reference/datagate/datagate-client/adg-connection.html#properties) property. Initially, <span> **AdgConnection** </span> objects are in the <span>Closed</span> state. After successful execution of the [ Open](/reference/datagate/datagate-client/adg-connection-open.html) method, the **AdgConnection** object is in the <span>Open</span> state. When open, <span> **AdgConnection** </span> objects represent a live connection to the database and can be used with other DG objects and methods to perform access operations.
+[AdgConnection](/reference/datagate/datagate-client/adg-connection.html) objects exist in one of two modes, as reflected by the [State](/reference/datagate/datagate-client/adg-connection.html#properties) property. Initially, **AdgConnection** objects are in the **Closed** state. After successful execution of the [ Open](/reference/datagate/datagate-client/adg-connection-open.html) method, the **AdgConnection** object is in the **Open** state. When open, **AdgConnection** objects represent a live connection to the database and can be used with other DG objects and methods to perform access operations.
 
-Prior to calling <span> **Open** </span>, you can use the [ SourceProfile](/reference/datagate/datagate-client/adg-connection.html#properties) property to modify connection parameters. Changes to <span> **SourceProfile** </span> affect subsequent <span> **Open** </span> method calls. The characteristics of the database connection cannot be changed when in the Open state. See the next topic [ Database Name Handling](database-name-handling.html) for a further introduction to <span> **SourceProfile** </span>.
+Prior to calling **Open**, you can use the [ SourceProfile](/reference/datagate/datagate-client/adg-connection.html#properties) property to modify connection parameters. Changes to  **SourceProfile**  affect subsequent  **Open**  method calls. The characteristics of the database connection cannot be changed when in the Open state. 
+
+See how to [Configuring a Database Name Store](/manuals/configuration/database-names.html) for a further introduction to  **SourceProfile** .
 ## See Also
 
 
@@ -17,7 +19,7 @@ Prior to calling <span> **Open** </span>, you can use the [ SourceProfile](/refe
       <br />
 [AdgConnection.State Property](/reference/datagate/datagate-client/adg-connection.html#properties)
       <br />
-[Database Name Handling](database-name-handling.html)
+[Configuring the Database Name Store](/manuals/configuration/database-names.html)
       <br />
 [Connecting to a Database](connectingtoa-database-main.html)
 

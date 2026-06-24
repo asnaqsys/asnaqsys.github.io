@@ -147,8 +147,6 @@ Manuals:
           path: /manuals/datagate/programmers-guide/connectingtoa-database.html
         - title: Managing Database Connections
           path: /manuals/datagate/programmers-guide/managing-database-connections.html
-        - title: Database Name Handling
-          path: /manuals/datagate/programmers-guide/database-name-handling.html
         - title: Disconnecting From a Database
           path: /manuals/datagate/programmers-guide/disconnectingfroma-database.html
       - sectiontitle: Accessing a File
