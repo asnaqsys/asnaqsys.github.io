@@ -26,6 +26,7 @@ There is a `"DisplayPages"` object defined in the schema for `appsettings.json`,
 
 | Type | Name | Description
 | --- | --- | --- 
-| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | FakeDataDirectory | File system absolute path holding test data for testing Display Pages.Defaults to the "/temp/FakeData" directory. |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string) | FakeDataDirectory | File system absolute path holding test data for testing Display Pages.Defaults to the "/temp/FakeData" directory. |
 | [FakeDataType](/reference/expo/qsys-expo-model/fake-data-type.html) | FakeDataType | Controls the generation and/or use of Fake data in lieu of running the program's logic.Defaults to none, when set to a different value, the value of "FakeDataDirectory" is used to locate the Fake data. |
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | MultiJobOnBrowser | Determines if multiple jobs are supported for the same browser |
+| [String](https://learn.microsoft.com/en-us/dotnet/api/system.string) | StartupPage | Optional route path to the startup page, for instance a Login page. This is used to redirect users to a page where the Job can be prepared before starting it. |

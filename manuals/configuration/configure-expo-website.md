@@ -132,18 +132,21 @@ method will be invoked.
 Finally, the Name value provides the initial Job Name.  
 
 ### DisplayPages
-The `DisplayPages` section of the configuration provides the ability to control the relationship of the website Display Pages and their corresponding Jobs. The two aspects that can be managed are the ability to run multiple jobs from a single browser and the usage of fake data.  
+The `DisplayPages` section of the configuration provides the ability to control the relationship of the website Display Pages and their corresponding Jobs. The aspects that can be managed are the ability to run multiple jobs from a single browser, establishing a startup page and the usage of fake data.  
 
-The section has three properties:
+The section has these properties:
  - `MultiJobOnBrowser` - Valid values: `true`, `false`
+ - `StartupPage` - Full path for the page to be shown for new Jobs.
  - `FakeDataType` - Valid values: `None`, `Output`, `Input`
  - `FakeDataDirectory` - Directory where Fake data files are located.
 
 #### Multiple Jobs per Browser
 Enabling the MultiJobOnBrowser property allows a user to employ a single browser to start [multiple jobs in different tabs](multiple-jobs-one-browser.html).  When the property is disabled (set to false), all the tabs on the user browser will display the state of the single job started on the first browser tab.
 
+#### Startup Page
+When a DisplayPage request is received, Expo attempts to locate the Job associated with the user's session; if no Job is found, Expo automatically creates one and associates it with that session.
+
+The Startup Page property allows you to override this default behavior by [designating a route](designate-startup-page.html) that executes custom logic to start a Job. This enables you to perform tasks such as establishing credentials, creating claims, initializing session state, or validating access before the Job is created or provide values to the Job during startup.
+
 #### Fake Data
 Fake data is utilized when particular pages of the website are to be displayed but the user does not wish to navigate the application all the way to the page.  The feature of [using fake data](using-fake-data.html) can be utilized by a developer to provide a set of files to another developer working purely in the look and feel of the website.
-
-
-

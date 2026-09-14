@@ -271,6 +271,8 @@ Manuals:
       section:
       - title: Configuring Job Idle Timeout
         path: /manuals/configuration/configure-job-idle-timeout.html      
+      - title: Designating a Startup Page
+        path: /manuals/configuration/designate-startup-page.html
       - title: Enabling Multiple Jobs per Browser
         path: /manuals/configuration/multiple-jobs-one-browser.html
       - title: Expo Client-Side Content
