@@ -38,11 +38,11 @@ In the code above, the Job enters the Accept Command state as soon as it starts.
 
 ### Configure PageStartup
 
-The first order of business is to designate the route to the StartupPage, for example, you could point to a Razor Page called `startup` located at the website's root, something like this:
+The first order of business is to designate the route to the StartupPage, for example, you could point to a Razor Page called `Entry` located at the website's root, something like this:
 
 ```json
     "DisplayPages": {
-      "StartupPage": "/startup",
+      "StartupPage": "/Entry",
       . . .
     },
 ```
@@ -57,7 +57,7 @@ The startup page is responsible for starting the Job. A common process to start 
   - Perform any desired setup
   - Issue a Return command to the Job and redirect to the Job's requested page
 
-Here is an example of a simple `entry` implementation:
+Here is an example of a simple startup implementation of the model for a page called `Entry`:
 
 ```cs
     [Authorize]
