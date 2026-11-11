@@ -5,7 +5,7 @@ description: "Become proficient with the program user interface. This guide offe
 
 The document provides an overview of the interaction between a program's  **Workstation File** and the Razor **Display Page** on the website.
 
-Handling the user interface of an interactive application is a cooperative effort between the procedural program running in the application *blue thread* and the Razor Page model and view in the ASP.NET Core *yellow thread*.
+Handling the user interface of an interactive application is a cooperative effort between the procedural program running in the application *blue thread* and the Razor Page model and view in the ASP.NET Core *yellow thread*. [Yellow and Blue Threads](yellow-blue-threads.html) describes how those two threads take turns during one user interaction.
 
 The procedural program uses a workstation file to issue read and write instructions against the record formats to provide or request user data. A [DataSet](//docs.microsoft.com/en-us/dotnet/api/system.data.dataset) serves as the repository for the program and the user's data. The program's data is transferred to the Razor Page model and further processed by Helper Tags to produce the HTML presented to the user. Similarly, the user data is transferred back from the Razor Page model, via the DataSet, to the program's workstation file.
 

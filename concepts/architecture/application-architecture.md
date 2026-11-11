@@ -24,7 +24,7 @@ IBM i Jobs can generally be classified as being either batch or interactive, whe
 
 ### Monarch Jobs
 Monarch provides an execution context anchored around the concept of a Job and implemented in its class library. Similar to IBM i Jobs, Monarch Jobs are classified as batch or interactive. 
-Monarch Interactive jobs consist of one or more class libraries and are executed in a dedicated thread, colloquially known as _blue_ threads, of a Monarch Application Server process; these Interactive jobs are associated with an ASP.NET Session.
+Monarch Interactive jobs consist of one or more class libraries and are executed in a dedicated thread, colloquially known as _blue_ threads, of a Monarch Application Server process; these Interactive jobs are associated with an ASP.NET Session. How that thread cooperates with the ASP.NET request thread is described in [Yellow and Blue Threads](yellow-blue-threads.html).
 Monarch Batch jobs can be run in their own process or on a dedicated thread alongside the thread of the job that started it. 
 
 Some of the facilities provided to programs by the Monarch Job are:
@@ -71,7 +71,7 @@ The MAS facilities can be configured to run the application in one of these thre
 - Out-of-Process & In-Server
 - Out-of-Process & Out-of-Server
 
-Communication between the Interactive Job hosted in the MAS and the website is done via TCP/IP Sockets. 
+Communication between the Interactive Job hosted in the MAS and the website is done via TCP/IP Sockets. The threads on each side of that socket, and how one user interaction passes between them, are described in [Yellow and Blue Threads](yellow-blue-threads.html). 
 
 The appsettings.json file contains a section dedicated to the Monarch Application Server.  This section, called _MonaLisaServer_, contains these two parameters:
 - HostName
